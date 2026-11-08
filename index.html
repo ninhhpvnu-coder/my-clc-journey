@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="CLC 9.0+">
+    <title>CLC English Journey with Ms Ninh — Academic Mastery Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- Academic Paper Cream Theme (Default ☀️) --- */
+        :root, [data-theme="paper"] {
+            --bg-color: #fbf4ea;
+            --surface-color: #ffffff;
+            --surface-hover: #fffdf9;
+            --card-color: #fdfaf5;
+            --primary: #14324d;
+            --primary-hover: #1d4367;
+            --accent: #a35d2b;
+            --accent-hover: #8c471c;
+            --success: #1b8755;
+            --warning: #b45309;
+            --danger: #c0392b;
+            --purple: #6d28d9;
+            --text-main: #14324d;
+            --text-muted: #4a607a;
+            --border: #eadccb;
+            --card-shadow: 0 4px 20px rgba(20, 50, 77, 0.06);
+            --header-bg: linear-gradient(135deg, #ffffff 0%, #fbf4ea 100%);
+            --hero-border: #eadccb;
+            --hero-title-color: #14324d;
+            --hero-slogan-color: #4a607a;
+            --hero-highlight-color: #a35d2b;
+            --brand-badge-bg: rgba(163, 93, 43, 0.1);
+            --brand-badge-border: rgba(163, 93, 43, 0.35);
+            --brand-badge-color: #8c471c;
+            --badge-sub-bg: rgba(20, 50, 77, 0.07);
+            --badge-sub-border: rgba(20, 50, 77, 0.2);
+            --badge-sub-color: #14324d;
+            --unit-title-color: #14324d;
+            --unit-scores-bg: rgba(20, 50, 77, 0.04);
+            --score-mini-color: #14324d;
+            --tab-active-color: #ffffff;
+            --tab-active-bg: #14324d;
+            --btn-launch-bg: linear-gradient(135deg, #14324d, #1d4367);
+            --btn-launch-color: #ffffff;
+        }
+
+        /* --- Midnight Navy Dark Theme (Optional 🌙) --- */
+        [data-theme="dark"] {
+            --bg-color: #0b1120;
+            --surface-color: #1e293b;
+            --surface-hover: #243247;
+            --card-color: #334155;
+            --primary: #38bdf8;
+            --primary-hover: #0ea5e9;
+            --accent: #c5855d;
+            --accent-hover: #dca07b;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #f43f5e;
+            --purple: #a78bfa;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border: #334155;
+            --card-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.5);
+            --header-bg: radial-gradient(circle at 12% 25%, rgba(197, 139, 98, 0.12) 0%, transparent 60%), linear-gradient(135deg, rgba(30, 41, 59, 0.98), rgba(15, 23, 42, 0.98));
+            --hero-border: rgba(197, 139, 98, 0.38);
+            --hero-title-color: #ffffff;
+            --hero-slogan-color: #e2e8f0;
+            --hero-highlight-color: #38bdf8;
+            --brand-badge-bg: linear-gradient(135deg, rgba(197, 139, 98, 0.25), rgba(56, 189, 248, 0.15));
+            --brand-badge-border: rgba(197, 139, 98, 0.48);
+            --brand-badge-color: #f5d0b5;
+            --badge-sub-bg: rgba(56, 189, 248, 0.12);
+            --badge-sub-border: rgba(56, 189, 248, 0.25);
+            --badge-sub-color: #38bdf8;
+            --unit-title-color: #ffffff;
+            --unit-scores-bg: rgba(11, 17, 32, 0.65);
+            --score-mini-color: #ffffff;
+            --tab-active-color: #0b1120;
+            --tab-active-bg: var(--primary);
+            --btn-launch-bg: linear-gradient(135deg, #38bdf8, #0284c7);
+            --btn-launch-color: #0b1120;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 14px 12px 48px 12px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        @media (min-width: 768px) {
+            body {
+                padding: 28px 24px 60px 24px;
+            }
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1120px;
+            margin: 0 auto;
+        }
+
+        header.hero-header {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            padding: 24px 22px;
+            text-align: left;
+            background: var(--header-bg);
+            border-radius: 20px;
+            border: 1.5px solid var(--hero-border);
+            box-shadow: var(--card-shadow);
+            margin-bottom: 24px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .hero-brand-card {
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .brand-avatar-img {
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 18px;
+            border: 2px solid rgba(197, 139, 98, 0.55);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15), 0 0 18px rgba(197, 139, 98, 0.28);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background: #fbf6ef;
+        }
+
+        .brand-avatar-img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 14px 32px rgba(0, 0, 0, 0.25), 0 0 26px rgba(197, 139, 98, 0.42);
+        }
+
+        .hero-content {
+            flex-grow: 1;
+        }
+
+        .hero-badge-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 8px;
+        }
+
+        .brand-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--brand-badge-bg);
+            border: 1px solid var(--brand-badge-border);
+            color: var(--brand-badge-color);
+            padding: 5px 14px;
+            border-radius: 9999px;
+            font-weight: 800;
+            font-size: 0.84rem;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+        }
+
+        .badge-sub {
+            font-size: 0.74rem;
+            font-weight: 700;
+            color: var(--badge-sub-color);
+            background: var(--badge-sub-bg);
+            border: 1px solid var(--badge-sub-border);
+            padding: 4px 10px;
+            border-radius: 9999px;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        .hero-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.65rem;
+            color: var(--hero-title-color);
+            margin-bottom: 6px;
+            line-height: 1.25;
+            letter-spacing: -0.01em;
+            font-weight: 800;
+        }
+
+        @media (min-width: 768px) {
+            .hero-title {
+                font-size: 2.15rem;
+            }
+        }
+
+        .hero-slogan-en {
+            color: var(--hero-slogan-color);
+            font-size: 0.94rem;
+            line-height: 1.55;
+            margin-bottom: 6px;
+        }
+
+        .hero-slogan-highlight {
+            color: var(--hero-highlight-color);
+            font-weight: 700;
+        }
+
+        .hero-motto {
+            font-size: 0.86rem;
+            color: var(--accent);
+            font-style: italic;
+            letter-spacing: 0.04em;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .theme-switch-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(197, 133, 93, 0.15);
+            border: 1.5px solid rgba(197, 133, 93, 0.45);
+            color: var(--accent);
+            padding: 6px 14px;
+            border-radius: 999px;
+            font-size: 0.78rem;
+            font-weight: 800;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .theme-switch-pill:hover {
+            background: var(--accent);
+            color: #ffffff;
+        }
+
+        @media (max-width: 640px) {
+            header.hero-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .hero-badge-row {
+                justify-content: center;
+            }
+            .brand-avatar-img {
+                width: 110px;
+                height: 110px;
+            }
+        }
+
+        /* KPI Stats Row (Exact 4 Tiers) */
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        @media (min-width: 768px) {
+            .kpi-grid {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 16px;
+            }
+        }
+
+        .kpi-card {
+            background: var(--surface-color);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 16px;
+            text-align: center;
+            box-shadow: var(--card-shadow);
+        }
+
+        .kpi-label {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .kpi-value {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.55rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .kpi-sub {
+            font-size: 0.76rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        /* Unit Cards Grid (Exact 2 Columns on Desktop) */
+        .units-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 18px;
+        }
+
+        @media (min-width: 768px) {
+            .units-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .unit-card {
+            background: var(--surface-color);
+            border: 1.5px solid var(--border);
+            border-radius: 18px;
+            padding: 22px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.25s ease;
+            box-shadow: var(--card-shadow);
+        }
+
+        .unit-card:hover {
+            border-color: rgba(56, 189, 248, 0.55);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 28px rgba(20, 50, 77, 0.12);
+        }
+
+        [data-theme="dark"] .unit-card:hover {
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+        }
+
+        .unit-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .unit-num-pill {
+            background: rgba(56, 189, 248, 0.15);
+            color: #0284c7;
+            font-weight: 800;
+            font-size: 0.8rem;
+            padding: 4px 12px;
+            border-radius: 999px;
+            border: 1px solid rgba(56, 189, 248, 0.35);
+        }
+
+        .unit-status-pill {
+            font-size: 0.76rem;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 999px;
+            background: rgba(148, 163, 184, 0.15);
+            color: var(--text-muted);
+        }
+
+        .unit-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.25rem;
+            color: var(--unit-title-color);
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        .unit-desc {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-bottom: 14px;
+            line-height: 1.5;
+        }
+
+        .unit-scores-bar {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+            background: var(--unit-scores-bg);
+            padding: 10px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            margin-bottom: 16px;
+            font-size: 0.78rem;
+        }
+
+        .score-mini {
+            text-align: center;
+        }
+
+        .score-mini b {
+            display: block;
+            color: var(--score-mini-color);
+            font-size: 0.92rem;
+            font-weight: 700;
+        }
+
+        .btn-launch {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: 100%;
+            background: var(--btn-launch-bg);
+            color: var(--btn-launch-color);
+            font-weight: 800;
+            font-size: 0.95rem;
+            padding: 12px 18px;
+            border-radius: 12px;
+            text-decoration: none;
+            transition: all 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-launch:hover {
+            filter: brightness(1.08);
+            box-shadow: 0 4px 14px rgba(20, 50, 77, 0.2);
+        }
+
+        [data-theme="dark"] .btn-launch:hover {
+            box-shadow: 0 0 18px rgba(56, 189, 248, 0.4);
+        }
+
+        /* Anki & Mobile Bar */
+        .panel-box {
+            background: var(--surface-color);
+            border: 1.5px solid var(--border);
+            border-radius: 18px;
+            padding: 22px;
+            margin-top: 25px;
+            box-shadow: var(--card-shadow);
+        }
+
+        .anki-pill-link {
+            background: var(--surface-color);
+            border: 1.5px solid var(--accent);
+            color: var(--accent);
+            padding: 8px 16px;
+            border-radius: 999px;
+            font-size: 0.88rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .anki-pill-link:hover {
+            background: var(--accent);
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body data-theme="paper">
+
+<div class="container">
+
+    <!-- Header identical to ielts-mastery-kit -->
+    <header class="hero-header">
+        <div class="hero-brand-card">
+            <img src="brand_logo.jpg" alt="CLC English Journey with Ms Ninh" class="brand-avatar-img">
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge-row" style="display: flex; justify-content: space-between; align-items: center; width: 100%; flex-wrap: wrap; gap: 10px; margin-bottom: 10px;">
+                <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                    <span class="brand-badge">🪷 CLC English Journey with Ms Ninh</span>
+                    <span class="badge-sub">Tuyển Sinh Lớp 6 CLC (2026 — 2028)</span>
+                </div>
+                <button onclick="toggleTheme()" class="theme-switch-pill" title="Chuyển chế độ Giấy Ngà Học Thuật / Ban Đêm">
+                    ☀️ <span class="theme-text">Giấy Ngà Học Thuật</span>
+                </button>
+            </div>
+            <h1 class="hero-title">🎯 CLC Academic Mastery Hub</h1>
+            <p class="hero-slogan-en">
+                Cambridge & Look Standard 4-Skill Coaching System •
+                <span class="hero-slogan-highlight">From Solid Foundation (Band 5.0) to Pinnacle CLC Mastery</span>
+            </p>
+            <p class="hero-motto">
+                — Where English Meets Your Goals —
+            </p>
+        </div>
+    </header>
+
+    <!-- Member Gateway Bar matching screenshot -->
+    <div style="display: flex; align-items: center; justify-content: space-between; background: var(--surface-color, #ffffff); border: 1.5px solid var(--border, #eadccb); box-shadow: var(--card-shadow, 0 4px 18px rgba(20, 50, 77, 0.06)); color: var(--text-main, #14324d); border-radius: 14px; padding: 12px 18px; margin-bottom: 20px; flex-wrap: wrap; gap: 10px;">
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <span style="font-size: 1.5rem;">✨</span>
+            <div>
+                <div style="font-size: 0.88rem; font-weight: 700; color: var(--text-main, #14324d);">
+                    <span style="display: inline-block; background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.35); font-size: 0.72rem; padding: 2px 8px; border-radius: 999px; margin-right: 6px; font-weight: 800;">HỌC THỬ FREE: UNIT 01 & 02</span>
+                </div>
+                <div style="font-size: 0.78rem; color: var(--text-muted, #4a607a); margin-top: 2px;">
+                    Học viên đã đăng ký vui lòng bấm Kích Hoạt để mở khóa toàn bộ lộ trình Look.
+                </div>
+            </div>
+        </div>
+        <button onclick="alert('Chào mừng con đến với Hệ thống CLC English Mastery Hub! Toàn bộ 4 Unit Foundation đầu tiên đã được mở khóa hoàn toàn để con học ngay.')" style="background: linear-gradient(135deg, #38bdf8, #0284c7); color: #0b1120; border: none; font-size: 0.84rem; font-weight: 800; padding: 10px 18px; border-radius: 10px; cursor: pointer; box-shadow: 0 0 15px rgba(56, 189, 248, 0.35); transition: transform 0.2s;">
+            🔑 Nhập Mã Kích Hoạt / Đăng Ký
+        </button>
+    </div>
+
+    <!-- 4 KPI Overview Row matching screenshot -->
+    <div class="kpi-grid">
+        <div class="kpi-card">
+            <div class="kpi-label">📚 Look Level 1 Foundation</div>
+            <div class="kpi-value" id="kpi_units_done">21 / 21 Units</div>
+            <div class="kpi-sub">613 / 613 Từ Vựng Cốt Lõi • 100% Hoàn Tất (Look 1)</div>
+        </div>
+        <div class="kpi-card">
+            <div class="kpi-label">🌱 Look Level 2 — Band 5.0–6.0</div>
+            <div class="kpi-value" style="color: var(--success);">32 / 32 Units</div>
+            <div class="kpi-sub">933 Từ Vựng • 32 Bài Học Tương Tác • Look Level 2 ✅</div>
+        </div>
+        <div class="kpi-card">
+            <div class="kpi-label">⚡ Giáo Trình Band 6.0 — 7.5</div>
+            <div class="kpi-value" style="color: var(--warning);">Band 6.0 — 7.5</div>
+            <div class="kpi-sub">Tư duy C1–C2 • Học thuật chuyên sâu, Đảo ngữ & Danh hóa</div>
+        </div>
+        <div class="kpi-card">
+            <div class="kpi-label">🏆 Luyện Đề Tổng Hợp (Cambridge)</div>
+            <div class="kpi-value" style="color: var(--purple);">Mục Tiêu 8.0+</div>
+            <div class="kpi-sub">Bộ đề Cam 1 — 20 • Khảo thí toàn diện L:8.5 • R:8.5 • W:7.5 • S:7.5</div>
+        </div>
+    </div>
+
+    <!-- Section Title matching screenshot -->
+    <div style="margin-top: 6px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 10px;">
+            <h2 style="font-size: 1.35rem; color: var(--primary); font-family: 'Space Grotesk', sans-serif;">🏛️ Giáo Trình Foundation — Look Level 1 (21 Bài)</h2>
+            <span style="font-size: 0.8rem; color: #34d399; background: rgba(16, 185, 129, 0.15); border: 1px solid rgba(16, 185, 129, 0.35); padding: 5px 14px; border-radius: 999px; font-weight: 700;">✓ 21 / 21 Units Đã Kích Hoạt</span>
+        </div>
+        <div class="units-grid" id="units_cards_container"></div>
+    </div>
+
+    <!-- Level 2 Section -->
+    <div style="margin-top: 32px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 10px;">
+            <h2 style="font-size: 1.35rem; color: var(--success); font-family: 'Space Grotesk', sans-serif;">🌱 Giáo Trình Band 5.0–6.0 — Look Level 2 (32 Bài)</h2>
+            <span style="font-size: 0.8rem; color: #34d399; background: rgba(16, 185, 129, 0.15); border: 1px solid rgba(16, 185, 129, 0.35); padding: 5px 14px; border-radius: 999px; font-weight: 700;">✓ 32 / 32 Units • 933 Từ</span>
+        </div>
+        <div class="units-grid" id="units_l2_container"></div>
+    </div>
+
+    <!-- Anki & Mobile Scanning Section -->
+    <div class="panel-box">
+        <h3 style="font-family:'Space Grotesk',sans-serif; color:var(--primary); font-size:1.25rem; margin-bottom:12px;">📦 Thẻ Từ Vựng Anki Flashcards 30 Từ/Deck (Kèm Nghĩa Tiếng Việt)</h3>
+        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:16px;">Tất cả các thẻ đã được dịch nghĩa tiếng Việt và ví dụ song ngữ chuẩn mực. Nhấp để tải file TSV về máy để con học 5 phút mỗi ngày:</p>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <a href="anki_decks/Look_Level_1_Unit_01_anki.tsv" class="anki-pill-link" download>📥 Unit 01 Anki (30 từ)</a>
+            <a href="anki_decks/Look_Level_1_Unit_02_anki.tsv" class="anki-pill-link" download>📥 Unit 02 Anki (30 từ)</a>
+            <a href="anki_decks/Look_Level_1_Unit_03_anki.tsv" class="anki-pill-link" download>📥 Unit 03 Anki (30 từ)</a>
+            <a href="anki_decks/Look_Level_1_Unit_04_anki.tsv" class="anki-pill-link" download>📥 Unit 04 Anki (30 từ)</a>
+        </div>
+    </div>
+
+    <div class="panel-box" style="display:flex; align-items:center; gap:24px; flex-wrap:wrap; margin-top:20px;">
+        <img src="qrcode_mobile.png" alt="Mã QR Mở Trên iPhone" style="width:130px; height:130px; border-radius:12px; border:1px solid var(--border); padding:6px; background:#fff;">
+        <div style="flex:1; min-width:260px;">
+            <h3 style="font-family:'Space Grotesk',sans-serif; color:var(--primary); font-size:1.2rem; margin-bottom:6px;">📱 Mở Trên iPhone / iPad Bằng Camera</h3>
+            <p style="font-size:0.88rem; color:var(--text-muted); line-height:1.5;">
+                1. Kết nối iPhone/iPad cùng mạng Wi-Fi gia đình với máy tính này.<br>
+                2. Mở Camera điện thoại quét mã QR bên cạnh để truy cập giao diện cảm ứng mượt mà.<br>
+                3. Con có thể lật thẻ Flashcard 3D, nghe loa phát âm bản ngữ và làm trắc nghiệm rất dễ dàng.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<script>
+// Theme Management matching ielts-mastery-kit
+function initTheme() {
+    const saved = localStorage.getItem('clc_theme') || 'paper';
+    document.body.setAttribute('data-theme', saved);
+    updateThemeButton(saved);
+}
+
+function toggleTheme() {
+    const cur = document.body.getAttribute('data-theme') || 'paper';
+    const next = (cur === 'paper') ? 'dark' : 'paper';
+    document.body.setAttribute('data-theme', next);
+    localStorage.setItem('clc_theme', next);
+    updateThemeButton(next);
+}
+
+function updateThemeButton(theme) {
+    const textSpan = document.querySelector('.theme-text');
+    if (textSpan) {
+        textSpan.innerText = (theme === 'paper') ? 'Giấy Ngà Học Thuật' : 'Chế Độ Ban Đêm';
+    }
+}
+
+initTheme();
+
+// UNITS_META mapping exact curriculum
+const UNITS_META = [
+    {
+        id: "01",
+        stage: 1,
+        title: "Unit 1: Numbers, Colors & Greetings",
+        file: "unit_01_look1_foundation.html",
+        desc: "Số đếm 1-10 vs Bảng 8 màu sắc cơ bản, Động từ to be, Mạo từ A/An, Hỏi tuổi How old are you? & Chào hỏi tự giới thiệu.",
+        vocabPreview: "one, two, three, four, five, six, seven, eight, nine, ten, children, hello, what's, your, name, how old, fine, thanks, too, my, black, blue, brown, green, orange, purple, red, white...",
+        isReady: true,
+        isFree: true
+    },
+    {
+        id: "02",
+        stage: 1,
+        title: "Unit 2: School Things & Classroom",
+        file: "unit_02_look1_school.html",
+        desc: "Đồ dùng học tập, Danh từ số nhiều có quy tắc, Cấu trúc There is/There are, Câu hỏi Can you see... & Đoạn văn lớp học 5B.",
+        vocabPreview: "yellow, big, small, thing, for, school, girl, paint, photo, bag, book, crayon, pen, pencil, pencil case, ruler, rubber, desk, chair, classroom, board...",
+        isReady: true,
+        isFree: true
+    },
+    {
+        id: "03",
+        stage: 1,
+        title: "Unit 3: Toys, Games & Playtime",
+        file: "unit_03_look1_toys.html",
+        desc: "Đồ chơi trẻ em, Câu hỏi đáp Is it...? Yes it is / No it isn't, Cấu trúc rủ rê Let's play & Viết câu cảm thán What a cool toy!",
+        vocabPreview: "bus, cat, cool, look after, apple, carrot, number, toy, toy shop, ball, bat, doll, game, kite, plane, teddy, train, this is, and...",
+        isReady: true,
+        isFree: false
+    },
+    {
+        id: "04",
+        stage: 1,
+        title: "Unit 4: Animals & Action Verbs",
+        file: "unit_04_look1_animals.html",
+        desc: "Động vật hoang dã & nông trại, Danh từ số nhiều bất quy tắc (fish), Đại từ tân ngữ (me), Khẩu lệnh lớp học (stand up, sit down, open, close).",
+        vocabPreview: "marble, favourite, fun, find, colour, play, share, elephant, fish, goat, horse, thank you, cute, open, close, read, boy, stand up, sit down...",
+        isReady: true,
+        isFree: false
+    },
+    {
+        id: "05",
+        stage: 1,
+        title: "Unit 5: School Trip, Museum & People",
+        file: "unit_05_look1_museum.html",
+        desc: "Chuyến tham quan bảo tàng, con người và nơi chốn xung quanh, đại từ nhân xưng he/she và quy tắc ứng xử ngoài trời.",
+        vocabPreview: "English, be quiet, Goodbye!, go, home, trip, museum, pink, new, old, outside, place, lots of, people, sign, car, make, paper, run, student, teacher...",
+        isReady: true,
+        isFree: false
+    },
+    {
+        id: "06",
+        stage: 1,
+        title: "Unit 6: Friends, School Life & Art",
+        file: "unit_06_look1_friends.html",
+        desc: "Tình bạn ở trường, câu hỏi đáp Yes/No he/she, cấu trúc sở hữu has got và ngôn ngữ hội họa thế giới (Mona Lisa, Leonardo da Vinci).",
+        vocabPreview: "brother, sister, best friend, make friends, at school, insect, jellyfish, kiwi, lamp, Italian, painting, know, smile, has got, Chinese, drawing...",
+        isReady: true,
+        isFree: false
+    },
+    {
+        id: "07",
+        stage: 1,
+        title: "Unit 7: Family, Relatives & Celebrations",
+        file: "unit_07_look1_family.html",
+        desc: "Đại gia đình nhiều thế hệ (grandma, grandpa, uncle, aunt, cousin), cấu trúc I've got/I haven't got và tiệc sinh nhật rộn ràng.",
+        vocabPreview: "other, Brazilian, baby, family, grandma, grandpa, dad, mum, uncle, aunt, baby brother, me, cousin, I've got, birthday, birthday party, cake...",
+        isReady: true,
+        isFree: false
+    },
+    {
+        id: "08",
+        stage: 1,
+        title: "Unit 8: Day & Night, Body Parts & Nature",
+        file: "unit_08_look1_daynight.html",
+        desc: "Chu kỳ ngày & đêm, mặt trời mặt trăng, các bộ phận cơ thể người (head, arm, leg, foot/feet), cấu trúc số nhiều These are... và bí mật vườn đêm.",
+        vocabPreview: "cartoon, only, dog, difference, sky, sun, day, light, hedgehog, sleep, moon, dark, night, bed, in bed, body, colourful, hand, leg, foot, eye, head...",
+        isReady: true,
+        isFree: false
+    },
+    {
+        id: "09",
+        stage: 1,
+        title: "Unit 9: Body Actions, Keeping Fit & Festivals",
+        file: "unit_09_look1_actions.html",
+        desc: "Miêu tả khuôn mặt và tóc, các động tác cơ thể (jump, stamp, wave, nod), cấu trúc sở hữu has got / hasn't got, giữ gìn vóc dáng và lễ hội thể thao.",
+        vocabPreview: "hair, face, he's got, he hasn't got, finger, point, toe, wave, round and round, nod, jump, in the air, with, keep fit, festival...",
+        isReady: true,
+        isFree: false
+    },
+    {
+        id: "10",
+        stage: 1,
+        title: "Unit 10: Carnival Masks, Home Rooms & Positions",
+        file: "unit_10_look1_carnival.html",
+        desc: "Lễ hội hóa trang Carnival, mặt nạ rồng, các căn phòng trong nhà (kitchen, bedroom, bathroom) và các giới từ vị trí chuẩn xác (in, on, under, next to).",
+        vocabPreview: "flower, Carnival, dragon, mask, tree house, bathroom, kitchen, living room, cupboard, shower, Where's, aquarium, next to...",
+        isReady: true,
+        isFree: false
+    },
+    {
+        id: "11",
+        stage: 1,
+        title: "Unit 11: Teamwork, Music & Classroom Manners",
+        file: "unit_11_look1_teamwork.html",
+        desc: "Kỹ năng làm việc nhóm, văn hóa ứng xử lịch sự trong lớp học (work together, take turns, borrow, pass), nhạc cụ vĩ cầm và rèn luyện bài tập đúng/sai.",
+        vocabPreview: "come, ready, hall, their, violin, box, yoghurt, zebra, work together, take turns, borrow, pass, here, exercise, answer, correct...",
+        isReady: true,
+        isFree: false
+    },
+    {
+        id: "12",
+        stage: 1,
+        title: "Unit 12: Savanna Wildlife & My Hometown Places",
+        file: "unit_12_look1_wildlife.html",
+        desc: "Thế giới hoang dã thảo nguyên xavan (lion, savanna, cub, meerkat), các địa điểm thị trấn (library, park, swimming pool, zoo) và mẫu câu There is / There are.",
+        vocabPreview: "animal, savanna, lion, tail, cub, meerkat, funny, library, park, playground, swimming pool, zoo, there's, model, tiny...",
+        isReady: true,
+        isFree: false
+    },
+    {
+        id: "13",
+        stage: 1,
+        title: "Unit 13: World Cities, Holidays & Farm Animals",
+        file: "unit_13_look1_cities.html",
+        desc: "Kỳ nghỉ thành phố và danh lam thắng cảnh thế giới (Statue of Liberty, Aegean Sea), động vật nông trại (sheep, cow, donkey) và động từ khuyết thiếu can / can't.",
+        vocabPreview: "map, city, Statue of Liberty, beautiful, Aegean Sea, on holiday, special, farm, sheep, bee, bird, chicken, cow, donkey, can, can't, swim...",
+        isReady: true,
+        isFree: false
+    },
+    {
+        id: "14",
+        stage: 1,
+        title: "Unit 14: Animal Abilities, Numbers 11-20 & Farm Life",
+        file: "unit_14_look1_numbers.html",
+        desc: "Tài năng của các loài động vật (fly high, sing, swim), chuồng trại nông nghiệp và hệ thống số đếm từ 11 đến 20 cùng câu hỏi How many...?",
+        vocabPreview: "fly, high, sing, sheep pen, farmer, duck, guess, How many, eleven, twelve, thirteen, fourteen, fifteen... twenty, lamb, pet...",
+        isReady: true,
+        isFree: false
+    },
+    {
+        id: "15",
+        stage: 1,
+        title: "Unit 15: World Costumes, Fables & Daily Clothes",
+        file: "unit_15_look1_clothes.html",
+        desc: "Trang phục truyền thống thế giới (gaucho, suit), câu chuyện ngụ ngôn hai chú ếch và thùng bơ (frog, butter, strong), trang phục thường nhật và Are these...?",
+        vocabPreview: "hat, suit, gaucho, frog, butter, strong, bucket, milk, clothes, dress, jeans, shoes, skirt, socks, trousers, T-shirt, Are these...?",
+        isReady: true,
+        isFree: false
+    },
+    {
+        id: "16",
+        stage: 1,
+        title: "Unit 16: Weather, School Uniforms & Harvest Foods",
+        file: "unit_16_look1_weather.html",
+        desc: "Thời tiết và chú bù nhìn rơm (scarecrow, boots, gloves, washing line), đồng phục học sinh thanh lịch và các món ăn thu hoạch bổ dưỡng (banana, bread, potato, rice).",
+        vocabPreview: "scarecrow, boots, gloves, weather, shirt, wear, uniform, tie, lucky, eat, drink, lemon, banana, bread, potato, rice, sweet...",
+        isReady: true,
+        isFree: false
+    },
+    {
+        id: "17",
+        stage: 1,
+        title: "Unit 17: School Lunch, Food Preferences & Celebrations",
+        file: "unit_17_look1_lunch.html",
+        desc: "Bữa trưa trường học, sở thích ăn uống I like / I don't like, câu hỏi Do you like...?, các món ăn ngon miệng (tomato, cake, meat, vegetable, omelette) và ngày liên hoan.",
+        vocabPreview: "tomato, I like, I don't like, nice, lunch, tray, Do you like, hungry, yummy, cake, meat, leaf, celebration, vegetable, omelette...",
+        isReady: true,
+        isFree: false
+    },
+    {
+        id: "18",
+        stage: 1,
+        title: "Unit 18: Classroom English, Inquiries & Beach Holidays",
+        file: "unit_18_look1_beach.html",
+        desc: "Giao tiếp lớp học chuẩn mực (How do you say...?, How do you spell...?, What does... mean?) và kỳ nghỉ bãi biển rực rỡ (beach, camel, sandcastle, shell, ice cream, breathe).",
+        vocabPreview: "toilet, understand, repeat, How do you say, spell, What does mean, huge, owl, beach, holiday, camel, sandcastle, shell, breathe...",
+        isReady: true,
+        isFree: false
+    },
+    {
+        id: "19",
+        stage: 1,
+        title: "Unit 19: Snorkelling Adventures & Free Time Hobbies",
+        file: "unit_19_look1_hobbies.html",
+        desc: "Khám phá đại dương lặn biển (snorkel, flippers, snorkelling, Caribbean Sea), câu hỏi tồn tại Is there / Are there và các hoạt động thời gian rảnh (fly a kite, make a cake, play football).",
+        vocabPreview: "snorkel, flippers, Is there, look for, snorkelling, free time, fly a kite, make a cake, play football, read a book, sing a song...",
+        isReady: true,
+        isFree: false
+    },
+    {
+        id: "20",
+        stage: 1,
+        title: "Unit 20: The Science of Rainbow Colours, Art & Pastries",
+        file: "unit_20_look1_rainbow.html",
+        desc: "Khoa học pha màu sắc (primary colour, secondary colour, mix, lighter, darker, rainbow), thế giới tưởng tượng nghệ thuật (imagine, scene) và tiệm bánh nướng thơm lừng (pastry, sweet).",
+        vocabPreview: "think of, flying, sing along, everybody, use, pastry, sweet, wheel, mix, primary colour, rainbow, secondary colour, imagine...",
+        isReady: true,
+        isFree: false
+    },
+    {
+        id: "21",
+        stage: 1,
+        title: "Unit 21: Foundation Milestone & The Grand Review",
+        file: "unit_21_look1_graduation.html",
+        desc: "Đích đến vinh quang 613 từ vựng Look 1: Cấu tạo từ và câu (word, sentence), sinh vật biển (crocodile, octopus, penguin), danh từ số nhiều bất quy tắc (mouse -> mice) và kỹ năng ghi nhớ.",
+        vocabPreview: "word, sentence, international, crocodile, octopus, penguin, fantastic, helmet, mouse, mice, rope, ask, remember (Hoàn tất 613 từ)!",
+        isReady: true,
+        isFree: false
+    }
+];
+
+// ─── LEVEL 2 UNITS META ───
+const UNITS_L2_META = [
+    {
+        "id": "22",
+        "title": "Unit 22: Sea Animals, Body Parts & Action Verbs",
+        "file": "unit_22_look2_sea_animals.html",
+        "desc": "Bài học về thợ lặn và đại dương (scuba diver, coast, flipper, mask), các bộ phận cơ thể (arm, leg), các con vật (fish, bee, sheep, chicken, duck) cùng động từ hành động và cấu trúc hỏi số lượng (can swim, walk, talk, How many ... are there?).",
+        "vocabPreview": "scuba diver, fish, coast, arm, flipper, leg, mask, water, people, swim, sheep, chicken, duck, walk, talk",
+        "count": 30,
+        "isReady": true,
+        "isFree": true
+    },
+    {
+        "id": "23",
+        "title": "Unit 23: Family, Clothes & Around the Town",
+        "file": "unit_23_look2_family.html",
+        "desc": "Bài học về gia đình (dad, mum, big brother, little brother), trang phục (jacket, hat, shirt, trousers), các địa điểm trong thị trấn (town centre, park, shop, farm) cùng mẫu câu sở hữu have got / has got và there is / there are.",
+        "vocabPreview": "friend, read, sea, family, eat, ice cream, town centre, park, shop, farm, banana, jacket, hat, shirt, trousers",
+        "count": 30,
+        "isReady": true,
+        "isFree": true
+    },
+    {
+        "id": "24",
+        "title": "Unit 24: Family, Home & Classroom Items",
+        "file": "unit_24_look2_family.html",
+        "desc": "Bài học về các phòng trong nhà (kitchen, living room, bathroom), đồ vật (lamp), các thành viên gia đình (sister, grandma, aunt, cousin, brother, grandpa, uncle) cùng đồ dùng học tập và các mẫu câu giao tiếp cơ bản (pen, pencil, book, open, begin, Have you got...?).",
+        "vocabPreview": "kitchen, living room, lamp, bathroom, sister, grandma, aunt, cousin, brother, grandpa, uncle, pencil, pen, book, learning",
+        "count": 30,
+        "isReady": true,
+        "isFree": false
+    },
+    {
+        "id": "25",
+        "title": "Unit 25: School Subjects & Days of the Week",
+        "file": "unit_25_look2_subjects.html",
+        "desc": "Bài học về các môn học quen thuộc ở trường (art, music, computers, PE, English, reading, maths, science), các ngày trong tuần (Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday) cùng mẫu câu hỏi sở thích (Do you like...?, Yes, I do., I’ve got, there’s no).",
+        "vocabPreview": "school, at school, art, music, computers, PE, English, reading, maths, science, Monday, Friday, Saturday, Sunday",
+        "count": 30,
+        "isReady": true,
+        "isFree": false
+    },
+    {
+        "id": "26",
+        "title": "Unit 26: Our Open Classroom & Green Garden",
+        "file": "unit_26_look2_classroom.html",
+        "desc": "Bài học về lớp học mở và khu vườn trường học (classroom, garden, plant, flower), các từ chỉ đồ vật và hoạt động học tập (timetable, school bag, lesson, homework), cùng mẫu câu hỏi 'Has she got...?' và câu trả lời 'Yes, I have.' / 'No, she hasn’t.'.",
+        "vocabPreview": "lesson, homework, garden, student, learn, plant, classroom, window, flower, fruit, timetable, school bag",
+        "count": 30,
+        "isReady": true,
+        "isFree": false
+    },
+    {
+        "id": "27",
+        "title": "Unit 27: After-School Fun & Helping at Home",
+        "file": "unit_27_look2_activities.html",
+        "desc": "Bài học về các hoạt động sau giờ học và việc nhà (play football, watch TV, dinner, bath, help), tính trách nhiệm (responsible, is being), các từ phát âm đối chiếu (thank, tank, tea, tree, bat, mat) cùng câu hỏi thời gian 'When...?' và cấu trúc 'be good at'.",
+        "vocabPreview": "play, lots of, responsible, dinner, play football, watch TV, help, bath, birthday, thank, favourite, be good at",
+        "count": 30,
+        "isReady": true,
+        "isFree": false
+    },
+    {
+        "id": "28",
+        "title": "Unit 28: Toys, Gadgets & Demonstratives",
+        "file": "unit_28_look2_toys.html",
+        "desc": "Bài học về đồ chơi và thiết bị điện tử quen thuộc (robot, skateboard, guitar, camera, tablet), đại từ chỉ định (this, that, these, those), câu hỏi lựa chọn 'Which...?' cùng các cấu trúc so sánh và lời mời (have a go, borrow, more than).",
+        "vocabPreview": "child, fly, kite, bike, guitar, building brick, robot, camera, skateboard, tablet, borrow, collector",
+        "count": 30,
+        "isReady": true,
+        "isFree": false
+    },
+    {
+        "id": "29",
+        "title": "Unit 29: Family, Collections & Tidying Up",
+        "file": "unit_29_look2_collections.html",
+        "desc": "Bài học về gia đình và nhà cửa (mother, father), hoạt động dọn dẹp (tidy up, tidy, first), bộ sưu tập đồ chơi (collection, teddy bear, rubber, queen) cùng các từ vựng và cấu trúc giao tiếp thông dụng (good idea, OK, everyone, too, lots).",
+        "vocabPreview": "computer, tidy up, everyone, tidy, idea, mother, father, weather, collection, teddy bear, rubber, queen",
+        "count": 30,
+        "isReady": true,
+        "isFree": false
+    },
+    {
+        "id": "30",
+        "title": "Unit 30: Feelings, Snacks & The Museum",
+        "file": "unit_30_look2_feelings.html",
+        "desc": "Bài học về cảm xúc và nhu cầu hằng ngày (happy, tired, hungry, thirsty), đồ ăn vặt (biscuit, snack, apple), câu hỏi thăm 'What’s the matter?' cùng các từ về bảo tàng và công nghệ (museum, dinosaur, technology, innovation).",
+        "vocabPreview": "biscuit, dinosaur, stamp, because, feel, happy, tired, angry, hungry, thirsty, snack, museum, technology",
+        "count": 30,
+        "isReady": true,
+        "isFree": false
+    },
+    {
+        "id": "31",
+        "title": "Unit 31: People, Actions & Around the House",
+        "file": "unit_31_look2_people.html",
+        "desc": "Bài học giới thiệu các từ về con người và cơ thể (man, woman, baby, eye, hair), các hành động vui nhộn (dance, kick, hop, smile) cùng các phòng và đồ vật trong nhà (dining room, armchair, bookcase, balcony, cob house).",
+        "vocabPreview": "man, woman, baby, eye, hair, answer, question, kick, dance, hop, smile, cob house, armchair, bookcase, dining room",
+        "count": 30,
+        "isReady": true,
+        "isFree": false
+    },
+    {
+        "id": "32",
+        "title": "Unit 32: My Dream House & Playtime",
+        "file": "unit_32_look2_furniture.html",
+        "desc": "Bài học khám phá các đồ vật trong nhà và vị trí (floor, mirror, rug, stairs, behind, in front of), các hoạt động vui chơi (swing, climbing wall, climb, catch) cùng cấu trúc 'have got / haven't got'.",
+        "vocabPreview": "floor, mirror, rug, our, their, stairs, imagine, swing, behind, between, climbing wall, climb, mouse, catch, ostrich",
+        "count": 30,
+        "isReady": true,
+        "isFree": false
+    },
+    {
+        "id": "33",
+        "title": "Unit 33: Homes, Sports & Team Games",
+        "file": "unit_33_look2_sports.html",
+        "desc": "Bài học giúp các em làm quen với từ vựng về nhà ở và cuộc sống (flat, sofa, building, grandparent), cùng các môn thể thao và hành động sôi nổi (baseball, basketball, tennis, bounce, hit, kick, throw, team, score).",
+        "vocabPreview": "flat, sofa, building, grandparent, basketball, baseball, tennis, hockey, bounce, hit, kick, throw, team, score",
+        "count": 30,
+        "isReady": true,
+        "isFree": false
+    },
+    {
+        "id": "34",
+        "title": "Unit 34: Sports, Activities & Staying Fit",
+        "file": "unit_34_look2_staying-fit.html",
+        "desc": "Bài học giúp các em rèn luyện các mẫu câu hỏi đáp về thể thao (Do you watch...?, Yes, we do / No, we don’t), các hoạt động rèn luyện thân thể (keep fit, go for a walk, badminton, unicycle) và thói quen sinh hoạt lành mạnh.",
+        "vocabPreview": "player, troupe, unicycle, sport, goal, keep, fit, badminton, table tennis, together, sock, sink, pink, think",
+        "count": 30,
+        "isReady": true,
+        "isFree": false
+    },
+    {
+        "id": "35",
+        "title": "Unit 35: Nature Safari, Insects & People at Work",
+        "file": "unit_35_look2_safari_jobs.html",
+        "desc": "Khám phá thế giới côn trùng và thám hiểm tự nhiên với cricket, beetle, dragonfly, spider, panda, cùng các nghề nghiệp và nơi làm việc như builder, doctor, farmer, nature reserve.",
+        "vocabPreview": "country, cricket, insect, safari, beetle, lanternfly, colourful, dragonfly, spider, panda, keeper, builder, doctor, farmer",
+        "count": 30,
+        "isReady": true,
+        "isFree": false
+    },
+    {
+        "id": "36",
+        "title": "Unit 36: Jobs, Football and Third-Person Verbs",
+        "file": "unit_36_look2_jobs.html",
+        "desc": "Bài học về nghề nghiệp và thế giới quanh ta với các từ như football player, taxi driver, teach, job, stadium, cùng cấu trúc hỏi đáp thì hiện tại đơn ngôi thứ ba: he grows, he/she teaches, Does he use …?, Yes, he does.",
+        "vocabPreview": "grow, football player, score goals, taxi driver, drive, teach, olive, young, job, world, stadium, million, spaceship, become",
+        "count": 30,
+        "isReady": true,
+        "isFree": false
+    },
+    {
+        "id": "37",
+        "title": "Unit 37: Polite Words, Town Life and Dream Jobs",
+        "file": "unit_37_look2_polite.html",
+        "desc": "Bài học về cách cư xử lịch sự và cuộc sống ở thị trấn với các từ polite, sorry, market, hospital, vegetable, vet, cùng mẫu câu Would you like …?, What does he/she do? và want to be.",
+        "vocabPreview": "person, wave, polite, town, sorry, skirt, slide, spoon, put on, skip, vegetable, market, hospital, glasses, vet",
+        "count": 30,
+        "isReady": true,
+        "isFree": false
+    },
+    {
+        "id": "38",
+        "title": "Unit 38: Daily Routines, Telling Time & Animal Stories",
+        "file": "unit_38_look2_daily_routine.html",
+        "desc": "Bài học về thói quen hằng ngày và thời gian với get up, have breakfast, go to bed, o’clock, morning, afternoon, evening, cùng các câu chuyện về magpie, penguin và câu hỏi What time do you...?",
+        "vocabPreview": "meal, get dressed, get up, breakfast, dinner, lunch, homework, o’clock, morning, afternoon, evening, penguin, early, late",
+        "count": 30,
+        "isReady": true,
+        "isFree": false
+    },
+    {
+        "id": "39",
+        "title": "Unit 39: Breakfast Foods Around the World & Daily Habits",
+        "file": "unit_39_look2_breakfast_foods.html",
+        "desc": "Bài học về các món ăn sáng trên thế giới (bread, cheese, egg, cucumber, cereal, pastry), thói quen hằng ngày (always, sometimes, after, until) và câu hỏi gợi ý 'Do you want to …?'.",
+        "vocabPreview": "bread, cheese, egg, tomato, cucumber, typical, Turkish, cereal, pastry, Japanese, bean, playground",
+        "count": 30,
+        "isReady": true,
+        "isFree": false
+    },
+    {
+        "id": "40",
+        "title": "Unit 40: Astronauts in Space & Fun Cooking",
+        "file": "unit_40_look2_astronauts_space.html",
+        "desc": "Bài học về cuộc sống của phi hành gia trên Trạm Vũ trụ Quốc tế (astronaut, International Space Station, Earth, float, outer space) cùng các hoạt động nấu ăn vui vẻ và hoa quả (pizza, dough, twirl, grape, mango, pear).",
+        "vocabPreview": "astronaut, International Space Station, Earth, float, outer space, brush, tooth, exercise, pizza, twirl, dough, mango, pear",
+        "count": 30,
+        "isReady": true,
+        "isFree": false
+    },
+    {
+        "id": "41",
+        "title": "Unit 41: Lunchtime, Vending Machines & There Is / There Are",
+        "file": "unit_41_look2_vending.html",
+        "desc": "Bài học về bữa trưa ở trường với các từ sausage, carrot, burger, lunch box, rice ball, vending machine, cùng các mẫu câu there’s a/an, there are some, there isn’t any, Is there any …? và Are there any …? để hỏi và trả lời về đồ vật, đồ ăn.",
+        "vocabPreview": "sausage, carrot, burger, sweet, drink, vending machine, usually, lunchtime, lunch box, rice ball, share, crab, frog, present",
+        "count": 30,
+        "isReady": true,
+        "isFree": false
+    },
+    {
+        "id": "42",
+        "title": "Unit 42: World Foods & Party Celebrations",
+        "file": "unit_42_look2_world-foods.html",
+        "desc": "Bài học về các món ăn đặc sắc trên thế giới (Peking duck, pancake, enchilada, tagine, couscous) cùng các hoạt động tưng bừng trong bữa tiệc (celebrate, dance, listen to music, take photos, have fun).",
+        "vocabPreview": "crayon, newspaper, potato, onion, Peking duck, pancake, sauce, enchilada, chocolate, tagine, celebrate, balloon",
+        "count": 30,
+        "isReady": true,
+        "isFree": false
+    },
+    {
+        "id": "43",
+        "title": "Unit 43: World Festivals & Special Celebrations",
+        "file": "unit_43_look2_world-festivals.html",
+        "desc": "Bài học về các lễ hội độc đáo trên thế giới (Thai New Year, Thanksgiving, Bonfire Night, carnival) cùng các hoạt động lễ hội rộn ràng (parade, picnic, water fight, hold hands) và mẫu câu hỏi thì hiện tại tiếp diễn (What are you doing? / What is she doing?).",
+        "vocabPreview": "festival, bucket, New Year, street, fight, long, celebration, Thanksgiving, carnival, turkey, pie, parade, picnic",
+        "count": 30,
+        "isReady": true,
+        "isFree": false
+    },
+    {
+        "id": "44",
+        "title": "Unit 44: Wild Animals & Safari Actions",
+        "file": "unit_44_look2_wild-animals.html",
+        "desc": "Bài học khám phá thế giới động vật hoang dã (lion, elephant, giraffe, hippo, monkey, snake, tiger, zebra, rhino, crocodile), các tính từ miêu tả (fast, slow, rich, crazy) cùng các mẫu câu hỏi và câu trả lời thì hiện tại tiếp diễn (Is it sleeping?, Are they running?, Are you looking …?).",
+        "vocabPreview": "lion, elephant, giraffe, hippo, monkey, snake, tiger, zebra, rhino, crocodile, fast, slow",
+        "count": 30,
+        "isReady": true,
+        "isFree": false
+    },
+    {
+        "id": "45",
+        "title": "Unit 45: Animal Comparisons & Habitats",
+        "file": "unit_45_look2_animal-comparisons.html",
+        "desc": "Bài học về tính từ so sánh hơn (bigger, smaller, slower, longer, hungrier, cuter, cooler, easier), trạng từ chỉ cách thức (hungrily, quietly), cụm động từ (look after, go off) và từ vựng về động vật hoang dã cùng môi trường tự nhiên (desert, lake, shade, branch, sand cat, snow monkey, iguana, lizard).",
+        "vocabPreview": "bigger, slower, younger, smaller, longer, hungrier, cuter, cooler, desert, lake, iguana, sand cat",
+        "count": 30,
+        "isReady": true,
+        "isFree": false
+    },
+    {
+        "id": "46",
+        "title": "Unit 46: Weather, Rainbows & Reflexive Pronouns",
+        "file": "unit_46_look2_weather.html",
+        "desc": "Bài học về hiện tượng thời tiết (storm, sunny, windy, rain, snow), trang phục và lời khuyên (wear a coat, bring an umbrella, put on a scarf), vẻ đẹp cầu vồng (rainbow, arc, sunlight, violet) cùng đại từ phản thân (yourself, himself, herself).",
+        "vocabPreview": "sky, storm, cold, hot, sunny, windy, rainbow, bright, raindrop, sunlight, scarf, yourself, himself, herself",
+        "count": 30,
+        "isReady": true,
+        "isFree": false
+    },
+    {
+        "id": "47",
+        "title": "Unit 47: Giant Pandas, Seasons & Transport",
+        "file": "unit_47_look2_pandas_transport.html",
+        "desc": "Bài học về thế giới động vật ở sở thú (giant panda, zookeeper, bamboo), mùa khí hậu (monsoon, dry, skiing), cùng các phương tiện giao thông và cách di chuyển (go by bus, car, helicopter, lorry, motorbike, plane).",
+        "vocabPreview": "glove, bottle, monsoon, dry, skiing, zoo, zookeeper, giant panda, bamboo, busy, bus, car, helicopter, lorry, motorbike, plane",
+        "count": 30,
+        "isReady": true,
+        "isFree": false
+    },
+    {
+        "id": "48",
+        "title": "Unit 48: Transport Around Town & Plural Forms",
+        "file": "unit_48_look2_getting_around.html",
+        "desc": "Chủ đề học về các cách di chuyển quanh thành phố (get to school, come home, train, ship, buses), các câu hỏi chỉ đường và giờ giấc, cùng quy tắc chia danh từ số nhiều có đuôi -es (beaches, boxes, dishes, buses).",
+        "vocabPreview": "ship, train, library, pool, healthy, snack, shipyard, ground, beach, beaches, box, boxes, buses, dishes",
+        "count": 30,
+        "isReady": true,
+        "isFree": false
+    },
+    {
+        "id": "49",
+        "title": "Unit 49: Irregular Plurals & Unique Transport",
+        "file": "unit_49_look2_unique_transport.html",
+        "desc": "Bài học cung cấp các dạng danh từ số nhiều bất quy tắc đặc biệt (children, men, women, feet, mice, sheep, fish) và danh từ đổi đuôi (lorries, scarves, tomatoes), cùng các phương tiện giao thông độc đáo (gondola, tuk-tuk, cable car) và nhóm từ phát âm vần /əʊ/ (cone, alone, throne, hope, rope, drone, bone).",
+        "vocabPreview": "lorries, scarves, tomatoes, children, feet, mice, sheep, women, seat belt, below, tiny, gondola, tuk-tuk, cable car",
+        "count": 30,
+        "isReady": true,
+        "isFree": false
+    },
+    {
+        "id": "50",
+        "title": "Unit 50: Growing Up & Changing Life",
+        "file": "unit_50_look2_growing_up.html",
+        "desc": "Bài học về quá trình lớn lên và đổi thay kỳ diệu của tự nhiên (grow up, change, tadpole, flamingo, chick), các tính từ miêu tả tính cách và ngoại hình (clever, naughty, quiet, loud) cùng thì quá khứ đơn với to be (was, were).",
+        "vocabPreview": "grow up, flamingo, chick, clever, naughty, quiet, scary, cartoon, famous, creator, tadpole, change",
+        "count": 30,
+        "isReady": true,
+        "isFree": false
+    },
+    {
+        "id": "51",
+        "title": "Unit 51: Transport Inventions & Long U Sounds",
+        "file": "unit_51_look2_transport_sounds.html",
+        "desc": "Bài học về lịch sử phát triển của các phương tiện giao thông (wheel, horse, bicycle, electric), các số đếm lớn (fifty, one hundred, one hundred and forty) cùng các từ vựng chứa nguyên âm u-e (cube, cute, flute, tune).",
+        "vocabPreview": "strong, cute, flute, decide, tune, dune, wheel, bicycle, journey, electric, amazing, fifty",
+        "count": 30,
+        "isReady": true,
+        "isFree": false
+    },
+    {
+        "id": "52",
+        "title": "Unit 52: Exciting Journeys & Mountain Roads",
+        "file": "unit_52_look2_beginnings.html",
+        "desc": "Bài học về những chuyến hành trình trên cung đường đèo hiểm trở (mountain, road, tunnel, vehicle, driver), quy tắc an toàn giao thông (careful, cyclist, must, hold on), cùng việc lưu giữ kỷ niệm qua nhật ký và lời cảm ơn (diary, thank-you note, beginning, stone, jewel).",
+        "vocabPreview": "beginning, separate, thank-you note, diary, week, each, film, restaurant, interesting, high, mountain, most, dangerous, road, hold on, probably, vehicle, driver, careful, cyclist, must, fall, exciting, tunnel, best, stream, stone, pick up, jewel, later",
+        "count": 30,
+        "isReady": true,
+        "isFree": false
+    },
+    {
+        "id": "53",
+        "title": "Unit 53: Level 2 Grand Milestone & Final Review",
+        "file": "unit_53_look2_graduation.html",
+        "desc": "Bài học cột mốc vinh danh hoàn thành xuất sắc toàn bộ 933 từ vựng của chương trình Look Level 2, củng cố các từ khóa (let, lose, turn) và tổng kết toàn diện ngữ âm, ngữ pháp trọng tâm phục vụ kỳ thi tuyển sinh lớp 6 CLC.",
+        "vocabPreview": "let, lose, turn, review, achievement, milestone, look level 2",
+        "count": 3,
+        "isReady": true,
+        "isFree": false
+    }
+];
+
+function renderUnitCards() {
+    const container = document.getElementById("units_cards_container");
+    if (!container) return;
+
+    const cardsHtml = UNITS_META.map(u => {
+        let lockBadge = "";
+        let actionBtn = "";
+        let statusText = "Chưa làm bài";
+        let statusStyle = "background: rgba(148,163,184,0.15); color: #94a3b8;";
+
+        if (u.isFree) {
+            lockBadge = `<span style="font-size: 0.72rem; font-weight: 800; background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.35); padding: 3px 8px; border-radius: 999px;">✨ HỌC THỬ FREE</span>`;
+            actionBtn = `<a href="${u.file}" class="btn-launch" style="background: linear-gradient(135deg, #38bdf8, #0284c7);">✨ Vào Học Thử Unit ${parseInt(u.id)} (Miễn Phí) →</a>`;
+        } else if (u.isReady) {
+            lockBadge = `<span style="font-size: 0.72rem; font-weight: 800; background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.35); padding: 3px 8px; border-radius: 999px;">🔓 ĐÃ MỞ KHÓA</span>`;
+            actionBtn = `<a href="${u.file}" class="btn-launch" style="background: linear-gradient(135deg, #14324d, #1d4367);">🚀 Bắt Đầu Học Unit ${parseInt(u.id)} →</a>`;
+        } else {
+            lockBadge = `<span style="font-size: 0.72rem; font-weight: 800; background: rgba(197, 139, 98, 0.15); color: #c58b62; border: 1px solid rgba(197, 139, 98, 0.4); padding: 3px 8px; border-radius: 999px;">⏳ SẮP RA MẮT</span>`;
+            actionBtn = `<button class="btn-launch" style="background: rgba(148,163,184,0.3); color: #94a3b8; cursor: not-allowed; box-shadow: none;">Đang Biên Soạn Theo Lộ Trình</button>`;
+        }
+
+        return `
+            <div class="unit-card">
+                <div>
+                    <div class="unit-top">
+                        <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
+                            ${lockBadge}
+                        </div>
+                        <span class="unit-status-pill" style="${statusStyle}">${statusText}</span>
+                    </div>
+                    <div class="unit-title">${u.title}</div>
+                    <p class="unit-desc">${u.desc}</p>
+                    <div style="font-size: 0.78rem; color: #38bdf8; margin-bottom: 14px; background: rgba(56,189,248,0.08); padding: 6px 10px; border-radius: 8px;">
+                        <b>30 Từ vựng trọng tâm:</b> <i>${u.vocabPreview}</i>
+                    </div>
+                </div>
+                <div>
+                    <div class="unit-scores-bar">
+                        <div class="score-mini"><span>🎯 Vocab</span><b>0/30</b></div>
+                        <div class="score-mini"><span>⚡ Phonics</span><b>0/5</b></div>
+                        <div class="score-mini"><span>⚙️ Grammar</span><b>0/10</b></div>
+                        <div class="score-mini"><span>🔄 Transform</span><b>0/4</b></div>
+                    </div>
+                    ${actionBtn}
+                </div>
+            </div>
+        `;
+    });
+
+    container.innerHTML = cardsHtml.join("");
+}
+
+function renderLevel2Cards() {
+    const container = document.getElementById("units_l2_container");
+    if (!container) return;
+
+    const cardsHtml = UNITS_L2_META.map(u => {
+        let lockBadge = "";
+        let actionBtn = "";
+        const statusText = "Chưa làm bài";
+        const statusStyle = "background: rgba(148,163,184,0.15); color: #94a3b8;";
+
+        if (u.isFree) {
+            lockBadge = `<span style="font-size: 0.72rem; font-weight: 800; background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.35); padding: 3px 8px; border-radius: 999px;">✨ HỌC THỬ FREE</span>`;
+            actionBtn = `<a href="${u.file}" class="btn-launch" style="background: linear-gradient(135deg, #38bdf8, #0284c7);">✨ Vào Học Thử Unit ${parseInt(u.id)} →</a>`;
+        } else if (u.isReady) {
+            lockBadge = `<span style="font-size: 0.72rem; font-weight: 800; background: rgba(27, 135, 85, 0.15); color: #34d399; border: 1px solid rgba(27, 135, 85, 0.35); padding: 3px 8px; border-radius: 999px;">🌱 LEVEL 2</span>`;
+            actionBtn = `<a href="${u.file}" class="btn-launch" style="background: linear-gradient(135deg, #1b8755, #15694a);">🌱 Học Unit ${parseInt(u.id)} — Level 2 →</a>`;
+        }
+
+        return `
+            <div class="unit-card">
+                <div>
+                    <div class="unit-top">
+                        <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
+                            ${lockBadge}
+                        </div>
+                        <span class="unit-status-pill" style="${statusStyle}">${statusText}</span>
+                    </div>
+                    <div class="unit-title">${u.title}</div>
+                    <p class="unit-desc">${u.desc}</p>
+                    <div style="font-size: 0.78rem; color: #34d399; margin-bottom: 14px; background: rgba(27,135,85,0.08); padding: 6px 10px; border-radius: 8px;">
+                        <b>30 Từ vựng trọng tâm:</b> <i>${u.vocabPreview}</i>
+                    </div>
+                </div>
+                <div>
+                    <div class="unit-scores-bar">
+                        <div class="score-mini"><span>🎯 Vocab</span><b>0/30</b></div>
+                        <div class="score-mini"><span>⚡ Phonics</span><b>0/5</b></div>
+                        <div class="score-mini"><span>⚙️ Grammar</span><b>0/10</b></div>
+                        <div class="score-mini"><span>🔄 Transform</span><b>0/4</b></div>
+                    </div>
+                    ${actionBtn}
+                </div>
+            </div>
+        `;
+    });
+
+    container.innerHTML = cardsHtml.join("");
+}
+
+window.addEventListener("load", () => {
+    renderUnitCards();
+    renderLevel2Cards();
+});
+</script>
+
+</body>
+</html>

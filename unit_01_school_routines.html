@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 01: School Life & Routines - CLC English Mastery</title>
+    <style>
+        :root {
+            --primary: #1a73e8;
+            --primary-dark: #0d47a1;
+            --success: #2e7d32;
+            --error: #d32f2f;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+        body {
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding-bottom: 60px;
+        }
+        .top-nav {
+            background: #fff;
+            border-bottom: 1px solid var(--border);
+            padding: 12px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .btn-back {
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: 700;
+            font-size: 11pt;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .unit-title-head {
+            font-size: 13pt;
+            font-weight: 700;
+            color: var(--primary-dark);
+        }
+        .score-pill {
+            background: #e3f2fd;
+            color: var(--primary-dark);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 11pt;
+        }
+        .tab-bar {
+            display: flex;
+            background: #fff;
+            overflow-x: auto;
+            border-bottom: 1px solid var(--border);
+            padding: 0 10px;
+        }
+        .tab-btn {
+            background: none;
+            border: none;
+            padding: 12px 18px;
+            font-size: 11pt;
+            font-weight: 600;
+            color: var(--text-muted);
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            white-space: nowrap;
+        }
+        .tab-btn.active {
+            color: var(--primary);
+            border-bottom: 3px solid var(--primary);
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 24px;
+            border: 1px solid var(--border);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+            margin-bottom: 20px;
+        }
+        .card-header {
+            font-size: 14pt;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-bottom: 16px;
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 8px;
+        }
+        /* Vocab Grid */
+        .vocab-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 15px;
+        }
+        .vocab-item {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 14px;
+            position: relative;
+        }
+        .vocab-word {
+            font-size: 13pt;
+            font-weight: 700;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .vocab-ipa {
+            font-size: 10pt;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+        .vocab-mean {
+            font-size: 10.5pt;
+            font-weight: 600;
+            margin: 4px 0;
+            color: #334155;
+        }
+        .vocab-ex {
+            font-size: 9.5pt;
+            color: #64748b;
+        }
+        .btn-audio {
+            background: #e2e8f0;
+            border: none;
+            border-radius: 50%;
+            width: 28px;
+            height: 28px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12pt;
+        }
+        .btn-audio:hover {
+            background: #cbd5e1;
+        }
+        /* Questions */
+        .q-item {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed var(--border);
+        }
+        .q-text {
+            font-size: 11pt;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+        @media (max-width: 600px) {
+            .options-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .option-btn {
+            background: #fff;
+            border: 1.5px solid #cbd5e1;
+            padding: 10px 14px;
+            border-radius: 8px;
+            text-align: left;
+            font-size: 10.5pt;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .option-btn:hover {
+            border-color: var(--primary);
+            background: #f0f7ff;
+        }
+        .option-btn.selected-correct {
+            background: #e8f5e9 !important;
+            border-color: var(--success) !important;
+            color: var(--success);
+            font-weight: bold;
+        }
+        .option-btn.selected-wrong {
+            background: #ffebee !important;
+            border-color: var(--error) !important;
+            color: var(--error);
+            font-weight: bold;
+        }
+        .q-explain {
+            margin-top: 8px;
+            padding: 8px 12px;
+            background: #f1f5f9;
+            border-radius: 6px;
+            font-size: 10pt;
+            display: none;
+        }
+        /* Transformation input */
+        .transform-box {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 8px;
+        }
+        .input-transform {
+            width: 100%;
+            padding: 10px 14px;
+            border: 1.5px solid #cbd5e1;
+            border-radius: 8px;
+            font-size: 11pt;
+        }
+        .btn-check-transform {
+            align-self: flex-start;
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        /* Reading Dual */
+        .reading-dual {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 20px;
+        }
+        @media (max-width: 768px) {
+            .reading-dual {
+                grid-template-columns: 1fr;
+            }
+        }
+        .passage-box {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 18px;
+            font-size: 11pt;
+            line-height: 1.7;
+            max-height: 480px;
+            overflow-y: auto;
+        }
+        .highlight-keyword {
+            background: #fff3c4;
+            font-weight: 600;
+            padding: 1px 4px;
+            border-radius: 3px;
+        }
+        /* Bottom Submit */
+        .submit-bar {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .btn-submit-all {
+            background: linear-gradient(135deg, #1976d2, #0d47a1);
+            color: white;
+            padding: 14px 40px;
+            border: none;
+            border-radius: 30px;
+            font-size: 13pt;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(25, 118, 210, 0.3);
+        }
+        .btn-submit-all:hover {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Navigation -->
+    <div class="top-nav">
+        <a href="index.html" class="btn-back">⬅ Quay Lại Mục Lục</a>
+        <div class="unit-title-head">Unit 01: School Life & Routines</div>
+        <div class="score-pill" id="scoreBadge">Điểm: 0 / 25</div>
+    </div>
+
+    <!-- Tab Bar -->
+    <div class="tab-bar">
+        <button class="tab-btn active" onclick="switchTab('vocab')">1. Từ Vựng (Look)</button>
+        <button class="tab-btn" onclick="switchTab('phonetics')">2. Ngữ Âm (Phonetics)</button>
+        <button class="tab-btn" onclick="switchTab('grammar')">3. Ngữ Pháp & Bẫy Đề</button>
+        <button class="tab-btn" onclick="switchTab('reading')">4. Đọc Hiểu (Reading)</button>
+        <button class="tab-btn" onclick="switchTab('transform')">5. Viết Lại Câu</button>
+        <button class="tab-btn" onclick="switchTab('speaking')">6. Phỏng Vấn (Speaking)</button>
+    </div>
+
+    <div class="container">
+
+        <!-- TAB 1: CORE VOCABULARY -->
+        <div id="tab-vocab" class="tab-content active">
+            <div class="card">
+                <div class="card-header">📖 15 Từ Vựng Cốt Lõi (Look Level 4-5) - Bấm biểu tượng 🔊 để nghe phát âm</div>
+                <div class="vocab-grid" id="vocabGrid"></div>
+            </div>
+        </div>
+
+        <!-- TAB 2: PHONETICS LAB -->
+        <div id="tab-phonetics" class="tab-content">
+            <div class="card">
+                <div class="card-header">⚡ Phonetics Lab: Phát âm đuôi -s/es & Trọng âm từ (5 câu)</div>
+                <div id="phoneticsQuestions"></div>
+            </div>
+        </div>
+
+        <!-- TAB 3: GRAMMAR & ERROR ID -->
+        <div id="tab-grammar" class="tab-content">
+            <div class="card">
+                <div class="card-header">✍️ Grammar Mastery: Thì Hiện Tại Đơn / Tiếp Diễn & Tìm Lỗi Sai (10 câu)</div>
+                <div id="grammarQuestions"></div>
+            </div>
+        </div>
+
+        <!-- TAB 4: READING LAB -->
+        <div id="tab-reading" class="tab-content">
+            <div class="card">
+                <div class="card-header">📖 Reading Lab: Đọc Hiểu Về Trường THCS & THPT Nguyễn Tất Thành</div>
+                <div class="reading-dual">
+                    <div class="passage-box">
+                        <button class="btn-audio" onclick="speakText(document.getElementById('readingPassage').innerText)" title="Nghe đọc bài đọc">🔊 Nghe Đọc Bài</button>
+                        <div id="readingPassage" style="margin-top:10px;">
+                            Nguyen Tat Thanh School is one of the most reputable schools in Hanoi. Every day, students arrive at school before 7:30 a.m. dressed neatly in their crisp <span class="highlight-keyword">uniforms</span>.
+                            <br><br>
+                            The daily school <span class="highlight-keyword">routine</span> begins with a lively 15-minute morning exercise on the spacious playground. Students study key academic <span class="highlight-keyword">subjects</span> like Mathematics, Vietnamese, and English in the morning.
+                            <br><br>
+                            In the afternoon, they carry out interesting science <span class="highlight-keyword">experiments</span> in modern laboratories and work on group <span class="highlight-keyword">projects</span> in the digital library. Teachers always encourage students to <span class="highlight-keyword">concentrate</span> on creative thinking rather than memorizing facts.
+                            <br><br>
+                            After academic hours, there are diverse <span class="highlight-keyword">extracurricular</span> activities, including basketball, arts, and robotics clubs. Many students work diligently to <span class="highlight-keyword">achieve</span> excellent results at the end of each semester.
+                        </div>
+                    </div>
+                    <div id="readingQuestions"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 5: SENTENCE TRANSFORMATION -->
+        <div id="tab-transform" class="tab-content">
+            <div class="card">
+                <div class="card-header">🔄 Sentence Transformation: Viết lại câu không đổi nghĩa (4 câu)</div>
+                <p style="font-size:10.5pt; color:var(--text-muted); margin-bottom:15px;">Dạng bài phân loại điểm 9-10. Gõ câu hoàn chỉnh vào ô bên dưới và bấm "Kiểm Tra".</p>
+                <div id="transformQuestions"></div>
+            </div>
+        </div>
+
+        <!-- TAB 6: SPEAKING / INTERVIEW -->
+        <div id="tab-speaking" class="tab-content">
+            <div class="card">
+                <div class="card-header">🎙️ UMS & CLC Admission Interview Practice</div>
+                <p style="font-size:10.5pt; color:var(--text-muted); margin-bottom:15px;">Mô phỏng phỏng vấn vấn đáp tiếng Anh vào trường CLC. Bấm nghe câu hỏi và câu trả lời mẫu:</p>
+                
+                <div style="background:#f8fafc; padding:15px; border-radius:8px; margin-bottom:15px;">
+                    <strong>Question 1: Can you introduce yourself and describe your daily school routine?</strong>
+                    <button class="btn-audio" onclick="speakText('Can you introduce yourself and describe your daily school routine?')">🔊</button>
+                    <div style="margin-top:8px; font-size:10pt; color:#334155; font-style:italic;">
+                        💡 <em>Gợi ý trả lời mẫu:</em> "Good morning teachers. My name is Minh. Every morning, I wake up at 6:30 and prepare my uniform. At school, I usually attend academic classes in the morning and participate in our English speaking club in the afternoon..."
+                        <button class="btn-audio" onclick="speakText('Good morning teachers. My name is Minh. Every morning, I wake up at 6:30 and prepare my uniform. At school, I usually attend academic classes in the morning and participate in our English speaking club in the afternoon.')">🔊 Nghe Mẫu</button>
+                    </div>
+                </div>
+
+                <div style="background:#f8fafc; padding:15px; border-radius:8px;">
+                    <strong>Question 2: What is your favorite school subject and why do you love it?</strong>
+                    <button class="btn-audio" onclick="speakText('What is your favorite school subject and why do you love it?')">🔊</button>
+                    <div style="margin-top:8px; font-size:10pt; color:#334155; font-style:italic;">
+                        💡 <em>Gợi ý trả lời mẫu:</em> "My favorite subject is English because it allows me to explore fascinating science books from National Geographic and connect with friends from all over the world..."
+                        <button class="btn-audio" onclick="speakText('My favorite subject is English because it allows me to explore fascinating science books from National Geographic and connect with friends from all over the world.')">🔊 Nghe Mẫu</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="submit-bar">
+            <button class="btn-submit-all" onclick="submitAndSyncProgress()">💾 NỘP BÀI & ĐỒNG BỘ VÀO HỒ SƠ HỌC TẬP</button>
+        </div>
+
+    </div>
+
+    <script>
+        // Data
+        const VOCAB_LIST = [
+            { w: "routine", ipa: "/ruːˈtiːn/", m: "thói quen, lịch biểu hàng ngày", ex: "My daily routine starts at 6:30 AM." },
+            { w: "uniform", ipa: "/ˈjuːnɪfɔːm/", m: "đồng phục học sinh", ex: "Students must wear uniforms on Mondays." },
+            { w: "assignment", ipa: "/əˈsaɪnmənt/", m: "bài tập được giao", ex: "We have an English assignment today." },
+            { w: "experiment", ipa: "/ɪkˈsperɪmənt/", m: "thí nghiệm khoa học", ex: "They do experiments in the lab." },
+            { w: "laboratory", ipa: "/ləˈbɒrətri/", m: "phòng thí nghiệm", ex: "Our school has two modern laboratories." },
+            { w: "project", ipa: "/ˈprɒdʒekt/", m: "dự án, bài tập nhóm", ex: "We are doing a science project on plants." },
+            { w: "schedule", ipa: "/ˈʃedʒuːl/", m: "thời khóa biểu", ex: "Check your timetable schedule." },
+            { w: "library", ipa: "/ˈlaɪbrəri/", m: "thư viện trường học", ex: "She reads books in the library." },
+            { w: "presentation", ipa: "/ˌpreznˈteɪʃn/", m: "bài thuyết trình", ex: "Nam gave an excellent presentation." },
+            { w: "classmate", ipa: "/ˈklɑːsmeɪt/", m: "bạn cùng lớp", ex: "I often study with my classmates." },
+            { w: "subject", ipa: "/ˈsʌbdʒɪkt/", m: "môn học", ex: "Math is my favorite subject." },
+            { w: "extracurricular", ipa: "/ˌekstrəkəˈrɪkjələ(r)/", m: "ngoại khóa", ex: "He joined extracurricular sports clubs." },
+            { w: "concentrate", ipa: "/ˈkɒnsntreɪt/", m: "tập trung chú ý", ex: "Please concentrate on your work." },
+            { w: "achieve", ipa: "/əˈtʃiːv/", m: "đạt được mục tiêu", ex: "Work hard to achieve high scores." },
+            { w: "diligent", ipa: "/ˈdɪlɪdʒənt/", m: "chăm chỉ, cần cù", ex: "Diligent students always do well." }
+        ];
+
+        const PHONETICS_QS = [
+            { id: "p1", q: "1. Choose the word whose underlined part is pronounced differently: book<u>s</u>, cat<u>s</u>, map<u>s</u>, pen<u>s</u>", opts: ["A. books", "B. cats", "C. maps", "D. pens"], ans: 3, exp: "D đúng. 'pens' tận cùng là âm hữu thanh /n/ nên đuôi -s phát âm là /z/. Ba từ còn lại đuôi -s phát âm là /s/." },
+            { id: "p2", q: "2. Choose the word whose underlined part is pronounced differently: wash<u>es</u>, watch<u>es</u>, class<u>es</u>, mak<u>es</u>", opts: ["A. washes", "B. watches", "C. classes", "D. makes"], ans: 3, exp: "D đúng. 'makes' phát âm đuôi -s là /s/. Ba từ còn lại phát âm là /ɪz/." },
+            { id: "p3", q: "3. Choose the word whose underlined part is pronounced differently: teach<u>er</u>, comput<u>er</u>, aft<u>er</u>, pref<u>er</u>", opts: ["A. teacher", "B. computer", "C. after", "D. prefer"], ans: 3, exp: "D đúng. 'prefer' âm /ɜː/ dài và nhấn âm 2. Ba từ còn lại là âm /ə/ ngắn." },
+            { id: "p4", q: "4. Choose the word that has a different stress pattern: 'teacher, 'student, en'joy, 'doctor", opts: ["A. teacher", "B. student", "C. enjoy", "D. doctor"], ans: 2, exp: "C đúng. 'enjoy' là động từ 2 âm tiết nhấn âm 2. Ba từ còn lại là danh từ nhấn âm 1." },
+            { id: "p5", q: "5. Choose the word that has a different stress pattern: 'uniform, 'subject, 'routine, 'classmate", opts: ["A. uniform", "B. subject", "C. routine", "D. classmate"], ans: 2, exp: "C đúng. 'routine' phát âm là /ruːˈtiːn/ nhấn âm tiết thứ 2!" }
+        ];
+
+        const GRAMMAR_QS = [
+            { id: "g1", q: "1. Nam usually __________ to school by bike, but today he __________ by bus.", opts: ["A. goes / goes", "B. is going / goes", "C. goes / is going", "D. is going / is going"], ans: 2, exp: "C đúng. 'usually' dùng thì Hiện tại đơn (goes), 'today' biểu thị hành động tạm thời dùng Hiện tại tiếp diễn (is going)." },
+            { id: "g2", q: "2. Listen! The teacher __________ instructions for the science experiment.", opts: ["A. gives", "B. is giving", "C. gave", "D. will give"], ans: 1, exp: "B đúng. Có 'Listen!' là dấu hiệu của thì Hiện tại tiếp diễn." },
+            { id: "g3", q: "3. Students must arrive at school __________ 7:15 in the morning.", opts: ["A. on", "B. at", "C. in", "D. for"], ans: 1, exp: "B đúng. Chỉ mốc thời gian giờ giấc dùng giới từ AT." },
+            { id: "g4", q: "4. She is very good __________ solving difficult Math problems.", opts: ["A. in", "B. at", "C. on", "D. with"], ans: 1, exp: "B đúng. Cấu trúc 'be good at + V-ing'." },
+            { id: "g5", q: "5. How __________ hours a day do you spend reading books in the library?", opts: ["A. much", "B. many", "C. often", "D. long"], ans: 1, exp: "B đúng. 'hours' là danh từ đếm được số nhiều nên dùng HOW MANY." },
+            { id: "g6", q: "6. (Error ID) <u>My brother</u>(A) <u>don't</u>(B) <u>have</u>(C) to wear uniform <u>on</u>(D) Fridays.", opts: ["A. My brother", "B. don't", "C. have", "D. on"], ans: 1, exp: "B đúng. 'My brother' là chủ ngữ số ít nên phải dùng 'doesn't have'." },
+            { id: "g7", q: "7. (Error ID) Look! The students <u>are play</u>(A) <u>basketball</u>(B) on <u>the school</u>(C) <u>playground</u>(D).", opts: ["A. are play", "B. basketball", "C. the school", "D. playground"], ans: 0, exp: "A đúng. Sau 'are' phải là 'playing' (Hiện tại tiếp diễn)." },
+            { id: "g8", q: "8. (Error ID) She <u>walks</u>(A) <u>quick</u>(B) <u>to the</u>(C) classroom <u>because</u>(D) she is late.", opts: ["A. walks", "B. quick", "C. to the", "D. because"], ans: 1, exp: "B đúng. Bổ nghĩa cho động từ 'walks' phải dùng trạng từ 'quickly'." },
+            { id: "g9", q: "9. If con __________ hard, you will achieve high marks in the entrance exam.", opts: ["A. study", "B. will study", "C. studied", "D. studies"], ans: 0, exp: "A đúng. Mệnh đề IF của câu điều kiện loại 1 chia thì Hiện tại đơn." },
+            { id: "g10", q: "10. This project is much __________ than our previous assignment.", opts: ["A. difficult", "B. more difficult", "C. most difficult", "D. as difficult"], ans: 1, exp: "B đúng. Có 'than' nên dùng so sánh hơn 'more difficult'." }
+        ];
+
+        const READING_QS = [
+            { id: "r1", q: "1. What time do students arrive at Nguyen Tat Thanh school?", opts: ["A. At 8:00 AM", "B. Before 7:30 AM", "C. At 7:45 AM", "D. After 7:30 AM"], ans: 1, exp: "Dẫn chứng trong bài: 'Every day, students arrive at school before 7:30 a.m.'" },
+            { id: "r2", q: "2. What do students do in the modern laboratories?", opts: ["A. Read books", "B. Play basketball", "C. Carry out science experiments", "D. Morning exercise"], ans: 2, exp: "Dẫn chứng: 'carry out interesting science experiments in modern laboratories'." },
+            { id: "r3", q: "3. What do teachers encourage students to do?", opts: ["A. Memorize facts", "B. Focus on creative thinking", "C. Play video games", "D. Sleep in class"], ans: 1, exp: "Dẫn chứng: 'Teachers always encourage students to concentrate on creative thinking rather than memorizing facts.'" },
+            { id: "r4", q: "4. What does the word 'they' in paragraph 3 refer to?", opts: ["A. Teachers", "B. Laboratories", "C. Students", "D. Experiments"], ans: 2, exp: "'they' thay thế cho 'Students' ở đoạn trước." },
+            { id: "r5", q: "5. Which extracurricular club is NOT mentioned in the text?", opts: ["A. Basketball", "B. Swimming", "C. Arts", "D. Robotics"], ans: 1, exp: "Swimming (Bơi lội) không được nhắc tới trong bài." }
+        ];
+
+        const TRANSFORM_QS = [
+            { id: "t1", origin: "I started studying at this school four years ago.", prompt: "-> I have", keywords: ["studied at this school for four years", "been studying at this school for four years"], exp: "Chuyển started V-ing [time] ago -> have V3/ed for [time]." },
+            { id: "t2", origin: "My classroom is bigger than your classroom.", prompt: "-> Your classroom is not as", keywords: ["big as my classroom", "big as mine"], exp: "So sánh hơn -> So sánh không bằng: not as big as." },
+            { id: "t3", origin: "Because the rain was heavy, we cancelled the morning exercise.", prompt: "-> Because of", keywords: ["the heavy rain, we cancelled the morning exercise", "the heavy rain"], exp: "Because + S + be + adj -> Because of + the + adj + noun." },
+            { id: "t4", origin: "It takes Nam 30 minutes to finish his science project.", prompt: "-> Nam spends", keywords: ["30 minutes finishing his science project", "thirty minutes finishing his science project"], exp: "It takes someone [time] to V -> S spends [time] V-ing." }
+        ];
+
+        // Speech
+        function speakText(text) {
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+                const u = new SpeechSynthesisUtterance(text);
+                u.lang = 'en-US';
+                u.rate = 0.9;
+                window.speechSynthesis.speak(u);
+            } else {
+                alert("Trình duyệt không hỗ trợ Web Speech API.");
+            }
+        }
+
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+            document.getElementById('tab-' + tabId).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        // Render Vocab
+        const vGrid = document.getElementById('vocabGrid');
+        VOCAB_LIST.forEach(item => {
+            vGrid.innerHTML += `
+                <div class="vocab-item">
+                    <div class="vocab-word">
+                        <span>${item.w}</span>
+                        <button class="btn-audio" onclick="speakText('${item.w}')">🔊</button>
+                    </div>
+                    <div class="vocab-ipa">${item.ipa}</div>
+                    <div class="vocab-mean">${item.m}</div>
+                    <div class="vocab-ex">"${item.ex}"</div>
+                </div>
+            `;
+        });
+
+        // User answers & scores
+        let userAnswers = {};
+        let wrongList = [];
+
+        function renderQuestions(list, containerId) {
+            const container = document.getElementById(containerId);
+            list.forEach(q => {
+                let optsHtml = '';
+                q.opts.forEach((opt, idx) => {
+                    optsHtml += `<button class="option-btn" id="btn_${q.id}_${idx}" onclick="selectOption('${q.id}', ${idx}, ${q.ans})">${opt}</button>`;
+                });
+                container.innerHTML += `
+                    <div class="q-item">
+                        <div class="q-text">${q.q}</div>
+                        <div class="options-grid">${optsHtml}</div>
+                        <div class="q-explain" id="exp_${q.id}">💡 ${q.exp}</div>
+                    </div>
+                `;
+            });
+        }
+
+        renderQuestions(PHONETICS_QS, 'phoneticsQuestions');
+        renderQuestions(GRAMMAR_QS, 'grammarQuestions');
+        renderQuestions(READING_QS, 'readingQuestions');
+
+        // Render Transform
+        const tContainer = document.getElementById('transformQuestions');
+        TRANSFORM_QS.forEach(t => {
+            tContainer.innerHTML += `
+                <div class="q-item">
+                    <div class="q-text"><strong>${t.origin}</strong></div>
+                    <div class="transform-box">
+                        <div style="font-weight:bold; color:var(--primary);">${t.prompt}</div>
+                        <input type="text" class="input-transform" id="in_${t.id}" placeholder="Gõ tiếp câu hoàn chỉnh tại đây...">
+                        <button class="btn-check-transform" onclick="checkTransform('${t.id}')">Kiểm Tra Đáp Án</button>
+                        <div class="q-explain" id="exp_${t.id}">💡 Giải thích: ${t.exp}</div>
+                    </div>
+                </div>
+            `;
+        });
+
+        function selectOption(qId, choiceIdx, correctIdx) {
+            if (userAnswers[qId] !== undefined) return; // answered
+            userAnswers[qId] = choiceIdx;
+
+            const isCorrect = choiceIdx === correctIdx;
+            const btn = document.getElementById(`btn_${qId}_${choiceIdx}`);
+            const exp = document.getElementById(`exp_${qId}`);
+
+            if (isCorrect) {
+                btn.classList.add('selected-correct');
+            } else {
+                btn.classList.add('selected-wrong');
+                document.getElementById(`btn_${qId}_${correctIdx}`).classList.add('selected-correct');
+                wrongList.push({ question: qId, user_answer: `Option ${choiceIdx}`, correct_answer: `Option ${correctIdx}`, tag: qId.startsWith('p') ? 'Phonetics' : (qId.startsWith('g') ? 'Grammar' : 'Reading') });
+            }
+            exp.style.display = 'block';
+            updateScore();
+        }
+
+        function checkTransform(tId) {
+            const input = document.getElementById(`in_${tId}`);
+            const val = input.value.trim().toLowerCase();
+            const q = TRANSFORM_QS.find(x => x.id === tId);
+            const exp = document.getElementById(`exp_${tId}`);
+
+            const matched = q.keywords.some(kw => val.includes(kw.toLowerCase()));
+            if (matched) {
+                input.style.borderColor = 'var(--success)';
+                input.style.backgroundColor = '#e8f5e9';
+                userAnswers[tId] = true;
+            } else {
+                input.style.borderColor = 'var(--error)';
+                input.style.backgroundColor = '#ffebee';
+                userAnswers[tId] = false;
+                wrongList.push({ question: q.origin, user_answer: val, correct_answer: q.keywords[0], tag: 'Sentence Transformation' });
+            }
+            exp.style.display = 'block';
+            updateScore();
+        }
+
+        function updateScore() {
+            let correctCount = 0;
+            // phonetics
+            PHONETICS_QS.forEach(q => { if (userAnswers[q.id] === q.ans) correctCount++; });
+            GRAMMAR_QS.forEach(q => { if (userAnswers[q.id] === q.ans) correctCount++; });
+            READING_QS.forEach(q => { if (userAnswers[q.id] === q.ans) correctCount++; });
+            TRANSFORM_QS.forEach(q => { if (userAnswers[q.id] === true) correctCount++; });
+
+            const total = PHONETICS_QS.length + GRAMMAR_QS.length + READING_QS.length + TRANSFORM_QS.length;
+            document.getElementById('scoreBadge').innerText = `Điểm: ${correctCount} / ${total}`;
+        }
+
+        async function submitAndSyncProgress() {
+            let correctCount = 0;
+            const total = PHONETICS_QS.length + GRAMMAR_QS.length + READING_QS.length + TRANSFORM_QS.length;
+            PHONETICS_QS.forEach(q => { if (userAnswers[q.id] === q.ans) correctCount++; });
+            GRAMMAR_QS.forEach(q => { if (userAnswers[q.id] === q.ans) correctCount++; });
+            READING_QS.forEach(q => { if (userAnswers[q.id] === q.ans) correctCount++; });
+            TRANSFORM_QS.forEach(q => { if (userAnswers[q.id] === true) correctCount++; });
+
+            const score10 = (correctCount / total) * 10;
+            const pct = (correctCount / total) * 100;
+
+            const payload = {
+                unit_id: "Unit 01",
+                unit_title: "Unit 01: School Life & Routines",
+                score: score10,
+                total: 10,
+                percentage: pct,
+                wrong_answers: wrongList
+            };
+
+            try {
+                const res = await fetch('/api/sync_progress', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                const data = await res.json();
+                alert(`🎉 Chúc mừng con đã hoàn thành Unit 01!\nĐiểm số đạt được: ${score10.toFixed(1)} / 10 (${pct.toFixed(0)}%)\n\nKết quả đã được đồng bộ tự động vào Hồ sơ học tập và Sổ tay lỗi sai.`);
+            } catch (err) {
+                alert(`Con đã hoàn thành bài thi với điểm số: ${score10.toFixed(1)} / 10 (${pct.toFixed(0)}%). (Không kết nối được server đồng bộ)`);
+            }
+        }
+    </script>
+</body>
+</html>
+
