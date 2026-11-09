@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="vi" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <script>document.documentElement.classList.remove("no-js");</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Unit 99: Challenges, Competitions & Great Achievements">
+    <title>Unit 99: Challenges, Competitions & Great Achievements — CLC English Mastery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- Academic Paper Cream Theme (Default ☀️) --- */
+        :root, [data-theme="paper"] {
+            --bg-color: #fbf4ea;
+            --surface-color: #ffffff;
+            --surface-hover: #fffdf9;
+            --card-color: #ffffff;
+            --panel-bg: #fdfaf5;
+            --bar-bg: #ffffff;
+            --primary: #14324d;
+            --primary-hover: #1d4367;
+            --accent: #a35d2b;
+            --accent-hover: #8c471c;
+            --success: #1b8755;
+            --warning: #b45309;
+            --danger: #c0392b;
+            --text-main: #14324d;
+            --text-muted: #4a607a;
+            --border: #eadccb;
+            --card-shadow: 0 4px 18px rgba(20, 50, 77, 0.05);
+            --header-bg: linear-gradient(135deg, #ffffff 0%, #fbf4ea 100%);
+            --option-bg: #ffffff;
+            --input-bg: #fdfbf7;
+            --tab-active-bg: #14324d;
+            --tab-active-color: #ffffff;
+            --vocab-ipa-color: #a35d2b;
+            --vocab-colloc-color: #8c471c;
+            --vocab-colloc-bg: rgba(163, 93, 43, 0.1);
+            --vocab-colloc-border: rgba(163, 93, 43, 0.25);
+            --vocab-btn-bg: rgba(20, 50, 77, 0.07);
+            --vocab-btn-border: rgba(20, 50, 77, 0.2);
+            --eval-box-bg: #ffffff;
+        }
+
+        /* --- Midnight Navy Dark Theme (Optional 🌙) --- */
+        [data-theme="dark"] {
+            --bg-color: #0b1120;
+            --surface-color: #1e293b;
+            --surface-hover: #243247;
+            --card-color: #1e293b;
+            --panel-bg: rgba(15, 23, 42, 0.75);
+            --bar-bg: rgba(15, 23, 42, 0.9);
+            --primary: #38bdf8;
+            --primary-hover: #0ea5e9;
+            --accent: #c5855d;
+            --accent-hover: #dca07b;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #f43f5e;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border: #334155;
+            --card-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.5);
+            --header-bg: linear-gradient(135deg, rgba(30, 41, 59, 0.95), rgba(15, 23, 42, 0.95));
+            --option-bg: rgba(30, 41, 59, 0.8);
+            --input-bg: #0b1120;
+            --tab-active-bg: var(--primary);
+            --tab-active-color: #0b1120;
+            --vocab-ipa-color: #38bdf8;
+            --vocab-colloc-color: #f59e0b;
+            --vocab-colloc-bg: rgba(245, 158, 11, 0.08);
+            --vocab-colloc-border: rgba(245, 158, 11, 0.2);
+            --vocab-btn-bg: rgba(56, 189, 248, 0.15);
+            --vocab-btn-border: rgba(56, 189, 248, 0.3);
+            --eval-box-bg: rgba(15, 23, 42, 0.9);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 12px 10px 50px 10px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        @media (min-width: 768px) {
+            body {
+                padding: 24px 20px 60px 20px;
+            }
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1080px;
+            margin: 0 auto;
+        }
+
+        /* Header matching IELTS-Mastery-Kit */
+        header {
+            margin-bottom: 20px;
+            padding: 18px 20px;
+            background: var(--header-bg);
+            border-radius: 18px;
+            border: 1.5px solid var(--border);
+            box-shadow: var(--card-shadow);
+            position: relative;
+        }
+
+        .header-top-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .nav-back-link {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.88rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--surface-color);
+            border: 1px solid var(--border);
+            padding: 6px 14px;
+            border-radius: 999px;
+            transition: all 0.2s;
+        }
+
+        .nav-back-link:hover {
+            background: var(--primary);
+            color: var(--tab-active-color);
+        }
+
+        .header-controls {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .theme-toggle-btn, .mode-btn {
+            background: var(--surface-color);
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .theme-toggle-btn:hover, .mode-btn:hover {
+            color: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .badge-pill {
+            display: inline-block;
+            background: var(--vocab-colloc-bg);
+            color: var(--accent);
+            border: 1px solid var(--vocab-colloc-border);
+            padding: 4px 12px;
+            border-radius: 9999px;
+            font-weight: 800;
+            font-size: 0.78rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+
+        h1.unit-main-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.45rem;
+            color: var(--primary);
+            margin-bottom: 4px;
+            line-height: 1.3;
+            font-weight: 800;
+        }
+
+        @media (min-width: 768px) {
+            h1.unit-main-title {
+                font-size: 2rem;
+            }
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 0.88rem;
+            line-height: 1.45;
+        }
+
+        /* Tabs Navigation */
+        .tabs {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 20px;
+            overflow-x: auto;
+            padding-bottom: 6px;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .tab-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--surface-color);
+            border: 1.5px solid var(--border);
+            color: var(--text-muted);
+            padding: 10px 18px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 0.88rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+            flex-shrink: 0;
+            min-height: 44px;
+        }
+
+        .tab-btn:hover {
+            color: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .tab-btn.active {
+            background: var(--tab-active-bg);
+            color: var(--tab-active-color);
+            border-color: var(--tab-active-bg);
+            box-shadow: 0 4px 14px rgba(20, 50, 77, 0.15);
+        }
+
+        [data-theme="dark"] .tab-btn.active {
+            box-shadow: 0 0 15px rgba(56, 189, 248, 0.35);
+        }
+
+        .tab-content {
+            display: none;
+            background: var(--surface-color);
+            border: 1.5px solid var(--border);
+            border-radius: 18px;
+            padding: 20px 16px;
+            margin-bottom: 25px;
+            box-shadow: var(--card-shadow);
+        }
+
+        @media (min-width: 768px) {
+            .tab-content {
+                padding: 28px;
+            }
+        }
+
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.25s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(6px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Full Page Scroll Mode */
+        body.full-scroll-mode .tab-content {
+            display: block !important;
+            margin-bottom: 28px !important;
+        }
+
+        h2.section-heading {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.25rem;
+            margin-bottom: 18px;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            line-height: 1.35;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 10px;
+            font-weight: 700;
+        }
+
+        /* 3D FLASHCARD FLIP COMPONENT */
+        .flashcard-hero-box {
+            background: var(--panel-bg);
+            border: 1.5px solid var(--border);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        .flashcard-3d-scene {
+            perspective: 1000px;
+            width: 100%;
+            max-width: 500px;
+            height: 250px;
+            margin: 16px auto;
+            cursor: pointer;
+        }
+
+        .flashcard-3d-card {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
+            transform-style: preserve-3d;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(20, 50, 77, 0.1);
+        }
+
+        .flashcard-3d-card.flipped {
+            transform: rotateY(180deg);
+        }
+
+        .fc-side {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 24px;
+            border-radius: 16px;
+            background: var(--surface-color);
+            border: 2px solid var(--border);
+        }
+
+        .fc-back {
+            background: var(--panel-bg);
+            border-color: var(--accent);
+            transform: rotateY(180deg);
+        }
+
+        .fc-pos-tag {
+            background: var(--vocab-colloc-bg);
+            color: var(--accent);
+            border: 1px solid var(--vocab-colloc-border);
+            padding: 3px 12px;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .fc-main-word {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+
+        .fc-ipa-text {
+            font-family: monospace;
+            font-size: 1.15rem;
+            color: var(--vocab-ipa-color);
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .fc-mean-viet {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--success);
+            margin-bottom: 10px;
+        }
+
+        .fc-example-text {
+            font-size: 0.95rem;
+            color: var(--text-main);
+            font-style: italic;
+            margin-bottom: 4px;
+        }
+
+        .fc-example-viet {
+            font-size: 0.86rem;
+            color: var(--text-muted);
+        }
+
+        .fc-ctrl-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 14px;
+            flex-wrap: wrap;
+        }
+
+        .btn-fc-nav {
+            background: var(--surface-color);
+            color: var(--text-main);
+            border: 1.5px solid var(--border);
+            padding: 9px 18px;
+            border-radius: 999px;
+            font-weight: 700;
+            font-size: 0.88rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-fc-nav:hover {
+            background: var(--primary);
+            color: var(--tab-active-color);
+            border-color: var(--primary);
+        }
+
+        /* EXACT IELTS VOCABULARY GRID */
+        .vocab-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+            margin-top: 14px;
+        }
+
+        @media (min-width: 640px) {
+            .vocab-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 14px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .vocab-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 16px;
+            }
+        }
+
+        .vocab-card {
+            background: var(--surface-color);
+            border: 1.5px solid var(--border);
+            border-radius: 14px;
+            padding: 16px;
+            transition: all 0.25s ease;
+            position: relative;
+            box-shadow: var(--card-shadow);
+        }
+
+        .vocab-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(20, 50, 77, 0.08);
+        }
+
+        [data-theme="dark"] .vocab-card:hover {
+            border-color: rgba(56, 189, 248, 0.5);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+        }
+
+        .vocab-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .vocab-word {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 800;
+            color: var(--primary);
+        }
+
+        .vocab-audio-btn {
+            background: var(--vocab-btn-bg);
+            border: 1.5px solid var(--vocab-btn-border);
+            color: var(--primary);
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+            flex-shrink: 0;
+        }
+
+        .vocab-audio-btn:hover, .vocab-audio-btn:active {
+            background: var(--primary);
+            color: var(--tab-active-color);
+            transform: scale(1.08);
+        }
+
+        .vocab-ipa {
+            font-size: 0.88rem;
+            color: var(--vocab-ipa-color);
+            font-family: monospace;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .vocab-meaning {
+            font-weight: 700;
+            color: var(--text-main);
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+        }
+
+        .vocab-colloc {
+            font-size: 0.82rem;
+            color: var(--vocab-colloc-color);
+            background: var(--vocab-colloc-bg);
+            border: 1px solid var(--vocab-colloc-border);
+            padding: 4px 8px;
+            border-radius: 6px;
+            margin-bottom: 6px;
+            line-height: 1.35;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        .vocab-example {
+            font-size: 0.84rem;
+            color: var(--text-muted);
+            font-style: italic;
+            line-height: 1.45;
+            border-top: 1px solid var(--border);
+            padding-top: 6px;
+            margin-top: 6px;
+        }
+
+        /* EXACT IELTS QUIZ STYLING */
+        .question-item {
+            margin-bottom: 20px;
+            padding-bottom: 18px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .question-title {
+            font-weight: 600;
+            margin-bottom: 12px;
+            font-size: 0.98rem;
+            line-height: 1.5;
+            color: var(--text-main);
+        }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        @media (min-width: 600px) {
+            .options-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+        }
+
+        .option-label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--option-bg);
+            border: 1.5px solid var(--border);
+            color: var(--text-main);
+            padding: 10px 14px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 0.92rem;
+            min-height: 46px;
+            transition: all 0.2s;
+        }
+
+        .option-label:hover {
+            border-color: var(--primary);
+            background: rgba(56, 189, 248, 0.05);
+        }
+
+        .option-label.correct {
+            background: rgba(27, 135, 85, 0.12) !important;
+            border-color: var(--success) !important;
+            color: var(--success);
+            font-weight: 700;
+        }
+
+        .option-label.wrong {
+            background: rgba(192, 57, 43, 0.1) !important;
+            border-color: var(--danger) !important;
+            color: var(--danger);
+            font-weight: 700;
+        }
+
+        .explanation {
+            display: none;
+            font-size: 0.88rem;
+            padding: 12px 14px;
+            border-radius: 8px;
+            margin-top: 10px;
+            line-height: 1.5;
+            background: var(--panel-bg);
+            border-left: 4px solid var(--primary);
+            color: var(--text-main);
+        }
+
+        /* TRANSFORMATION */
+        .transform-item {
+            margin-bottom: 20px;
+            padding-bottom: 18px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .input-transform-ielts {
+            width: 100%;
+            background: var(--input-bg);
+            border: 1.5px solid var(--border);
+            color: var(--text-main);
+            padding: 12px 14px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-family: inherit;
+            margin: 8px 0;
+            transition: border-color 0.2s;
+        }
+
+        .input-transform-ielts:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        /* READING DUAL BOX */
+        .reading-dual-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 820px) {
+            .reading-dual-grid {
+                grid-template-columns: 1.15fr 1fr;
+            }
+        }
+
+        .passage-card {
+            background: var(--panel-bg);
+            border: 1.5px solid var(--border);
+            border-radius: 14px;
+            padding: 20px;
+            font-size: 1rem;
+            line-height: 1.7;
+            max-height: 520px;
+            overflow-y: auto;
+        }
+
+        /* ACTION BAR & CONTROLS */
+        .action-bar {
+            margin-top: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: stretch;
+        }
+
+        @media (min-width: 640px) {
+            .action-bar {
+                flex-direction: row;
+                align-items: center;
+                gap: 14px;
+            }
+        }
+
+        .btn-primary {
+            background: var(--btn-launch-bg, var(--primary));
+            color: var(--btn-launch-color, #ffffff);
+            font-weight: 800;
+            border: none;
+            padding: 14px 28px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 1rem;
+            min-height: 48px;
+            text-align: center;
+            transition: all 0.2s;
+            box-shadow: 0 4px 14px rgba(20, 50, 77, 0.15);
+        }
+
+        .btn-primary:hover {
+            filter: brightness(1.1);
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background: var(--surface-color);
+            color: var(--text-main);
+            border: 1.5px solid var(--border);
+            padding: 12px 20px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 0.92rem;
+            min-height: 48px;
+            text-align: center;
+            transition: all 0.2s;
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .score-pill {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: var(--primary);
+            background: var(--vocab-colloc-bg);
+            padding: 10px 18px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            text-align: center;
+        }
+
+        @media (min-width: 640px) {
+            .score-pill {
+                margin-left: auto;
+            }
+        }
+    </style>
+</head>
+<body data-theme="paper">
+
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+            <div class="header-top-row">
+                <a href="index.html" class="nav-back-link">← Quay Lại Mục Lục Hub</a>
+                <div class="header-controls">
+                    <button class="mode-btn" onclick="toggleScrollMode()">Chế độ: Tab</button>
+                    <button class="theme-toggle-btn" onclick="toggleTheme()">🌓 Đổi Giao Diện</button>
+                </div>
+            </div>
+            <div class="badge-pill">Level 5: Band 8.0 — 9.0 (Thành Thạo Đỉnh Cao & Hoàn Thiện Tuyển Sinh CLC)</div>
+            <h1 class="unit-main-title">Unit 99: Challenges, Competitions & Great Achievements</h1>
+            <p class="subtitle">Look 5: Từ 91 - 120 (unit 99)</p>
+        </header>
+
+        <!-- Tabs Navigation -->
+        <nav class="tabs" id="mainTabs">
+            <button class="tab-btn active" onclick="switchTab('vocab')">1. Từ Vựng (30 Từ Look)</button>
+            <button class="tab-btn" onclick="switchTab('phonetics')">2. Ngữ Âm (Phonetics)</button>
+            <button class="tab-btn" onclick="switchTab('grammar')">3. Ngữ Pháp & Bẫy Đề</button>
+            <button class="tab-btn" onclick="switchTab('reading')">4. Đọc Hiểu (Reading)</button>
+            <button class="tab-btn" onclick="switchTab('transform')">5. Viết Lại Câu</button>
+            <button class="tab-btn" onclick="switchTab('speaking')">6. Phỏng Vấn (Speaking)</button>
+        </nav>
+
+        <!-- TAB 1: 30 VOCABULARY + FLASHCARDS -->
+        <section id="tab-vocab" class="tab-content active">
+            <h2 class="section-heading">
+                <span>📖 30 Từ Vựng Trọng Tâm (Look Level 5)</span>
+                <span style="font-size:0.85rem; font-weight:normal; color:var(--text-muted);">Bấm 🔊 để nghe phát âm</span>
+            </h2>
+
+            <!-- 3D Flip Flashcard -->
+            <div class="flashcard-hero-box">
+                <div style="font-weight:700; color:var(--primary); font-size:1.05rem; margin-bottom:4px;">🎴 Thẻ Lật Flashcard 3D Thông Minh</div>
+                <p style="font-size:0.84rem; color:var(--text-muted);">(Chạm vào thẻ để lật xem nghĩa tiếng Việt & câu ví dụ mẫu)</p>
+                <div class="flashcard-3d-scene" onclick="flipFlashcard()">
+                    <div class="flashcard-3d-card" id="fcCard">
+                        <div class="fc-side fc-front">
+                            <span class="fc-pos-tag" id="fcPos">number</span>
+                            <div class="fc-main-word" id="fcWord">one</div>
+                            <div class="fc-ipa-text" id="fcIpa">/wʌn/</div>
+                            <button class="vocab-audio-btn" onclick="event.stopPropagation(); speakText(currentWord.w)" title="Nghe phát âm">🔊</button>
+                            <span style="font-size:0.75rem; color:var(--text-muted); margin-top:10px;">Chạm để lật thẻ ➔</span>
+                        </div>
+                        <div class="fc-side fc-back">
+                            <div class="fc-mean-viet" id="fcMean">số một (1)</div>
+                            <div class="fc-example-text" id="fcEx">"I have one apple in my bag."</div>
+                            <div class="fc-example-viet" id="fcExVi">Tôi có một quả táo trong cặp.</div>
+                            <div style="margin-top:10px;">
+                                <button class="btn-fc-nav" onclick="event.stopPropagation(); speakText(currentWord.ex)" title="Nghe đọc ví dụ">🔊 Nghe Ví Dụ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fc-ctrl-row">
+                    <button class="btn-fc-nav" onclick="prevCard()">← Từ Trước</button>
+                    <span id="fcCounter" style="font-weight:700; color:var(--primary); font-size:0.95rem; min-width:90px;">Từ 1 / 30</span>
+                    <button class="btn-fc-nav" onclick="nextCard()">Từ Sau →</button>
+                    <button class="btn-fc-nav" onclick="speakText(currentWord.w)">🔊 Phát Âm</button>
+                    <button class="btn-fc-nav" onclick="randomCard()">🔀 Ngẫu Nhiên</button>
+                </div>
+            </div>
+
+            <!-- Vocab Grid (Exact IELTS Cards) -->
+            <div class="vocab-grid" id="vocabGrid"></div>
+        </section>
+
+        <!-- TAB 2: PHONETICS LAB -->
+        <section id="tab-phonetics" class="tab-content">
+            <h2 class="section-heading">
+                <span>⚡ Phonetics Lab: Ngữ Âm & Trọng Âm Cốt Lõi (5 câu)</span>
+                <span style="font-size:0.85rem; font-weight:normal; color:var(--text-muted);">Mỗi câu 1 điểm</span>
+            </h2>
+            <div id="phoneticsQuestions"></div>
+        </section>
+
+        <!-- TAB 3: GRAMMAR & ERROR ID -->
+        <section id="tab-grammar" class="tab-content">
+            <h2 class="section-heading">
+                <span>⚙️ Grammar Mastery: Ngữ Pháp & Bẫy Đề Thi (10 câu)</span>
+                <span style="font-size:0.85rem; font-weight:normal; color:var(--text-muted);">Mỗi câu 1 điểm</span>
+            </h2>
+            <div id="grammarQuestions"></div>
+        </section>
+
+        <!-- TAB 4: READING LAB -->
+        <section id="tab-reading" class="tab-content">
+            <h2 class="section-heading">
+                <span>The Inspiring Journey of a Mountain Marathon Champion</span>
+                <button class="vocab-audio-btn" onclick="speakText(document.getElementById('readingPassage').innerText)" title="Nghe toàn bộ bài đọc">🔊</button>
+            </h2>
+            <div class="reading-dual-grid">
+                <div class="passage-card">
+                    <div id="readingPassage">Every summer, hundreds of determined athletes travel to the coastal highlands to take part in the Golden Trail Challenge, one of the most grueling sporting events in the country. The competition features a fifty-kilometer marathon that winds from the scenic waterfront, climbs steep pine forests, and concludes inside a roaring modern stadium. Along the rugged route, runners must conquer steep hills where even skilled bicycle riders and horse riders struggle to maintain balance. Spectators who prefer a scenic route can ride a panoramic cable car to cheer for their favourite competitors from mountain peaks.
+
+This year's ultimate winner was Lucas Silva, a modest distance runner whose remarkable life story reads like an inspiring biography. Lucas grew up in a tiny mountain village where paved running tracks did not exist. Instead, he trained solo at dawn, jogging alongside wild deer through dense forests. Facing an enormous physical challenge, Lucas maintained unwavering discipline for several grueling months before entering the championship. When the golden morning sun began to shine across the finish line, Lucas sprinted into the stadium to win first place and claim the grand prize.
+
+As the race director placed the gold medal around his neck and exclaimed, 'Congratulations! You are a true sports hero!', the crowd erupted in thunderous applause. Lucas had just set a new national speed record, proving that perseverance can turn impossible dreams into breathtaking reality.</div>
+                </div>
+                <div id="readingQuestions"></div>
+            </div>
+        </section>
+
+        <!-- TAB 5: SENTENCE TRANSFORMATION -->
+        <section id="tab-transform" class="tab-content">
+            <h2 class="section-heading">
+                <span>🔄 Sentence Transformation: Viết Lại Câu Không Đổi Nghĩa (4 câu)</span>
+                <span style="font-size:0.85rem; font-weight:normal; color:var(--accent);">Phân loại điểm 9-10</span>
+            </h2>
+            <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:18px;">Gõ câu viết lại hoàn chỉnh vào ô bên dưới rồi nhấn "Kiểm Tra":</p>
+            <div id="transformQuestions"></div>
+        </section>
+
+        <!-- TAB 6: SPEAKING / INTERVIEW -->
+        <section id="tab-speaking" class="tab-content">
+            <h2 class="section-heading">
+                <span>🎙️ Phỏng Vấn Vấn Đáp Tuyển Sinh CLC (Speaking)</span>
+                <span style="font-size:0.85rem; font-weight:normal; color:var(--text-muted);">Nghe phát âm chuẩn</span>
+            </h2>
+            <div id="speakingQuestions"></div>
+        </section>
+
+        <!-- Action Bar (Floating bottom) -->
+        <div class="action-bar">
+            <button class="btn-primary" onclick="submitAndSyncProgress()">💾 Nộp Bài & Đồng Bộ Tiến Độ Học Tập</button>
+            <button class="btn-secondary" onclick="resetUnitAnswers()">🔄 Làm Lại Từ Đầu</button>
+            <div class="score-pill" id="scoreBadge">Điểm Đạt: 0 / 24</div>
+        </div>
+
+    </div>
+
+    <script>
+        const UNIT_INFO = {"unit_num": "99", "title": "Unit 99: Challenges, Competitions & Great Achievements"};
+        const VOCAB_LIST = [{"w": "yet", "pos": "adv", "ipa": "/jet/", "m": "chưa (dùng trong câu phủ định hoặc nghi vấn để chỉ việc chưa xảy ra tính đến nay)", "ex": "The referee has not blown the final whistle to end the match yet.", "ex_vi": "Trọng tài vẫn chưa thổi còi mãn cuộc để kết thúc trận đấu."}, {"w": "just", "pos": "adv", "ipa": "/jʌst/", "m": "vừa mới (chỉ một hành động xảy ra cách đây một khoảng thời gian rất ngắn)", "ex": "Our school track team has just won the championship trophy after months of training.", "ex_vi": "Đội điền kinh trường chúng tôi vừa mới giành được cúp vô địch sau nhiều tháng khổ luyện."}, {"w": "several", "pos": "det", "ipa": "/ˈsev(ə)rəl/", "m": "một vài, một số (nhiều hơn hai nhưng không quá nhiều)", "ex": "Several talented athletes were awarded gold medals at the closing ceremony.", "ex_vi": "Một vài vận động viên tài năng đã được trao huy chương vàng tại buổi lễ bế mạc."}, {"w": "tiny", "pos": "adj", "ipa": "/ˈtaɪni/", "m": "tí hon, rất nhỏ bé", "ex": "Even a tiny technical mistake can cost an athlete the championship victory.", "ex_vi": "Ngay cả một sơ suất kỹ thuật tí hon cũng có thể khiến một vận động viên mất đi chiến thắng vô địch."}, {"w": "solo", "pos": "adv", "ipa": "/ˈsəʊləʊ/", "m": "đơn độc, một mình (không có người khác đi cùng hoặc trợ giúp)", "ex": "The adventurous pilot decided to fly solo across the vast desert.", "ex_vi": "Người phi công ưa thám hiểm đã quyết định bay đơn độc một mình qua sa mạc mênh mông."}, {"w": "hero", "pos": "n", "ipa": "/ˈhɪərəʊ/", "m": "người anh hùng, tấm gương dũng cảm được ngưỡng mộ", "ex": "The goalkeeper became a national hero after saving three penalty kicks in the final match.", "ex_vi": "Thủ môn đã trở thành người anh hùng dân tộc sau khi cản phá được ba quả đá phạt đền trong trận chung kết."}, {"w": "biography", "pos": "n", "ipa": "/baɪˈɒɡrəfi/", "m": "tiểu sử, truyện danh nhân (câu chuyện kể về cuộc đời một người)", "ex": "I am reading an inspiring biography of the Olympic swimming champion.", "ex_vi": "Tôi đang đọc một cuốn tiểu sử truyền cảm hứng về nhà vô địch bơi lội Olympic."}, {"w": "amusement park", "pos": "n", "ipa": "/əˈmjuːzmənt pɑːk/", "m": "công viên giải trí (khu vui chơi với các trò chơi cảm giác mạnh)", "ex": "The students visited a famous amusement park to celebrate their high exam scores.", "ex_vi": "Các học sinh đã đến thăm một công viên giải trí nổi tiếng để ăn mừng điểm số cao trong kỳ thi."}, {"w": "cable car", "pos": "n", "ipa": "/ˈkeɪb(ə)l kɑː(r)/", "m": "cáp treo (phương tiện chở người di chuyển trên dây cáp lên đỉnh núi)", "ex": "Visitors can ride a modern cable car to reach the peak of the mountain effortlessly.", "ex_vi": "Du khách có thể đi một chuyến cáp treo hiện đại để lên tới đỉnh núi một cách nhẹ nhàng."}, {"w": "waterfront", "pos": "n", "ipa": "/ˈwɔːtəfrʌnt/", "m": "khu vực bờ sông, bờ biển (dải đất ven mặt nước của đô thị)", "ex": "Crowds of spectators gathered along the bustling waterfront to watch the boat regatta.", "ex_vi": "Đông đảo khán giả đã tụ tập dọc theo khu vực bờ sông náo nhiệt để theo dõi cuộc đua thuyền."}, {"w": "miss", "pos": "v", "ipa": "/mɪs/", "m": "nhớ nhung (người thân, bạn bè); bỏ lỡ (cơ hội, trận thi đấu)", "ex": "Although he enjoys living abroad, he still misses his childhood friends and hometown.", "ex_vi": "Mặc dù thích sống ở nước ngoài, cậu ấy vẫn nhớ những người bạn thời thơ ấu và quê hương của mình."}, {"w": "record", "pos": "v", "ipa": "/rəˈkɔːd/", "m": "ghi âm, thu âm, ghi hình (lưu lại âm thanh hoặc hình ảnh)", "ex": "The sports journalist used a portable microphone to record interviews with the athletes.", "ex_vi": "Nhà báo thể thao đã dùng một chiếc micrô cầm tay để ghi âm các cuộc phỏng vấn với các vận động viên."}, {"w": "enormous", "pos": "adj", "ipa": "/ɪˈnɔːməs/", "m": "to lớn, khổng lồ, đồ sộ", "ex": "An enormous crowd of fifty thousand cheering fans packed into the football arena.", "ex_vi": "Một đám đông khổng lồ gồm năm mươi nghìn người hâm mộ reo hò đã chật kín sân bóng đá."}, {"w": "painter", "pos": "n", "ipa": "/peɪntə(r)/", "m": "họa sĩ, người vẽ tranh chuyên nghiệp", "ex": "The celebrated painter captured the thrilling atmosphere of the stadium on canvas.", "ex_vi": "Họa sĩ lừng danh đã ghi lại không khí đầy kịch tính của sân vận động trên tấm toan vẽ."}, {"w": "mammoth", "pos": "n", "ipa": "/ˈmæməθ/", "m": "voi ma mút (loài voi lông dài thời tiền sử đã tuyệt chủng)", "ex": "Ancient hunters once followed herds of woolly mammoth across freezing landscapes.", "ex_vi": "Những người thợ săn cổ đại từng lần theo những đàn voi ma mút lông cừu qua các vùng đất băng giá."}, {"w": "aurochs", "pos": "n", "ipa": "/ˈɔːrɒks/", "m": "bò rừng châu Âu (loài bò hoang dã cổ xưa, tổ tiên loài bò nhà)", "ex": "Cave paintings depict how prehistoric tribes hunted the massive aurochs for meat.", "ex_vi": "Các bức tranh trong hang động mô tả cách các bộ tộc tiền sử săn bắt loài bò rừng châu Âu to lớn để lấy thịt."}, {"w": "extinct", "pos": "adj", "ipa": "/ɪkˈstɪŋkt/", "m": "tuyệt chủng, không còn sinh tồn trên Trái Đất", "ex": "Without decisive wildlife protection laws, many endangered species may soon become extinct.", "ex_vi": "Nếu không có các đạo luật bảo vệ động vật hoang dã kiên quyết, nhiều loài nguy cấp có thể sớm bị tuyệt chủng."}, {"w": "deer", "pos": "n", "ipa": "/dɪə(r)/", "m": "con hươu, con nai (loài thú ăn cỏ guốc chẵn có gạc)", "ex": "A graceful wild deer quietly drank clean water from the forest brook.", "ex_vi": "Một chú hươu hoang dã duyên dáng lặng lẽ uống nước sạch từ con suối trong rừng."}, {"w": "exist", "pos": "v", "ipa": "/ɪɡˈzɪst/", "m": "tồn tại, hiện hữu trong đời sống hoặc thiên nhiên", "ex": "Scientists proved that ancient creatures used to exist in this lush river valley.", "ex_vi": "Các nhà khoa học đã chứng minh rằng những sinh vật cổ đại từng tồn tại trong thung lũng sông xanh tốt này."}, {"w": "challenge", "pos": "n", "ipa": "/ˈtʃælɪndʒ/", "m": "thử thách, thách thức (nhiệm vụ gian nan đòi hỏi nỗ lực cao)", "ex": "Completing a marathon is a formidable physical challenge for any runner.", "ex_vi": "Hoàn thành một cuộc chạy việt dã marathon là một thử thách thể chất ghê gớm đối với bất kỳ vận động viên nào."}, {"w": "race", "pos": "n", "ipa": "/reɪs/", "m": "cuộc đua (tranh tài tốc độ chạy, bơi, đua xe)", "ex": "He sprinted with tremendous determination to finish first in the hundred-meter race.", "ex_vi": "Cậu ấy đã bứt tốc với lòng quyết tâm phi thường để về đích đầu tiên trong cuộc đua một trăm mét."}, {"w": "rider", "pos": "n", "ipa": "/ˈraɪdə(r)/", "m": "người cưỡi ngựa, tay đua xe đạp hoặc xe máy", "ex": "The skilled bicycle rider navigated smoothly through the steep mountain roads.", "ex_vi": "Tay đua xe đạp điêu luyện đã điều khiển xe một cách êm ái qua những con đường núi dốc đứng."}, {"w": "stadium", "pos": "n", "ipa": "/ˈsteɪdiəm/", "m": "sân vận động (khu liên hợp thể thao có khán đài lớn)", "ex": "Spectators sang triumphantly as fireworks illuminated the night sky over the stadium.", "ex_vi": "Khán giả hát vang khúc ca chiến thắng khi pháo hoa thắp sáng bầu trời đêm trên sân vận động."}, {"w": "winner", "pos": "n", "ipa": "/ˈwɪnə(r)/", "m": "người chiến thắng, nhà vô địch cuộc thi", "ex": "The proud winner held the crystal trophy high above her head with a beaming smile.", "ex_vi": "Người chiến thắng đầy tự hào đã giơ cao chiếc cúp pha lê trên đầu với nụ cười rạng rỡ."}, {"w": "competition", "pos": "n", "ipa": "/ˌkɒmpəˈtɪʃ(ə)n/", "m": "cuộc thi, sự tranh tài thi đấu", "ex": "More than thirty schools sent their brightest students to take part in the science competition.", "ex_vi": "Hơn ba mươi trường học đã cử những học sinh xuất sắc nhất của họ tham gia cuộc thi khoa học."}, {"w": "prize", "pos": "n", "ipa": "/praɪz/", "m": "giải thưởng, phần thưởng vinh dự", "ex": "She was overjoyed to receive the prestigious first prize for her creative story.", "ex_vi": "Cô ấy vui mừng khôn xiết khi nhận được giải nhất danh giá cho câu chuyện sáng tạo của mình."}, {"w": "win", "pos": "v", "ipa": "/wɪn/", "m": "chiến thắng, đoạt giải, giành ngôi quán quân", "ex": "Through relentless perseverance and rigorous practice, our team managed to win the championship.", "ex_vi": "Nhờ vào sự bền bỉ không ngừng và quá trình luyện tập nghiêm ngặt, đội của chúng tôi đã giành chiến thắng chức vô địch."}, {"w": "take part (in)", "pos": "phr v", "ipa": "/teɪk pɑːt (ɪn)/", "m": "tham gia vào, góp mặt vào (hoạt động, giải đấu)", "ex": "All students are warmly encouraged to take part in school sports day and artistic contests.", "ex_vi": "Tất cả học sinh đều được nhiệt tình khuyến khích tham gia vào ngày hội thể thao của trường và các hội thi nghệ thuật."}, {"w": "Congratulations!", "pos": "excl", "ipa": "/kənˌɡrætʃuˈleɪʃ(ə)nz/", "m": "Chúc mừng! Xin chúc mừng! (lời chúc mừng thành công, thắng lợi)", "ex": "Congratulations! You thoroughly deserved to win the regional spelling bee contest.", "ex_vi": "Xin chúc mừng! Em hoàn toàn xứng đáng giành chiến thắng trong cuộc thi đánh vần cấp khu vực."}, {"w": "shine ─ shone ─ shone", "pos": "v", "ipa": "/ʃaɪn ─ ʃɒn ─ ʃɒn/", "m": "tỏa sáng, chiếu sáng rực rỡ; thể hiện tài năng xuất chúng", "ex": "The golden autumn sun began to shine brightly across the sports arena, inspiring all participants.", "ex_vi": "Ánh nắng vàng mùa thu bắt đầu tỏa sáng rực rỡ khắp đấu trường thể thao, truyền cảm hứng cho tất cả người tham gia."}];
+        const PHONETICS_QS = [{"id": "p1", "q": "Choose the word whose underlined part is pronounced differently from that of the others.", "opts": ["A. pr<u>i</u>ze", "B. r<u>i</u>der", "C. t<u>i</u>ny", "D. m<u>i</u>ss"], "ans": 3, "exp": "D đúng. 'miss' có chữ 'i' phát âm là /ɪ/ (/mɪs/), trong khi các từ còn lại có 'i' phát âm là /aɪ/: 'prize' (/praɪz/), 'rider' (/ˈraɪdə(r)/), 'tiny' (/ˈtaɪni/)."}, {"id": "p2", "q": "Choose the word whose underlined part is pronounced differently from that of the others.", "opts": ["A. e<u>x</u>ist", "B. e<u>x</u>tinct", "C. e<u>x</u>plain", "D. e<u>x</u>pert"], "ans": 0, "exp": "A đúng. 'exist' có chữ 'x' được phát âm là /ɡz/ (/ɪɡˈzɪst/), trong khi các từ còn lại có chữ 'x' được phát âm là /ks/: 'extinct' (/ɪkˈstɪŋkt/), 'explain' (/ɪkˈspleɪn/), 'expert' (/ˈekspɜːt/)."}, {"id": "p3", "q": "Choose the word that differs from the other three in the position of primary stress.", "opts": ["A. winner", "B. hero", "C. extinct", "D. challenge"], "ans": 2, "exp": "C đúng. 'extinct' có trọng âm rơi vào âm tiết thứ 2 (/ɪkˈstɪŋkt/), trong khi các từ còn lại đều có trọng âm rơi vào âm tiết thứ 1: 'winner' (/ˈwɪnə(r)/), 'hero' (/ˈhɪərəʊ/), 'challenge' (/ˈtʃælɪndʒ/)."}, {"id": "p4", "q": "Choose the word that differs from the other three in the position of primary stress.", "opts": ["A. several", "B. stadium", "C. enormous", "D. dinosaur"], "ans": 2, "exp": "C đúng. 'enormous' có trọng âm rơi vào âm tiết thứ 2 (/ɪˈnɔːməs/), trong khi các từ còn lại đều có trọng âm rơi vào âm tiết thứ 1: 'several' (/ˈsev(ə)rəl/), 'stadium' (/ˈsteɪdiəm/), 'dinosaur' (/ˈdaɪnəsɔː(r)/)."}, {"id": "p5", "q": "Choose the word that differs from the other three in the position of primary stress.", "opts": ["A. biography", "B. photography", "C. geography", "D. competition"], "ans": 3, "exp": "D đúng. 'competition' có trọng âm rơi vào âm tiết thứ 3 (/ˌkɒmpəˈtɪʃ(ə)n/), trong khi các danh từ có hậu tố -graphy còn lại đều có trọng âm rơi vào âm tiết thứ 2: 'biography' (/baɪˈɒɡrəfi/), 'photography' (/fəˈtɒɡrəfi/), 'geography' (/dʒiˈɒɡrəfi/)."}];
+        const GRAMMAR_QS = [{"id": "g1", "q": "The school football team hasn't announced the starting lineup for the championship match ______.", "opts": ["A. already", "B. yet", "C. just", "D. ever"], "ans": 1, "exp": "B đúng. 'yet' đứng ở cuối câu phủ định trong thì Hiện tại hoàn thành để diễn tả việc chưa xảy ra tính đến thời điểm nói. 'already' thường dùng trong câu khẳng định, 'just' đứng giữa have/has và V3, 'ever' dùng trong câu hỏi hoặc cấu trúc so sánh hơn nhất."}, {"id": "g2", "q": "All the teachers warmly offered their congratulations to Minh ______ winning the first prize in the national English competition.", "opts": ["A. for", "B. on", "C. with", "D. at"], "ans": 1, "exp": "B đúng. Cấu trúc cố định: 'congratulations to somebody on (doing) something' hoặc 'congratulate somebody on (doing) something' (chúc mừng ai về thành tích hoặc sự kiện gì)."}, {"id": "g3", "q": "Over two hundred young athletes from various districts gathered to take ______ in the annual cross-country race.", "opts": ["A. place", "B. part", "C. care", "D. turn"], "ans": 1, "exp": "B đúng. Cụm động từ cố định 'take part in' = participate in (tham gia vào một cuộc thi hoặc hoạt động). Các cụm từ khác: take place (diễn ra), take care of (chăm sóc), take turns (thay phiên nhau)."}, {"id": "g4", "q": "Look at the giant electronic scoreboard! Our school runner ______ crossed the finish line in first place!", "opts": ["A. has just", "B. just has", "C. is just", "D. was just"], "ans": 0, "exp": "A đúng. Trạng từ 'just' (vừa mới) đứng giữa trợ động từ 'have/has' và quá khứ phân từ 'crossed' trong thì Hiện tại hoàn thành: 'has just crossed' diễn tả hành động vừa mới xảy ra tức thì."}, {"id": "g5", "q": "When living at the boarding school, Lan really misses ______ dinner with her family every evening.", "opts": ["A. have", "B. having", "C. to have", "D. had"], "ans": 1, "exp": "B đúng. Động từ 'miss' khi mang nghĩa nhớ nhung việc gì đó đòi hỏi danh động từ theo sau: 'miss doing something' (nhớ việc làm gì đó)."}, {"id": "g6", "q": "Scientists proved that woolly mammoths and aurochs ______ thousands of years ago due to severe climate change and human hunting.", "opts": ["A. became extinct", "B. are becoming extinct", "C. have become extinct", "D. become extinct"], "ans": 0, "exp": "A đúng. Ngữ cảnh có trạng ngữ thời gian xác định trong quá khứ xa xưa ('thousands of years ago'), do đó mệnh đề phải chia ở thì Quá khứ đơn: 'became extinct' (đã bị tuyệt chủng)."}, {"id": "g7", "q": "There are ______ historical biographies in the local library that detail the heroic achievements of our national heroes.", "opts": ["A. much", "B. each", "C. several", "D. a little"], "ans": 2, "exp": "C đúng. 'biographies' là danh từ đếm được số nhiều, nên chỉ có 'several' (một vài, một số) là lượng từ đi kèm phù hợp. 'much' và 'a little' đi với danh từ không đếm được, 'each' đi với danh từ đếm được số ít."}, {"id": "g8", "q": "(Tìm lỗi sai) She <u>hasn't</u>(A) finished <u>reading</u>(B) the fascinating biography of the Olympic <u>winner</u>(C) <u>already</u>(D).", "opts": ["A. hasn't", "B. reading", "C. winner", "D. already"], "ans": 3, "exp": "D đúng. Trong câu phủ định ở thì Hiện tại hoàn thành ('hasn't finished...'), trạng từ đứng ở cuối câu phải là 'yet' chứ không dùng 'already'. Sửa 'already' thành 'yet'."}, {"id": "g9", "q": "(Tìm lỗi sai) The brave <u>rider</u>(A) was proud <u>for</u>(B) receiving the silver trophy after <u>finishing</u>(C) the grueling <u>race</u>(D).", "opts": ["A. rider", "B. for", "C. finishing", "D. race"], "ans": 1, "exp": "B đúng. Cấu trúc tính từ: 'be proud of (doing) something' (tự hào về điều gì), không dùng giới từ 'for'. Sửa 'proud for' thành 'proud of'."}, {"id": "g10", "q": "(Tìm lỗi sai) Thousands of excited <u>spectators</u>(A) <u>were cheering</u>(B) enthusiastically when the athlete <u>crosses</u>(C) the finish line in the <u>stadium</u>(D).", "opts": ["A. spectators", "B. were cheering", "C. crosses", "D. stadium"], "ans": 2, "exp": "C đúng. Sự phối hợp thì trong quá khứ với liên từ 'when': một hành động đang diễn ra ('were cheering') thì một hành động khác xen vào phải chia ở thì Quá khứ đơn ('crossed'). Sửa 'crosses' thành 'crossed'."}];
+        const READING_QS = [{"id": "r1", "q": "What is the primary focus of the passage?", "opts": ["A. The technological advancement of modern cable cars in mountainous areas.", "B. The historical extinction of prehistoric mammals and deer in the highlands.", "C. The inspiring victory and disciplined journey of an athlete in a challenging marathon.", "D. The architectural construction of an enormous sports stadium near the waterfront."], "ans": 2, "exp": "C đúng. Toàn bộ bài đọc tập trung khắc họa hành trình kiên trì và chiến thắng truyền cảm hứng của vận động viên Lucas Silva tại cuộc đua Golden Trail Challenge. Dẫn chứng: 'This year's ultimate winner was Lucas Silva, a modest distance runner whose remarkable life story reads like an inspiring biography.'"}, {"id": "r2", "q": "How can spectators reach the mountain peaks to watch the competitors?", "opts": ["A. By paddling boats along the waterfront.", "B. By riding a panoramic cable car.", "C. By renting trained mountain horses.", "D. By walking along the railway tracks."], "ans": 1, "exp": "B đúng. Khán giả có thể đi cáp treo ngắm cảnh để lên các đỉnh núi cổ vũ. Dẫn chứng: 'Spectators who prefer a scenic route can ride a panoramic cable car to cheer for their favourite competitors from mountain peaks.'"}, {"id": "r3", "q": "The word 'solo' in the second paragraph is closest in meaning to ______.", "opts": ["A. with a large coaching team", "B. by himself without others", "C. at a very slow pace", "D. under dangerous weather"], "ans": 1, "exp": "B đúng. 'solo' có nghĩa là làm điều gì đó một mình, đơn độc không có ai đi cùng ('by himself without others'). Dẫn chứng: 'Instead, he trained solo at dawn, jogging alongside wild deer through dense forests.'"}, {"id": "r4", "q": "According to the passage, where did Lucas spend his childhood training?", "opts": ["A. Inside a modern indoor stadium with professional facilities.", "B. Along the crowded waterfront of an amusement park.", "C. In a tiny mountain village running alongside nature and wildlife.", "D. On an overseas training campus with Olympic champions."], "ans": 2, "exp": "C đúng. Lucas lớn lên ở một ngôi làng miền núi nhỏ và tập chạy một mình cùng đàn hươu hoang dã trong rừng. Dẫn chứng: 'Lucas grew up in a tiny mountain village where paved running tracks did not exist. Instead, he trained solo at dawn, jogging alongside wild deer through dense forests.'"}, {"id": "r5", "q": "What historic achievement did Lucas accomplish in addition to winning first place?", "opts": ["A. He published an award-winning biography of his village.", "B. He set a new national speed record for the marathon.", "C. He became the youngest race director in the country.", "D. He designed a new cable car route for tourists."], "ans": 1, "exp": "B đúng. Ngoài việc giành vị trí quán quân, Lucas còn vừa mới thiết lập một kỷ lục tốc độ quốc gia mới. Dẫn chứng: 'Lucas had just set a new national speed record, proving that perseverance can turn impossible dreams into breathtaking reality.'"}];
+        const TRANSFORM_QS = [{"id": "t1", "origin": "The referee blew the final whistle a moment ago.", "prompt": "The referee has", "keywords": "The referee has just blown the final whistle", "exp": "Chuyển đổi từ thì Quá khứ đơn với 'a moment ago' sang thì Hiện tại hoàn thành với trạng từ 'just': 'S + V-ed + a moment ago' chuyển thành 'S + have/has + just + V3/V-ed'. Câu viết lại hoàn chỉnh: 'The referee has just blown the final whistle.' (Trọng tài vừa mới thổi còi mãn cuộc)."}, {"id": "t2", "origin": "My sister started writing her biography last year, but she hasn't finished it.", "prompt": "My sister hasn't", "keywords": "My sister hasn't finished writing her biography yet", "exp": "Cấu trúc câu phủ định ở thì Hiện tại hoàn thành với trạng từ 'yet' đứng ở cuối câu: 'S + hasn't/haven't + V3/V-ed + (O) + yet'. Câu viết lại hoàn chỉnh: 'My sister hasn't finished writing her biography yet.' (Chị gái tôi vẫn chưa viết xong cuốn tiểu sử của mình)."}, {"id": "t3", "origin": "More than fifty skilled cyclists took part in the mountain race yesterday.", "prompt": "More than fifty skilled cyclists participated", "keywords": "More than fifty skilled cyclists participated in the mountain race yesterday", "exp": "Chuyển đổi cụm từ đồng nghĩa: 'take part in' tương đương với 'participate in' (tham gia vào). Ở thì Quá khứ đơn: 'took part in' chuyển thành 'participated in'. Câu viết lại hoàn chỉnh: 'More than fifty skilled cyclists participated in the mountain race yesterday.' (Hơn năm mươi tay đua xe đạp điêu luyện đã tham gia vào cuộc đua vượt núi ngày hôm qua)."}, {"id": "t4", "origin": "It is an enormous challenge for any amateur runner to complete a fifty-kilometer marathon.", "prompt": "Completing", "keywords": "Completing a fifty-kilometer marathon is an enormous challenge for any amateur runner", "exp": "Chuyển đổi cấu trúc chủ ngữ giả 'It is + Noun phrase + (for sb) + to-V' sang danh động từ làm chủ ngữ 'V-ing + is + Noun phrase + (for sb)'. Câu viết lại hoàn chỉnh: 'Completing a fifty-kilometer marathon is an enormous challenge for any amateur runner.' (Hoàn thành một cuộc chạy việt dã 50 km là một thử thách to lớn đối với bất kỳ vận động viên nghiệp dư nào)."}];
+        const SPEAKING_QS = [{"q": "Have you ever taken part in a sports competition or school contest? Tell me about your experience.", "sample": "Last semester, I took part in our school's table tennis competition and trained rigorously for several weeks. Although I only won the bronze medal instead of the first prize, the experience taught me valuable lessons about sportsmanship and staying calm under pressure.", "tip": "Khi trả lời về trải nghiệm tham gia thi đấu (competition), thí sinh nên áp dụng thì Hiện tại hoàn thành để mở đầu, sau đó chuyển sang Quá khứ đơn để thuật lại diễn biến cụ thể. Hãy bổ sung cảm xúc cá nhân và bài học rút ra (sportsmanship, perseverance) để bài nói sâu sắc và đạt điểm tối đa tiêu chí Fluency & Coherence."}, {"q": "In your opinion, what qualities make someone a true hero in modern society?", "sample": "In my opinion, a true hero is not someone with superhuman abilities, but an ordinary person who shows enormous courage and selflessness to help others. For example, brave firefighters and dedicated doctors who risk their own lives during emergencies are genuine heroes who deserve our utmost respect.", "tip": "Với câu hỏi định nghĩa hoặc quan điểm về 'hero' (người anh hùng thời hiện đại), thí sinh nên tránh lối trả lời ngắn hoặc chỉ nhắc tới siêu anh hùng giả tưởng. Hãy nêu rõ các phẩm chất cốt lõi (courage, selflessness, dedication) kèm theo ví dụ cụ thể từ đời thực (firefighters, doctors) để thể hiện tư duy phản biện và vốn từ học thuật phong phú."}];
+
+        // Theme management
+        function initTheme() {
+            const saved = localStorage.getItem('clc_theme') || 'paper';
+            document.body.setAttribute('data-theme', saved);
+        }
+        function toggleTheme() {
+            const cur = document.body.getAttribute('data-theme') || 'paper';
+            const next = cur === 'paper' ? 'dark' : 'paper';
+            document.body.setAttribute('data-theme', next);
+            localStorage.setItem('clc_theme', next);
+        }
+        initTheme();
+
+        // Scroll mode
+        function toggleScrollMode() {
+            const isFull = document.body.classList.toggle('full-scroll-mode');
+            const btn = document.querySelector('.mode-btn');
+            if (btn) btn.innerText = isFull ? 'Chế độ: Cuộn Toàn Trang' : 'Chế độ: Tab';
+        }
+
+        // Tabs
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+            const targetContent = document.getElementById('tab-' + tabId);
+            if (targetContent) targetContent.classList.add('active');
+            if (window.event && window.event.target) {
+                window.event.target.classList.add('active');
+            }
+        }
+
+        // Web Speech Audio
+        function speakText(text) {
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+                const u = new SpeechSynthesisUtterance(text);
+                u.lang = 'en-US';
+                u.rate = 0.88;
+                window.speechSynthesis.speak(u);
+            }
+        }
+
+        // Flashcards
+        let currentCardIdx = 0;
+        let currentWord = VOCAB_LIST[0];
+
+        function updateFlashcard() {
+            currentWord = VOCAB_LIST[currentCardIdx];
+            document.getElementById('fcPos').innerText = currentWord.pos;
+            document.getElementById('fcWord').innerText = currentWord.w;
+            document.getElementById('fcIpa').innerText = currentWord.ipa;
+            document.getElementById('fcMean').innerText = currentWord.m;
+            document.getElementById('fcEx').innerText = `"${currentWord.ex}"`;
+            document.getElementById('fcExVi').innerText = currentWord.ex_vi || '';
+            document.getElementById('fcCounter').innerText = `Từ ${currentCardIdx + 1} / ${VOCAB_LIST.length}`;
+            document.getElementById('fcCard').classList.remove('flipped');
+        }
+
+        function flipFlashcard() {
+            document.getElementById('fcCard').classList.toggle('flipped');
+        }
+
+        function nextCard() {
+            currentCardIdx = (currentCardIdx + 1) % VOCAB_LIST.length;
+            updateFlashcard();
+        }
+
+        function prevCard() {
+            currentCardIdx = (currentCardIdx - 1 + VOCAB_LIST.length) % VOCAB_LIST.length;
+            updateFlashcard();
+        }
+
+        function randomCard() {
+            currentCardIdx = Math.floor(Math.random() * VOCAB_LIST.length);
+            updateFlashcard();
+        }
+
+        // Render Vocab Cards (IELTS grid style)
+        const vGrid = document.getElementById('vocabGrid');
+        VOCAB_LIST.forEach((item, idx) => {
+            vGrid.innerHTML += `
+                <div class="vocab-card">
+                    <div class="vocab-header">
+                        <span class="vocab-word">${item.w}</span>
+                        <div style="display:flex; align-items:center; gap:6px;">
+                            <span style="font-size:0.75rem; color:var(--text-muted); font-weight:700;">#${idx + 1}</span>
+                            <button class="vocab-audio-btn" onclick="speakText('${item.w}')" title="Nghe phát âm">🔊</button>
+                        </div>
+                    </div>
+                    <div class="vocab-ipa">${item.ipa}</div>
+                    <span class="vocab-colloc">${item.pos}</span>
+                    <div class="vocab-meaning">${item.m}</div>
+                    <div class="vocab-example">"${item.ex}"</div>
+                    <div style="font-size:0.8rem; color:var(--text-muted); margin-top:2px;">${item.ex_vi || ''}</div>
+                </div>
+            `;
+        });
+
+        // Question handling
+        let userAnswers = {};
+        let wrongList = [];
+
+        function renderQuestions(list, containerId) {
+            const container = document.getElementById(containerId);
+            list.forEach(q => {
+                let optsHtml = '';
+                q.opts.forEach((opt, idx) => {
+                    optsHtml += `
+                        <label class="option-label" id="lbl_${q.id}_${idx}" onclick="selectOption('${q.id}', ${idx}, ${q.ans})">
+                            <input type="radio" name="opt_${q.id}" value="${idx}">
+                            <span>${opt}</span>
+                        </label>
+                    `;
+                });
+                container.innerHTML += `
+                    <div class="question-item">
+                        <div class="question-title">${q.q}</div>
+                        <div class="options-grid">${optsHtml}</div>
+                        <div class="explanation" id="exp_${q.id}">💡 <b>Giải thích:</b> ${q.exp}</div>
+                    </div>
+                `;
+            });
+        }
+
+        renderQuestions(PHONETICS_QS, 'phoneticsQuestions');
+        renderQuestions(GRAMMAR_QS, 'grammarQuestions');
+        renderQuestions(READING_QS, 'readingQuestions');
+
+        // Transform questions
+        const tContainer = document.getElementById('transformQuestions');
+        TRANSFORM_QS.forEach(t => {
+            tContainer.innerHTML += `
+                <div class="transform-item">
+                    <div class="question-title"><strong>${t.origin}</strong></div>
+                    <div style="font-weight:700; color:var(--primary); font-size:0.95rem;">${t.prompt}</div>
+                    <input type="text" class="input-transform-ielts" id="in_${t.id}" placeholder="Gõ tiếp câu hoàn chỉnh tại đây...">
+                    <div style="display:flex; gap:10px; align-items:center; margin-top:6px;">
+                        <button class="btn-secondary" style="min-height:38px; padding:6px 14px; font-size:0.86rem;" onclick="checkTransform('${t.id}')">Kiểm Tra</button>
+                    </div>
+                    <div class="explanation" id="exp_${t.id}">💡 <b>Giải thích:</b> ${t.exp}</div>
+                </div>
+            `;
+        });
+
+        // Speaking questions
+        const sContainer = document.getElementById('speakingQuestions');
+        SPEAKING_QS.forEach((s, idx) => {
+            sContainer.innerHTML += `
+                <div style="background:var(--panel-bg); padding:18px; border-radius:14px; margin-bottom:16px; border:1px solid var(--border);">
+                    <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:10px;">
+                        <strong style="font-size:1.02rem; color:var(--primary); line-height:1.4;">${s.q}</strong>
+                        <button class="vocab-audio-btn" onclick="speakText('${s.q.replace(/'/g, "\\'")}')" title="Nghe câu hỏi">🔊</button>
+                    </div>
+                    <div style="margin-top:12px; padding:12px 14px; background:var(--surface-color); border-radius:10px; border:1px solid var(--border);">
+                        <div style="font-weight:700; color:var(--success); font-size:0.92rem; margin-bottom:4px;">💡 Câu trả lời mẫu chuẩn CLC:</div>
+                        <div style="font-size:0.95rem; color:var(--text-main); font-style:italic; line-height:1.5;">"${s.sample}"</div>
+                        <div style="margin-top:10px; display:flex; align-items:center; gap:8px;">
+                            <button class="btn-fc-nav" style="padding:6px 14px; font-size:0.84rem;" onclick="speakText('${s.sample.replace(/'/g, "\\'")}')">🔊 Nghe Mẫu</button>
+                        </div>
+                    </div>
+                    <div style="font-size:0.84rem; color:var(--accent); margin-top:8px;">🎯 <b>Mẹo phỏng vấn:</b> ${s.tip}</div>
+                </div>
+            `;
+        });
+
+        function selectOption(qId, choiceIdx, correctIdx) {
+            if (userAnswers[qId] !== undefined) return;
+            userAnswers[qId] = choiceIdx;
+
+            const isCorrect = (choiceIdx === correctIdx);
+            const lbl = document.getElementById(`lbl_${qId}_${choiceIdx}`);
+            const correctLbl = document.getElementById(`lbl_${qId}_${correctIdx}`);
+            const exp = document.getElementById(`exp_${qId}`);
+
+            if (isCorrect) {
+                if (lbl) lbl.classList.add('correct');
+            } else {
+                if (lbl) lbl.classList.add('wrong');
+                if (correctLbl) correctLbl.classList.add('correct');
+                wrongList.push({ id: qId, studentAns: choiceIdx, correctAns: correctIdx });
+            }
+
+            if (exp) exp.style.display = 'block';
+            updateScore();
+        }
+
+        function checkTransform(tId) {
+            const input = document.getElementById(`in_${tId}`);
+            const exp = document.getElementById(`exp_${tId}`);
+            const val = input.value.trim().toLowerCase().replace(/[.,!?;:]+$/, '');
+            const q = TRANSFORM_QS.find(item => item.id === tId);
+
+            let matched = false;
+            for (let kw of q.keywords) {
+                if (val.includes(kw.toLowerCase())) {
+                    matched = true;
+                    break;
+                }
+            }
+
+            if (matched) {
+                input.style.borderColor = 'var(--success)';
+                input.style.backgroundColor = 'rgba(27, 135, 85, 0.08)';
+                userAnswers[tId] = 1;
+            } else {
+                input.style.borderColor = 'var(--danger)';
+                input.style.backgroundColor = 'rgba(192, 57, 43, 0.08)';
+                userAnswers[tId] = 0;
+                wrongList.push({ id: tId, studentAns: val, exp: q.exp });
+            }
+            if (exp) exp.style.display = 'block';
+            updateScore();
+        }
+
+        function updateScore() {
+            let score = 0;
+            PHONETICS_QS.forEach(q => { if (userAnswers[q.id] === q.ans) score += 1; });
+            GRAMMAR_QS.forEach(q => { if (userAnswers[q.id] === q.ans) score += 1; });
+            READING_QS.forEach(q => { if (userAnswers[q.id] === q.ans) score += 1; });
+            TRANSFORM_QS.forEach(t => { if (userAnswers[t.id] === 1) score += 1; });
+            document.getElementById('scoreBadge').innerText = `Điểm Đạt: ${score} / 24`;
+        }
+
+        function submitAndSyncProgress() {
+            let score = 0;
+            let total = 24;
+            PHONETICS_QS.forEach(q => { if (userAnswers[q.id] === q.ans) score += 1; });
+            GRAMMAR_QS.forEach(q => { if (userAnswers[q.id] === q.ans) score += 1; });
+            READING_QS.forEach(q => { if (userAnswers[q.id] === q.ans) score += 1; });
+            TRANSFORM_QS.forEach(t => { if (userAnswers[t.id] === 1) score += 1; });
+
+            const payload = {
+                unit: UNIT_INFO.title,
+                unit_id: UNIT_INFO.unit_num,
+                score: score,
+                total: total,
+                percentage: Math.round((score / total) * 100),
+                wrong_questions: wrongList
+            };
+
+            fetch('/api/sync_progress', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            })
+            .then(res => res.json())
+            .then(data => {
+                alert(`🎉 Chúc mừng con đã hoàn thành ${UNIT_INFO.title}!\nĐiểm số: ${score} / ${total} (${payload.percentage}%)\nKết quả đã tự động lưu vào sổ theo dõi học tập!`);
+            })
+            .catch(() => {
+                alert(`🎉 Con đã làm được ${score} / ${total} điểm!\n(Nhấp chạy MO_SERVER_CHO_IPHONE.bat để tự động đồng bộ kết quả lên hệ thống nhé).`);
+            });
+        }
+
+        function resetUnitAnswers() {
+            if (confirm("Con có muốn làm lại toàn bộ câu hỏi trong Unit này không?")) {
+                location.reload();
+            }
+        }
+
+        // Initialize flashcard
+        updateFlashcard();
+    </script>
+</body>
+</html>

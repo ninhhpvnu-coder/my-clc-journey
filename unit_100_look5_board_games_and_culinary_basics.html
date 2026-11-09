@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="vi" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <script>document.documentElement.classList.remove("no-js");</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Unit 100: Mind Sports, Nomadic Life & Culinary Basics">
+    <title>Unit 100: Mind Sports, Nomadic Life & Culinary Basics — CLC English Mastery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- Academic Paper Cream Theme (Default ☀️) --- */
+        :root, [data-theme="paper"] {
+            --bg-color: #fbf4ea;
+            --surface-color: #ffffff;
+            --surface-hover: #fffdf9;
+            --card-color: #ffffff;
+            --panel-bg: #fdfaf5;
+            --bar-bg: #ffffff;
+            --primary: #14324d;
+            --primary-hover: #1d4367;
+            --accent: #a35d2b;
+            --accent-hover: #8c471c;
+            --success: #1b8755;
+            --warning: #b45309;
+            --danger: #c0392b;
+            --text-main: #14324d;
+            --text-muted: #4a607a;
+            --border: #eadccb;
+            --card-shadow: 0 4px 18px rgba(20, 50, 77, 0.05);
+            --header-bg: linear-gradient(135deg, #ffffff 0%, #fbf4ea 100%);
+            --option-bg: #ffffff;
+            --input-bg: #fdfbf7;
+            --tab-active-bg: #14324d;
+            --tab-active-color: #ffffff;
+            --vocab-ipa-color: #a35d2b;
+            --vocab-colloc-color: #8c471c;
+            --vocab-colloc-bg: rgba(163, 93, 43, 0.1);
+            --vocab-colloc-border: rgba(163, 93, 43, 0.25);
+            --vocab-btn-bg: rgba(20, 50, 77, 0.07);
+            --vocab-btn-border: rgba(20, 50, 77, 0.2);
+            --eval-box-bg: #ffffff;
+        }
+
+        /* --- Midnight Navy Dark Theme (Optional 🌙) --- */
+        [data-theme="dark"] {
+            --bg-color: #0b1120;
+            --surface-color: #1e293b;
+            --surface-hover: #243247;
+            --card-color: #1e293b;
+            --panel-bg: rgba(15, 23, 42, 0.75);
+            --bar-bg: rgba(15, 23, 42, 0.9);
+            --primary: #38bdf8;
+            --primary-hover: #0ea5e9;
+            --accent: #c5855d;
+            --accent-hover: #dca07b;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #f43f5e;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border: #334155;
+            --card-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.5);
+            --header-bg: linear-gradient(135deg, rgba(30, 41, 59, 0.95), rgba(15, 23, 42, 0.95));
+            --option-bg: rgba(30, 41, 59, 0.8);
+            --input-bg: #0b1120;
+            --tab-active-bg: var(--primary);
+            --tab-active-color: #0b1120;
+            --vocab-ipa-color: #38bdf8;
+            --vocab-colloc-color: #f59e0b;
+            --vocab-colloc-bg: rgba(245, 158, 11, 0.08);
+            --vocab-colloc-border: rgba(245, 158, 11, 0.2);
+            --vocab-btn-bg: rgba(56, 189, 248, 0.15);
+            --vocab-btn-border: rgba(56, 189, 248, 0.3);
+            --eval-box-bg: rgba(15, 23, 42, 0.9);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 12px 10px 50px 10px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        @media (min-width: 768px) {
+            body {
+                padding: 24px 20px 60px 20px;
+            }
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1080px;
+            margin: 0 auto;
+        }
+
+        /* Header matching IELTS-Mastery-Kit */
+        header {
+            margin-bottom: 20px;
+            padding: 18px 20px;
+            background: var(--header-bg);
+            border-radius: 18px;
+            border: 1.5px solid var(--border);
+            box-shadow: var(--card-shadow);
+            position: relative;
+        }
+
+        .header-top-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .nav-back-link {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.88rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--surface-color);
+            border: 1px solid var(--border);
+            padding: 6px 14px;
+            border-radius: 999px;
+            transition: all 0.2s;
+        }
+
+        .nav-back-link:hover {
+            background: var(--primary);
+            color: var(--tab-active-color);
+        }
+
+        .header-controls {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .theme-toggle-btn, .mode-btn {
+            background: var(--surface-color);
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .theme-toggle-btn:hover, .mode-btn:hover {
+            color: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .badge-pill {
+            display: inline-block;
+            background: var(--vocab-colloc-bg);
+            color: var(--accent);
+            border: 1px solid var(--vocab-colloc-border);
+            padding: 4px 12px;
+            border-radius: 9999px;
+            font-weight: 800;
+            font-size: 0.78rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+
+        h1.unit-main-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.45rem;
+            color: var(--primary);
+            margin-bottom: 4px;
+            line-height: 1.3;
+            font-weight: 800;
+        }
+
+        @media (min-width: 768px) {
+            h1.unit-main-title {
+                font-size: 2rem;
+            }
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 0.88rem;
+            line-height: 1.45;
+        }
+
+        /* Tabs Navigation */
+        .tabs {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 20px;
+            overflow-x: auto;
+            padding-bottom: 6px;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .tab-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--surface-color);
+            border: 1.5px solid var(--border);
+            color: var(--text-muted);
+            padding: 10px 18px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 0.88rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+            flex-shrink: 0;
+            min-height: 44px;
+        }
+
+        .tab-btn:hover {
+            color: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .tab-btn.active {
+            background: var(--tab-active-bg);
+            color: var(--tab-active-color);
+            border-color: var(--tab-active-bg);
+            box-shadow: 0 4px 14px rgba(20, 50, 77, 0.15);
+        }
+
+        [data-theme="dark"] .tab-btn.active {
+            box-shadow: 0 0 15px rgba(56, 189, 248, 0.35);
+        }
+
+        .tab-content {
+            display: none;
+            background: var(--surface-color);
+            border: 1.5px solid var(--border);
+            border-radius: 18px;
+            padding: 20px 16px;
+            margin-bottom: 25px;
+            box-shadow: var(--card-shadow);
+        }
+
+        @media (min-width: 768px) {
+            .tab-content {
+                padding: 28px;
+            }
+        }
+
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.25s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(6px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Full Page Scroll Mode */
+        body.full-scroll-mode .tab-content {
+            display: block !important;
+            margin-bottom: 28px !important;
+        }
+
+        h2.section-heading {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.25rem;
+            margin-bottom: 18px;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            line-height: 1.35;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 10px;
+            font-weight: 700;
+        }
+
+        /* 3D FLASHCARD FLIP COMPONENT */
+        .flashcard-hero-box {
+            background: var(--panel-bg);
+            border: 1.5px solid var(--border);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        .flashcard-3d-scene {
+            perspective: 1000px;
+            width: 100%;
+            max-width: 500px;
+            height: 250px;
+            margin: 16px auto;
+            cursor: pointer;
+        }
+
+        .flashcard-3d-card {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
+            transform-style: preserve-3d;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(20, 50, 77, 0.1);
+        }
+
+        .flashcard-3d-card.flipped {
+            transform: rotateY(180deg);
+        }
+
+        .fc-side {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 24px;
+            border-radius: 16px;
+            background: var(--surface-color);
+            border: 2px solid var(--border);
+        }
+
+        .fc-back {
+            background: var(--panel-bg);
+            border-color: var(--accent);
+            transform: rotateY(180deg);
+        }
+
+        .fc-pos-tag {
+            background: var(--vocab-colloc-bg);
+            color: var(--accent);
+            border: 1px solid var(--vocab-colloc-border);
+            padding: 3px 12px;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .fc-main-word {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+
+        .fc-ipa-text {
+            font-family: monospace;
+            font-size: 1.15rem;
+            color: var(--vocab-ipa-color);
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .fc-mean-viet {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--success);
+            margin-bottom: 10px;
+        }
+
+        .fc-example-text {
+            font-size: 0.95rem;
+            color: var(--text-main);
+            font-style: italic;
+            margin-bottom: 4px;
+        }
+
+        .fc-example-viet {
+            font-size: 0.86rem;
+            color: var(--text-muted);
+        }
+
+        .fc-ctrl-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 14px;
+            flex-wrap: wrap;
+        }
+
+        .btn-fc-nav {
+            background: var(--surface-color);
+            color: var(--text-main);
+            border: 1.5px solid var(--border);
+            padding: 9px 18px;
+            border-radius: 999px;
+            font-weight: 700;
+            font-size: 0.88rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-fc-nav:hover {
+            background: var(--primary);
+            color: var(--tab-active-color);
+            border-color: var(--primary);
+        }
+
+        /* EXACT IELTS VOCABULARY GRID */
+        .vocab-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+            margin-top: 14px;
+        }
+
+        @media (min-width: 640px) {
+            .vocab-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 14px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .vocab-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 16px;
+            }
+        }
+
+        .vocab-card {
+            background: var(--surface-color);
+            border: 1.5px solid var(--border);
+            border-radius: 14px;
+            padding: 16px;
+            transition: all 0.25s ease;
+            position: relative;
+            box-shadow: var(--card-shadow);
+        }
+
+        .vocab-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(20, 50, 77, 0.08);
+        }
+
+        [data-theme="dark"] .vocab-card:hover {
+            border-color: rgba(56, 189, 248, 0.5);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+        }
+
+        .vocab-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .vocab-word {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 800;
+            color: var(--primary);
+        }
+
+        .vocab-audio-btn {
+            background: var(--vocab-btn-bg);
+            border: 1.5px solid var(--vocab-btn-border);
+            color: var(--primary);
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+            flex-shrink: 0;
+        }
+
+        .vocab-audio-btn:hover, .vocab-audio-btn:active {
+            background: var(--primary);
+            color: var(--tab-active-color);
+            transform: scale(1.08);
+        }
+
+        .vocab-ipa {
+            font-size: 0.88rem;
+            color: var(--vocab-ipa-color);
+            font-family: monospace;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .vocab-meaning {
+            font-weight: 700;
+            color: var(--text-main);
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+        }
+
+        .vocab-colloc {
+            font-size: 0.82rem;
+            color: var(--vocab-colloc-color);
+            background: var(--vocab-colloc-bg);
+            border: 1px solid var(--vocab-colloc-border);
+            padding: 4px 8px;
+            border-radius: 6px;
+            margin-bottom: 6px;
+            line-height: 1.35;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        .vocab-example {
+            font-size: 0.84rem;
+            color: var(--text-muted);
+            font-style: italic;
+            line-height: 1.45;
+            border-top: 1px solid var(--border);
+            padding-top: 6px;
+            margin-top: 6px;
+        }
+
+        /* EXACT IELTS QUIZ STYLING */
+        .question-item {
+            margin-bottom: 20px;
+            padding-bottom: 18px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .question-title {
+            font-weight: 600;
+            margin-bottom: 12px;
+            font-size: 0.98rem;
+            line-height: 1.5;
+            color: var(--text-main);
+        }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        @media (min-width: 600px) {
+            .options-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+        }
+
+        .option-label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--option-bg);
+            border: 1.5px solid var(--border);
+            color: var(--text-main);
+            padding: 10px 14px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 0.92rem;
+            min-height: 46px;
+            transition: all 0.2s;
+        }
+
+        .option-label:hover {
+            border-color: var(--primary);
+            background: rgba(56, 189, 248, 0.05);
+        }
+
+        .option-label.correct {
+            background: rgba(27, 135, 85, 0.12) !important;
+            border-color: var(--success) !important;
+            color: var(--success);
+            font-weight: 700;
+        }
+
+        .option-label.wrong {
+            background: rgba(192, 57, 43, 0.1) !important;
+            border-color: var(--danger) !important;
+            color: var(--danger);
+            font-weight: 700;
+        }
+
+        .explanation {
+            display: none;
+            font-size: 0.88rem;
+            padding: 12px 14px;
+            border-radius: 8px;
+            margin-top: 10px;
+            line-height: 1.5;
+            background: var(--panel-bg);
+            border-left: 4px solid var(--primary);
+            color: var(--text-main);
+        }
+
+        /* TRANSFORMATION */
+        .transform-item {
+            margin-bottom: 20px;
+            padding-bottom: 18px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .input-transform-ielts {
+            width: 100%;
+            background: var(--input-bg);
+            border: 1.5px solid var(--border);
+            color: var(--text-main);
+            padding: 12px 14px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-family: inherit;
+            margin: 8px 0;
+            transition: border-color 0.2s;
+        }
+
+        .input-transform-ielts:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        /* READING DUAL BOX */
+        .reading-dual-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 820px) {
+            .reading-dual-grid {
+                grid-template-columns: 1.15fr 1fr;
+            }
+        }
+
+        .passage-card {
+            background: var(--panel-bg);
+            border: 1.5px solid var(--border);
+            border-radius: 14px;
+            padding: 20px;
+            font-size: 1rem;
+            line-height: 1.7;
+            max-height: 520px;
+            overflow-y: auto;
+        }
+
+        /* ACTION BAR & CONTROLS */
+        .action-bar {
+            margin-top: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: stretch;
+        }
+
+        @media (min-width: 640px) {
+            .action-bar {
+                flex-direction: row;
+                align-items: center;
+                gap: 14px;
+            }
+        }
+
+        .btn-primary {
+            background: var(--btn-launch-bg, var(--primary));
+            color: var(--btn-launch-color, #ffffff);
+            font-weight: 800;
+            border: none;
+            padding: 14px 28px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 1rem;
+            min-height: 48px;
+            text-align: center;
+            transition: all 0.2s;
+            box-shadow: 0 4px 14px rgba(20, 50, 77, 0.15);
+        }
+
+        .btn-primary:hover {
+            filter: brightness(1.1);
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background: var(--surface-color);
+            color: var(--text-main);
+            border: 1.5px solid var(--border);
+            padding: 12px 20px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 0.92rem;
+            min-height: 48px;
+            text-align: center;
+            transition: all 0.2s;
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .score-pill {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: var(--primary);
+            background: var(--vocab-colloc-bg);
+            padding: 10px 18px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            text-align: center;
+        }
+
+        @media (min-width: 640px) {
+            .score-pill {
+                margin-left: auto;
+            }
+        }
+    </style>
+</head>
+<body data-theme="paper">
+
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+            <div class="header-top-row">
+                <a href="index.html" class="nav-back-link">← Quay Lại Mục Lục Hub</a>
+                <div class="header-controls">
+                    <button class="mode-btn" onclick="toggleScrollMode()">Chế độ: Tab</button>
+                    <button class="theme-toggle-btn" onclick="toggleTheme()">🌓 Đổi Giao Diện</button>
+                </div>
+            </div>
+            <div class="badge-pill">Level 5: Band 8.0 — 9.0 (Thành Thạo Đỉnh Cao & Hoàn Thiện Tuyển Sinh CLC)</div>
+            <h1 class="unit-main-title">Unit 100: Mind Sports, Nomadic Life & Culinary Basics</h1>
+            <p class="subtitle">Look 5: Từ 121 - 150 (unit 100)</p>
+        </header>
+
+        <!-- Tabs Navigation -->
+        <nav class="tabs" id="mainTabs">
+            <button class="tab-btn active" onclick="switchTab('vocab')">1. Từ Vựng (30 Từ Look)</button>
+            <button class="tab-btn" onclick="switchTab('phonetics')">2. Ngữ Âm (Phonetics)</button>
+            <button class="tab-btn" onclick="switchTab('grammar')">3. Ngữ Pháp & Bẫy Đề</button>
+            <button class="tab-btn" onclick="switchTab('reading')">4. Đọc Hiểu (Reading)</button>
+            <button class="tab-btn" onclick="switchTab('transform')">5. Viết Lại Câu</button>
+            <button class="tab-btn" onclick="switchTab('speaking')">6. Phỏng Vấn (Speaking)</button>
+        </nav>
+
+        <!-- TAB 1: 30 VOCABULARY + FLASHCARDS -->
+        <section id="tab-vocab" class="tab-content active">
+            <h2 class="section-heading">
+                <span>📖 30 Từ Vựng Trọng Tâm (Look Level 5)</span>
+                <span style="font-size:0.85rem; font-weight:normal; color:var(--text-muted);">Bấm 🔊 để nghe phát âm</span>
+            </h2>
+
+            <!-- 3D Flip Flashcard -->
+            <div class="flashcard-hero-box">
+                <div style="font-weight:700; color:var(--primary); font-size:1.05rem; margin-bottom:4px;">🎴 Thẻ Lật Flashcard 3D Thông Minh</div>
+                <p style="font-size:0.84rem; color:var(--text-muted);">(Chạm vào thẻ để lật xem nghĩa tiếng Việt & câu ví dụ mẫu)</p>
+                <div class="flashcard-3d-scene" onclick="flipFlashcard()">
+                    <div class="flashcard-3d-card" id="fcCard">
+                        <div class="fc-side fc-front">
+                            <span class="fc-pos-tag" id="fcPos">number</span>
+                            <div class="fc-main-word" id="fcWord">one</div>
+                            <div class="fc-ipa-text" id="fcIpa">/wʌn/</div>
+                            <button class="vocab-audio-btn" onclick="event.stopPropagation(); speakText(currentWord.w)" title="Nghe phát âm">🔊</button>
+                            <span style="font-size:0.75rem; color:var(--text-muted); margin-top:10px;">Chạm để lật thẻ ➔</span>
+                        </div>
+                        <div class="fc-side fc-back">
+                            <div class="fc-mean-viet" id="fcMean">số một (1)</div>
+                            <div class="fc-example-text" id="fcEx">"I have one apple in my bag."</div>
+                            <div class="fc-example-viet" id="fcExVi">Tôi có một quả táo trong cặp.</div>
+                            <div style="margin-top:10px;">
+                                <button class="btn-fc-nav" onclick="event.stopPropagation(); speakText(currentWord.ex)" title="Nghe đọc ví dụ">🔊 Nghe Ví Dụ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fc-ctrl-row">
+                    <button class="btn-fc-nav" onclick="prevCard()">← Từ Trước</button>
+                    <span id="fcCounter" style="font-weight:700; color:var(--primary); font-size:0.95rem; min-width:90px;">Từ 1 / 30</span>
+                    <button class="btn-fc-nav" onclick="nextCard()">Từ Sau →</button>
+                    <button class="btn-fc-nav" onclick="speakText(currentWord.w)">🔊 Phát Âm</button>
+                    <button class="btn-fc-nav" onclick="randomCard()">🔀 Ngẫu Nhiên</button>
+                </div>
+            </div>
+
+            <!-- Vocab Grid (Exact IELTS Cards) -->
+            <div class="vocab-grid" id="vocabGrid"></div>
+        </section>
+
+        <!-- TAB 2: PHONETICS LAB -->
+        <section id="tab-phonetics" class="tab-content">
+            <h2 class="section-heading">
+                <span>⚡ Phonetics Lab: Ngữ Âm & Trọng Âm Cốt Lõi (5 câu)</span>
+                <span style="font-size:0.85rem; font-weight:normal; color:var(--text-muted);">Mỗi câu 1 điểm</span>
+            </h2>
+            <div id="phoneticsQuestions"></div>
+        </section>
+
+        <!-- TAB 3: GRAMMAR & ERROR ID -->
+        <section id="tab-grammar" class="tab-content">
+            <h2 class="section-heading">
+                <span>⚙️ Grammar Mastery: Ngữ Pháp & Bẫy Đề Thi (10 câu)</span>
+                <span style="font-size:0.85rem; font-weight:normal; color:var(--text-muted);">Mỗi câu 1 điểm</span>
+            </h2>
+            <div id="grammarQuestions"></div>
+        </section>
+
+        <!-- TAB 4: READING LAB -->
+        <section id="tab-reading" class="tab-content">
+            <h2 class="section-heading">
+                <span>Mastering the Board on the Steppes: A Tale of Resilience and Strategy</span>
+                <button class="vocab-audio-btn" onclick="speakText(document.getElementById('readingPassage').innerText)" title="Nghe toàn bộ bài đọc">🔊</button>
+            </h2>
+            <div class="reading-dual-grid">
+                <div class="passage-card">
+                    <div id="readingPassage">Living on the sweeping grasslands of Central Asia, twelve-year-old Altan and his sister Sarangerel lead a life of remarkable resilience. During the bitter winter months, temperatures outside their traditional round ger can plummet to fifty degrees below zero, while summer brings burning sunshine across the dry steppe. Their nomadic family owns a wooden cart pulled by a sturdy ox, which helps them transport essential supplies and simple wooden furniture whenever they migrate. Inside the cozy ger, their mother prepares healthy meals using wholesome wheat flour, creamy yak butter, and sweet mountain honey, occasionally seasoning hearty stews with black pepper and dried herbs.
+
+Despite the remote wilderness, Sarangerel developed an extraordinary intellectual passion: she loves to play chess. Every evening after she turns off the solar lantern, she visualizes each (chess) piece moving across the sixty-four squares of the board. She trains intensely hard, sometimes playing completely blind against her brother to sharpen her mental concentration and spatial memory. Last month, Sarangerel decided to enter a competition organized in the national capital. Supported by her entire village, this gifted female prodigy hopes to represent her school in an international championship next year. Commentators agree that she is probably one of the most promising young minds in the country, proving that strategic brilliance can flourish anywhere.</div>
+                </div>
+                <div id="readingQuestions"></div>
+            </div>
+        </section>
+
+        <!-- TAB 5: SENTENCE TRANSFORMATION -->
+        <section id="tab-transform" class="tab-content">
+            <h2 class="section-heading">
+                <span>🔄 Sentence Transformation: Viết Lại Câu Không Đổi Nghĩa (4 câu)</span>
+                <span style="font-size:0.85rem; font-weight:normal; color:var(--accent);">Phân loại điểm 9-10</span>
+            </h2>
+            <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:18px;">Gõ câu viết lại hoàn chỉnh vào ô bên dưới rồi nhấn "Kiểm Tra":</p>
+            <div id="transformQuestions"></div>
+        </section>
+
+        <!-- TAB 6: SPEAKING / INTERVIEW -->
+        <section id="tab-speaking" class="tab-content">
+            <h2 class="section-heading">
+                <span>🎙️ Phỏng Vấn Vấn Đáp Tuyển Sinh CLC (Speaking)</span>
+                <span style="font-size:0.85rem; font-weight:normal; color:var(--text-muted);">Nghe phát âm chuẩn</span>
+            </h2>
+            <div id="speakingQuestions"></div>
+        </section>
+
+        <!-- Action Bar (Floating bottom) -->
+        <div class="action-bar">
+            <button class="btn-primary" onclick="submitAndSyncProgress()">💾 Nộp Bài & Đồng Bộ Tiến Độ Học Tập</button>
+            <button class="btn-secondary" onclick="resetUnitAnswers()">🔄 Làm Lại Từ Đầu</button>
+            <div class="score-pill" id="scoreBadge">Điểm Đạt: 0 / 24</div>
+        </div>
+
+    </div>
+
+    <script>
+        const UNIT_INFO = {"unit_num": "100", "title": "Unit 100: Mind Sports, Nomadic Life & Culinary Basics"};
+        const VOCAB_LIST = [{"w": "a.m.", "pos": "abbr", "ipa": "/ˌeɪ ˈem/", "m": "buổi sáng (trước 12 giờ trưa, tính từ nửa đêm)", "ex": "Our school morning assembly begins promptly at 8 a.m. every Monday.", "ex_vi": "Buổi sinh hoạt dưới cờ buổi sáng của trường chúng tôi bắt đầu đúng 8 giờ sáng thứ Hai hàng tuần."}, {"w": "p.m.", "pos": "abbr", "ipa": "/ˌpiː ˈem/", "m": "buổi chiều, buổi tối (từ 12 giờ trưa đến trước nửa đêm)", "ex": "The international chess championship will conclude at 5 p.m. tomorrow.", "ex_vi": "Giải vô địch cờ vua quốc tế sẽ bế mạc vào lúc 5 giờ chiều ngày mai."}, {"w": "chess", "pos": "n", "ipa": "/tʃes/", "m": "cờ vua (môn thể thao trí tuệ cho hai người chơi trên bàn cờ 64 ô)", "ex": "Grandmaster Alice loves to play chess against international opponents.", "ex_vi": "Đại kiện tướng Alice rất thích chơi cờ vua với các đối thủ quốc tế."}, {"w": "(chess) piece", "pos": "n", "ipa": "/(tʃes) piːs/", "m": "quân cờ (quân cờ vua dùng để di chuyển trên bàn cờ)", "ex": "He carefully positioned each (chess) piece on the dark wooden board.", "ex_vi": "Cậu ấy cẩn thận sắp xếp từng quân cờ trên bàn cờ gỗ sẫm màu."}, {"w": "board", "pos": "n", "ipa": "/bɔːd/", "m": "bàn cờ (mặt phẳng kẻ ô vuông dùng để chơi cờ vua)", "ex": "Both competitors looked intently at the checkered board before making their move.", "ex_vi": "Cả hai đấu thủ đều nhìn chăm chú vào bàn cờ ca rô trước khi thực hiện nước đi."}, {"w": "blind", "pos": "adj", "ipa": "/blaɪnd/", "m": "mù, khiếm thị (không thể nhìn thấy)", "ex": "The brave blind musician taught young children how to play classical piano.", "ex_vi": "Người nhạc sĩ khiếm thị dũng cảm đã dạy các em nhỏ cách chơi đàn dương cầm cổ điển."}, {"w": "international", "pos": "adj", "ipa": "/ˌɪntəˈnæʃ(ə)nəl/", "m": "quốc tế, toàn cầu (thuộc về hoặc liên quan đến nhiều quốc gia)", "ex": "Students from fifteen countries attended the prestigious international summit in Geneva.", "ex_vi": "Học sinh từ mười lăm quốc gia đã tham dự hội nghị thượng đỉnh quốc tế danh giá tại Geneva."}, {"w": "probably", "pos": "adv", "ipa": "/ˈprɒbəbli/", "m": "có lẽ, có thể, hầu như chắc chắn", "ex": "She will probably win the scholarship because of her outstanding academic performance.", "ex_vi": "Cô ấy có lẽ sẽ giành được học bổng nhờ vào thành tích học tập xuất sắc của mình."}, {"w": "female", "pos": "adj", "ipa": "/ˈfiːmeɪl/", "m": "nữ, thuộc về phái nữ hoặc giống cái", "ex": "Judit Polgar is considered the strongest female chess player in modern history.", "ex_vi": "Judit Polgar được xem là nữ kỳ thủ cờ vua mạnh nhất trong lịch sử hiện đại."}, {"w": "ring ─ rang ─ rung", "pos": "v", "ipa": "/rɪŋ ─ ræŋ ─ rʌŋ/", "m": "rung chuông, đổ chuông, reo chuông (điện thoại hoặc chuông báo)", "ex": "The old school bell will ring loudly across the courtyard at noon.", "ex_vi": "Tiếng chuông trường học cổ kính sẽ reo vang khắp sân trường vào đúng giữa trưa."}, {"w": "turn off", "pos": "phr v", "ipa": "/tɜːn ɒf/", "m": "tắt, ngắt nguồn (thiết bị điện, bếp, máy tính)", "ex": "Please remember to turn off your mobile phones before the examination starts.", "ex_vi": "Xin vui lòng nhớ tắt điện thoại di động của bạn trước khi kỳ thi bắt đầu."}, {"w": "hard", "pos": "adv", "ipa": "/hɑːd/", "m": "chăm chỉ, miệt mài, hết sức mình (nỗ lực cao độ)", "ex": "The dedicated athletes practiced extremely hard every afternoon to prepare for the tournament.", "ex_vi": "Các vận động viên tận tụy đã luyện tập vô cùng chăm chỉ mỗi buổi chiều để chuẩn bị cho giải đấu."}, {"w": "run", "pos": "n", "ipa": "/rʌn/", "m": "buổi chạy bộ, lượt chạy bộ", "ex": "My father goes for a brisk five-kilometer run around the tranquil lake every morning.", "ex_vi": "Bố tôi thực hiện một buổi chạy bộ năm cây số nhanh nhẹn quanh hồ nước yên bình mỗi buổi sáng."}, {"w": "burning", "pos": "adj", "ipa": "/bɜːnɪŋ/", "m": "nóng rực, gay gắt, thiêu đốt (nhiệt độ rất cao)", "ex": "The desert travelers sought shelter from the burning afternoon sun under a cluster of palm trees.", "ex_vi": "Những người lữ hành sa mạc tìm nơi trú ẩn khỏi ánh mặt trời buổi chiều gay gắt dưới một rặng cọ."}, {"w": "fifty degrees below", "pos": "phr", "ipa": "/ˈfɪfti dɪˈɡriːz ˈbɪˈləʊ/", "m": "âm năm mươi độ (nhiệt độ âm 50 độ C cực kỳ lạnh giá)", "ex": "Temperatures in the polar winter can plunge to fifty degrees below zero.", "ex_vi": "Nhiệt độ vào mùa đông vùng cực có thể giảm sâu xuống mức âm năm mươi độ C."}, {"w": "rainforest", "pos": "n", "ipa": "/ˈreɪnfɒrɪst/", "m": "rừng mưa nhiệt đới (khu rừng rậm ẩm ướt ở vùng khí hậu nhiệt đới)", "ex": "The Amazon rainforest is home to millions of rare plant and animal species.", "ex_vi": "Rừng mưa nhiệt đới Amazon là ngôi nhà của hàng triệu loài động thực vật quý hiếm."}, {"w": "unusual", "pos": "adj", "ipa": "/ʌnˈjuːʒuəl/", "m": "bất thường, khác thường, lạ lùng", "ex": "It is quite unusual for snow to fall in this tropical valley during December.", "ex_vi": "Khá là bất thường khi tuyết lại rơi ở thung lũng nhiệt đới này trong tháng Mười Hai."}, {"w": "hope", "pos": "v", "ipa": "/həʊp/", "m": "hy vọng, mong ước (tin rằng điều tốt đẹp có thể xảy ra)", "ex": "We sincerely hope that all endangered creatures will be preserved for future generations.", "ex_vi": "Chúng tôi chân thành hy vọng rằng muôn loài nguy cấp sẽ được bảo tồn cho các thế hệ tương lai."}, {"w": "enter a competition", "pos": "phr", "ipa": "/ˈentə(r) ə ˌkɒmpəˈtɪʃ(ə)n/", "m": "đăng ký tham gia một cuộc thi (ghi danh thi đấu)", "ex": "Our school choir decided to enter a competition organized by the municipal arts council.", "ex_vi": "Dàn hợp xướng trường chúng tôi đã quyết định đăng ký tham gia một cuộc thi do hội đồng nghệ thuật thành phố tổ chức."}, {"w": "trampoline", "pos": "n", "ipa": "/ˌtræmpəˈliːn/", "m": "bạt nhún lò xo (tấm bạt đàn hồi căng trên khung sắt để bật nhảy)", "ex": "The children spent a joyful afternoon bouncing energetically on the backyard trampoline.", "ex_vi": "Lũ trẻ đã trải qua một buổi chiều vui vẻ bật nhảy tràn đầy năng lượng trên tấm bạt nhún ở sân sau."}, {"w": "cart", "pos": "n", "ipa": "/kɑːt/", "m": "xe bò, xe ngựa kéo (xe hai hoặc bốn bánh thô sơ chở đồ)", "ex": "The rural farmer loaded heavy sacks of grain onto an old wooden cart.", "ex_vi": "Người nông dân vùng nông thôn chất những bao tải ngũ cốc nặng nề lên một cỗ xe gỗ thô sơ."}, {"w": "ger", "pos": "n", "ipa": "/ɡeə(r)/", "m": "lều yurt, lều ger (lều tròn truyền thống bằng nỉ của người du mục Mông Cổ)", "ex": "Nomadic families in Mongolia live comfortably inside a traditional round ger.", "ex_vi": "Các gia đình du mục ở Mông Cổ sinh sống thoải mái bên trong một túp lều tròn ger truyền thống."}, {"w": "ox", "pos": "n", "ipa": "/ɒks/", "m": "con bò đực (thường được thuần hóa và dùng để kéo cày, kéo xe)", "ex": "A strong ox was harnessed to plow the stubborn soil in the terraced field.", "ex_vi": "Một chú bò đực khỏe mạnh đã được thắng ách để cày xới lớp đất cằn cỗi trên thửa ruộng bậc thang."}, {"w": "furniture", "pos": "n", "ipa": "/ˈfɜːnɪtʃə(r)/", "m": "đồ đạc nội thất (bàn, ghế, tủ, giường trong nhà)", "ex": "The elegant dining room was decorated with antique wooden furniture imported from France.", "ex_vi": "Phòng ăn thanh lịch được bài trí bằng đồ nội thất gỗ cổ điển nhập khẩu từ Pháp."}, {"w": "healthy", "pos": "adj", "ipa": "/ˈhelθi/", "m": "lành mạnh, tốt cho sức khỏe; khỏe khoắn", "ex": "Maintaining a healthy balanced diet with fresh vegetables boosts our immune system.", "ex_vi": "Duy trì một chế độ ăn uống lành mạnh cân bằng với rau tươi giúp tăng cường hệ miễn dịch của chúng ta."}, {"w": "biscuit", "pos": "n", "ipa": "/ˈbɪskɪt/", "m": "bánh quy (loại bánh mỏng, giòn, nướng khô)", "ex": "Grandmother offered each grandchild a crunchy almond biscuit and a cup of warm tea.", "ex_vi": "Bà mời mỗi đứa cháu một chiếc bánh quy hạnh nhân giòn rụm và một tách trà ấm."}, {"w": "butter", "pos": "n", "ipa": "/ˈbʌtə(r)/", "m": "bơ (chất béo màu vàng làm từ sữa dùng để ăn hoặc nấu nướng)", "ex": "She spread a generous layer of creamy butter on the freshly baked sourdough toast.", "ex_vi": "Cô ấy phết một lớp bơ béo ngậy dày dặn lên lát bánh mì nướng men chua vừa mới ra lò."}, {"w": "flour", "pos": "n", "ipa": "/ˈflaʊə(r)/", "m": "bột mì (loại bột mịn xay từ ngũ cốc dùng làm bánh mì, bánh ngọt)", "ex": "The baker sifted two cups of white wheat flour into a large ceramic mixing bowl.", "ex_vi": "Người thợ làm bánh rây hai cốc bột mì trắng vào một chiếc âu trộn lớn bằng gốm sứ."}, {"w": "honey", "pos": "n", "ipa": "/ˈhʌni/", "m": "mật ong (chất ngọt đặc quánh màu vàng do ong mật tạo ra)", "ex": "Pure wildflower honey adds a delicious natural sweetness to hot herbal tea.", "ex_vi": "Mật ong hoa rừng nguyên chất đem lại vị ngọt tự nhiên thơm ngon cho tách trà thảo mộc nóng."}, {"w": "pepper", "pos": "n", "ipa": "/ˈpepə(r)/", "m": "hạt tiêu, bột tiêu (gia vị cay nồng rắc lên món ăn)", "ex": "The chef seasoned the grilled pumpkin soup with crushed black pepper and sea salt.", "ex_vi": "Đầu bếp nêm nếm món súp bí ngô nướng với hạt tiêu đen xay nhuyễn và muối biển."}];
+        const PHONETICS_QS = [{"id": "p1", "q": "Choose the word whose underlined part is pronounced differently from that of the others.", "opts": ["A. bl<u>i</u>nd", "B. b<u>i</u>scuit", "C. r<u>i</u>ng", "D. f<u>i</u>fty"], "ans": 0, "exp": "A đúng. 'blind' có chữ 'i' phát âm là /aɪ/ (/blaɪnd/), trong khi các từ còn lại có 'i' phát âm là /ɪ/: 'biscuit' (/ˈbɪskɪt/), 'ring' (/rɪŋ/), 'fifty' (/ˈfɪfti/)."}, {"id": "p2", "q": "Choose the word whose underlined part is pronounced differently from that of the others.", "opts": ["A. <u>h</u>onest", "B. <u>h</u>oney", "C. <u>h</u>ope", "D. <u>h</u>ealthy"], "ans": 0, "exp": "A đúng. 'honest' có âm 'h' câm (/ˈɒnɪst/), trong khi các từ còn lại đều có chữ 'h' được phát âm là /h/: 'honey' (/ˈhʌni/), 'hope' (/həʊp/), 'healthy' (/ˈhelθi/)."}, {"id": "p3", "q": "Choose the word that differs from the other three in the position of primary stress.", "opts": ["A. female", "B. healthy", "C. below", "D. biscuit"], "ans": 2, "exp": "C đúng. 'below' có trọng âm rơi vào âm tiết thứ 2 (/bɪˈləʊ/), trong khi các từ còn lại đều có trọng âm rơi vào âm tiết thứ 1: 'female' (/ˈfiːmeɪl/), 'healthy' (/ˈhelθi/), 'biscuit' (/ˈbɪskɪt/)."}, {"id": "p4", "q": "Choose the word that differs from the other three in the position of primary stress.", "opts": ["A. probably", "B. unusual", "C. furniture", "D. rainforest"], "ans": 1, "exp": "B đúng. 'unusual' có trọng âm rơi vào âm tiết thứ 2 (/ʌnˈjuːʒuəl/), trong khi các từ còn lại đều có trọng âm rơi vào âm tiết thứ 1: 'probably' (/ˈprɒbəbli/), 'furniture' (/ˈfɜːnɪtʃə(r)/), 'rainforest' (/ˈreɪnfɒrɪst/)."}, {"id": "p5", "q": "Choose the word that differs from the other three in the position of primary stress.", "opts": ["A. traditional", "B. impossible", "C. international", "D. continuous"], "ans": 2, "exp": "C đúng. 'international' có trọng âm rơi vào âm tiết thứ 3 (/ˌɪntəˈnæʃ(ə)nəl/), trong khi các từ còn lại đều có trọng âm rơi vào âm tiết thứ 2: 'traditional' (/trəˈdɪʃənl/), 'impossible' (/ɪmˈpɒsəbl/), 'continuous' (/kənˈtɪnjuəs/)."}];
+        const GRAMMAR_QS = [{"id": "g1", "q": "We need to purchase some new ______ for our new living room, but large sofas take up too much space.", "opts": ["A. furniture", "B. furnitures", "C. pieces of furnitures", "D. a furniture"], "ans": 0, "exp": "A đúng. 'furniture' (đồ nội thất) là danh từ không đếm được trong tiếng Anh, không thêm đuôi 's/es' và không đi kèm trực tiếp với mạo từ 'a'. Khi muốn đếm số lượng, người ta dùng cụm 'a piece of furniture / pieces of furniture'."}, {"id": "g2", "q": "Before leaving the science laboratory, all students must remember to ______ the gas taps and electrical switches.", "opts": ["A. turn up", "B. turn off", "C. turn on", "D. turn into"], "ans": 1, "exp": "B đúng. Cụm động từ 'turn off' có nghĩa là tắt hoặc ngắt nguồn thiết bị điện, khóa van gas để đảm bảo an toàn phòng thí nghiệm. Các cụm khác: turn up (tăng âm lượng/xuất hiện), turn on (bật lên), turn into (biến thành)."}, {"id": "g3", "q": "To encourage student creativity, our school principal invited everyone to ______ the national essay competition.", "opts": ["A. enter", "B. make", "C. put", "D. set"], "ans": 0, "exp": "A đúng. Cụm từ cố định 'enter a competition' có nghĩa là đăng ký tham gia, ghi danh vào một cuộc thi."}, {"id": "g4", "q": "The international chess tournament is scheduled to begin promptly ______ 8:30 a.m. tomorrow morning.", "opts": ["A. on", "B. in", "C. at", "D. for"], "ans": 2, "exp": "C đúng. Giới từ 'at' được sử dụng trước mốc thời gian cụ thể trong ngày (giờ giấc chính xác): 'at 8:30 a.m.'."}, {"id": "g5", "q": "In ancient agricultural societies, farmers trained sturdy ______ to pull heavy carts and plow the soil.", "opts": ["A. oxes", "B. oxs", "C. oxen", "D. oxens"], "ans": 2, "exp": "C đúng. Danh từ 'ox' (con bò đực) có hình thức số nhiều bất quy tắc là 'oxen', không thêm đuôi 'es' hay 's'."}, {"id": "g6", "q": "The young chess player practiced extremely ______ every evening to prepare for the championship match.", "opts": ["A. hardly", "B. hard", "C. hardness", "D. hardily"], "ans": 1, "exp": "B đúng. 'hard' vừa là tính từ vừa là trạng từ chỉ phương cách mang nghĩa 'chăm chỉ, nỗ lực hết mình'. Trạng từ 'hardly' mang nghĩa hoàn toàn khác là 'hầu như không'."}, {"id": "g7", "q": "To bake delicious sweet biscuits, she only needed ______ butter and ______ fresh eggs.", "opts": ["A. a little / a few", "B. a few / a little", "C. many / much", "D. much / a little"], "ans": 0, "exp": "A đúng. 'butter' (bơ) là danh từ không đếm được nên đi với lượng từ 'a little' (một chút), trong khi 'eggs' (trứng) là danh từ đếm được số nhiều nên đi với 'a few' (một vài)."}, {"id": "g8", "q": "(Tìm lỗi sai) There <u>are</u>(A) too <u>many</u>(B) heavy <u>furnitures</u>(C) inside this small nomadic <u>ger</u>(D).", "opts": ["A. are", "B. many", "C. furnitures", "D. ger"], "ans": 2, "exp": "C đúng. 'furniture' là danh từ không đếm được, không có dạng số nhiều 'furnitures'. Toàn bộ cụm từ cần sửa thành 'There is too much heavy furniture'."}, {"id": "g9", "q": "(Tìm lỗi sai) The grandfather clock <u>has rang</u>(A) five times, <u>signaling</u>(B) that the <u>chess</u>(C) round will begin <u>soon</u>(D).", "opts": ["A. has rang", "B. signaling", "C. chess", "D. soon"], "ans": 0, "exp": "A đúng. Động từ bất quy tắc 'ring - rang - rung' có quá khứ phân từ (V3) là 'rung'. Trong thì Hiện tại hoàn thành sau trợ động từ 'has', động từ phải ở dạng V3: sửa 'has rang' thành 'has rung'."}, {"id": "g10", "q": "(Tìm lỗi sai) When it is <u>fifty degrees below</u>(A) zero outside, no <u>one</u>(B) can survive without <u>wear</u>(C) <u>thick</u>(D) insulated coats.", "opts": ["A. fifty degrees below", "B. one", "C. wear", "D. thick"], "ans": 2, "exp": "C đúng. Sau giới từ 'without' bắt buộc phải dùng danh động từ (V-ing): sửa 'wear' thành 'wearing'."}];
+        const READING_QS = [{"id": "r1", "q": "What is the primary message of the passage?", "opts": ["A. The severe weather hazards that threaten nomadic cattle in Central Asia.", "B. An inspiring young girl who develops outstanding chess skills despite living in a remote nomadic setting.", "C. The traditional culinary recipes and cooking techniques of Central Asian families.", "D. How nomadic families construct wooden carts and furniture using local materials."], "ans": 1, "exp": "B đúng. Toàn bộ đoạn văn ca ngợi niềm đam mê cờ vua và tài năng chiến lược phi thường của cô bé du mục Sarangerel trong hoàn cảnh sống khắc nghiệt. Dẫn chứng: 'Despite the remote wilderness, Sarangerel developed an extraordinary intellectual passion: she loves to play chess.'"}, {"id": "r2", "q": "What animal helps the nomadic family transport their belongings during migration?", "opts": ["A. A wild desert camel.", "B. A sturdy ox pulling a cart.", "C. A herd of trained reindeer.", "D. A mountain horse."], "ans": 1, "exp": "B đúng. Gia đình du mục sử dụng một con bò đực khỏe mạnh để kéo xe chở đồ đạc và nội thất. Dẫn chứng: 'Their nomadic family owns a wooden cart pulled by a sturdy ox, which helps them transport essential supplies and simple wooden furniture whenever they migrate.'"}, {"id": "r3", "q": "The word 'blind' in the second paragraph describes a method of playing chess ______.", "opts": ["A. in complete darkness without electric lights", "B. without looking at the board, relying solely on mental visualization", "C. using special wooden pieces with rough surfaces", "D. against players who have lost their physical eyesight"], "ans": 1, "exp": "B đúng. 'playing completely blind' (chơi cờ tưởng, cờ mù) nghĩa là chơi mà không nhìn vào bàn cờ, hoàn toàn dựa vào hình dung trong tâm trí để rèn luyện trí nhớ và sự tập trung. Dẫn chứng: 'Every evening after she turns off the solar lantern, she visualizes each (chess) piece moving across the sixty-four squares of the board. She trains intensely hard, sometimes playing completely blind against her brother to sharpen her mental concentration...'"}, {"id": "r4", "q": "Which ingredients are mentioned as part of the healthy meals prepared inside the ger?", "opts": ["A. Sweet biscuits, chocolate, and white sugar.", "B. Wheat flour, yak butter, mountain honey, and black pepper.", "C. Canned vegetables, processed cheese, and vegetable oil.", "D. Fresh seafood, rice noodles, and soy sauce."], "ans": 1, "exp": "B đúng. Người mẹ chuẩn bị bữa ăn lành mạnh bằng bột mì, bơ bò Tây Tạng, mật ong và hạt tiêu đen. Dẫn chứng: 'Inside the cozy ger, their mother prepares healthy meals using wholesome wheat flour, creamy yak butter, and sweet mountain honey, occasionally seasoning hearty stews with black pepper and dried herbs.'"}, {"id": "r5", "q": "What is Sarangerel's aspiration for the upcoming year?", "opts": ["A. To build a modern house in the capital city.", "B. To represent her school in an international chess championship.", "C. To travel across the Amazon rainforest on a horse cart.", "D. To open a bakery selling traditional biscuits and butter."], "ans": 1, "exp": "B đúng. Sarangerel hy vọng sẽ đại diện cho trường học của mình tại một giải vô địch quốc tế vào năm tới. Dẫn chứng: 'this gifted female prodigy hopes to represent her school in an international championship next year.'"}];
+        const TRANSFORM_QS = [{"id": "t1", "origin": "Remember to turn off all the lights before you leave the classroom.", "prompt": "Don't forget", "keywords": "Don't forget to turn off all the lights before you leave the classroom", "exp": "Chuyển đổi cấu trúc nhắc nhở: 'Remember to-V' tương đương với 'Don't forget to-V' (Đừng quên làm gì). Câu hoàn chỉnh: 'Don't forget to turn off all the lights before you leave the classroom.' (Đừng quên tắt tất cả các bóng đèn trước khi em rời khỏi lớp học)."}, {"id": "t2", "origin": "It is necessary for the students to train hard every day to win the chess championship.", "prompt": "The students must", "keywords": "The students must train hard every day to win the chess championship", "exp": "Chuyển đổi cấu trúc tính từ chỉ sự cần thiết: 'It is necessary for somebody to-V' tương đương với động từ khuyết thiếu 'Somebody must + V-bare' (Ai đó phải làm gì). Câu hoàn chỉnh: 'The students must train hard every day to win the chess championship.' (Các học sinh phải luyện tập chăm chỉ mỗi ngày để giành chức vô địch cờ vua)."}, {"id": "t3", "origin": "Sarangerel hasn't entered an international chess competition before.", "prompt": "This is the first time", "keywords": "This is the first time Sarangerel has entered an international chess competition", "exp": "Chuyển đổi cấu trúc trải nghiệm: 'S + have/has + not/never + V3/V-ed + before' sang cấu trúc 'This is the first time + S + have/has + V3/V-ed'. Câu hoàn chỉnh: 'This is the first time Sarangerel has entered an international chess competition.' (Đây là lần đầu tiên Sarangerel đăng ký tham gia một cuộc thi cờ vua quốc tế)."}, {"id": "t4", "origin": "There isn't any butter left in the refrigerator.", "prompt": "There is", "keywords": "There is no butter left in the refrigerator", "exp": "Chuyển đổi câu phủ định với 'not any' sang câu khẳng định với 'no': 'There isn't any + N (không đếm được)' tương đương với 'There is no + N'. Câu hoàn chỉnh: 'There is no butter left in the refrigerator.' (Không còn chút bơ nào trong tủ lạnh)."}];
+        const SPEAKING_QS = [{"q": "Do you enjoy playing board games like chess in your free time? Why or why not?", "sample": "Yes, I really enjoy playing chess with my father on weekends. Chess is not only an entertaining board game, but it also trains my concentration, logical thinking, and patience under pressure.", "tip": "Khi trả lời về sở thích chơi board games hoặc cờ vua (chess), học sinh nên nêu rõ đối tượng cùng chơi (my father/friends), tần suất (on weekends), cùng những lợi ích phát triển tư duy (concentration, patience, logical thinking). Tránh câu trả lời quá ngắn chỉ có 'Yes, I do'."}, {"q": "Why is it important to choose healthy food instead of eating too many sweet biscuits and fast food?", "sample": "Choosing healthy food provides our bodies with essential vitamins and lasting energy to study and exercise effectively. In contrast, eating too many sugary biscuits and oily snacks can cause tooth decay, obesity, and lethargy throughout the day.", "tip": "Đối với chủ đề chế độ ăn uống lành mạnh (healthy food/diet), giám khảo thường đánh giá cao cấu trúc so sánh tương phản (On the one hand... In contrast...). Thí sinh nên sử dụng các từ vựng học thuật chỉ tác hại (obesity, tooth decay, lethargy) và lợi ích (vital nutrients, lasting energy) để ghi điểm tuyệt đối."}];
+
+        // Theme management
+        function initTheme() {
+            const saved = localStorage.getItem('clc_theme') || 'paper';
+            document.body.setAttribute('data-theme', saved);
+        }
+        function toggleTheme() {
+            const cur = document.body.getAttribute('data-theme') || 'paper';
+            const next = cur === 'paper' ? 'dark' : 'paper';
+            document.body.setAttribute('data-theme', next);
+            localStorage.setItem('clc_theme', next);
+        }
+        initTheme();
+
+        // Scroll mode
+        function toggleScrollMode() {
+            const isFull = document.body.classList.toggle('full-scroll-mode');
+            const btn = document.querySelector('.mode-btn');
+            if (btn) btn.innerText = isFull ? 'Chế độ: Cuộn Toàn Trang' : 'Chế độ: Tab';
+        }
+
+        // Tabs
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+            const targetContent = document.getElementById('tab-' + tabId);
+            if (targetContent) targetContent.classList.add('active');
+            if (window.event && window.event.target) {
+                window.event.target.classList.add('active');
+            }
+        }
+
+        // Web Speech Audio
+        function speakText(text) {
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+                const u = new SpeechSynthesisUtterance(text);
+                u.lang = 'en-US';
+                u.rate = 0.88;
+                window.speechSynthesis.speak(u);
+            }
+        }
+
+        // Flashcards
+        let currentCardIdx = 0;
+        let currentWord = VOCAB_LIST[0];
+
+        function updateFlashcard() {
+            currentWord = VOCAB_LIST[currentCardIdx];
+            document.getElementById('fcPos').innerText = currentWord.pos;
+            document.getElementById('fcWord').innerText = currentWord.w;
+            document.getElementById('fcIpa').innerText = currentWord.ipa;
+            document.getElementById('fcMean').innerText = currentWord.m;
+            document.getElementById('fcEx').innerText = `"${currentWord.ex}"`;
+            document.getElementById('fcExVi').innerText = currentWord.ex_vi || '';
+            document.getElementById('fcCounter').innerText = `Từ ${currentCardIdx + 1} / ${VOCAB_LIST.length}`;
+            document.getElementById('fcCard').classList.remove('flipped');
+        }
+
+        function flipFlashcard() {
+            document.getElementById('fcCard').classList.toggle('flipped');
+        }
+
+        function nextCard() {
+            currentCardIdx = (currentCardIdx + 1) % VOCAB_LIST.length;
+            updateFlashcard();
+        }
+
+        function prevCard() {
+            currentCardIdx = (currentCardIdx - 1 + VOCAB_LIST.length) % VOCAB_LIST.length;
+            updateFlashcard();
+        }
+
+        function randomCard() {
+            currentCardIdx = Math.floor(Math.random() * VOCAB_LIST.length);
+            updateFlashcard();
+        }
+
+        // Render Vocab Cards (IELTS grid style)
+        const vGrid = document.getElementById('vocabGrid');
+        VOCAB_LIST.forEach((item, idx) => {
+            vGrid.innerHTML += `
+                <div class="vocab-card">
+                    <div class="vocab-header">
+                        <span class="vocab-word">${item.w}</span>
+                        <div style="display:flex; align-items:center; gap:6px;">
+                            <span style="font-size:0.75rem; color:var(--text-muted); font-weight:700;">#${idx + 1}</span>
+                            <button class="vocab-audio-btn" onclick="speakText('${item.w}')" title="Nghe phát âm">🔊</button>
+                        </div>
+                    </div>
+                    <div class="vocab-ipa">${item.ipa}</div>
+                    <span class="vocab-colloc">${item.pos}</span>
+                    <div class="vocab-meaning">${item.m}</div>
+                    <div class="vocab-example">"${item.ex}"</div>
+                    <div style="font-size:0.8rem; color:var(--text-muted); margin-top:2px;">${item.ex_vi || ''}</div>
+                </div>
+            `;
+        });
+
+        // Question handling
+        let userAnswers = {};
+        let wrongList = [];
+
+        function renderQuestions(list, containerId) {
+            const container = document.getElementById(containerId);
+            list.forEach(q => {
+                let optsHtml = '';
+                q.opts.forEach((opt, idx) => {
+                    optsHtml += `
+                        <label class="option-label" id="lbl_${q.id}_${idx}" onclick="selectOption('${q.id}', ${idx}, ${q.ans})">
+                            <input type="radio" name="opt_${q.id}" value="${idx}">
+                            <span>${opt}</span>
+                        </label>
+                    `;
+                });
+                container.innerHTML += `
+                    <div class="question-item">
+                        <div class="question-title">${q.q}</div>
+                        <div class="options-grid">${optsHtml}</div>
+                        <div class="explanation" id="exp_${q.id}">💡 <b>Giải thích:</b> ${q.exp}</div>
+                    </div>
+                `;
+            });
+        }
+
+        renderQuestions(PHONETICS_QS, 'phoneticsQuestions');
+        renderQuestions(GRAMMAR_QS, 'grammarQuestions');
+        renderQuestions(READING_QS, 'readingQuestions');
+
+        // Transform questions
+        const tContainer = document.getElementById('transformQuestions');
+        TRANSFORM_QS.forEach(t => {
+            tContainer.innerHTML += `
+                <div class="transform-item">
+                    <div class="question-title"><strong>${t.origin}</strong></div>
+                    <div style="font-weight:700; color:var(--primary); font-size:0.95rem;">${t.prompt}</div>
+                    <input type="text" class="input-transform-ielts" id="in_${t.id}" placeholder="Gõ tiếp câu hoàn chỉnh tại đây...">
+                    <div style="display:flex; gap:10px; align-items:center; margin-top:6px;">
+                        <button class="btn-secondary" style="min-height:38px; padding:6px 14px; font-size:0.86rem;" onclick="checkTransform('${t.id}')">Kiểm Tra</button>
+                    </div>
+                    <div class="explanation" id="exp_${t.id}">💡 <b>Giải thích:</b> ${t.exp}</div>
+                </div>
+            `;
+        });
+
+        // Speaking questions
+        const sContainer = document.getElementById('speakingQuestions');
+        SPEAKING_QS.forEach((s, idx) => {
+            sContainer.innerHTML += `
+                <div style="background:var(--panel-bg); padding:18px; border-radius:14px; margin-bottom:16px; border:1px solid var(--border);">
+                    <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:10px;">
+                        <strong style="font-size:1.02rem; color:var(--primary); line-height:1.4;">${s.q}</strong>
+                        <button class="vocab-audio-btn" onclick="speakText('${s.q.replace(/'/g, "\\'")}')" title="Nghe câu hỏi">🔊</button>
+                    </div>
+                    <div style="margin-top:12px; padding:12px 14px; background:var(--surface-color); border-radius:10px; border:1px solid var(--border);">
+                        <div style="font-weight:700; color:var(--success); font-size:0.92rem; margin-bottom:4px;">💡 Câu trả lời mẫu chuẩn CLC:</div>
+                        <div style="font-size:0.95rem; color:var(--text-main); font-style:italic; line-height:1.5;">"${s.sample}"</div>
+                        <div style="margin-top:10px; display:flex; align-items:center; gap:8px;">
+                            <button class="btn-fc-nav" style="padding:6px 14px; font-size:0.84rem;" onclick="speakText('${s.sample.replace(/'/g, "\\'")}')">🔊 Nghe Mẫu</button>
+                        </div>
+                    </div>
+                    <div style="font-size:0.84rem; color:var(--accent); margin-top:8px;">🎯 <b>Mẹo phỏng vấn:</b> ${s.tip}</div>
+                </div>
+            `;
+        });
+
+        function selectOption(qId, choiceIdx, correctIdx) {
+            if (userAnswers[qId] !== undefined) return;
+            userAnswers[qId] = choiceIdx;
+
+            const isCorrect = (choiceIdx === correctIdx);
+            const lbl = document.getElementById(`lbl_${qId}_${choiceIdx}`);
+            const correctLbl = document.getElementById(`lbl_${qId}_${correctIdx}`);
+            const exp = document.getElementById(`exp_${qId}`);
+
+            if (isCorrect) {
+                if (lbl) lbl.classList.add('correct');
+            } else {
+                if (lbl) lbl.classList.add('wrong');
+                if (correctLbl) correctLbl.classList.add('correct');
+                wrongList.push({ id: qId, studentAns: choiceIdx, correctAns: correctIdx });
+            }
+
+            if (exp) exp.style.display = 'block';
+            updateScore();
+        }
+
+        function checkTransform(tId) {
+            const input = document.getElementById(`in_${tId}`);
+            const exp = document.getElementById(`exp_${tId}`);
+            const val = input.value.trim().toLowerCase().replace(/[.,!?;:]+$/, '');
+            const q = TRANSFORM_QS.find(item => item.id === tId);
+
+            let matched = false;
+            for (let kw of q.keywords) {
+                if (val.includes(kw.toLowerCase())) {
+                    matched = true;
+                    break;
+                }
+            }
+
+            if (matched) {
+                input.style.borderColor = 'var(--success)';
+                input.style.backgroundColor = 'rgba(27, 135, 85, 0.08)';
+                userAnswers[tId] = 1;
+            } else {
+                input.style.borderColor = 'var(--danger)';
+                input.style.backgroundColor = 'rgba(192, 57, 43, 0.08)';
+                userAnswers[tId] = 0;
+                wrongList.push({ id: tId, studentAns: val, exp: q.exp });
+            }
+            if (exp) exp.style.display = 'block';
+            updateScore();
+        }
+
+        function updateScore() {
+            let score = 0;
+            PHONETICS_QS.forEach(q => { if (userAnswers[q.id] === q.ans) score += 1; });
+            GRAMMAR_QS.forEach(q => { if (userAnswers[q.id] === q.ans) score += 1; });
+            READING_QS.forEach(q => { if (userAnswers[q.id] === q.ans) score += 1; });
+            TRANSFORM_QS.forEach(t => { if (userAnswers[t.id] === 1) score += 1; });
+            document.getElementById('scoreBadge').innerText = `Điểm Đạt: ${score} / 24`;
+        }
+
+        function submitAndSyncProgress() {
+            let score = 0;
+            let total = 24;
+            PHONETICS_QS.forEach(q => { if (userAnswers[q.id] === q.ans) score += 1; });
+            GRAMMAR_QS.forEach(q => { if (userAnswers[q.id] === q.ans) score += 1; });
+            READING_QS.forEach(q => { if (userAnswers[q.id] === q.ans) score += 1; });
+            TRANSFORM_QS.forEach(t => { if (userAnswers[t.id] === 1) score += 1; });
+
+            const payload = {
+                unit: UNIT_INFO.title,
+                unit_id: UNIT_INFO.unit_num,
+                score: score,
+                total: total,
+                percentage: Math.round((score / total) * 100),
+                wrong_questions: wrongList
+            };
+
+            fetch('/api/sync_progress', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            })
+            .then(res => res.json())
+            .then(data => {
+                alert(`🎉 Chúc mừng con đã hoàn thành ${UNIT_INFO.title}!\nĐiểm số: ${score} / ${total} (${payload.percentage}%)\nKết quả đã tự động lưu vào sổ theo dõi học tập!`);
+            })
+            .catch(() => {
+                alert(`🎉 Con đã làm được ${score} / ${total} điểm!\n(Nhấp chạy MO_SERVER_CHO_IPHONE.bat để tự động đồng bộ kết quả lên hệ thống nhé).`);
+            });
+        }
+
+        function resetUnitAnswers() {
+            if (confirm("Con có muốn làm lại toàn bộ câu hỏi trong Unit này không?")) {
+                location.reload();
+            }
+        }
+
+        // Initialize flashcard
+        updateFlashcard();
+    </script>
+</body>
+</html>

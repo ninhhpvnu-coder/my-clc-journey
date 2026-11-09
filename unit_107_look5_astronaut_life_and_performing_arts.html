@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="vi" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <script>document.documentElement.classList.remove("no-js");</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Unit 107: Astronaut Life & Performing Arts">
+    <title>Unit 107: Astronaut Life & Performing Arts — CLC English Mastery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- Academic Paper Cream Theme (Default ☀️) --- */
+        :root, [data-theme="paper"] {
+            --bg-color: #fbf4ea;
+            --surface-color: #ffffff;
+            --surface-hover: #fffdf9;
+            --card-color: #ffffff;
+            --panel-bg: #fdfaf5;
+            --bar-bg: #ffffff;
+            --primary: #14324d;
+            --primary-hover: #1d4367;
+            --accent: #a35d2b;
+            --accent-hover: #8c471c;
+            --success: #1b8755;
+            --warning: #b45309;
+            --danger: #c0392b;
+            --text-main: #14324d;
+            --text-muted: #4a607a;
+            --border: #eadccb;
+            --card-shadow: 0 4px 18px rgba(20, 50, 77, 0.05);
+            --header-bg: linear-gradient(135deg, #ffffff 0%, #fbf4ea 100%);
+            --option-bg: #ffffff;
+            --input-bg: #fdfbf7;
+            --tab-active-bg: #14324d;
+            --tab-active-color: #ffffff;
+            --vocab-ipa-color: #a35d2b;
+            --vocab-colloc-color: #8c471c;
+            --vocab-colloc-bg: rgba(163, 93, 43, 0.1);
+            --vocab-colloc-border: rgba(163, 93, 43, 0.25);
+            --vocab-btn-bg: rgba(20, 50, 77, 0.07);
+            --vocab-btn-border: rgba(20, 50, 77, 0.2);
+            --eval-box-bg: #ffffff;
+        }
+
+        /* --- Midnight Navy Dark Theme (Optional 🌙) --- */
+        [data-theme="dark"] {
+            --bg-color: #0b1120;
+            --surface-color: #1e293b;
+            --surface-hover: #243247;
+            --card-color: #1e293b;
+            --panel-bg: rgba(15, 23, 42, 0.75);
+            --bar-bg: rgba(15, 23, 42, 0.9);
+            --primary: #38bdf8;
+            --primary-hover: #0ea5e9;
+            --accent: #c5855d;
+            --accent-hover: #dca07b;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #f43f5e;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border: #334155;
+            --card-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.5);
+            --header-bg: linear-gradient(135deg, rgba(30, 41, 59, 0.95), rgba(15, 23, 42, 0.95));
+            --option-bg: rgba(30, 41, 59, 0.8);
+            --input-bg: #0b1120;
+            --tab-active-bg: var(--primary);
+            --tab-active-color: #0b1120;
+            --vocab-ipa-color: #38bdf8;
+            --vocab-colloc-color: #f59e0b;
+            --vocab-colloc-bg: rgba(245, 158, 11, 0.08);
+            --vocab-colloc-border: rgba(245, 158, 11, 0.2);
+            --vocab-btn-bg: rgba(56, 189, 248, 0.15);
+            --vocab-btn-border: rgba(56, 189, 248, 0.3);
+            --eval-box-bg: rgba(15, 23, 42, 0.9);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 12px 10px 50px 10px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        @media (min-width: 768px) {
+            body {
+                padding: 24px 20px 60px 20px;
+            }
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1080px;
+            margin: 0 auto;
+        }
+
+        /* Header matching IELTS-Mastery-Kit */
+        header {
+            margin-bottom: 20px;
+            padding: 18px 20px;
+            background: var(--header-bg);
+            border-radius: 18px;
+            border: 1.5px solid var(--border);
+            box-shadow: var(--card-shadow);
+            position: relative;
+        }
+
+        .header-top-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .nav-back-link {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.88rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--surface-color);
+            border: 1px solid var(--border);
+            padding: 6px 14px;
+            border-radius: 999px;
+            transition: all 0.2s;
+        }
+
+        .nav-back-link:hover {
+            background: var(--primary);
+            color: var(--tab-active-color);
+        }
+
+        .header-controls {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .theme-toggle-btn, .mode-btn {
+            background: var(--surface-color);
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .theme-toggle-btn:hover, .mode-btn:hover {
+            color: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .badge-pill {
+            display: inline-block;
+            background: var(--vocab-colloc-bg);
+            color: var(--accent);
+            border: 1px solid var(--vocab-colloc-border);
+            padding: 4px 12px;
+            border-radius: 9999px;
+            font-weight: 800;
+            font-size: 0.78rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+
+        h1.unit-main-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.45rem;
+            color: var(--primary);
+            margin-bottom: 4px;
+            line-height: 1.3;
+            font-weight: 800;
+        }
+
+        @media (min-width: 768px) {
+            h1.unit-main-title {
+                font-size: 2rem;
+            }
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 0.88rem;
+            line-height: 1.45;
+        }
+
+        /* Tabs Navigation */
+        .tabs {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 20px;
+            overflow-x: auto;
+            padding-bottom: 6px;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .tab-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--surface-color);
+            border: 1.5px solid var(--border);
+            color: var(--text-muted);
+            padding: 10px 18px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 0.88rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+            flex-shrink: 0;
+            min-height: 44px;
+        }
+
+        .tab-btn:hover {
+            color: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .tab-btn.active {
+            background: var(--tab-active-bg);
+            color: var(--tab-active-color);
+            border-color: var(--tab-active-bg);
+            box-shadow: 0 4px 14px rgba(20, 50, 77, 0.15);
+        }
+
+        [data-theme="dark"] .tab-btn.active {
+            box-shadow: 0 0 15px rgba(56, 189, 248, 0.35);
+        }
+
+        .tab-content {
+            display: none;
+            background: var(--surface-color);
+            border: 1.5px solid var(--border);
+            border-radius: 18px;
+            padding: 20px 16px;
+            margin-bottom: 25px;
+            box-shadow: var(--card-shadow);
+        }
+
+        @media (min-width: 768px) {
+            .tab-content {
+                padding: 28px;
+            }
+        }
+
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.25s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(6px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Full Page Scroll Mode */
+        body.full-scroll-mode .tab-content {
+            display: block !important;
+            margin-bottom: 28px !important;
+        }
+
+        h2.section-heading {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.25rem;
+            margin-bottom: 18px;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            line-height: 1.35;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 10px;
+            font-weight: 700;
+        }
+
+        /* 3D FLASHCARD FLIP COMPONENT */
+        .flashcard-hero-box {
+            background: var(--panel-bg);
+            border: 1.5px solid var(--border);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        .flashcard-3d-scene {
+            perspective: 1000px;
+            width: 100%;
+            max-width: 500px;
+            height: 250px;
+            margin: 16px auto;
+            cursor: pointer;
+        }
+
+        .flashcard-3d-card {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
+            transform-style: preserve-3d;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(20, 50, 77, 0.1);
+        }
+
+        .flashcard-3d-card.flipped {
+            transform: rotateY(180deg);
+        }
+
+        .fc-side {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 24px;
+            border-radius: 16px;
+            background: var(--surface-color);
+            border: 2px solid var(--border);
+        }
+
+        .fc-back {
+            background: var(--panel-bg);
+            border-color: var(--accent);
+            transform: rotateY(180deg);
+        }
+
+        .fc-pos-tag {
+            background: var(--vocab-colloc-bg);
+            color: var(--accent);
+            border: 1px solid var(--vocab-colloc-border);
+            padding: 3px 12px;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .fc-main-word {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+
+        .fc-ipa-text {
+            font-family: monospace;
+            font-size: 1.15rem;
+            color: var(--vocab-ipa-color);
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .fc-mean-viet {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--success);
+            margin-bottom: 10px;
+        }
+
+        .fc-example-text {
+            font-size: 0.95rem;
+            color: var(--text-main);
+            font-style: italic;
+            margin-bottom: 4px;
+        }
+
+        .fc-example-viet {
+            font-size: 0.86rem;
+            color: var(--text-muted);
+        }
+
+        .fc-ctrl-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 14px;
+            flex-wrap: wrap;
+        }
+
+        .btn-fc-nav {
+            background: var(--surface-color);
+            color: var(--text-main);
+            border: 1.5px solid var(--border);
+            padding: 9px 18px;
+            border-radius: 999px;
+            font-weight: 700;
+            font-size: 0.88rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-fc-nav:hover {
+            background: var(--primary);
+            color: var(--tab-active-color);
+            border-color: var(--primary);
+        }
+
+        /* EXACT IELTS VOCABULARY GRID */
+        .vocab-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+            margin-top: 14px;
+        }
+
+        @media (min-width: 640px) {
+            .vocab-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 14px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .vocab-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 16px;
+            }
+        }
+
+        .vocab-card {
+            background: var(--surface-color);
+            border: 1.5px solid var(--border);
+            border-radius: 14px;
+            padding: 16px;
+            transition: all 0.25s ease;
+            position: relative;
+            box-shadow: var(--card-shadow);
+        }
+
+        .vocab-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(20, 50, 77, 0.08);
+        }
+
+        [data-theme="dark"] .vocab-card:hover {
+            border-color: rgba(56, 189, 248, 0.5);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+        }
+
+        .vocab-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .vocab-word {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 800;
+            color: var(--primary);
+        }
+
+        .vocab-audio-btn {
+            background: var(--vocab-btn-bg);
+            border: 1.5px solid var(--vocab-btn-border);
+            color: var(--primary);
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+            flex-shrink: 0;
+        }
+
+        .vocab-audio-btn:hover, .vocab-audio-btn:active {
+            background: var(--primary);
+            color: var(--tab-active-color);
+            transform: scale(1.08);
+        }
+
+        .vocab-ipa {
+            font-size: 0.88rem;
+            color: var(--vocab-ipa-color);
+            font-family: monospace;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .vocab-meaning {
+            font-weight: 700;
+            color: var(--text-main);
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+        }
+
+        .vocab-colloc {
+            font-size: 0.82rem;
+            color: var(--vocab-colloc-color);
+            background: var(--vocab-colloc-bg);
+            border: 1px solid var(--vocab-colloc-border);
+            padding: 4px 8px;
+            border-radius: 6px;
+            margin-bottom: 6px;
+            line-height: 1.35;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        .vocab-example {
+            font-size: 0.84rem;
+            color: var(--text-muted);
+            font-style: italic;
+            line-height: 1.45;
+            border-top: 1px solid var(--border);
+            padding-top: 6px;
+            margin-top: 6px;
+        }
+
+        /* EXACT IELTS QUIZ STYLING */
+        .question-item {
+            margin-bottom: 20px;
+            padding-bottom: 18px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .question-title {
+            font-weight: 600;
+            margin-bottom: 12px;
+            font-size: 0.98rem;
+            line-height: 1.5;
+            color: var(--text-main);
+        }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        @media (min-width: 600px) {
+            .options-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+        }
+
+        .option-label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--option-bg);
+            border: 1.5px solid var(--border);
+            color: var(--text-main);
+            padding: 10px 14px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 0.92rem;
+            min-height: 46px;
+            transition: all 0.2s;
+        }
+
+        .option-label:hover {
+            border-color: var(--primary);
+            background: rgba(56, 189, 248, 0.05);
+        }
+
+        .option-label.correct {
+            background: rgba(27, 135, 85, 0.12) !important;
+            border-color: var(--success) !important;
+            color: var(--success);
+            font-weight: 700;
+        }
+
+        .option-label.wrong {
+            background: rgba(192, 57, 43, 0.1) !important;
+            border-color: var(--danger) !important;
+            color: var(--danger);
+            font-weight: 700;
+        }
+
+        .explanation {
+            display: none;
+            font-size: 0.88rem;
+            padding: 12px 14px;
+            border-radius: 8px;
+            margin-top: 10px;
+            line-height: 1.5;
+            background: var(--panel-bg);
+            border-left: 4px solid var(--primary);
+            color: var(--text-main);
+        }
+
+        /* TRANSFORMATION */
+        .transform-item {
+            margin-bottom: 20px;
+            padding-bottom: 18px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .input-transform-ielts {
+            width: 100%;
+            background: var(--input-bg);
+            border: 1.5px solid var(--border);
+            color: var(--text-main);
+            padding: 12px 14px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-family: inherit;
+            margin: 8px 0;
+            transition: border-color 0.2s;
+        }
+
+        .input-transform-ielts:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        /* READING DUAL BOX */
+        .reading-dual-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 820px) {
+            .reading-dual-grid {
+                grid-template-columns: 1.15fr 1fr;
+            }
+        }
+
+        .passage-card {
+            background: var(--panel-bg);
+            border: 1.5px solid var(--border);
+            border-radius: 14px;
+            padding: 20px;
+            font-size: 1rem;
+            line-height: 1.7;
+            max-height: 520px;
+            overflow-y: auto;
+        }
+
+        /* ACTION BAR & CONTROLS */
+        .action-bar {
+            margin-top: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: stretch;
+        }
+
+        @media (min-width: 640px) {
+            .action-bar {
+                flex-direction: row;
+                align-items: center;
+                gap: 14px;
+            }
+        }
+
+        .btn-primary {
+            background: var(--btn-launch-bg, var(--primary));
+            color: var(--btn-launch-color, #ffffff);
+            font-weight: 800;
+            border: none;
+            padding: 14px 28px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 1rem;
+            min-height: 48px;
+            text-align: center;
+            transition: all 0.2s;
+            box-shadow: 0 4px 14px rgba(20, 50, 77, 0.15);
+        }
+
+        .btn-primary:hover {
+            filter: brightness(1.1);
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background: var(--surface-color);
+            color: var(--text-main);
+            border: 1.5px solid var(--border);
+            padding: 12px 20px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 0.92rem;
+            min-height: 48px;
+            text-align: center;
+            transition: all 0.2s;
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .score-pill {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: var(--primary);
+            background: var(--vocab-colloc-bg);
+            padding: 10px 18px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            text-align: center;
+        }
+
+        @media (min-width: 640px) {
+            .score-pill {
+                margin-left: auto;
+            }
+        }
+    </style>
+</head>
+<body data-theme="paper">
+
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+            <div class="header-top-row">
+                <a href="index.html" class="nav-back-link">← Quay Lại Mục Lục Hub</a>
+                <div class="header-controls">
+                    <button class="mode-btn" onclick="toggleScrollMode()">Chế độ: Tab</button>
+                    <button class="theme-toggle-btn" onclick="toggleTheme()">🌓 Đổi Giao Diện</button>
+                </div>
+            </div>
+            <div class="badge-pill">Level 5: Band 8.0 — 9.0 (Thành Thạo Đỉnh Cao & Hoàn Thiện Tuyển Sinh CLC)</div>
+            <h1 class="unit-main-title">Unit 107: Astronaut Life & Performing Arts</h1>
+            <p class="subtitle">Look 5: Từ 331 - 360 (unit 107)</p>
+        </header>
+
+        <!-- Tabs Navigation -->
+        <nav class="tabs" id="mainTabs">
+            <button class="tab-btn active" onclick="switchTab('vocab')">1. Từ Vựng (30 Từ Look)</button>
+            <button class="tab-btn" onclick="switchTab('phonetics')">2. Ngữ Âm (Phonetics)</button>
+            <button class="tab-btn" onclick="switchTab('grammar')">3. Ngữ Pháp & Bẫy Đề</button>
+            <button class="tab-btn" onclick="switchTab('reading')">4. Đọc Hiểu (Reading)</button>
+            <button class="tab-btn" onclick="switchTab('transform')">5. Viết Lại Câu</button>
+            <button class="tab-btn" onclick="switchTab('speaking')">6. Phỏng Vấn (Speaking)</button>
+        </nav>
+
+        <!-- TAB 1: 30 VOCABULARY + FLASHCARDS -->
+        <section id="tab-vocab" class="tab-content active">
+            <h2 class="section-heading">
+                <span>📖 30 Từ Vựng Trọng Tâm (Look Level 5)</span>
+                <span style="font-size:0.85rem; font-weight:normal; color:var(--text-muted);">Bấm 🔊 để nghe phát âm</span>
+            </h2>
+
+            <!-- 3D Flip Flashcard -->
+            <div class="flashcard-hero-box">
+                <div style="font-weight:700; color:var(--primary); font-size:1.05rem; margin-bottom:4px;">🎴 Thẻ Lật Flashcard 3D Thông Minh</div>
+                <p style="font-size:0.84rem; color:var(--text-muted);">(Chạm vào thẻ để lật xem nghĩa tiếng Việt & câu ví dụ mẫu)</p>
+                <div class="flashcard-3d-scene" onclick="flipFlashcard()">
+                    <div class="flashcard-3d-card" id="fcCard">
+                        <div class="fc-side fc-front">
+                            <span class="fc-pos-tag" id="fcPos">number</span>
+                            <div class="fc-main-word" id="fcWord">one</div>
+                            <div class="fc-ipa-text" id="fcIpa">/wʌn/</div>
+                            <button class="vocab-audio-btn" onclick="event.stopPropagation(); speakText(currentWord.w)" title="Nghe phát âm">🔊</button>
+                            <span style="font-size:0.75rem; color:var(--text-muted); margin-top:10px;">Chạm để lật thẻ ➔</span>
+                        </div>
+                        <div class="fc-side fc-back">
+                            <div class="fc-mean-viet" id="fcMean">số một (1)</div>
+                            <div class="fc-example-text" id="fcEx">"I have one apple in my bag."</div>
+                            <div class="fc-example-viet" id="fcExVi">Tôi có một quả táo trong cặp.</div>
+                            <div style="margin-top:10px;">
+                                <button class="btn-fc-nav" onclick="event.stopPropagation(); speakText(currentWord.ex)" title="Nghe đọc ví dụ">🔊 Nghe Ví Dụ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fc-ctrl-row">
+                    <button class="btn-fc-nav" onclick="prevCard()">← Từ Trước</button>
+                    <span id="fcCounter" style="font-weight:700; color:var(--primary); font-size:0.95rem; min-width:90px;">Từ 1 / 30</span>
+                    <button class="btn-fc-nav" onclick="nextCard()">Từ Sau →</button>
+                    <button class="btn-fc-nav" onclick="speakText(currentWord.w)">🔊 Phát Âm</button>
+                    <button class="btn-fc-nav" onclick="randomCard()">🔀 Ngẫu Nhiên</button>
+                </div>
+            </div>
+
+            <!-- Vocab Grid (Exact IELTS Cards) -->
+            <div class="vocab-grid" id="vocabGrid"></div>
+        </section>
+
+        <!-- TAB 2: PHONETICS LAB -->
+        <section id="tab-phonetics" class="tab-content">
+            <h2 class="section-heading">
+                <span>⚡ Phonetics Lab: Ngữ Âm & Trọng Âm Cốt Lõi (5 câu)</span>
+                <span style="font-size:0.85rem; font-weight:normal; color:var(--text-muted);">Mỗi câu 1 điểm</span>
+            </h2>
+            <div id="phoneticsQuestions"></div>
+        </section>
+
+        <!-- TAB 3: GRAMMAR & ERROR ID -->
+        <section id="tab-grammar" class="tab-content">
+            <h2 class="section-heading">
+                <span>⚙️ Grammar Mastery: Ngữ Pháp & Bẫy Đề Thi (10 câu)</span>
+                <span style="font-size:0.85rem; font-weight:normal; color:var(--text-muted);">Mỗi câu 1 điểm</span>
+            </h2>
+            <div id="grammarQuestions"></div>
+        </section>
+
+        <!-- TAB 4: READING LAB -->
+        <section id="tab-reading" class="tab-content">
+            <h2 class="section-heading">
+                <span>A Day in the Life of an Astronaut</span>
+                <button class="vocab-audio-btn" onclick="speakText(document.getElementById('readingPassage').innerText)" title="Nghe toàn bộ bài đọc">🔊</button>
+            </h2>
+            <div class="reading-dual-grid">
+                <div class="passage-card">
+                    <div id="readingPassage">Life on the International Space Station is very different from life on Earth. Every day, astronauts must follow a strict arrangement of activities to stay healthy. Because there is no gravity, it is impossible to run outdoors, so astronauts use a running machine for about two hours each day. They also have to pull themselves along rails to move from one part of the station to another.
+
+Outside the station, the atmosphere is a mixture of gases, and beyond our planet lie the other worlds of our solar system: stormy Jupiter, icy Uranus, ringed Saturn, and distant Neptune. Astronauts can observe these planets through a telescope or by studying data sent from probes. Carbon dioxide levels inside the station are carefully monitored because too much of this gas is harmful.
+
+Mission Control on Earth stays in constant contact with the crew. When a mission ends, the whole team at Mission Control celebrates the touchdown of the spacecraft. Back on Earth, many astronauts become performers of a different kind — they go on stage at schools and theatres to share their incredible stories with enthusiastic audiences, inspiring young people to dream of the stars.</div>
+                </div>
+                <div id="readingQuestions"></div>
+            </div>
+        </section>
+
+        <!-- TAB 5: SENTENCE TRANSFORMATION -->
+        <section id="tab-transform" class="tab-content">
+            <h2 class="section-heading">
+                <span>🔄 Sentence Transformation: Viết Lại Câu Không Đổi Nghĩa (4 câu)</span>
+                <span style="font-size:0.85rem; font-weight:normal; color:var(--accent);">Phân loại điểm 9-10</span>
+            </h2>
+            <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:18px;">Gõ câu viết lại hoàn chỉnh vào ô bên dưới rồi nhấn "Kiểm Tra":</p>
+            <div id="transformQuestions"></div>
+        </section>
+
+        <!-- TAB 6: SPEAKING / INTERVIEW -->
+        <section id="tab-speaking" class="tab-content">
+            <h2 class="section-heading">
+                <span>🎙️ Phỏng Vấn Vấn Đáp Tuyển Sinh CLC (Speaking)</span>
+                <span style="font-size:0.85rem; font-weight:normal; color:var(--text-muted);">Nghe phát âm chuẩn</span>
+            </h2>
+            <div id="speakingQuestions"></div>
+        </section>
+
+        <!-- Action Bar (Floating bottom) -->
+        <div class="action-bar">
+            <button class="btn-primary" onclick="submitAndSyncProgress()">💾 Nộp Bài & Đồng Bộ Tiến Độ Học Tập</button>
+            <button class="btn-secondary" onclick="resetUnitAnswers()">🔄 Làm Lại Từ Đầu</button>
+            <div class="score-pill" id="scoreBadge">Điểm Đạt: 0 / 24</div>
+        </div>
+
+    </div>
+
+    <script>
+        const UNIT_INFO = {"unit_num": "107", "title": "Unit 107: Astronaut Life & Performing Arts"};
+        const VOCAB_LIST = [{"w": "pull", "pos": "v", "ipa": "/pʊl/", "m": "kéo, giật mạnh vào phía mình", "ex": "As Tom began to slide down the rocky hill, his friends managed to pull him back to safety.", "ex_vi": "Khi Tom bắt đầu trượt xuống sườn đồi đầy đá, bạn bè của cậu ấy đã kéo cậu trở lại chỗ an toàn."}, {"w": "sleeping bag", "pos": "n", "ipa": "/ˈsliːpɪŋ bæg/", "m": "túi ngủ (dùng khi cắm trại hoặc ngủ ngoài trời)", "ex": "The children got into their sleeping bags in the tent and their mum told them a bedtime story.", "ex_vi": "Những đứa trẻ chui vào túi ngủ trong lều và mẹ chúng kể cho chúng nghe một câu chuyện trước khi ngủ."}, {"w": "definite", "pos": "adj", "ipa": "/ˈdefənət/", "m": "chắc chắn, dứt khoát, không còn nghi ngờ", "ex": "Nobody could give a definite answer to the question of whether there's life on other planets.", "ex_vi": "Không ai có thể đưa ra câu trả lời chắc chắn cho câu hỏi liệu có sự sống trên các hành tinh khác hay không."}, {"w": "arrangement", "pos": "n", "ipa": "/əˈreɪndʒmənt/", "m": "sự sắp xếp, kế hoạch, thỏa thuận", "ex": "We made arrangements to go to the library after school.", "ex_vi": "Chúng tôi đã lên kế hoạch để đến thư viện sau giờ học."}, {"w": "running machine", "pos": "n", "ipa": "/ˈrʌnɪŋ məʃiːn/", "m": "máy chạy bộ (dụng cụ thể thao)", "ex": "Sheila does one kilometre on the running machine to warm up before her exercise class.", "ex_vi": "Sheila chạy một kilômét trên máy chạy bộ để khởi động trước giờ tập thể dục."}, {"w": "Mission Control", "pos": "n", "ipa": "/ˈmɪʃ(ə)n kənˈtrəʊl/", "m": "Trung tâm Điều hành Nhiệm vụ (trung tâm kiểm soát chuyến bay vũ trụ của NASA)", "ex": "The astronauts were in radio contact with Mission Control from take-off to landing.", "ex_vi": "Các phi hành gia duy trì liên lạc qua vô tuyến với Trung tâm Điều hành Nhiệm vụ từ lúc cất cánh đến khi hạ cánh."}, {"w": "Mercury", "pos": "n", "ipa": "/ˈmɜːkjəri/", "m": "Sao Thủy (hành tinh gần Mặt Trời nhất trong hệ Mặt Trời)", "ex": "Mercury is the smallest planet in our solar system and is only slightly larger than the Moon.", "ex_vi": "Sao Thủy là hành tinh nhỏ nhất trong hệ Mặt Trời và chỉ lớn hơn Mặt Trăng một chút."}, {"w": "the rest", "pos": "n", "ipa": "/ðə rest/", "m": "phần còn lại, những người/thứ khác", "ex": "Why didn't you invite the rest of the class to your party?", "ex_vi": "Tại sao bạn không mời những bạn còn lại trong lớp đến bữa tiệc của mình?"}, {"w": "icy", "pos": "adj", "ipa": "/ˈaɪsi/", "m": "băng giá, rất lạnh, phủ đầy băng", "ex": "It's dangerous to drive on icy roads in the middle of winter.", "ex_vi": "Lái xe trên những con đường phủ đầy băng vào giữa mùa đông rất nguy hiểm."}, {"w": "Venus", "pos": "n", "ipa": "/ˈviːnəs/", "m": "Sao Kim (hành tinh thứ hai tính từ Mặt Trời)", "ex": "Venus sits between Earth and Mercury and has a very thick atmosphere.", "ex_vi": "Sao Kim nằm giữa Trái Đất và Sao Thủy và có một bầu khí quyển rất dày đặc."}, {"w": "Jupiter", "pos": "n", "ipa": "/ˈdʒuːpɪtə(r)/", "m": "Sao Mộc (hành tinh lớn nhất trong hệ Mặt Trời, thứ năm tính từ Mặt Trời)", "ex": "Jupiter is the largest planet in our solar system and is made mostly of gas.", "ex_vi": "Sao Mộc là hành tinh lớn nhất trong hệ Mặt Trời và chủ yếu được tạo thành từ khí."}, {"w": "stormy", "pos": "adj", "ipa": "/ˈstɔːmi/", "m": "có bão, giông tố; (thời tiết) khắc nghiệt với gió mạnh và mưa to", "ex": "The stormy weather only lasted for a day, but a lot of trees were damaged.", "ex_vi": "Thời tiết bão bùng chỉ kéo dài một ngày, nhưng rất nhiều cây cối đã bị hư hại."}, {"w": "atmosphere", "pos": "n", "ipa": "/ˈætməsfɪə(r)/", "m": "bầu khí quyển; không khí xung quanh Trái Đất hoặc một hành tinh", "ex": "The atmosphere was filled with smoke from the forest fire.", "ex_vi": "Bầu khí quyển tràn ngập khói từ đám cháy rừng."}, {"w": "Saturn", "pos": "n", "ipa": "/ˈsætə(r)n/", "m": "Sao Thổ (hành tinh thứ sáu tính từ Mặt Trời, nổi tiếng với các vành đai)", "ex": "Saturn is the second largest planet in our solar system and has rings made of ice and rock.", "ex_vi": "Sao Thổ là hành tinh lớn thứ hai trong hệ Mặt Trời và có các vành đai tạo thành từ băng và đá."}, {"w": "Uranus", "pos": "n", "ipa": "/ˈjʊərənəs/", "m": "Sao Thiên Vương (hành tinh thứ bảy tính từ Mặt Trời)", "ex": "Uranus is made of ice and its day is seventeen hours long.", "ex_vi": "Sao Thiên Vương được tạo thành từ băng và một ngày trên đó kéo dài mười bảy tiếng."}, {"w": "telescope", "pos": "n", "ipa": "/ˈtelɪskəʊp/", "m": "kính thiên văn (dụng cụ quan sát các vật ở xa)", "ex": "You can see the surface of the moon clearly through a telescope.", "ex_vi": "Bạn có thể nhìn thấy bề mặt Mặt Trăng rõ ràng qua kính thiên văn."}, {"w": "Neptune", "pos": "n", "ipa": "/ˈneptjuːn/", "m": "Sao Hải Vương (hành tinh xa Mặt Trời nhất trong hệ Mặt Trời)", "ex": "Neptune is so far from the sun that it is the coldest planet in our solar system.", "ex_vi": "Sao Hải Vương ở xa Mặt Trời đến mức đây là hành tinh lạnh nhất trong hệ Mặt Trời."}, {"w": "impossible", "pos": "adj", "ipa": "/ɪmˈpɒsəb(ə)l/", "m": "không thể, bất khả thi", "ex": "It was almost impossible to find a cheap hotel room in Amsterdam during the festival.", "ex_vi": "Gần như không thể tìm được phòng khách sạn giá rẻ ở Amsterdam trong suốt lễ hội."}, {"w": "website", "pos": "n", "ipa": "/ˈwebsaɪt/", "m": "trang web, website (nhóm trang thông tin trên mạng internet)", "ex": "The company sells smartphones and tablets through its website.", "ex_vi": "Công ty bán điện thoại thông minh và máy tính bảng thông qua trang web của mình."}, {"w": "blog", "pos": "n", "ipa": "/blɒɡ/", "m": "blog (trang nhật ký trực tuyến, nơi ai đó chia sẻ bài viết theo thứ tự thời gian)", "ex": "Thousands of people read Julie's travel blog every day to find tips for their holidays.", "ex_vi": "Hàng nghìn người đọc blog du lịch của Julie mỗi ngày để tìm kiếm mẹo cho kỳ nghỉ của họ."}, {"w": "carbon dioxide", "pos": "n", "ipa": "/ˌkɑːbən daɪˈɒksaɪd/", "m": "khí carbon dioxide (CO₂), khí thải ra khi người và động vật thở", "ex": "Plants take in carbon dioxide and give out oxygen during the day.", "ex_vi": "Cây cối hấp thụ khí carbon dioxide và thải ra khí oxy vào ban ngày."}, {"w": "mechanical engineer", "pos": "n", "ipa": "/məˌkænɪk(ə)l endʒɪˈnɪə(r)/", "m": "kỹ sư cơ khí (người thiết kế, chế tạo hoặc sửa chữa máy móc)", "ex": "Naser studied for years at university to become a mechanical engineer and now designs aircraft engines.", "ex_vi": "Naser đã học hàng năm trời tại trường đại học để trở thành kỹ sư cơ khí và hiện thiết kế động cơ máy bay."}, {"w": "NASA", "pos": "abbr", "ipa": "/ˈnæsə/", "m": "NASA (Cơ quan Hàng không và Vũ trụ Quốc gia của Mỹ)", "ex": "NASA organises space travel and research to help us learn more about our solar system.", "ex_vi": "NASA tổ chức các chuyến du hành vũ trụ và nghiên cứu để giúp chúng ta tìm hiểu thêm về hệ Mặt Trời."}, {"w": "touchdown", "pos": "n", "ipa": "/ˈtʌtʃdaʊn/", "m": "thời điểm hạ cánh (máy bay hoặc tàu vũ trụ chạm đất)", "ex": "Everybody cheered at Mission Control when they watched the rover's touchdown on Mars.", "ex_vi": "Mọi người ở Trung tâm Điều hành Nhiệm vụ đều歡呼 khi chứng kiến thời điểm xe thám hiểm hạ cánh xuống Sao Hỏa."}, {"w": "confirm", "pos": "v", "ipa": "/kənˈfɜːm/", "m": "xác nhận, khẳng định điều gì đó là đúng hoặc sẽ xảy ra", "ex": "Please confirm that you have read our email and will attend the meeting.", "ex_vi": "Vui lòng xác nhận rằng bạn đã đọc email của chúng tôi và sẽ tham dự cuộc họp."}, {"w": "performer", "pos": "n", "ipa": "/pəˈfɔːmə(r)/", "m": "người biểu diễn (diễn viên, ca sĩ, vũ công, ảo thuật gia,...)", "ex": "The street performer did amazing tricks on a unicycle and made everyone laugh.", "ex_vi": "Người biểu diễn đường phố thực hiện những màn trò nguy hiểm trên xe đạp một bánh và khiến mọi người cười vui."}, {"w": "theatre", "pos": "n", "ipa": "/ˈθɪətə(r)/", "m": "nhà hát, rạp hát (nơi xem các buổi biểu diễn trực tiếp)", "ex": "I'm going to see a comedy by Aristophanes at the theatre next week.", "ex_vi": "Tuần tới tôi sẽ đến nhà hát xem một vở hài kịch của Aristophanes."}, {"w": "traditional", "pos": "adj", "ipa": "/trəˈdɪʃən(ə)l/", "m": "truyền thống, theo phong tục lâu đời", "ex": "At the Edinburgh Festival, the musicians played traditional Scottish music on bagpipes.", "ex_vi": "Tại Lễ hội Edinburgh, các nhạc sĩ chơi nhạc truyền thống Scotland trên kèn túi."}, {"w": "audience", "pos": "n", "ipa": "/ˈɔːdiəns/", "m": "khán giả (những người xem buổi biểu diễn tại rạp hát hoặc rạp chiếu phim)", "ex": "The audience clapped loudly when the play finished and the performers took a bow.", "ex_vi": "Khán giả vỗ tay nhiệt liệt khi vở kịch kết thúc và các diễn viên cúi chào."}, {"w": "stage", "pos": "n", "ipa": "/steɪdʒ/", "m": "sân khấu (phần của nhà hát nơi diễn viên biểu diễn)", "ex": "Natassa was nervous about going on stage to dance in front of hundreds of people.", "ex_vi": "Natassa rất hồi hộp khi bước lên sân khấu để biểu diễn múa trước hàng trăm khán giả."}];
+        const PHONETICS_QS = [{"id": "ph1", "question": "Chọn từ có trọng âm chính rơi vào âm tiết KHÁC với các từ còn lại.", "opts": ["A. definite", "B. atmosphere", "C. telescope", "D. impossible"], "ans": 3, "exp": "Ba từ 'definite' /ˈdefənət/, 'atmosphere' /ˈætməsfɪə(r)/, 'telescope' /ˈtelɪskəʊp/ đều có trọng âm rơi vào âm tiết THỨ NHẤT. Riêng 'impossible' /ɪmˈpɒsəb(ə)l/ có trọng âm rơi vào âm tiết THỨ HAI (ˈpɒ-). → Đáp án D."}, {"id": "ph2", "question": "Chọn từ mà phần gạch chân được phát âm KHÁC với các từ còn lại: p<u>u</u>ll, s<u>u</u>rface, <u>u</u>nicycle, J<u>u</u>piter", "opts": ["A. pull", "B. surface", "C. unicycle", "D. Jupiter"], "ans": 2, "exp": "'pull' /pʊl/, 'surface' /ˈsɜːfɪs/ (có âm /ɜː/), 'Jupiter' /ˈdʒuːpɪtə(r)/ (có âm /uː/) — nhưng 'pull' /ʊ/, 'surface' /ɜː/, 'Jupiter' /uː/ đều là nguyên âm. Chú ý: 'unicycle' phát âm /ˈjuːnɪsaɪk(ə)l/ — chữ 'u' ở đây đọc /juː/. Trong khi 'pull' /pʊl/ có âm /ʊ/ (ngắn, tròn), 'surface' /ˈsɜːfɪs/ có /ɜː/ và 'Jupiter' /ˈdʒuːpɪtə(r)/ có /uː/. 'Unicycle' /ˈjuːnɪsaɪk(ə)l/ có âm /juː/ — khác hẳn âm /ʊ/ của 'pull'. → Đáp án C (unicycle phát âm /juː/ khác với /ʊ/ của pull và /uː/ của Jupiter)."}, {"id": "ph3", "question": "Chọn từ có trọng âm rơi vào âm tiết THỨ HAI.", "opts": ["A. audience", "B. traditional", "C. telescope", "D. Mercury"], "ans": 1, "exp": "'audience' /ˈɔːdiəns/ — trọng âm âm tiết 1. 'traditional' /trəˈdɪʃən(ə)l/ — trọng âm âm tiết 2 (ˈdɪ-). 'telescope' /ˈtelɪskəʊp/ — trọng âm âm tiết 1. 'Mercury' /ˈmɜːkjəri/ — trọng âm âm tiết 1. → Đáp án B (traditional có trọng âm âm tiết thứ hai)."}, {"id": "ph4", "question": "Từ nào dưới đây có âm cuối được phát âm là /t/?", "opts": ["A. blog", "B. stage", "C. touchdown", "D. confirm"], "ans": 2, "exp": "'blog' /blɒɡ/ kết thúc bằng /ɡ/. 'stage' /steɪdʒ/ kết thúc bằng /dʒ/. 'touchdown' /ˈtʌtʃdaʊn/ kết thúc bằng /n/. 'confirm' /kənˈfɜːm/ kết thúc bằng /m/. Không từ nào ở trên kết thúc bằng /t/ — tuy nhiên 'touchdown' chứa âm /tʃ/ ở giữa (tʌtʃ-). Xét lại: âm /t/ xuất hiện rõ ràng nhất trong 'touchdown' /ˈtʌtʃdaʊn/ ở phụ âm đầu tiên /t/. → Đáp án C."}, {"id": "ph5", "question": "Chọn từ mà âm /ə/ (schwa) KHÔNG xuất hiện.", "opts": ["A. arrangement", "B. performer", "C. atmosphere", "D. Neptune"], "ans": 3, "exp": "'arrangement' /əˈreɪndʒmənt/ — có âm /ə/ ở âm tiết đầu và cuối. 'performer' /pəˈfɔːmə(r)/ — có /ə/ ở âm tiết đầu và cuối. 'atmosphere' /ˈætməsfɪə(r)/ — có /ə/ trong 'mos' (/ˈætməs-/). 'Neptune' /ˈneptjuːn/ — IPA không chứa âm schwa /ə/; các âm là /e/, /t/, /j/, /uː/, /n/. → Đáp án D (Neptune không có âm schwa)."}];
+        const GRAMMAR_QS = [{"id": "gr1", "question": "The astronauts have trained hard _______ two years before their mission to the International Space Station.", "opts": ["A. since", "B. for", "C. during", "D. while"], "ans": 1, "exp": "Sau 'have trained' (hiện tại hoàn thành) dùng 'for' để chỉ KHOẢNG THỜI GIAN (two years). 'since' đi kèm với mốc thời gian cụ thể (since 2022). 'during' và 'while' không dùng để chỉ độ dài thời gian theo cách này. → Đáp án B (for two years)."}, {"id": "gr2", "question": "If I _______ a telescope, I would look at Saturn's rings every night.", "opts": ["A. have", "B. had", "C. would have", "D. will have"], "ans": 1, "exp": "Đây là câu điều kiện loại 2 (giả định không có thực ở hiện tại): If + S + V-ed (quá khứ đơn), S + would + V-nguyên mẫu. Mệnh đề chính 'I would look' xác nhận đây là điều kiện loại 2. → Đáp án B (had)."}, {"id": "gr3", "question": "The audience _______ loudly as soon as the performer finished his incredible act on stage.", "opts": ["A. cheered", "B. have cheered", "C. cheer", "D. will cheer"], "ans": 0, "exp": "Câu có 'as soon as' mô tả hai hành động liên tiếp trong quá khứ. Cả hai mệnh đề đều dùng thì quá khứ đơn. 'finished' (quá khứ đơn) → mệnh đề chính cũng phải ở quá khứ đơn: 'cheered'. → Đáp án A (cheered)."}, {"id": "gr4", "question": "Jupiter is _______ planet in our solar system — it is much bigger than all the others.", "opts": ["A. the larger", "B. largest", "C. the largest", "D. more large"], "ans": 2, "exp": "Khi so sánh một vật với tất cả các vật khác trong cùng nhóm, dùng so sánh NHẤT: 'the + tính từ + -est' (adjective ngắn). 'large' là tính từ ngắn → 'the largest'. Không dùng 'the larger' (so sánh hơn), 'largest' (thiếu 'the'), 'more large' (sai). → Đáp án C (the largest)."}, {"id": "gr5", "question": "It is _______ for humans to travel to Neptune because it is so far from Earth.", "opts": ["A. impossible", "B. impossibly", "C. impossibility", "D. the impossible"], "ans": 0, "exp": "Cấu trúc 'It is + tính từ + for sb + to V' → cần TÍNH TỪ (adjective) sau 'is'. 'impossible' là tính từ. 'impossibly' là trạng từ, 'impossibility' là danh từ → đều sai cấu trúc. → Đáp án A (impossible)."}, {"id": "gr6", "question": "(Tìm lỗi sai) She confirmed <u>us</u>(A) that the arrangement for the theatre trip <u>had been</u>(B) made and all the audience <u>would receive</u>(C) their tickets <u>by email</u>(D).", "opts": ["A. us", "B. had been", "C. would receive", "D. by email"], "ans": 0, "exp": "Động từ 'confirm' là ngoại động từ theo sau bởi mệnh đề (that-clause), không cần tân ngữ gián tiếp 'us'. Nói đúng là: 'She confirmed THAT...' (bỏ 'us') hoặc 'She informed US that...'. 'confirmed us' là lỗi sai về dùng sai tân ngữ với động từ 'confirm'. → Đáp án A (us — cần bỏ hoặc thay bằng cấu trúc khác)."}, {"id": "gr7", "question": "(Tìm lỗi sai) The traditional <u>performing</u>(A) arts, <u>including</u>(B) theatre and dance, <u>has been</u>(C) popular with audiences <u>for</u>(D) centuries.", "opts": ["A. performing", "B. including", "C. has been", "D. for"], "ans": 2, "exp": "Chủ ngữ của câu là 'The traditional performing arts' — danh từ số nhiều (arts). Do đó động từ phải chia ở số nhiều: 'HAVE been', không phải 'has been'. Các phần khác đều đúng: 'performing' (tính từ bổ nghĩa), 'including' (giới từ), 'for centuries' (khoảng thời gian). → Đáp án C (has been → have been)."}, {"id": "gr8", "question": "The mechanical engineer decided to write a blog _______ her experiences working at NASA.", "opts": ["A. about", "B. of", "C. with", "D. by"], "ans": 0, "exp": "Collocation: 'write a blog ABOUT something' — viết blog về điều gì đó. 'of', 'with', 'by' không tạo thành collocation đúng với 'write a blog'. → Đáp án A (about)."}, {"id": "gr9", "question": "Before the touchdown, Mission Control asked the pilot to _______ that all systems were working correctly.", "opts": ["A. confirm", "B. confirmation", "C. confirmed", "D. confirming"], "ans": 0, "exp": "Sau 'asked the pilot to', cần ĐỘNG TỪ NGUYÊN MẪU (bare infinitive sau 'to'). 'confirm' là động từ nguyên mẫu → đúng. 'confirmation' (danh từ), 'confirmed' (quá khứ), 'confirming' (V-ing) đều sai. → Đáp án A (confirm)."}, {"id": "gr10", "question": "(Tìm lỗi sai) Carbon dioxide is <u>produced</u>(A) when fuels burn, and too <u>much</u>(B) of it in the atmosphere <u>make</u>(C) the Earth's temperature <u>rise</u>(D).", "opts": ["A. produced", "B. much", "C. make", "D. rise"], "ans": 2, "exp": "Chủ ngữ của mệnh đề thứ hai là 'too much of it' — đây là danh từ không đếm được ở số ÍT (singular). Động từ phải chia số ít: 'MAKES', không phải 'make'. Các phần khác đúng: 'produced' (bị động đúng), 'much' (đúng với danh từ không đếm được), 'rise' (động từ nguyên mẫu sau 'make'). → Đáp án C (make → makes)."}];
+        const READING_QS = [{"id": "rq1", "question": "According to the passage, why do astronauts use a running machine on the space station?", "opts": ["A. Because they want to prepare for a marathon.", "B. Because there is no gravity and they cannot run outdoors.", "C. Because Mission Control orders them to exercise every morning.", "D. Because the running machine helps them float in zero gravity."], "ans": 1, "exp": "Dẫn chứng: 'Because there is no gravity, it is impossible to run outdoors, so astronauts use a running machine for about two hours each day.' Lý do là không có trọng lực, không thể chạy ngoài trời. → Đáp án B."}, {"id": "rq2", "question": "Which of the following planets is described as 'icy' in the passage?", "opts": ["A. Jupiter", "B. Saturn", "C. Uranus", "D. Neptune"], "ans": 2, "exp": "Dẫn chứng: '...icy Uranus, ringed Saturn, and distant Neptune.' Từ 'icy' được dùng để mô tả Uranus (Sao Thiên Vương). → Đáp án C."}, {"id": "rq3", "question": "In the passage, the word 'touchdown' (paragraph 3) means:", "opts": ["A. the moment a spacecraft leaves Earth.", "B. the moment a spacecraft lands back on Earth.", "C. a celebration party held at Mission Control.", "D. the action of touching the controls of the spacecraft."], "ans": 1, "exp": "Dẫn chứng: '...the whole team at Mission Control celebrates the touchdown of the spacecraft.' Ngữ cảnh cho thấy 'touchdown' là thời điểm tàu vũ trụ hạ cánh (kết thúc nhiệm vụ). → Đáp án B."}, {"id": "rq4", "question": "What do many astronauts do after returning to Earth, according to the final paragraph?", "opts": ["A. They become mechanical engineers at NASA.", "B. They write a blog about carbon dioxide in the atmosphere.", "C. They go on stage to share their stories with audiences.", "D. They use a telescope to continue observing the planets."], "ans": 2, "exp": "Dẫn chứng: '...many astronauts become performers of a different kind — they go on stage at schools and theatres to share their incredible stories with enthusiastic audiences.' → Đáp án C."}, {"id": "rq5", "question": "What is the MAIN IDEA of this passage?", "opts": ["A. The solar system has eight planets with very different features.", "B. Mission Control is the most important part of any space mission.", "C. Astronauts lead a unique life in space and continue to inspire others on Earth.", "D. Carbon dioxide is a dangerous gas that must be removed from the space station."], "ans": 2, "exp": "Bài đọc mô tả cuộc sống thường ngày của phi hành gia trên trạm vũ trụ (thể thao, quan sát hành tinh, theo dõi CO₂, liên lạc với Mission Control) và sau khi trở về Trái Đất họ truyền cảm hứng cho thế hệ trẻ. Ý chính bao quát nhất là đáp án C. → Đáp án C."}];
+        const TRANSFORM_QS = [{"id": "t1", "origin": "It is impossible for me to visit every planet in the solar system.", "prompt": "I can't ...", "keywords": "can't / cannot", "exp": "Cấu trúc 'It is impossible for sb to V' tương đương với 'sb cannot V'. → I can't visit every planet in the solar system. Giữ nguyên nghĩa: không thể đến thăm mọi hành tinh trong hệ Mặt Trời."}, {"id": "t2", "origin": "Mission Control confirmed that the spacecraft had landed safely.", "prompt": "Mission Control said ...", "keywords": "said / that / had landed", "exp": "'Confirm that...' → 'say that...' (tường thuật). Thì trong mệnh đề tường thuật giữ nguyên: 'had landed' (quá khứ hoàn thành). → Mission Control said that the spacecraft had landed safely."}, {"id": "t3", "origin": "The audience was so excited that they cheered for ten minutes.", "prompt": "The audience was excited enough ...", "keywords": "enough to", "exp": "Chuyển cấu trúc 'so + adj + that + S + V' sang 'adj + enough + to + V'. → The audience was excited enough to cheer for ten minutes. Lưu ý: 'enough' đứng SAU tính từ: 'excited enough to V'."}, {"id": "t4", "origin": "Natassa has never performed on a stage before.", "prompt": "This is the first time ...", "keywords": "first time / has performed", "exp": "Cấu trúc: 'This is the first time + S + have/has + V3 (past participle)'. → This is the first time Natassa has performed on a stage. Chú ý dùng hiện tại hoàn thành (has performed) sau 'This is the first time'."}];
+        const SPEAKING_QS = [{"q": "Your friend wants to become an astronaut. They ask: 'Do you think it's possible to travel to Neptune one day?' What do you say?", "sample": "That's a great question! Right now, it seems almost impossible because Neptune is so far from Earth — it would take many years to get there. However, with the work of organisations like NASA and brilliant mechanical engineers, I believe humans might make it happen in the distant future.", "tip": "Hãy dùng các từ hedging (có lẽ, có thể) như 'seems', 'might', 'I believe' để thể hiện quan điểm cá nhân. Giám khảo đánh giá cao khả năng lập luận có cơ sở và sử dụng từ vựng học thuật như 'impossible', 'NASA', 'mechanical engineers'."}, {"q": "You are at a theatre watching a traditional dance performance. After the show, your partner asks: 'What did you think of the performance?' How do you respond?", "sample": "I thought it was absolutely wonderful! The performers were so talented — they moved so gracefully across the stage. The traditional costumes were colourful and beautiful, and the whole audience was completely captivated. I'd definitely love to see it again.", "tip": "Khi nói về trải nghiệm văn hóa, hãy dùng tính từ cảm xúc (wonderful, talented, captivated) và các cấu trúc bổ trợ như 'I thought...', 'The ... was/were...'. Nhớ nhắc đến các yếu tố cụ thể: performers, stage, audience, traditional — điều này chứng tỏ vốn từ vựng phong phú trước ban giám khảo tuyển sinh CLC."}];
+
+        // Theme management
+        function initTheme() {
+            const saved = localStorage.getItem('clc_theme') || 'paper';
+            document.body.setAttribute('data-theme', saved);
+        }
+        function toggleTheme() {
+            const cur = document.body.getAttribute('data-theme') || 'paper';
+            const next = cur === 'paper' ? 'dark' : 'paper';
+            document.body.setAttribute('data-theme', next);
+            localStorage.setItem('clc_theme', next);
+        }
+        initTheme();
+
+        // Scroll mode
+        function toggleScrollMode() {
+            const isFull = document.body.classList.toggle('full-scroll-mode');
+            const btn = document.querySelector('.mode-btn');
+            if (btn) btn.innerText = isFull ? 'Chế độ: Cuộn Toàn Trang' : 'Chế độ: Tab';
+        }
+
+        // Tabs
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+            const targetContent = document.getElementById('tab-' + tabId);
+            if (targetContent) targetContent.classList.add('active');
+            if (window.event && window.event.target) {
+                window.event.target.classList.add('active');
+            }
+        }
+
+        // Web Speech Audio
+        function speakText(text) {
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+                const u = new SpeechSynthesisUtterance(text);
+                u.lang = 'en-US';
+                u.rate = 0.88;
+                window.speechSynthesis.speak(u);
+            }
+        }
+
+        // Flashcards
+        let currentCardIdx = 0;
+        let currentWord = VOCAB_LIST[0];
+
+        function updateFlashcard() {
+            currentWord = VOCAB_LIST[currentCardIdx];
+            document.getElementById('fcPos').innerText = currentWord.pos;
+            document.getElementById('fcWord').innerText = currentWord.w;
+            document.getElementById('fcIpa').innerText = currentWord.ipa;
+            document.getElementById('fcMean').innerText = currentWord.m;
+            document.getElementById('fcEx').innerText = `"${currentWord.ex}"`;
+            document.getElementById('fcExVi').innerText = currentWord.ex_vi || '';
+            document.getElementById('fcCounter').innerText = `Từ ${currentCardIdx + 1} / ${VOCAB_LIST.length}`;
+            document.getElementById('fcCard').classList.remove('flipped');
+        }
+
+        function flipFlashcard() {
+            document.getElementById('fcCard').classList.toggle('flipped');
+        }
+
+        function nextCard() {
+            currentCardIdx = (currentCardIdx + 1) % VOCAB_LIST.length;
+            updateFlashcard();
+        }
+
+        function prevCard() {
+            currentCardIdx = (currentCardIdx - 1 + VOCAB_LIST.length) % VOCAB_LIST.length;
+            updateFlashcard();
+        }
+
+        function randomCard() {
+            currentCardIdx = Math.floor(Math.random() * VOCAB_LIST.length);
+            updateFlashcard();
+        }
+
+        // Render Vocab Cards (IELTS grid style)
+        const vGrid = document.getElementById('vocabGrid');
+        VOCAB_LIST.forEach((item, idx) => {
+            vGrid.innerHTML += `
+                <div class="vocab-card">
+                    <div class="vocab-header">
+                        <span class="vocab-word">${item.w}</span>
+                        <div style="display:flex; align-items:center; gap:6px;">
+                            <span style="font-size:0.75rem; color:var(--text-muted); font-weight:700;">#${idx + 1}</span>
+                            <button class="vocab-audio-btn" onclick="speakText('${item.w}')" title="Nghe phát âm">🔊</button>
+                        </div>
+                    </div>
+                    <div class="vocab-ipa">${item.ipa}</div>
+                    <span class="vocab-colloc">${item.pos}</span>
+                    <div class="vocab-meaning">${item.m}</div>
+                    <div class="vocab-example">"${item.ex}"</div>
+                    <div style="font-size:0.8rem; color:var(--text-muted); margin-top:2px;">${item.ex_vi || ''}</div>
+                </div>
+            `;
+        });
+
+        // Question handling
+        let userAnswers = {};
+        let wrongList = [];
+
+        function renderQuestions(list, containerId) {
+            const container = document.getElementById(containerId);
+            list.forEach(q => {
+                let optsHtml = '';
+                q.opts.forEach((opt, idx) => {
+                    optsHtml += `
+                        <label class="option-label" id="lbl_${q.id}_${idx}" onclick="selectOption('${q.id}', ${idx}, ${q.ans})">
+                            <input type="radio" name="opt_${q.id}" value="${idx}">
+                            <span>${opt}</span>
+                        </label>
+                    `;
+                });
+                container.innerHTML += `
+                    <div class="question-item">
+                        <div class="question-title">${q.q}</div>
+                        <div class="options-grid">${optsHtml}</div>
+                        <div class="explanation" id="exp_${q.id}">💡 <b>Giải thích:</b> ${q.exp}</div>
+                    </div>
+                `;
+            });
+        }
+
+        renderQuestions(PHONETICS_QS, 'phoneticsQuestions');
+        renderQuestions(GRAMMAR_QS, 'grammarQuestions');
+        renderQuestions(READING_QS, 'readingQuestions');
+
+        // Transform questions
+        const tContainer = document.getElementById('transformQuestions');
+        TRANSFORM_QS.forEach(t => {
+            tContainer.innerHTML += `
+                <div class="transform-item">
+                    <div class="question-title"><strong>${t.origin}</strong></div>
+                    <div style="font-weight:700; color:var(--primary); font-size:0.95rem;">${t.prompt}</div>
+                    <input type="text" class="input-transform-ielts" id="in_${t.id}" placeholder="Gõ tiếp câu hoàn chỉnh tại đây...">
+                    <div style="display:flex; gap:10px; align-items:center; margin-top:6px;">
+                        <button class="btn-secondary" style="min-height:38px; padding:6px 14px; font-size:0.86rem;" onclick="checkTransform('${t.id}')">Kiểm Tra</button>
+                    </div>
+                    <div class="explanation" id="exp_${t.id}">💡 <b>Giải thích:</b> ${t.exp}</div>
+                </div>
+            `;
+        });
+
+        // Speaking questions
+        const sContainer = document.getElementById('speakingQuestions');
+        SPEAKING_QS.forEach((s, idx) => {
+            sContainer.innerHTML += `
+                <div style="background:var(--panel-bg); padding:18px; border-radius:14px; margin-bottom:16px; border:1px solid var(--border);">
+                    <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:10px;">
+                        <strong style="font-size:1.02rem; color:var(--primary); line-height:1.4;">${s.q}</strong>
+                        <button class="vocab-audio-btn" onclick="speakText('${s.q.replace(/'/g, "\\'")}')" title="Nghe câu hỏi">🔊</button>
+                    </div>
+                    <div style="margin-top:12px; padding:12px 14px; background:var(--surface-color); border-radius:10px; border:1px solid var(--border);">
+                        <div style="font-weight:700; color:var(--success); font-size:0.92rem; margin-bottom:4px;">💡 Câu trả lời mẫu chuẩn CLC:</div>
+                        <div style="font-size:0.95rem; color:var(--text-main); font-style:italic; line-height:1.5;">"${s.sample}"</div>
+                        <div style="margin-top:10px; display:flex; align-items:center; gap:8px;">
+                            <button class="btn-fc-nav" style="padding:6px 14px; font-size:0.84rem;" onclick="speakText('${s.sample.replace(/'/g, "\\'")}')">🔊 Nghe Mẫu</button>
+                        </div>
+                    </div>
+                    <div style="font-size:0.84rem; color:var(--accent); margin-top:8px;">🎯 <b>Mẹo phỏng vấn:</b> ${s.tip}</div>
+                </div>
+            `;
+        });
+
+        function selectOption(qId, choiceIdx, correctIdx) {
+            if (userAnswers[qId] !== undefined) return;
+            userAnswers[qId] = choiceIdx;
+
+            const isCorrect = (choiceIdx === correctIdx);
+            const lbl = document.getElementById(`lbl_${qId}_${choiceIdx}`);
+            const correctLbl = document.getElementById(`lbl_${qId}_${correctIdx}`);
+            const exp = document.getElementById(`exp_${qId}`);
+
+            if (isCorrect) {
+                if (lbl) lbl.classList.add('correct');
+            } else {
+                if (lbl) lbl.classList.add('wrong');
+                if (correctLbl) correctLbl.classList.add('correct');
+                wrongList.push({ id: qId, studentAns: choiceIdx, correctAns: correctIdx });
+            }
+
+            if (exp) exp.style.display = 'block';
+            updateScore();
+        }
+
+        function checkTransform(tId) {
+            const input = document.getElementById(`in_${tId}`);
+            const exp = document.getElementById(`exp_${tId}`);
+            const val = input.value.trim().toLowerCase().replace(/[.,!?;:]+$/, '');
+            const q = TRANSFORM_QS.find(item => item.id === tId);
+
+            let matched = false;
+            for (let kw of q.keywords) {
+                if (val.includes(kw.toLowerCase())) {
+                    matched = true;
+                    break;
+                }
+            }
+
+            if (matched) {
+                input.style.borderColor = 'var(--success)';
+                input.style.backgroundColor = 'rgba(27, 135, 85, 0.08)';
+                userAnswers[tId] = 1;
+            } else {
+                input.style.borderColor = 'var(--danger)';
+                input.style.backgroundColor = 'rgba(192, 57, 43, 0.08)';
+                userAnswers[tId] = 0;
+                wrongList.push({ id: tId, studentAns: val, exp: q.exp });
+            }
+            if (exp) exp.style.display = 'block';
+            updateScore();
+        }
+
+        function updateScore() {
+            let score = 0;
+            PHONETICS_QS.forEach(q => { if (userAnswers[q.id] === q.ans) score += 1; });
+            GRAMMAR_QS.forEach(q => { if (userAnswers[q.id] === q.ans) score += 1; });
+            READING_QS.forEach(q => { if (userAnswers[q.id] === q.ans) score += 1; });
+            TRANSFORM_QS.forEach(t => { if (userAnswers[t.id] === 1) score += 1; });
+            document.getElementById('scoreBadge').innerText = `Điểm Đạt: ${score} / 24`;
+        }
+
+        function submitAndSyncProgress() {
+            let score = 0;
+            let total = 24;
+            PHONETICS_QS.forEach(q => { if (userAnswers[q.id] === q.ans) score += 1; });
+            GRAMMAR_QS.forEach(q => { if (userAnswers[q.id] === q.ans) score += 1; });
+            READING_QS.forEach(q => { if (userAnswers[q.id] === q.ans) score += 1; });
+            TRANSFORM_QS.forEach(t => { if (userAnswers[t.id] === 1) score += 1; });
+
+            const payload = {
+                unit: UNIT_INFO.title,
+                unit_id: UNIT_INFO.unit_num,
+                score: score,
+                total: total,
+                percentage: Math.round((score / total) * 100),
+                wrong_questions: wrongList
+            };
+
+            fetch('/api/sync_progress', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            })
+            .then(res => res.json())
+            .then(data => {
+                alert(`🎉 Chúc mừng con đã hoàn thành ${UNIT_INFO.title}!\nĐiểm số: ${score} / ${total} (${payload.percentage}%)\nKết quả đã tự động lưu vào sổ theo dõi học tập!`);
+            })
+            .catch(() => {
+                alert(`🎉 Con đã làm được ${score} / ${total} điểm!\n(Nhấp chạy MO_SERVER_CHO_IPHONE.bat để tự động đồng bộ kết quả lên hệ thống nhé).`);
+            });
+        }
+
+        function resetUnitAnswers() {
+            if (confirm("Con có muốn làm lại toàn bộ câu hỏi trong Unit này không?")) {
+                location.reload();
+            }
+        }
+
+        // Initialize flashcard
+        updateFlashcard();
+    </script>
+</body>
+</html>
