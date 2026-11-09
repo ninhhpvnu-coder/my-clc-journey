@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="vi" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <script>document.documentElement.classList.remove("no-js");</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Unit 90: Digital Future, Technology & States of Being">
+    <title>Unit 90: Digital Future, Technology & States of Being — CLC English Mastery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- Academic Paper Cream Theme (Default ☀️) --- */
+        :root, [data-theme="paper"] {
+            --bg-color: #fbf4ea;
+            --surface-color: #ffffff;
+            --surface-hover: #fffdf9;
+            --card-color: #ffffff;
+            --panel-bg: #fdfaf5;
+            --bar-bg: #ffffff;
+            --primary: #14324d;
+            --primary-hover: #1d4367;
+            --accent: #a35d2b;
+            --accent-hover: #8c471c;
+            --success: #1b8755;
+            --warning: #b45309;
+            --danger: #c0392b;
+            --text-main: #14324d;
+            --text-muted: #4a607a;
+            --border: #eadccb;
+            --card-shadow: 0 4px 18px rgba(20, 50, 77, 0.05);
+            --header-bg: linear-gradient(135deg, #ffffff 0%, #fbf4ea 100%);
+            --option-bg: #ffffff;
+            --input-bg: #fdfbf7;
+            --tab-active-bg: #14324d;
+            --tab-active-color: #ffffff;
+            --vocab-ipa-color: #a35d2b;
+            --vocab-colloc-color: #8c471c;
+            --vocab-colloc-bg: rgba(163, 93, 43, 0.1);
+            --vocab-colloc-border: rgba(163, 93, 43, 0.25);
+            --vocab-btn-bg: rgba(20, 50, 77, 0.07);
+            --vocab-btn-border: rgba(20, 50, 77, 0.2);
+            --eval-box-bg: #ffffff;
+        }
+
+        /* --- Midnight Navy Dark Theme (Optional 🌙) --- */
+        [data-theme="dark"] {
+            --bg-color: #0b1120;
+            --surface-color: #1e293b;
+            --surface-hover: #243247;
+            --card-color: #1e293b;
+            --panel-bg: rgba(15, 23, 42, 0.75);
+            --bar-bg: rgba(15, 23, 42, 0.9);
+            --primary: #38bdf8;
+            --primary-hover: #0ea5e9;
+            --accent: #c5855d;
+            --accent-hover: #dca07b;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #f43f5e;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border: #334155;
+            --card-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.5);
+            --header-bg: linear-gradient(135deg, rgba(30, 41, 59, 0.95), rgba(15, 23, 42, 0.95));
+            --option-bg: rgba(30, 41, 59, 0.8);
+            --input-bg: #0b1120;
+            --tab-active-bg: var(--primary);
+            --tab-active-color: #0b1120;
+            --vocab-ipa-color: #38bdf8;
+            --vocab-colloc-color: #f59e0b;
+            --vocab-colloc-bg: rgba(245, 158, 11, 0.08);
+            --vocab-colloc-border: rgba(245, 158, 11, 0.2);
+            --vocab-btn-bg: rgba(56, 189, 248, 0.15);
+            --vocab-btn-border: rgba(56, 189, 248, 0.3);
+            --eval-box-bg: rgba(15, 23, 42, 0.9);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 12px 10px 50px 10px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        @media (min-width: 768px) {
+            body {
+                padding: 24px 20px 60px 20px;
+            }
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1080px;
+            margin: 0 auto;
+        }
+
+        /* Header matching IELTS-Mastery-Kit */
+        header {
+            margin-bottom: 20px;
+            padding: 18px 20px;
+            background: var(--header-bg);
+            border-radius: 18px;
+            border: 1.5px solid var(--border);
+            box-shadow: var(--card-shadow);
+            position: relative;
+        }
+
+        .header-top-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .nav-back-link {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.88rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--surface-color);
+            border: 1px solid var(--border);
+            padding: 6px 14px;
+            border-radius: 999px;
+            transition: all 0.2s;
+        }
+
+        .nav-back-link:hover {
+            background: var(--primary);
+            color: var(--tab-active-color);
+        }
+
+        .header-controls {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .theme-toggle-btn, .mode-btn {
+            background: var(--surface-color);
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .theme-toggle-btn:hover, .mode-btn:hover {
+            color: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .badge-pill {
+            display: inline-block;
+            background: var(--vocab-colloc-bg);
+            color: var(--accent);
+            border: 1px solid var(--vocab-colloc-border);
+            padding: 4px 12px;
+            border-radius: 9999px;
+            font-weight: 800;
+            font-size: 0.78rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+
+        h1.unit-main-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.45rem;
+            color: var(--primary);
+            margin-bottom: 4px;
+            line-height: 1.3;
+            font-weight: 800;
+        }
+
+        @media (min-width: 768px) {
+            h1.unit-main-title {
+                font-size: 2rem;
+            }
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 0.88rem;
+            line-height: 1.45;
+        }
+
+        /* Tabs Navigation */
+        .tabs {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 20px;
+            overflow-x: auto;
+            padding-bottom: 6px;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .tab-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--surface-color);
+            border: 1.5px solid var(--border);
+            color: var(--text-muted);
+            padding: 10px 18px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 0.88rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+            flex-shrink: 0;
+            min-height: 44px;
+        }
+
+        .tab-btn:hover {
+            color: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .tab-btn.active {
+            background: var(--tab-active-bg);
+            color: var(--tab-active-color);
+            border-color: var(--tab-active-bg);
+            box-shadow: 0 4px 14px rgba(20, 50, 77, 0.15);
+        }
+
+        [data-theme="dark"] .tab-btn.active {
+            box-shadow: 0 0 15px rgba(56, 189, 248, 0.35);
+        }
+
+        .tab-content {
+            display: none;
+            background: var(--surface-color);
+            border: 1.5px solid var(--border);
+            border-radius: 18px;
+            padding: 20px 16px;
+            margin-bottom: 25px;
+            box-shadow: var(--card-shadow);
+        }
+
+        @media (min-width: 768px) {
+            .tab-content {
+                padding: 28px;
+            }
+        }
+
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.25s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(6px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Full Page Scroll Mode */
+        body.full-scroll-mode .tab-content {
+            display: block !important;
+            margin-bottom: 28px !important;
+        }
+
+        h2.section-heading {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.25rem;
+            margin-bottom: 18px;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            line-height: 1.35;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 10px;
+            font-weight: 700;
+        }
+
+        /* 3D FLASHCARD FLIP COMPONENT */
+        .flashcard-hero-box {
+            background: var(--panel-bg);
+            border: 1.5px solid var(--border);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        .flashcard-3d-scene {
+            perspective: 1000px;
+            width: 100%;
+            max-width: 500px;
+            height: 250px;
+            margin: 16px auto;
+            cursor: pointer;
+        }
+
+        .flashcard-3d-card {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
+            transform-style: preserve-3d;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(20, 50, 77, 0.1);
+        }
+
+        .flashcard-3d-card.flipped {
+            transform: rotateY(180deg);
+        }
+
+        .fc-side {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 24px;
+            border-radius: 16px;
+            background: var(--surface-color);
+            border: 2px solid var(--border);
+        }
+
+        .fc-back {
+            background: var(--panel-bg);
+            border-color: var(--accent);
+            transform: rotateY(180deg);
+        }
+
+        .fc-pos-tag {
+            background: var(--vocab-colloc-bg);
+            color: var(--accent);
+            border: 1px solid var(--vocab-colloc-border);
+            padding: 3px 12px;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .fc-main-word {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+
+        .fc-ipa-text {
+            font-family: monospace;
+            font-size: 1.15rem;
+            color: var(--vocab-ipa-color);
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .fc-mean-viet {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--success);
+            margin-bottom: 10px;
+        }
+
+        .fc-example-text {
+            font-size: 0.95rem;
+            color: var(--text-main);
+            font-style: italic;
+            margin-bottom: 4px;
+        }
+
+        .fc-example-viet {
+            font-size: 0.86rem;
+            color: var(--text-muted);
+        }
+
+        .fc-ctrl-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 14px;
+            flex-wrap: wrap;
+        }
+
+        .btn-fc-nav {
+            background: var(--surface-color);
+            color: var(--text-main);
+            border: 1.5px solid var(--border);
+            padding: 9px 18px;
+            border-radius: 999px;
+            font-weight: 700;
+            font-size: 0.88rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-fc-nav:hover {
+            background: var(--primary);
+            color: var(--tab-active-color);
+            border-color: var(--primary);
+        }
+
+        /* EXACT IELTS VOCABULARY GRID */
+        .vocab-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+            margin-top: 14px;
+        }
+
+        @media (min-width: 640px) {
+            .vocab-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 14px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .vocab-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 16px;
+            }
+        }
+
+        .vocab-card {
+            background: var(--surface-color);
+            border: 1.5px solid var(--border);
+            border-radius: 14px;
+            padding: 16px;
+            transition: all 0.25s ease;
+            position: relative;
+            box-shadow: var(--card-shadow);
+        }
+
+        .vocab-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(20, 50, 77, 0.08);
+        }
+
+        [data-theme="dark"] .vocab-card:hover {
+            border-color: rgba(56, 189, 248, 0.5);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+        }
+
+        .vocab-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .vocab-word {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 800;
+            color: var(--primary);
+        }
+
+        .vocab-audio-btn {
+            background: var(--vocab-btn-bg);
+            border: 1.5px solid var(--vocab-btn-border);
+            color: var(--primary);
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+            flex-shrink: 0;
+        }
+
+        .vocab-audio-btn:hover, .vocab-audio-btn:active {
+            background: var(--primary);
+            color: var(--tab-active-color);
+            transform: scale(1.08);
+        }
+
+        .vocab-ipa {
+            font-size: 0.88rem;
+            color: var(--vocab-ipa-color);
+            font-family: monospace;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .vocab-meaning {
+            font-weight: 700;
+            color: var(--text-main);
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+        }
+
+        .vocab-colloc {
+            font-size: 0.82rem;
+            color: var(--vocab-colloc-color);
+            background: var(--vocab-colloc-bg);
+            border: 1px solid var(--vocab-colloc-border);
+            padding: 4px 8px;
+            border-radius: 6px;
+            margin-bottom: 6px;
+            line-height: 1.35;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        .vocab-example {
+            font-size: 0.84rem;
+            color: var(--text-muted);
+            font-style: italic;
+            line-height: 1.45;
+            border-top: 1px solid var(--border);
+            padding-top: 6px;
+            margin-top: 6px;
+        }
+
+        /* EXACT IELTS QUIZ STYLING */
+        .question-item {
+            margin-bottom: 20px;
+            padding-bottom: 18px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .question-title {
+            font-weight: 600;
+            margin-bottom: 12px;
+            font-size: 0.98rem;
+            line-height: 1.5;
+            color: var(--text-main);
+        }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        @media (min-width: 600px) {
+            .options-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+        }
+
+        .option-label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--option-bg);
+            border: 1.5px solid var(--border);
+            color: var(--text-main);
+            padding: 10px 14px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 0.92rem;
+            min-height: 46px;
+            transition: all 0.2s;
+        }
+
+        .option-label:hover {
+            border-color: var(--primary);
+            background: rgba(56, 189, 248, 0.05);
+        }
+
+        .option-label.correct {
+            background: rgba(27, 135, 85, 0.12) !important;
+            border-color: var(--success) !important;
+            color: var(--success);
+            font-weight: 700;
+        }
+
+        .option-label.wrong {
+            background: rgba(192, 57, 43, 0.1) !important;
+            border-color: var(--danger) !important;
+            color: var(--danger);
+            font-weight: 700;
+        }
+
+        .explanation {
+            display: none;
+            font-size: 0.88rem;
+            padding: 12px 14px;
+            border-radius: 8px;
+            margin-top: 10px;
+            line-height: 1.5;
+            background: var(--panel-bg);
+            border-left: 4px solid var(--primary);
+            color: var(--text-main);
+        }
+
+        /* TRANSFORMATION */
+        .transform-item {
+            margin-bottom: 20px;
+            padding-bottom: 18px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .input-transform-ielts {
+            width: 100%;
+            background: var(--input-bg);
+            border: 1.5px solid var(--border);
+            color: var(--text-main);
+            padding: 12px 14px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-family: inherit;
+            margin: 8px 0;
+            transition: border-color 0.2s;
+        }
+
+        .input-transform-ielts:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        /* READING DUAL BOX */
+        .reading-dual-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 820px) {
+            .reading-dual-grid {
+                grid-template-columns: 1.15fr 1fr;
+            }
+        }
+
+        .passage-card {
+            background: var(--panel-bg);
+            border: 1.5px solid var(--border);
+            border-radius: 14px;
+            padding: 20px;
+            font-size: 1rem;
+            line-height: 1.7;
+            max-height: 520px;
+            overflow-y: auto;
+        }
+
+        /* ACTION BAR & CONTROLS */
+        .action-bar {
+            margin-top: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: stretch;
+        }
+
+        @media (min-width: 640px) {
+            .action-bar {
+                flex-direction: row;
+                align-items: center;
+                gap: 14px;
+            }
+        }
+
+        .btn-primary {
+            background: var(--btn-launch-bg, var(--primary));
+            color: var(--btn-launch-color, #ffffff);
+            font-weight: 800;
+            border: none;
+            padding: 14px 28px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 1rem;
+            min-height: 48px;
+            text-align: center;
+            transition: all 0.2s;
+            box-shadow: 0 4px 14px rgba(20, 50, 77, 0.15);
+        }
+
+        .btn-primary:hover {
+            filter: brightness(1.1);
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background: var(--surface-color);
+            color: var(--text-main);
+            border: 1.5px solid var(--border);
+            padding: 12px 20px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 0.92rem;
+            min-height: 48px;
+            text-align: center;
+            transition: all 0.2s;
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .score-pill {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: var(--primary);
+            background: var(--vocab-colloc-bg);
+            padding: 10px 18px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            text-align: center;
+        }
+
+        @media (min-width: 640px) {
+            .score-pill {
+                margin-left: auto;
+            }
+        }
+    </style>
+</head>
+<body data-theme="paper">
+
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+            <div class="header-top-row">
+                <a href="index.html" class="nav-back-link">← Quay Lại Mục Lục Hub</a>
+                <div class="header-controls">
+                    <button class="mode-btn" onclick="toggleScrollMode()">Chế độ: Tab</button>
+                    <button class="theme-toggle-btn" onclick="toggleTheme()">🌓 Đổi Giao Diện</button>
+                </div>
+            </div>
+            <div class="badge-pill">Level 4: Band 7.0 — 8.0 (Học Thuật Chuyên Sâu & Tư Duy Đỉnh Cao CLC)</div>
+            <h1 class="unit-main-title">Unit 90: Digital Future, Technology & States of Being</h1>
+            <p class="subtitle">Look 4: Từ 421 - 450 (unit 90)</p>
+        </header>
+
+        <!-- Tabs Navigation -->
+        <nav class="tabs" id="mainTabs">
+            <button class="tab-btn active" onclick="switchTab('vocab')">1. Từ Vựng (30 Từ Look)</button>
+            <button class="tab-btn" onclick="switchTab('phonetics')">2. Ngữ Âm (Phonetics)</button>
+            <button class="tab-btn" onclick="switchTab('grammar')">3. Ngữ Pháp & Bẫy Đề</button>
+            <button class="tab-btn" onclick="switchTab('reading')">4. Đọc Hiểu (Reading)</button>
+            <button class="tab-btn" onclick="switchTab('transform')">5. Viết Lại Câu</button>
+            <button class="tab-btn" onclick="switchTab('speaking')">6. Phỏng Vấn (Speaking)</button>
+        </nav>
+
+        <!-- TAB 1: 30 VOCABULARY + FLASHCARDS -->
+        <section id="tab-vocab" class="tab-content active">
+            <h2 class="section-heading">
+                <span>📖 30 Từ Vựng Trọng Tâm (Look Level 4)</span>
+                <span style="font-size:0.85rem; font-weight:normal; color:var(--text-muted);">Bấm 🔊 để nghe phát âm</span>
+            </h2>
+
+            <!-- 3D Flip Flashcard -->
+            <div class="flashcard-hero-box">
+                <div style="font-weight:700; color:var(--primary); font-size:1.05rem; margin-bottom:4px;">🎴 Thẻ Lật Flashcard 3D Thông Minh</div>
+                <p style="font-size:0.84rem; color:var(--text-muted);">(Chạm vào thẻ để lật xem nghĩa tiếng Việt & câu ví dụ mẫu)</p>
+                <div class="flashcard-3d-scene" onclick="flipFlashcard()">
+                    <div class="flashcard-3d-card" id="fcCard">
+                        <div class="fc-side fc-front">
+                            <span class="fc-pos-tag" id="fcPos">number</span>
+                            <div class="fc-main-word" id="fcWord">one</div>
+                            <div class="fc-ipa-text" id="fcIpa">/wʌn/</div>
+                            <button class="vocab-audio-btn" onclick="event.stopPropagation(); speakText(currentWord.w)" title="Nghe phát âm">🔊</button>
+                            <span style="font-size:0.75rem; color:var(--text-muted); margin-top:10px;">Chạm để lật thẻ ➔</span>
+                        </div>
+                        <div class="fc-side fc-back">
+                            <div class="fc-mean-viet" id="fcMean">số một (1)</div>
+                            <div class="fc-example-text" id="fcEx">"I have one apple in my bag."</div>
+                            <div class="fc-example-viet" id="fcExVi">Tôi có một quả táo trong cặp.</div>
+                            <div style="margin-top:10px;">
+                                <button class="btn-fc-nav" onclick="event.stopPropagation(); speakText(currentWord.ex)" title="Nghe đọc ví dụ">🔊 Nghe Ví Dụ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fc-ctrl-row">
+                    <button class="btn-fc-nav" onclick="prevCard()">← Từ Trước</button>
+                    <span id="fcCounter" style="font-weight:700; color:var(--primary); font-size:0.95rem; min-width:90px;">Từ 1 / 30</span>
+                    <button class="btn-fc-nav" onclick="nextCard()">Từ Sau →</button>
+                    <button class="btn-fc-nav" onclick="speakText(currentWord.w)">🔊 Phát Âm</button>
+                    <button class="btn-fc-nav" onclick="randomCard()">🔀 Ngẫu Nhiên</button>
+                </div>
+            </div>
+
+            <!-- Vocab Grid (Exact IELTS Cards) -->
+            <div class="vocab-grid" id="vocabGrid"></div>
+        </section>
+
+        <!-- TAB 2: PHONETICS LAB -->
+        <section id="tab-phonetics" class="tab-content">
+            <h2 class="section-heading">
+                <span>⚡ Phonetics Lab: Ngữ Âm & Trọng Âm Cốt Lõi (5 câu)</span>
+                <span style="font-size:0.85rem; font-weight:normal; color:var(--text-muted);">Mỗi câu 1 điểm</span>
+            </h2>
+            <div id="phoneticsQuestions"></div>
+        </section>
+
+        <!-- TAB 3: GRAMMAR & ERROR ID -->
+        <section id="tab-grammar" class="tab-content">
+            <h2 class="section-heading">
+                <span>⚙️ Grammar Mastery: Ngữ Pháp & Bẫy Đề Thi (10 câu)</span>
+                <span style="font-size:0.85rem; font-weight:normal; color:var(--text-muted);">Mỗi câu 1 điểm</span>
+            </h2>
+            <div id="grammarQuestions"></div>
+        </section>
+
+        <!-- TAB 4: READING LAB -->
+        <section id="tab-reading" class="tab-content">
+            <h2 class="section-heading">
+                <span>Technological Inventions Reshaping Our World</span>
+                <button class="vocab-audio-btn" onclick="speakText(document.getElementById('readingPassage').innerText)" title="Nghe toàn bộ bài đọc">🔊</button>
+            </h2>
+            <div class="reading-dual-grid">
+                <div class="passage-card">
+                    <div id="readingPassage">In recent decades, modern technology has transformed how humans live, communicate, and solve urgent global problems. One of the most useful inventions of the twenty-first century is the autonomous drone. In Rwanda, a mountainous East African nation where steep geography often blocks road transport, medical workers regularly send a text to order emergency supplies. Within minutes, a remote-controlled drone is launched into the sky. Guided by navigation satellites, the flying vehicle travels rapidly across valleys to deliver fresh units of blood directly to a rural medical centre. Upon arrival, it drops the precious package safely by parachute before flying back. Meanwhile, scientists in Norway and Southeast Asia are employing similar drone robotics to protect endangered wildlife. By flying quietly above dense tropical canopies, aerial cameras locate orangutan nests without disturbing mothers while their young offspring are asleep. In schools, virtual reality simulations allow students to experience these scientific breakthroughs firsthand in their classrooms. It is an inspiring fact that imaginative technology is saving both human lives and vulnerable ecosystems.</div>
+                </div>
+                <div id="readingQuestions"></div>
+            </div>
+        </section>
+
+        <!-- TAB 5: SENTENCE TRANSFORMATION -->
+        <section id="tab-transform" class="tab-content">
+            <h2 class="section-heading">
+                <span>🔄 Sentence Transformation: Viết Lại Câu Không Đổi Nghĩa (4 câu)</span>
+                <span style="font-size:0.85rem; font-weight:normal; color:var(--accent);">Phân loại điểm 9-10</span>
+            </h2>
+            <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:18px;">Gõ câu viết lại hoàn chỉnh vào ô bên dưới rồi nhấn "Kiểm Tra":</p>
+            <div id="transformQuestions"></div>
+        </section>
+
+        <!-- TAB 6: SPEAKING / INTERVIEW -->
+        <section id="tab-speaking" class="tab-content">
+            <h2 class="section-heading">
+                <span>🎙️ Phỏng Vấn Vấn Đáp Tuyển Sinh CLC (Speaking)</span>
+                <span style="font-size:0.85rem; font-weight:normal; color:var(--text-muted);">Nghe phát âm chuẩn</span>
+            </h2>
+            <div id="speakingQuestions"></div>
+        </section>
+
+        <!-- Action Bar (Floating bottom) -->
+        <div class="action-bar">
+            <button class="btn-primary" onclick="submitAndSyncProgress()">💾 Nộp Bài & Đồng Bộ Tiến Độ Học Tập</button>
+            <button class="btn-secondary" onclick="resetUnitAnswers()">🔄 Làm Lại Từ Đầu</button>
+            <div class="score-pill" id="scoreBadge">Điểm Đạt: 0 / 24</div>
+        </div>
+
+    </div>
+
+    <script>
+        const UNIT_INFO = {"unit_num": "90", "title": "Unit 90: Digital Future, Technology & States of Being"};
+        const VOCAB_LIST = [{"w": "wifi", "pos": "n", "ipa": "/ˈwaɪ faɪ/", "m": "mạng không dây, sóng kết nối in-tơ-nét không dây", "ex": "The new digital library offers high-speed wifi so pupils can search for study materials easily.", "ex_vi": "Thư viện kỹ thuật số mới cung cấp sóng wifi tốc độ cao để học sinh có thể tìm kiếm tài liệu học tập một cách dễ dàng."}, {"w": "Norway", "pos": "n", "ipa": "/ˈnɔːweɪ/", "m": "nước Na Uy (quốc gia ở Bắc Âu)", "ex": "Norway is famous for its breathtaking coastal fjords and advanced green technologies.", "ex_vi": "Na Uy nổi tiếng với những vịnh hẹp ven biển tuyệt đẹp và các công nghệ xanh tiên tiến."}, {"w": "virtual reality", "pos": "n", "ipa": "/ˌvɜːtʃuəl riˈæləti/", "m": "thực tế ảo (công nghệ mô phỏng không gian đa chiều)", "ex": "Our science teacher used virtual reality headsets to take the whole class on an exploration inside the human heart.", "ex_vi": "Thầy giáo khoa học của chúng tôi đã sử dụng kính thực tế ảo để đưa cả lớp đi thám hiểm bên trong trái tim con người."}, {"w": "useful", "pos": "adj", "ipa": "/ˈjuːsfəl/", "m": "hữu ích, có ích, tiện lợi", "ex": "Learning coding at an early age provides children with useful problem-solving skills.", "ex_vi": "Học lập trình từ sớm trang bị cho trẻ em những kỹ năng giải quyết vấn đề vô cùng hữu ích."}, {"w": "drone", "pos": "n", "ipa": "/drəʊn/", "m": "máy bay không người lái, thiết bị bay điều khiển từ xa", "ex": "The rescue team launched a flying drone to locate hikers trapped on the snowy mountain peak.", "ex_vi": "Đội cứu hộ đã phóng một chiếc máy bay không người lái để xác định vị trí những người leo núi bị mắc kẹt trên đỉnh núi tuyết."}, {"w": "control", "pos": "v", "ipa": "/kənˈtrəʊl/", "m": "điều khiển, kiểm soát, chỉ huy", "ex": "The engineer taught students how to control the miniature robotic arm using a smartphone application.", "ex_vi": "Người kỹ sư đã hướng dẫn học sinh cách điều khiển cánh tay rô-bốt thu nhỏ thông qua ứng dụng điện thoại thông minh."}, {"w": "satellite", "pos": "n", "ipa": "/ˈsætəlaɪt/", "m": "vệ tinh nhân tạo (thiết bị truyền tín hiệu ngoài không gian)", "ex": "Weather satellites orbiting the Earth provide accurate warnings about upcoming tropical typhoons.", "ex_vi": "Các vệ tinh thời tiết quay quanh Trái Đất cung cấp những cảnh báo chính xác về các cơn bão nhiệt đới sắp tới."}, {"w": "drop", "pos": "v", "ipa": "/drɒp/", "m": "thả xuống, làm rơi, giảm bớt", "ex": "The automated drone was programmed to drop emergency medical packages gently into the village square.", "ex_vi": "Chiếc máy bay không người lái tự động được lập trình để thả các gói y tế khẩn cấp nhẹ nhàng xuống quảng trường của ngôi làng."}, {"w": "Rwanda", "pos": "n", "ipa": "/ruˈændə/", "m": "nước Ru-an-đa (quốc gia ở Đông Phi)", "ex": "Rwanda has pioneered the widespread use of autonomous drones to deliver medical supplies across remote hills.", "ex_vi": "Ru-an-đa là quốc gia tiên phong trong việc sử dụng rộng rãi máy bay không người lái tự hành để vận chuyển vật tư y tế qua những ngọn đồi xa xôi."}, {"w": "blood", "pos": "n", "ipa": "/blʌd/", "m": "máu, huyết tương trong cơ thể", "ex": "The red drone carried precious units of donated blood to save patients injured in a traffic accident.", "ex_vi": "Chiếc máy bay không người lái màu đỏ đã vận chuyển những đơn vị máu hiến tặng quý giá để cứu các bệnh nhân bị thương trong một vụ tai nạn giao thông."}, {"w": "send a text", "pos": "phr", "ipa": "/send ə tekst/", "m": "gửi một tin nhắn điện thoại, nhắn tin", "ex": "Doctors can send a text message to order immediate medical deliveries whenever an emergency arises.", "ex_vi": "Các bác sĩ có thể gửi một tin nhắn để yêu cầu giao vật tư y tế ngay lập tức bất cứ khi nào tình huống khẩn cấp phát sinh."}, {"w": "medical centre", "pos": "n", "ipa": "/ˈmedɪk(ə)l sentə(r)/", "m": "trung tâm y tế, trạm y tế địa phương", "ex": "The remote mountainous village built a new medical centre with modern emergency equipment.", "ex_vi": "Ngôi làng vùng núi xa xôi đã xây dựng một trung tâm y tế mới với các trang thiết bị cấp cứu hiện đại."}, {"w": "nest", "pos": "n", "ipa": "/nest/", "m": "tổ chim, tổ thú (nơi sinh sống và nuôi con)", "ex": "Wildlife researchers used thermal cameras to observe the eagle's nest high in the ancient pine tree.", "ex_vi": "Các nhà nghiên cứu động vật hoang dã đã sử dụng máy quay tầm nhiệt để quan sát tổ chim đại bàng trên ngọn cây thông cổ thụ."}, {"w": "orangutan", "pos": "n", "ipa": "/ɔːˌræŋuːˈtæn/", "m": "đười ươi (loài linh trưởng lớn lông đỏ hung)", "ex": "Conservationists track wild orangutan populations in tropical rainforests to protect them from illegal logging.", "ex_vi": "Các nhà bảo tồn theo dõi các quần thể đười ươi hoang dã trong rừng mưa nhiệt đới để bảo vệ chúng khỏi nạn khai thác gỗ trái phép."}, {"w": "deliver", "pos": "v", "ipa": "/dɪˈlɪvə(r)/", "m": "giao hàng, vận chuyển, phân phát đến tận nơi", "ex": "Autonomous electric vehicles are designed to deliver parcels quickly to urban households.", "ex_vi": "Các phương tiện điện tự hành được thiết kế để giao bưu kiện nhanh chóng đến từng hộ gia đình thành thị."}, {"w": "launch", "pos": "v", "ipa": "/lɔːntʃ/", "m": "phóng (tên lửa, vệ tinh), khởi động, phát động", "ex": "Scientists plan to launch an advanced research satellite into space next winter.", "ex_vi": "Các nhà khoa học lên kế hoạch phóng một vệ tinh nghiên cứu tiên tiến vào không gian vào mùa đông tới."}, {"w": "communicate", "pos": "v", "ipa": "/kəˈmjuːnɪkeɪt/", "m": "giao tiếp, liên lạc, trao đổi thông tin", "ex": "Digital devices allow doctors in large hospitals to communicate with remote clinic nurses in real time.", "ex_vi": "Các thiết bị kỹ thuật số cho phép các bác sĩ ở bệnh viện lớn giao tiếp với y tá ở phòng khám vùng xa theo thời gian thực."}, {"w": "imagine", "pos": "v", "ipa": "/ɪˈmædʒɪn/", "m": "tưởng tượng, hình dung, mường tượng", "ex": "Can you imagine living in an underwater city powered entirely by clean renewable energy?", "ex_vi": "Bạn có thể tưởng tượng việc sống trong một thành phố dưới biển được vận hành hoàn toàn bằng năng lượng tái tạo sạch không?"}, {"w": "imagination", "pos": "n", "ipa": "/ɪˌmædʒɪˈneɪʃ(ə)n/", "m": "trí tưởng tượng, khả năng sáng tạo", "ex": "Reading inspiring science fiction novels stimulates children's vivid imagination about future worlds.", "ex_vi": "Đọc các tiểu thuyết khoa học viễn tưởng truyền cảm hứng kích thích trí tưởng tượng phong phú của trẻ em về những thế giới tương lai."}, {"w": "solve", "pos": "v", "ipa": "/sɒlv/", "m": "giải quyết (vấn đề), tìm ra lời giải, tháo gỡ", "ex": "Smart robots are programmed to help engineers solve complex environmental calculations rapidly.", "ex_vi": "Các rô-bốt thông minh được lập trình để giúp các kỹ sư giải quyết các bài toán môi trường phức tạp một cách nhanh chóng."}, {"w": "pretend", "pos": "v", "ipa": "/prɪˈtend/", "m": "giả vờ, đóng giả, làm ra vẻ", "ex": "In the drama lesson, the pupils pretend to be astronauts stepping onto the surface of Mars.", "ex_vi": "Trong tiết học kịch, các em học sinh giả vờ làm những nhà du hành vũ trụ đặt chân lên bề mặt Sao Hỏa."}, {"w": "invention", "pos": "n", "ipa": "/ɪnˈvenʃ(ə)n/", "m": "phát minh, sáng chế mới", "ex": "The electric motor was a revolutionary invention that transformed manufacturing and transportation.", "ex_vi": "Động cơ điện là một phát minh mang tính cách mạng đã làm biến đổi nền sản xuất và giao thông vận tải."}, {"w": "fact", "pos": "n", "ipa": "/fækt/", "m": "sự thật, dữ kiện thực tế, chân lý", "ex": "It is a scientific fact that light travels much faster than sound waves in the atmosphere.", "ex_vi": "Đó là một sự thật khoa học rằng ánh sáng truyền đi nhanh hơn nhiều so với sóng âm trong khí quyển."}, {"w": "cafeteria", "pos": "n", "ipa": "/ˌkæfəˈtɪəriə/", "m": "quán ăn tự phục vụ, căng tin trường học", "ex": "The international school cafeteria serves balanced meals with fresh salads and warm whole-grain bread.", "ex_vi": "Căng tin tự phục vụ của trường quốc tế phục vụ những bữa ăn cân bằng với sa lát tươi và bánh mì nguyên cám nóng hổi."}, {"w": "technology", "pos": "n", "ipa": "/tekˈnɒlədʒi/", "m": "công nghệ, kỹ thuật công nghệ hiện đại", "ex": "Modern technology helps meteorologists predict extreme storms days before they hit the coast.", "ex_vi": "Công nghệ hiện đại giúp các nhà khí tượng học dự báo những cơn bão dữ dội nhiều ngày trước khi chúng đổ bộ vào bờ biển."}, {"w": "geography", "pos": "n", "ipa": "/dʒiˈɒɡrəfi/", "m": "môn địa lý, địa thế địa lý", "ex": "In our geography class, we learned how satellite imagery helps map remote rainforest regions.", "ex_vi": "Trong lớp địa lý, chúng tôi đã học cách hình ảnh vệ tinh giúp lập bản đồ những vùng rừng mưa xa xôi."}, {"w": "robotics", "pos": "n", "ipa": "/rəʊˈbɒtɪks/", "m": "ngành rô-bốt học, khoa học người máy", "ex": "Students in the robotics club designed a small tracked rover that can navigate over rough terrain.", "ex_vi": "Học sinh trong câu lạc bộ rô-bốt học đã thiết kế một xe tự hành bánh xích nhỏ có thể di chuyển qua địa hình gồ ghề."}, {"w": "adjective", "pos": "n", "ipa": "/ˈædʒɪktɪv/", "m": "tính từ (từ loại dùng để miêu tả đặc điểm, tính chất)", "ex": "The teacher asked the class to underline each descriptive adjective in the science paragraph.", "ex_vi": "Giáo viên yêu cầu cả lớp gạch chân mỗi tính từ miêu tả trong đoạn văn khoa học."}, {"w": "asleep", "pos": "adj", "ipa": "/əsliːp/", "m": "ngủ, đang ngủ say, thiếp đi", "ex": "After a tiring robotics competition, the exhausted boy fell asleep instantly on the bus home.", "ex_vi": "Sau một cuộc thi rô-bốt mệt nhoài, cậu bé kiệt sức đã ngủ thiếp đi ngay lập tức trên chuyến xe buýt về nhà."}, {"w": "awake", "pos": "adj", "ipa": "/əweɪk/", "m": "thức, tỉnh táo, không ngủ", "ex": "Drinking strong coffee late at night keeps many university students awake until dawn.", "ex_vi": "Uống cà phê đậm đặc vào đêm khuya khiến nhiều sinh viên đại học thao thức cho đến tận rạng sáng."}];
+        const PHONETICS_QS = [{"id": "p1", "q": "1. Choose the word whose underlined part is pronounced differently from the others:", "opts": ["A. bl<u>oo</u>d", "B. dr<u>o</u>p", "C. s<u>o</u>lve", "D. r<u>o</u>botics"], "ans": 0, "exp": "A đúng. Phần gạch chân của 'blood' phát âm là /ʌ/ (/blʌd/), trong khi 'drop' (/drɒp/), 'solve' (/sɒlv/), và âm tiết thứ hai của 'robotics' (/rəʊˈbɒtɪks/) đều được phát âm là /ɒ/."}, {"id": "p2", "q": "2. Choose the word whose underlined part is pronounced differently from the others:", "opts": ["A. te<u>ch</u>nology", "B. laun<u>ch</u>", "C. s<u>c</u>hool", "D. <u>ch</u>emist"], "ans": 1, "exp": "B đúng. Phần gạch chân 'ch' trong 'launch' phát âm là /tʃ/ (/lɔːntʃ/), trong khi 'ch' trong 'technology' (/tekˈnɒlədʒi/), 'school' (/skuːl/) và 'chemist' (/ˈkemɪst/) đều được phát âm là /k/."}, {"id": "p3", "q": "3. Choose the word whose underlined part is pronounced differently from the others:", "opts": ["A. w<u>i</u>fi", "B. satell<u>i</u>te", "C. med<u>i</u>cal", "D. onl<u>i</u>ne"], "ans": 2, "exp": "C đúng. Chữ cái 'i' gạch chân trong 'medical' phát âm là /ɪ/ (/ˈmedɪkl/), còn trong 'wifi' (/ˈwaɪ faɪ/), 'satellite' (/ˈsætəlaɪt/) và 'online' (/ˈɒnlaɪn/) đều phát âm là nguyên âm đôi /aɪ/."}, {"id": "p4", "q": "4. Choose the word that has a different stress pattern from the others:", "opts": ["A. asleep", "B. awake", "C. control", "D. useful"], "ans": 3, "exp": "D đúng. 'useful' có trọng âm rơi vào âm tiết thứ nhất (/ˈjuːsfəl/), trong khi 'asleep' (/əˈsliːp/), 'awake' (/əˈweɪk/) và 'control' (/kənˈtrəʊl/) đều có trọng âm rơi vào âm tiết thứ hai."}, {"id": "p5", "q": "5. Choose the word that has a different stress pattern from the others:", "opts": ["A. satellite", "B. technology", "C. geography", "D. robotics"], "ans": 0, "exp": "A đúng. 'satellite' có trọng âm rơi vào âm tiết thứ nhất (/ˈsætəlaɪt/), trong khi 'technology' (/tekˈnɒlədʒi/), 'geography' (/dʒiˈɒɡrəfi/) và 'robotics' (/rəʊˈbɒtɪks/) đều có trọng âm rơi vào âm tiết thứ hai."}];
+        const GRAMMAR_QS = [{"id": "g1", "q": "1. If scientists ______ more solar-powered satellites into space, global weather forecasting will become much more accurate.", "opts": ["A. launch", "B. launched", "C. will launch", "D. are launching"], "ans": 0, "exp": "A đúng. Câu điều kiện loại 1 (First Conditional) diễn tả một hành động có thể xảy ra ở tương lai: 'If + S + V(hiện tại đơn), S + will + V(nguyên mẫu)'. Với chủ ngữ số nhiều 'scientists', động từ chia ở thì hiện tại đơn là 'launch'."}, {"id": "g2", "q": "2. Can you imagine ______ autonomous drones to deliver hot meals directly to school cafeterias in remote areas?", "opts": ["A. to use", "B. using", "C. use", "D. used"], "ans": 1, "exp": "B đúng. Động từ 'imagine' (tưởng tượng, hình dung) theo sau bởi danh động từ V-ing ('imagine doing something': tưởng tượng việc làm gì)."}, {"id": "g3", "q": "3. High-speed wifi connections enable doctors at the city hospital to communicate ______ remote clinic nurses seamlessly.", "opts": ["A. for", "B. with", "C. on", "D. at"], "ans": 1, "exp": "B đúng. Cụm động từ cố định: 'communicate with somebody' mang nghĩa giao tiếp, trao đổi thông tin với ai đó ('communicate with remote clinic nurses': liên lạc với các y tá trạm xá vùng xa)."}, {"id": "g4", "q": "4. Drinking a warm cup of herbal tea before bedtime helps restless children fall ______ quickly without taking medicine.", "opts": ["A. asleep", "B. sleepily", "C. sleeping", "D. sleepy"], "ans": 0, "exp": "A đúng. Cụm cố định: 'fall asleep' mang nghĩa ngủ thiếp đi, chìm vào giấc ngủ. 'Asleep' là một tính từ vị ngữ (predicative adjective) đi sau động từ liên kết 'fall'."}, {"id": "g5", "q": "5. The little boy closed his eyes and pretended ______ an astronaut exploring distant planets in a virtual reality simulator.", "opts": ["A. being", "B. to be", "C. be", "D. been"], "ans": 1, "exp": "B đúng. Cấu trúc với động từ 'pretend': 'pretend to + V(nguyên mẫu)' mang nghĩa giả vờ hoặc đóng giả làm ai/cái gì ('pretended to be an astronaut': đóng giả làm phi hành gia)."}, {"id": "g6", "q": "6. Advanced algorithms and robotics allow automated delivery drones to solve navigation problems and deliver life-saving blood ______ local clinics in Rwanda.", "opts": ["A. to", "B. for", "C. in", "D. at"], "ans": 0, "exp": "A đúng. Cấu trúc chuyển động: 'deliver something to somebody/somewhere' mang nghĩa vận chuyển, giao cái gì đến cho ai hoặc địa điểm nào ('deliver life-saving blood to local clinics')."}, {"id": "g7", "q": "7. As soon as the cargo drone lands safely near the village medical centre, the pilot will send a text ______ the head doctor.", "opts": ["A. with", "B. for", "C. to", "D. about"], "ans": 2, "exp": "C đúng. Cấu trúc 'send a text (message) to somebody' mang nghĩa gửi một tin nhắn tới ai đó. Mệnh đề trạng ngữ chỉ thời gian với 'as soon as' dùng thì hiện tại đơn, mệnh đề chính dùng thì tương lai đơn 'will send'."}, {"id": "g8", "q": "8. (Tìm lỗi sai) The <u>asleep</u>(A) baby looked so <u>peaceful</u>(B) in the cradle that nobody <u>dared</u>(C) to make any loud <u>noise</u>(D).", "opts": ["A. asleep", "B. peaceful", "C. dared", "D. noise"], "ans": 0, "exp": "A đúng (lỗi sai cần sửa). 'Asleep' là tính từ vị ngữ (predicative adjective), chỉ đứng sau động từ liên kết (như be, fall, sound), không bao giờ đứng trước danh từ để bổ nghĩa. Để bổ nghĩa trước danh từ 'baby', phải dùng tính từ 'sleeping' ('The sleeping baby...')."}, {"id": "g9", "q": "9. (Tìm lỗi sai) If modern technology <u>will advance</u>(A) rapidly, automated robots <u>will replace</u>(B) human workers in many dangerous <u>underground</u>(C) mining <u>factories</u>(D).", "opts": ["A. will advance", "B. will replace", "C. underground", "D. factories"], "ans": 0, "exp": "A đúng (lỗi sai cần sửa). Trong mệnh đề điều kiện 'If' của câu điều kiện loại 1, không được sử dụng thì tương lai với 'will'. Phải dùng thì hiện tại đơn: sửa 'will advance' thành 'advances' (với chủ ngữ số ít 'technology')."}, {"id": "g10", "q": "10. (Tìm lỗi sai) Students should <u>not drink</u>(A) too much sugary energy drink to <u>stay</u>(B) <u>awakely</u>(C) during late-night exam <u>revision</u>(D).", "opts": ["A. not drink", "B. stay", "C. awakely", "D. revision"], "ans": 2, "exp": "C đúng (lỗi sai cần sửa). 'Stay' ở đây đóng vai trò là động từ nối (linking verb) chỉ trạng thái duy trì ('stay + adjective': giữ nguyên trạng thái nào đó). Ngoài ra, trong tiếng Anh không tồn tại trạng từ 'awakely'. Cần sửa thành tính từ 'awake' ('stay awake': giữ tỉnh táo)."}];
+        const READING_QS = [{"id": "r1", "q": "1. What is the primary purpose of the passage?", "opts": ["A. To criticize the high cost of operating satellites in European countries.", "B. To demonstrate how modern technology and drones solve humanitarian and ecological challenges.", "C. To explain why medical workers in Rwanda prefer traveling on dangerous mountainous roads.", "D. To describe the dietary habits of wild orangutans living in tropical rainforests."], "ans": 1, "exp": "B đúng. Mục đích chính của bài đọc là chứng minh công nghệ hiện đại và máy bay không người lái đang giúp giải quyết các thách thức nhân đạo và sinh thái trên toàn cầu. Dẫn chứng: 'In recent decades, modern technology has transformed how humans live, communicate, and solve urgent global problems... It is an inspiring fact that imaginative technology is saving both human lives and vulnerable ecosystems.'"}, {"id": "r2", "q": "2. According to the text, why are drones essential for medical deliveries in Rwanda?", "opts": ["A. Because rural hospitals refuse to use telephones or text messages.", "B. Because the nation's steep geography makes land transportation difficult and slow.", "C. Because satellites are unable to transmit communication signals over the mountains.", "D. Because doctors only treat patients during midnight storms."], "ans": 1, "exp": "B đúng. Theo đoạn 1, máy bay không người lái là thiết yếu ở Ru-an-đa vì địa hình đồi núi dốc khiến việc vận chuyển bằng đường bộ gặp nhiều khó khăn. Dẫn chứng: 'In Rwanda, a mountainous East African nation where steep geography often blocks road transport, medical workers regularly send a text to order emergency supplies. Within minutes, a remote-controlled drone is launched into the sky.'"}, {"id": "r3", "q": "3. The word 'precious' in paragraph 1 is closest in meaning to ______.", "opts": ["A. extremely valuable and vital", "B. heavy and difficult to carry", "C. completely broken and useless", "D. dangerous and poisonous"], "ans": 0, "exp": "A đúng. Từ 'precious' trong ngữ cảnh các đơn vị máu cấp cứu mang nghĩa 'vô cùng quý giá và quan trọng đối với sự sống' (extremely valuable and vital). Dẫn chứng: 'Upon arrival, it drops the precious package safely by parachute before flying back.'"}, {"id": "r4", "q": "4. How do conservationists use aerial drone cameras to protect orangutans?", "opts": ["A. They drop food directly onto baby monkeys while they are eating.", "B. They build artificial metal shelters in place of natural treetop nests.", "C. They locate wildlife nests quietly without waking or disturbing the animals.", "D. They capture wild animals and transport them to European medical centres."], "ans": 2, "exp": "C đúng. Các nhà bảo tồn dùng máy bay không người lái để định vị tổ đười ươi một cách êm ái mà không làm kinh động đến con mẹ khi con non đang ngủ. Dẫn chứng: 'By flying quietly above dense tropical canopies, aerial cameras locate orangutan nests without disturbing mothers while their young offspring are asleep.'"}, {"id": "r5", "q": "5. What can be inferred about future classroom education from the passage?", "opts": ["A. Students will completely stop learning scientific concepts from textbooks.", "B. Virtual reality technology can provide pupils with vivid experiences of real-world innovations.", "C. Schools will replace teachers with automated aerial drones inside classrooms.", "D. Geography lessons will be removed from the primary curriculum."], "ans": 1, "exp": "B đúng. Từ đoạn cuối có thể suy luận rằng công nghệ thực tế ảo giúp học sinh trải nghiệm trực quan và sống động các đột phá khoa học ngay trong lớp học. Dẫn chứng: 'In schools, virtual reality simulations allow students to experience these scientific breakthroughs firsthand in their classrooms.'"}];
+        const TRANSFORM_QS = [{"id": "t1", "origin": "It is impossible for ground ambulances to deliver emergency blood to the mountain clinic quickly.", "prompt": "Ground ambulances cannot", "keywords": "cannot deliver emergency blood quickly", "exp": "Cấu trúc chuyển đổi giữa 'It is impossible for sb to V' (ai không thể làm gì) và 'S + cannot + V': 'It is impossible for S to V' = 'S + cannot + V'. Câu viết lại hoàn chỉnh: 'Ground ambulances cannot deliver emergency blood to the mountain clinic quickly.' (Xe cứu thương mặt đất không thể vận chuyển máu cấp cứu tới phòng khám trên núi một cách nhanh chóng)."}, {"id": "t2", "origin": "Unless doctors send a text message immediately, the drone will not launch.", "prompt": "If doctors do not", "keywords": "If doctors do not send", "exp": "Cấu trúc chuyển đổi tương đương giữa 'Unless' và 'If... not': 'Unless + S + V(hiện tại)' = 'If + S + do/does not + V'. Câu viết lại hoàn chỉnh: 'If doctors do not send a text message immediately, the drone will not launch.' (Nếu các bác sĩ không gửi tin nhắn ngay lập tức, máy bay không người lái sẽ không cất cánh)."}, {"id": "t3", "origin": "The loud sound of the helicopter woke the baby up during her afternoon nap.", "prompt": "The baby could not stay", "keywords": "stay asleep because of the loud sound", "exp": "Cấu trúc chuyển đổi với cụm tính từ trạng thái 'stay asleep' (tiếp tục ngủ say) và nguyên nhân 'because of': 'The loud sound woke S up' = 'S could not stay asleep because of the loud sound...'. Câu viết lại hoàn chỉnh: 'The baby could not stay asleep because of the loud sound of the helicopter during her afternoon nap.' (Đứa bé không thể tiếp tục ngủ say vì âm thanh lớn của chiếc trực thăng trong giấc ngủ trưa)."}, {"id": "t4", "origin": "Children find it very exciting to explore distant planets using virtual reality headsets.", "prompt": "Exploring distant planets using virtual reality headsets", "keywords": "is very exciting for children", "exp": "Cấu trúc chuyển đổi giữa 'S + find it + adj + to V' và danh động từ làm chủ ngữ 'V-ing + is + adj for sb'. Câu viết lại hoàn chỉnh: 'Exploring distant planets using virtual reality headsets is very exciting for children.' (Việc khám phá các hành tinh xa xôi bằng kính thực tế ảo rất thú vị đối với trẻ em)."}];
+        const SPEAKING_QS = [{"q": "How do modern technologies like drones and satellites help humans protect endangered wildlife?", "sample": "Modern technologies provide researchers with powerful tools to monitor wildlife without causing harm. For instance, thermal drones can spot orangutan nests and track poachers from high above the dense forest canopy, while satellites help map changes in animal habitats across vast continents.", "tip": "Giám khảo CLC mong đợi câu trả lời có tính logic và ví dụ minh họa cụ thể ('For instance', 'while'). Thí sinh nên sử dụng từ vựng học thuật thuộc chủ đề công nghệ và môi trường như 'thermal drones', 'dense forest canopy', 'track poachers', 'map animal habitats'."}, {"q": "In what ways will classroom learning change in the future with virtual reality and artificial intelligence?", "sample": "In the future, virtual reality headsets will allow students to experience immersive field trips to deep oceans or outer space directly from their desks. Additionally, intelligent robotics can assist teachers by giving personalized feedback to help pupils solve challenging problems at their own pace.", "tip": "Đối với câu hỏi về giáo dục tương lai, thí sinh nên sử dụng thì tương lai đơn ('will allow', 'will transform') kết hợp với các từ nối lập luận ('Additionally', 'In the future'). Hãy tập trung vào trải nghiệm học tập nhập vai ('immersive field trips') và cá nhân hóa giáo dục ('personalized feedback')."}];
+
+        // Theme management
+        function initTheme() {
+            const saved = localStorage.getItem('clc_theme') || 'paper';
+            document.body.setAttribute('data-theme', saved);
+        }
+        function toggleTheme() {
+            const cur = document.body.getAttribute('data-theme') || 'paper';
+            const next = cur === 'paper' ? 'dark' : 'paper';
+            document.body.setAttribute('data-theme', next);
+            localStorage.setItem('clc_theme', next);
+        }
+        initTheme();
+
+        // Scroll mode
+        function toggleScrollMode() {
+            const isFull = document.body.classList.toggle('full-scroll-mode');
+            const btn = document.querySelector('.mode-btn');
+            if (btn) btn.innerText = isFull ? 'Chế độ: Cuộn Toàn Trang' : 'Chế độ: Tab';
+        }
+
+        // Tabs
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+            const targetContent = document.getElementById('tab-' + tabId);
+            if (targetContent) targetContent.classList.add('active');
+            if (window.event && window.event.target) {
+                window.event.target.classList.add('active');
+            }
+        }
+
+        // Web Speech Audio
+        function speakText(text) {
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+                const u = new SpeechSynthesisUtterance(text);
+                u.lang = 'en-US';
+                u.rate = 0.88;
+                window.speechSynthesis.speak(u);
+            }
+        }
+
+        // Flashcards
+        let currentCardIdx = 0;
+        let currentWord = VOCAB_LIST[0];
+
+        function updateFlashcard() {
+            currentWord = VOCAB_LIST[currentCardIdx];
+            document.getElementById('fcPos').innerText = currentWord.pos;
+            document.getElementById('fcWord').innerText = currentWord.w;
+            document.getElementById('fcIpa').innerText = currentWord.ipa;
+            document.getElementById('fcMean').innerText = currentWord.m;
+            document.getElementById('fcEx').innerText = `"${currentWord.ex}"`;
+            document.getElementById('fcExVi').innerText = currentWord.ex_vi || '';
+            document.getElementById('fcCounter').innerText = `Từ ${currentCardIdx + 1} / ${VOCAB_LIST.length}`;
+            document.getElementById('fcCard').classList.remove('flipped');
+        }
+
+        function flipFlashcard() {
+            document.getElementById('fcCard').classList.toggle('flipped');
+        }
+
+        function nextCard() {
+            currentCardIdx = (currentCardIdx + 1) % VOCAB_LIST.length;
+            updateFlashcard();
+        }
+
+        function prevCard() {
+            currentCardIdx = (currentCardIdx - 1 + VOCAB_LIST.length) % VOCAB_LIST.length;
+            updateFlashcard();
+        }
+
+        function randomCard() {
+            currentCardIdx = Math.floor(Math.random() * VOCAB_LIST.length);
+            updateFlashcard();
+        }
+
+        // Render Vocab Cards (IELTS grid style)
+        const vGrid = document.getElementById('vocabGrid');
+        VOCAB_LIST.forEach((item, idx) => {
+            vGrid.innerHTML += `
+                <div class="vocab-card">
+                    <div class="vocab-header">
+                        <span class="vocab-word">${item.w}</span>
+                        <div style="display:flex; align-items:center; gap:6px;">
+                            <span style="font-size:0.75rem; color:var(--text-muted); font-weight:700;">#${idx + 1}</span>
+                            <button class="vocab-audio-btn" onclick="speakText('${item.w}')" title="Nghe phát âm">🔊</button>
+                        </div>
+                    </div>
+                    <div class="vocab-ipa">${item.ipa}</div>
+                    <span class="vocab-colloc">${item.pos}</span>
+                    <div class="vocab-meaning">${item.m}</div>
+                    <div class="vocab-example">"${item.ex}"</div>
+                    <div style="font-size:0.8rem; color:var(--text-muted); margin-top:2px;">${item.ex_vi || ''}</div>
+                </div>
+            `;
+        });
+
+        // Question handling
+        let userAnswers = {};
+        let wrongList = [];
+
+        function renderQuestions(list, containerId) {
+            const container = document.getElementById(containerId);
+            list.forEach(q => {
+                let optsHtml = '';
+                q.opts.forEach((opt, idx) => {
+                    optsHtml += `
+                        <label class="option-label" id="lbl_${q.id}_${idx}" onclick="selectOption('${q.id}', ${idx}, ${q.ans})">
+                            <input type="radio" name="opt_${q.id}" value="${idx}">
+                            <span>${opt}</span>
+                        </label>
+                    `;
+                });
+                container.innerHTML += `
+                    <div class="question-item">
+                        <div class="question-title">${q.q}</div>
+                        <div class="options-grid">${optsHtml}</div>
+                        <div class="explanation" id="exp_${q.id}">💡 <b>Giải thích:</b> ${q.exp}</div>
+                    </div>
+                `;
+            });
+        }
+
+        renderQuestions(PHONETICS_QS, 'phoneticsQuestions');
+        renderQuestions(GRAMMAR_QS, 'grammarQuestions');
+        renderQuestions(READING_QS, 'readingQuestions');
+
+        // Transform questions
+        const tContainer = document.getElementById('transformQuestions');
+        TRANSFORM_QS.forEach(t => {
+            tContainer.innerHTML += `
+                <div class="transform-item">
+                    <div class="question-title"><strong>${t.origin}</strong></div>
+                    <div style="font-weight:700; color:var(--primary); font-size:0.95rem;">${t.prompt}</div>
+                    <input type="text" class="input-transform-ielts" id="in_${t.id}" placeholder="Gõ tiếp câu hoàn chỉnh tại đây...">
+                    <div style="display:flex; gap:10px; align-items:center; margin-top:6px;">
+                        <button class="btn-secondary" style="min-height:38px; padding:6px 14px; font-size:0.86rem;" onclick="checkTransform('${t.id}')">Kiểm Tra</button>
+                    </div>
+                    <div class="explanation" id="exp_${t.id}">💡 <b>Giải thích:</b> ${t.exp}</div>
+                </div>
+            `;
+        });
+
+        // Speaking questions
+        const sContainer = document.getElementById('speakingQuestions');
+        SPEAKING_QS.forEach((s, idx) => {
+            sContainer.innerHTML += `
+                <div style="background:var(--panel-bg); padding:18px; border-radius:14px; margin-bottom:16px; border:1px solid var(--border);">
+                    <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:10px;">
+                        <strong style="font-size:1.02rem; color:var(--primary); line-height:1.4;">${s.q}</strong>
+                        <button class="vocab-audio-btn" onclick="speakText('${s.q.replace(/'/g, "\\'")}')" title="Nghe câu hỏi">🔊</button>
+                    </div>
+                    <div style="margin-top:12px; padding:12px 14px; background:var(--surface-color); border-radius:10px; border:1px solid var(--border);">
+                        <div style="font-weight:700; color:var(--success); font-size:0.92rem; margin-bottom:4px;">💡 Câu trả lời mẫu chuẩn CLC:</div>
+                        <div style="font-size:0.95rem; color:var(--text-main); font-style:italic; line-height:1.5;">"${s.sample}"</div>
+                        <div style="margin-top:10px; display:flex; align-items:center; gap:8px;">
+                            <button class="btn-fc-nav" style="padding:6px 14px; font-size:0.84rem;" onclick="speakText('${s.sample.replace(/'/g, "\\'")}')">🔊 Nghe Mẫu</button>
+                        </div>
+                    </div>
+                    <div style="font-size:0.84rem; color:var(--accent); margin-top:8px;">🎯 <b>Mẹo phỏng vấn:</b> ${s.tip}</div>
+                </div>
+            `;
+        });
+
+        function selectOption(qId, choiceIdx, correctIdx) {
+            if (userAnswers[qId] !== undefined) return;
+            userAnswers[qId] = choiceIdx;
+
+            const isCorrect = (choiceIdx === correctIdx);
+            const lbl = document.getElementById(`lbl_${qId}_${choiceIdx}`);
+            const correctLbl = document.getElementById(`lbl_${qId}_${correctIdx}`);
+            const exp = document.getElementById(`exp_${qId}`);
+
+            if (isCorrect) {
+                if (lbl) lbl.classList.add('correct');
+            } else {
+                if (lbl) lbl.classList.add('wrong');
+                if (correctLbl) correctLbl.classList.add('correct');
+                wrongList.push({ id: qId, studentAns: choiceIdx, correctAns: correctIdx });
+            }
+
+            if (exp) exp.style.display = 'block';
+            updateScore();
+        }
+
+        function checkTransform(tId) {
+            const input = document.getElementById(`in_${tId}`);
+            const exp = document.getElementById(`exp_${tId}`);
+            const val = input.value.trim().toLowerCase().replace(/[.,!?;:]+$/, '');
+            const q = TRANSFORM_QS.find(item => item.id === tId);
+
+            let matched = false;
+            for (let kw of q.keywords) {
+                if (val.includes(kw.toLowerCase())) {
+                    matched = true;
+                    break;
+                }
+            }
+
+            if (matched) {
+                input.style.borderColor = 'var(--success)';
+                input.style.backgroundColor = 'rgba(27, 135, 85, 0.08)';
+                userAnswers[tId] = 1;
+            } else {
+                input.style.borderColor = 'var(--danger)';
+                input.style.backgroundColor = 'rgba(192, 57, 43, 0.08)';
+                userAnswers[tId] = 0;
+                wrongList.push({ id: tId, studentAns: val, exp: q.exp });
+            }
+            if (exp) exp.style.display = 'block';
+            updateScore();
+        }
+
+        function updateScore() {
+            let score = 0;
+            PHONETICS_QS.forEach(q => { if (userAnswers[q.id] === q.ans) score += 1; });
+            GRAMMAR_QS.forEach(q => { if (userAnswers[q.id] === q.ans) score += 1; });
+            READING_QS.forEach(q => { if (userAnswers[q.id] === q.ans) score += 1; });
+            TRANSFORM_QS.forEach(t => { if (userAnswers[t.id] === 1) score += 1; });
+            document.getElementById('scoreBadge').innerText = `Điểm Đạt: ${score} / 24`;
+        }
+
+        function submitAndSyncProgress() {
+            let score = 0;
+            let total = 24;
+            PHONETICS_QS.forEach(q => { if (userAnswers[q.id] === q.ans) score += 1; });
+            GRAMMAR_QS.forEach(q => { if (userAnswers[q.id] === q.ans) score += 1; });
+            READING_QS.forEach(q => { if (userAnswers[q.id] === q.ans) score += 1; });
+            TRANSFORM_QS.forEach(t => { if (userAnswers[t.id] === 1) score += 1; });
+
+            const payload = {
+                unit: UNIT_INFO.title,
+                unit_id: UNIT_INFO.unit_num,
+                score: score,
+                total: total,
+                percentage: Math.round((score / total) * 100),
+                wrong_questions: wrongList
+            };
+
+            fetch('/api/sync_progress', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            })
+            .then(res => res.json())
+            .then(data => {
+                alert(`🎉 Chúc mừng con đã hoàn thành ${UNIT_INFO.title}!\nĐiểm số: ${score} / ${total} (${payload.percentage}%)\nKết quả đã tự động lưu vào sổ theo dõi học tập!`);
+            })
+            .catch(() => {
+                alert(`🎉 Con đã làm được ${score} / ${total} điểm!\n(Nhấp chạy MO_SERVER_CHO_IPHONE.bat để tự động đồng bộ kết quả lên hệ thống nhé).`);
+            });
+        }
+
+        function resetUnitAnswers() {
+            if (confirm("Con có muốn làm lại toàn bộ câu hỏi trong Unit này không?")) {
+                location.reload();
+            }
+        }
+
+        // Initialize flashcard
+        updateFlashcard();
+    </script>
+</body>
+</html>
