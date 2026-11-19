@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="academic">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Khảo Sát Ngữ Pháp 10 Chủ Đề — Lớp 6 CLC English Journey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-page: #fbf7ee;
+            --bg-card: #ffffff;
+            --bg-card-sub: #f6f1e5;
+            --text-main: #1e293b;
+            --text-sub: #475569;
+            --text-muted: #64748b;
+            --border: #e2d9c8;
+            --border-focus: #2563eb;
+            --primary: #2563eb;
+            --primary-soft: #eff6ff;
+            --accent: #d97706;
+            --accent-soft: #fef3c7;
+            --success: #16a34a;
+            --success-soft: #dcfce7;
+            --danger: #dc2626;
+            --danger-soft: #fee2e2;
+            --purple: #7c3aed;
+            --purple-soft: #f3e8ff;
+            --shadow-sm: 0 2px 4px rgba(15, 23, 42, 0.04);
+            --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.08);
+            --shadow-lg: 0 10px 25px rgba(15, 23, 42, 0.12);
+            --radius-md: 12px;
+            --radius-lg: 16px;
+        }
+
+        [data-theme="dark"] {
+            --bg-page: #0f172a;
+            --bg-card: #1e293b;
+            --bg-card-sub: #162032;
+            --text-main: #f8fafc;
+            --text-sub: #cbd5e1;
+            --text-muted: #94a3b8;
+            --border: #334155;
+            --border-focus: #38bdf8;
+            --primary: #38bdf8;
+            --primary-soft: #082f49;
+            --accent: #fbbf24;
+            --accent-soft: #451a03;
+            --success: #4ade80;
+            --success-soft: #052e16;
+            --danger: #f87171;
+            --danger-soft: #450a0a;
+            --purple: #c084fc;
+            --purple-soft: #3b0764;
+            --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.2);
+            --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.3);
+            --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.4);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-page);
+            color: var(--text-main);
+            line-height: 1.6;
+            min-height: 100vh;
+            padding-bottom: 60px;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        /* Header Navigation */
+        .top-navbar {
+            background: var(--bg-card);
+            border-bottom: 1px solid var(--border);
+            padding: 12px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: var(--shadow-sm);
+        }
+        .brand-link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: var(--text-main);
+            font-weight: 700;
+            font-size: 1.05rem;
+        }
+        .brand-icon {
+            font-size: 1.35rem;
+        }
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .btn-nav {
+            background: var(--bg-card-sub);
+            border: 1px solid var(--border);
+            color: var(--text-main);
+            padding: 6px 14px;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s ease;
+        }
+        .btn-nav:hover {
+            background: var(--primary-soft);
+            color: var(--primary);
+            border-color: var(--primary);
+        }
+
+        /* Hero Container */
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 24px 16px;
+        }
+
+        .hero-banner {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #0369a1 100%);
+            border-radius: var(--radius-lg);
+            padding: 28px 24px;
+            color: #ffffff;
+            box-shadow: var(--shadow-md);
+            margin-bottom: 24px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-banner::after {
+            content: "✍️";
+            position: absolute;
+            right: 20px;
+            bottom: -15px;
+            font-size: 6rem;
+            opacity: 0.15;
+            pointer-events: none;
+        }
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+            padding: 4px 12px;
+            border-radius: 999px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        .hero-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.65rem;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 8px;
+        }
+        .hero-subtitle {
+            font-size: 0.95rem;
+            opacity: 0.92;
+            max-width: 720px;
+        }
+
+        /* Progress Dashboard */
+        .progress-bar-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 16px 20px;
+            margin-bottom: 24px;
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+        }
+        .progress-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .progress-trophy {
+            font-size: 2rem;
+        }
+        .progress-stat-title {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+        .progress-stat-value {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--primary);
+        }
+        .progress-track {
+            flex: 1;
+            min-width: 220px;
+            background: var(--bg-card-sub);
+            height: 10px;
+            border-radius: 999px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+        .progress-fill {
+            background: linear-gradient(90deg, #10b981, #06b6d4);
+            height: 100%;
+            width: 0%;
+            transition: width 0.5s ease;
+        }
+
+        /* Topic Tabs Selector */
+        .topic-scroller {
+            overflow-x: auto;
+            white-space: nowrap;
+            padding-bottom: 8px;
+            margin-bottom: 24px;
+            -webkit-overflow-scrolling: touch;
+        }
+        .topic-scroller::-webkit-scrollbar {
+            height: 6px;
+        }
+        .topic-scroller::-webkit-scrollbar-thumb {
+            background: var(--border);
+            border-radius: 4px;
+        }
+        .topic-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-sub);
+            padding: 10px 18px;
+            border-radius: 999px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin-right: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: var(--shadow-sm);
+        }
+        .topic-btn:hover {
+            background: var(--primary-soft);
+            color: var(--primary);
+            border-color: var(--primary);
+        }
+        .topic-btn.active {
+            background: var(--primary);
+            color: #ffffff;
+            border-color: var(--primary);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35);
+        }
+        .topic-badge-done {
+            background: #10b981;
+            color: #ffffff;
+            border-radius: 999px;
+            font-size: 0.7rem;
+            padding: 1px 6px;
+            display: none;
+        }
+        .topic-btn.is-completed .topic-badge-done {
+            display: inline-block;
+        }
+
+        /* Test Box Card */
+        .test-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            box-shadow: var(--shadow-md);
+            margin-bottom: 30px;
+        }
+        .test-header {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 18px;
+            margin-bottom: 20px;
+        }
+        .test-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+        .test-grammar-focus {
+            background: var(--accent-soft);
+            border-left: 4px solid var(--accent);
+            padding: 10px 14px;
+            border-radius: 0 var(--radius-md) var(--radius-md) 0;
+            font-size: 0.9rem;
+            color: var(--text-main);
+        }
+        .grammar-focus-label {
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        /* Section Split: Part 1 & Part 2 */
+        .part-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 28px;
+            margin-bottom: 18px;
+            padding: 10px 14px;
+            background: var(--bg-card-sub);
+            border-radius: var(--radius-md);
+            border-left: 4px solid var(--primary);
+        }
+        .part-title {
+            font-size: 1.05rem;
+            font-weight: 800;
+            color: var(--text-main);
+        }
+        .part-badge {
+            font-size: 0.8rem;
+            font-weight: 700;
+            background: var(--primary);
+            color: #ffffff;
+            padding: 3px 10px;
+            border-radius: 999px;
+        }
+
+        /* MCQ Card Item */
+        .mcq-card {
+            background: var(--bg-page);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 16px;
+            margin-bottom: 16px;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+        .mcq-card:hover {
+            box-shadow: var(--shadow-sm);
+        }
+        .mcq-question {
+            font-size: 0.98rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: var(--text-main);
+            display: flex;
+            gap: 8px;
+        }
+        .mcq-num {
+            color: var(--primary);
+            font-weight: 800;
+            flex-shrink: 0;
+        }
+        .mcq-options {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 8px;
+        }
+        @media (min-width: 640px) {
+            .mcq-options {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        .opt-btn {
+            background: var(--bg-card);
+            border: 1.5px solid var(--border);
+            border-radius: 10px;
+            padding: 10px 14px;
+            text-align: left;
+            font-size: 0.92rem;
+            font-weight: 600;
+            color: var(--text-main);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .opt-btn:hover:not(.locked) {
+            background: var(--primary-soft);
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+        .opt-btn.correct {
+            background: var(--success-soft) !important;
+            border-color: var(--success) !important;
+            color: var(--success) !important;
+            font-weight: 800;
+        }
+        .opt-btn.wrong {
+            background: var(--danger-soft) !important;
+            border-color: var(--danger) !important;
+            color: var(--danger) !important;
+        }
+        .opt-btn.locked {
+            cursor: default;
+        }
+
+        .explanation-box {
+            display: none;
+            margin-top: 12px;
+            padding: 12px 14px;
+            background: var(--bg-card);
+            border-radius: 8px;
+            border-left: 3px solid var(--primary);
+            font-size: 0.88rem;
+            color: var(--text-sub);
+            animation: fadeIn 0.3s ease;
+        }
+        .explanation-title {
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 4px;
+        }
+
+        /* Essay Card Item */
+        .essay-card {
+            background: var(--bg-page);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 18px;
+            margin-bottom: 18px;
+        }
+        .essay-type-badge {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 700;
+            background: var(--purple-soft);
+            color: var(--purple);
+            padding: 3px 8px;
+            border-radius: 6px;
+            margin-bottom: 8px;
+        }
+        .essay-prompt {
+            font-size: 0.98rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            white-space: pre-line;
+            line-height: 1.5;
+        }
+        .essay-input-row {
+            margin-bottom: 10px;
+        }
+        .essay-input {
+            width: 100%;
+            padding: 12px 14px;
+            border: 1.5px solid var(--border);
+            border-radius: 10px;
+            background: var(--bg-card);
+            color: var(--text-main);
+            font-family: inherit;
+            font-size: 0.95rem;
+            outline: none;
+            transition: border-color 0.2s ease;
+        }
+        .essay-input:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+        }
+        .essay-actions {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .btn-check-essay {
+            background: var(--purple);
+            color: #ffffff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 0.88rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .btn-check-essay:hover {
+            background: #6d28d9;
+            transform: translateY(-1px);
+        }
+        .essay-result-box {
+            display: none;
+            margin-top: 12px;
+            padding: 12px 16px;
+            background: var(--bg-card);
+            border-radius: 10px;
+            border-left: 3px solid var(--purple);
+            font-size: 0.9rem;
+        }
+        .essay-std-ans {
+            font-weight: 700;
+            color: var(--success);
+            margin-bottom: 6px;
+        }
+
+        /* Test Action Footer */
+        .test-footer-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 24px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border);
+        }
+        .btn-reset-test {
+            background: var(--bg-card-sub);
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            padding: 10px 18px;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .btn-next-test {
+            background: var(--primary);
+            color: #ffffff;
+            border: none;
+            padding: 10px 22px;
+            border-radius: 10px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+            transition: transform 0.2s ease;
+        }
+        .btn-next-test:hover {
+            transform: translateY(-1px);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(4px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive tweaks */
+        @media (max-width: 600px) {
+            .hero-title {
+                font-size: 1.35rem;
+            }
+            .test-title {
+                font-size: 1.15rem;
+            }
+            .part-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 6px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header class="top-navbar">
+        <a href="index.html" class="brand-link" title="Về trang tổng quan khóa học">
+            <span class="brand-icon">📚</span>
+            <span>CLC Academic Hub</span>
+        </a>
+        <div class="nav-actions">
+            <button onclick="window.print()" class="btn-nav" title="In toàn bộ đề này ra giấy">
+                🖨️ <span>In Đề Ra Giấy</span>
+            </button>
+            <button onclick="toggleTheme()" class="btn-nav" id="themeBtn" title="Chuyển chế độ sáng / tối">
+                ☀️ <span id="themeText">Giao diện Giấy Ngà</span>
+            </button>
+            <a href="index.html" class="btn-nav" style="background: var(--primary); color: #fff; border: none;">
+                🏠 <span>Về Trang Chủ</span>
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero-banner">
+            <div class="hero-badge">🎯 Luyện Thi Tuyển Sinh Lớp 6 CLC</div>
+            <h1 class="hero-title">Khảo Sát Toàn Diện 10 Đề Ngữ Pháp Chuyên Sâu</h1>
+            <p class="hero-subtitle">
+                Được chuyển thể trực tiếp từ 100 đoạn hội thoại gia đình. Mỗi đề chuẩn hóa gồm 10 câu trắc nghiệm khách quan + 5 câu tự luận viết lại câu & chia động từ kèm giải thích ngữ pháp cặn kẽ!
+            </p>
+        </div>
+
+        <!-- Progress Tracking Card -->
+        <div class="progress-bar-card">
+            <div class="progress-info">
+                <span class="progress-trophy">🏆</span>
+                <div>
+                    <div class="progress-stat-title">MỨC ĐỘ HOÀN THÀNH TOÀN KHÓA</div>
+                    <div class="progress-stat-value" id="progressPctText">0% (0/10 Đề)</div>
+                </div>
+            </div>
+            <div class="progress-track">
+                <div class="progress-fill" id="progressFillBar"></div>
+            </div>
+            <div id="testScoreBadge" style="font-weight: 700; font-size: 0.95rem; color: var(--text-sub);">
+                Điểm đề hiện tại: <span id="currentScoreText" style="color: var(--primary); font-size: 1.15rem;">0/10</span>
+            </div>
+        </div>
+
+        <!-- Topic Tab Scroller -->
+        <div class="topic-scroller" id="topicTabs">
+            <!-- Rendered by JS -->
+        </div>
+
+        <!-- Main Test Content Box -->
+        <div class="test-box" id="testBoxContainer">
+            <!-- Dynamic Content Injected Here -->
+        </div>
+    </div>
+
+    <!-- Data Injection -->
+    <script>
+        const TESTS = [{"id": 1, "title": "TEST 1: DAILY ROUTINES & HABITS (Thói Quen Hàng Ngày)", "grammar_points": "Hiện tại đơn, Hiện tại tiếp diễn, Trạng từ tần suất, Giới từ thời gian (in/on/at), spend time + V-ing, before/after + V-ing, have to / has to, Because & Hiện tại hoàn thành với yet.", "mcqs": [{"q": "Every morning, my brother ______ up at 6:00 AM, but today he ______ in bed because he feels unwell.", "options": ["A. gets / is staying", "B. is getting / stays", "C. get / stays", "D. gets / stay"], "ans": "A", "explain": "Vế đầu diễn tả thói quen lặp đi lặp lại hàng ngày ('Every morning') chia Hiện tại đơn: 'my brother gets'. Vế sau diễn tả sự việc tạm thời hôm nay ('today') chia Hiện tại tiếp diễn: 'he is staying'."}, {"q": "Look! The school bus ______ at the bus stop. Hurry up or we will be late!", "options": ["A. arrives", "B. is arriving", "C. arrived", "D. has arrived"], "ans": "B", "explain": "Dấu hiệu 'Look!' báo hiệu hành động đang diễn ra ngay lúc nói -> dùng thì Hiện tại tiếp diễn (is arriving)."}, {"q": "Our English class starts ______ 8:30 AM ______ Tuesday and Thursday mornings.", "options": ["A. on / in", "B. at / on", "C. in / on", "D. at / in"], "ans": "B", "explain": "Quy tắc dùng giới từ chỉ thời gian: dùng 'at' trước giờ cụ thể (at 8:30 AM) và 'on' trước các thứ trong tuần / buổi của thứ (on Tuesday and Thursday mornings)."}, {"q": "How often does your sister tidy up her bedroom? – She does it ______ a week, usually on Wednesdays and Sundays.", "options": ["A. two times", "B. second", "C. twice", "D. twice time"], "ans": "C", "explain": "Cụm trạng từ tần suất chỉ 'hai lần một tuần' là 'twice a week' (thay vì 'two times')."}, {"q": "In the evening, Linda really enjoys ______ comic books and ______ to soft music before bed.", "options": ["A. to read / listen", "B. reading / listening", "C. read / listening", "D. reading / to listen"], "ans": "B", "explain": "Sau động từ chỉ sở thích 'enjoy' là danh động từ (V-ing): 'enjoy reading... and listening'."}, {"q": "In our family, each person ______ keep their own room tidy and clean.", "options": ["A. has to", "B. have to", "C. having to", "D. is having to"], "ans": "A", "explain": "Chủ ngữ 'each person' là đại từ bất định số ít, đi với 'has to' để chỉ bổn phận, trách nhiệm."}, {"q": "My little brother spends nearly two hours ______ Lego sets every weekend.", "options": ["A. to build", "B. build", "C. building", "D. built"], "ans": "C", "explain": "Cấu trúc: spend + time + V-ing (dành thời gian làm việc gì) -> 'spends nearly two hours building'."}, {"q": "After ______ breakfast, I always check my backpack to ensure I haven't left my notebooks behind.", "options": ["A. have", "B. having", "C. had", "D. to have"], "ans": "B", "explain": "Sau giới từ chỉ thời gian 'after' / 'before' là danh động từ (V-ing) -> 'After having breakfast'."}, {"q": "Why is Peter walking so fast? – ______ he hasn't finished his project ______ and it is due in ten minutes.", "options": ["A. So / already", "B. Although / yet", "C. Because / yet", "D. Because / already"], "ans": "C", "explain": "Trả lời cho câu hỏi 'Why' bằng 'Because'. Câu phủ định thì Hiện tại hoàn thành dùng 'yet' ở cuối câu ('hasn't finished... yet')."}, {"q": "My father usually ______ his car to the office, but this week he ______ by train due to heavy roadworks.", "options": ["A. drives / travels", "B. is driving / is traveling", "C. drives / is traveling", "D. drive / travels"], "ans": "C", "explain": "Hành động thói quen ('usually') chia Hiện tại đơn: 'drives'. Hành động tạm thời trong tuần này ('this week') chia Hiện tại tiếp diễn: 'is traveling'."}], "essays": [{"type": "Chia dạng đúng của động từ trong ngoặc (Verb Form)", "prompt": "Right now, Nam (sit) ______ at his desk, but he (not do) ______ his homework because he is listening to music.", "ans": "is sitting / is not doing (hoặc isn't doing)", "explain": "'Right now' chỉ hành động đang xảy ra tại thời điểm nói -> thì Hiện tại tiếp diễn. Chú ý gấp đôi phụ âm 'sit' -> 'sitting'."}, {"type": "Viết lại câu sao cho nghĩa không đổi (Sentence Transformation)", "prompt": "It takes Minh thirty minutes to walk to school every morning.\n-> Minh spends __________________________________________________.", "ans": "Minh spends thirty minutes walking to school every morning.", "explain": "Chuyển đổi cấu trúc tương đương: 'It takes sb + time + to V' = 'sb + spend + time + V-ing'."}, {"type": "Viết lại câu sao cho nghĩa không đổi (Sentence Transformation)", "prompt": "I always brush my teeth, and then I go to bed.\n-> Before __________________________________________________.", "ans": "Before going to bed, I always brush my teeth.", "explain": "Áp dụng cấu trúc 'Before + V-ing, S + V' (hoặc 'Before I go to bed, I always brush my teeth')."}, {"type": "Tìm và sửa một lỗi sai trong câu (Error Identification & Correction)", "prompt": "We usually have science classes in Friday morning at 9 o'clock.\nLỗi sai: ____________ -> Sửa lại: ____________", "ans": "in -> on", "explain": "Đứng trước thứ trong tuần có buổi (Friday morning) phải dùng giới từ 'on', không dùng 'in'."}, {"type": "Sắp xếp từ thành câu hoàn chỉnh (Sentence Building)", "prompt": "yet / put on / the school bus / his shoes / has not / because / is arriving / Tom / .\n-> __________________________________________________", "ans": "Tom has not put on his shoes yet because the school bus is arriving. (hoặc: Because the school bus is arriving, Tom has not put on his shoes yet.)", "explain": "Cấu trúc Hiện tại hoàn thành với 'yet' kết hợp mệnh đề chỉ nguyên nhân với 'because' và Hiện tại tiếp diễn."}]}, {"id": 2, "title": "TEST 2: SCHOOL & LEARNING (Trường Học & Học Tập)", "grammar_points": "Quá khứ đơn (Past Simple), Quá khứ tiếp diễn (Past Continuous) với when/while, So sánh hơn & So sánh nhất của tính từ, be good at / bad at + V-ing, used to + V-inf, so that + can + V.", "mcqs": [{"q": "Yesterday afternoon, while our teacher ______ the geometry problem, the electricity ______ out.", "options": ["A. explained / went", "B. was explaining / went", "C. explained / was going", "D. was explaining / was going"], "ans": "B", "explain": "Hành động đang diễn ra trong quá khứ kéo dài dùng Quá khứ tiếp diễn ('while teacher was explaining'), hành động ngắn cắt ngang chia Quá khứ đơn ('went out')."}, {"q": "What ______ you ______ at 8 PM last Sunday when I called you? – I was reviewing for my midterm exam.", "options": ["A. did / do", "B. were / doing", "C. are / doing", "D. was / doing"], "ans": "B", "explain": "Hỏi hành động đang diễn ra tại một thời điểm xác định trong quá khứ ('at 8 PM last Sunday') -> dùng Quá khứ tiếp diễn với chủ ngữ 'you': 'were you doing'."}, {"q": "This math exercise is ______ than the one we solved yesterday. I cannot find the answer.", "options": ["A. more hard", "B. much harder", "C. hardest", "D. as hard"], "ans": "B", "explain": "'Hard' là tính từ ngắn, dạng so sánh hơn là 'harder'. Để nhấn mạnh mức độ dùng 'much harder'."}, {"q": "Of all the students in our grade, Jenny is definitely ______ at writing English essays.", "options": ["A. better", "B. the best", "C. best", "D. good"], "ans": "B", "explain": "So sánh trong một tập hợp từ 3 đối tượng trở lên ('Of all the students...') dùng so sánh nhất: 'the best'."}, {"q": "Lan is exceptionally good ______ calculating fast, but she is quite bad ______ drawing maps.", "options": ["A. in / at", "B. at / in", "C. at / at", "D. on / at"], "ans": "C", "explain": "Cấu trúc: 'be good at + V-ing' (giỏi môn gì) và 'be bad at + V-ing' (kém môn gì)."}, {"q": "We ______ wear uniforms to primary school, but at secondary school we have to wear them every day.", "options": ["A. didn't use to", "B. weren't using to", "C. used not", "D. don't use to"], "ans": "A", "explain": "Cấu trúc chỉ thói quen/tình trạng trong quá khứ: dạng phủ định là 'didn't use to + V-inf'."}, {"q": "Minh stayed up late last night ______ he could finish his history presentation before class.", "options": ["A. in order to", "B. because of", "C. so that", "D. although"], "ans": "C", "explain": "Sau chỗ trống là một mệnh đề có chủ ngữ và modal verb ('he could finish...') chỉ mục đích -> dùng 'so that'."}, {"q": "On their school field trip last Friday, the students ______ the dinosaur exhibition and ______ lunch in the park.", "options": ["A. visit / have", "B. visited / had", "C. were visiting / had", "D. visited / have"], "ans": "B", "explain": "Hai hành động liên tiếp đã xảy ra và kết thúc trong quá khứ ('last Friday') -> đều chia thì Quá khứ đơn: 'visited / had'."}, {"q": "You ______ to bring your geometry compass tomorrow because we have a practical test.", "options": ["A. must", "B. should", "C. need", "D. can"], "ans": "C", "explain": "Sau chỗ trống có 'to bring' (to-infinitive), trong 4 phương án chỉ có động từ 'need' đi với 'need to V'."}, {"q": "While Phong ______ notes in his notebook, his classmate ______ him for an eraser.", "options": ["A. took / was asking", "B. was taking / asked", "C. was taking / was asking", "D. took / asked"], "ans": "B", "explain": "Hành động đang diễn ra ('was taking notes') thì có hành động khác xen vào chia Quá khứ đơn ('asked')."}], "essays": [{"type": "Viết lại câu sao cho nghĩa không đổi (Sentence Transformation)", "prompt": "No one in my class is more intelligent than Duy.\n-> Duy is the __________________________________________________.", "ans": "Duy is the most intelligent student in my class.", "explain": "Chuyển từ so sánh hơn không ai bằng sang so sánh nhất với tính từ dài: 'the most intelligent'."}, {"type": "Viết lại câu sao cho nghĩa không đổi (Sentence Transformation)", "prompt": "When he was seven, my uncle often rode a bicycle to school, but now he drives a car.\n-> My uncle used __________________________________________________.", "ans": "My uncle used to ride a bicycle to school when he was seven.", "explain": "Cấu trúc 'used to + V-inf' diễn tả thói quen trong quá khứ đã chấm dứt."}, {"type": "Chia dạng đúng của động từ trong ngoặc (Verb Form)", "prompt": "When the school bell (ring) ______, all students (discuss) ______ the project enthusiastically.", "ans": "rang / were discussing", "explain": "Hành động đang diễn ra chia Quá khứ tiếp diễn ('were discussing'), hành động cắt ngang chia Quá khứ đơn ('rang')."}, {"type": "Viết lại câu chỉ mục đích với 'so that' (Sentence Transformation)", "prompt": "Mai studied very hard in order to pass the entrance exam to the gifted school.\n-> Mai studied very hard so that __________________________________________________.", "ans": "Mai studied very hard so that she could pass the entrance exam to the gifted school.", "explain": "Chuyển 'in order to + V' thành 'so that + S + could + V' (do động từ chính ở quá khứ 'studied')."}, {"type": "Tìm và sửa một lỗi sai trong câu (Error Identification & Correction)", "prompt": "She is very good for solving tricky math puzzles in our group.\nLỗi sai: ____________ -> Sửa lại: ____________", "ans": "for -> at", "explain": "Giới từ đi với 'good' để chỉ sự giỏi giang trong một lĩnh vực là 'good at', không dùng 'good for'."}]}, {"id": 3, "title": "TEST 3: FAMILY & CHORES (Gia Đình & Việc Nhà)", "grammar_points": "Could you please...? & Will, should / shouldn't, must / mustn't, let / make someone do sth, Đại từ bất định (anyone/nobody/someone), Đại từ sở hữu (mine/yours/hers), too & enough + adj, Would you like...?, Đại từ phản thân (himself, by himself).", "mcqs": [{"q": "______ you please take out the kitchen garbage bag for me? – Certainly, I ______ do it right away.", "options": ["A. Must / may", "B. Could / will", "C. Should / can", "D. May / shall"], "ans": "B", "explain": "Cấu trúc yêu cầu lịch sự dùng 'Could you please...?' và đáp lại lời hứa/quyết định ngay lúc nói dùng thì tương lai đơn 'I will do it'."}, {"q": "Children ______ touch the sharp kitchen knives. It is strictly forbidden and dangerous.", "options": ["A. shouldn't", "B. needn't", "C. mustn't", "D. don't have to"], "ans": "C", "explain": "'Mustn't' diễn tả sự cấm đoán tuyệt đối ('strictly forbidden' - tuyệt đối cấm)."}, {"q": "My mother never lets me ______ late on weekdays because I have school the next morning.", "options": ["A. staying up", "B. to stay up", "C. stay up", "D. stayed up"], "ans": "C", "explain": "Cấu trúc 'let someone do something' (cho phép ai làm gì) -> động từ nguyên thể không 'to': 'stay up'."}, {"q": "Dad made my brother ______ his messy desk before he could play video games.", "options": ["A. clean", "B. cleaning", "C. to clean", "D. cleaned"], "ans": "A", "explain": "Cấu trúc 'make someone do something' (bắt buộc/yêu cầu ai làm gì) -> động từ nguyên thể không 'to': 'clean'."}, {"q": "Is there ______ in the living room? – No, ______ is there; everyone has gone to the supermarket.", "options": ["A. someone / nobody", "B. anyone / nobody", "C. anyone / somebody", "D. no one / anyone"], "ans": "B", "explain": "Trong câu hỏi nghi vấn dùng 'anyone'. Câu trả lời khẳng định mang nghĩa phủ định 'không có ai' dùng 'nobody'."}, {"q": "This is not my raincoat; ______ is hanging behind the door. Is this yellow one ______?", "options": ["A. my / your", "B. mine / yours", "C. mine / your", "D. me / yours"], "ans": "B", "explain": "Cả hai vị trí đều đóng vai trò đại từ sở hữu thay thế cho danh từ (raincoat) -> 'mine' (= my raincoat) và 'yours' (= your raincoat)."}, {"q": "The soup on the stove is ______ hot for the baby to eat right now. We must wait a few minutes.", "options": ["A. too", "B. enough", "C. so", "D. such"], "ans": "A", "explain": "Cấu trúc: 'too + Adj + (for sb) + to V' (quá đến nỗi không thể làm gì) -> 'too hot for the baby to eat'."}, {"q": "Tim is not old ______ to ride a motorbike on the street legally.", "options": ["A. too", "B. enough", "C. very", "D. so"], "ans": "B", "explain": "Cấu trúc: 'Adj + enough + to V' -> 'old enough to ride'."}, {"q": "______ a cup of hot chocolate with marshmallows, Grandma? – Yes, please. That sounds lovely.", "options": ["A. Do you like", "B. Would you like", "C. Are you wanting", "D. Will you like"], "ans": "B", "explain": "Cấu trúc mời mọc lịch sự: 'Would you like + Noun/to V?'."}, {"q": "Little Tommy assembled this complicated robotic toy completely by ______ without any adult assistance.", "options": ["A. him", "B. his", "C. himself", "D. itself"], "ans": "C", "explain": "Cụm 'by oneself' (bằng chính bản thân mình/tự làm). Chủ ngữ 'Tommy' (nam) -> 'by himself'."}], "essays": [{"type": "Viết lại câu sao cho nghĩa không đổi (Sentence Transformation)", "prompt": "This heavy wooden dining table is too heavy for me to lift alone.\n-> This heavy wooden dining table is not __________________________________________________.", "ans": "This heavy wooden dining table is not light enough for me to lift alone.", "explain": "Chuyển từ cấu trúc 'too heavy' sang 'not light enough' (đối nghĩa tính từ)."}, {"type": "Viết lại câu sao cho nghĩa không đổi (Sentence Transformation)", "prompt": "My parents allow me to hang out with my classmates on Saturday evenings.\n-> My parents let __________________________________________________.", "ans": "My parents let me hang out with my classmates on Saturday evenings.", "explain": "Chuyển đổi tương đương: 'allow sb to do sth' = 'let sb do sth'."}, {"type": "Tìm và sửa một lỗi sai trong câu (Error Identification & Correction)", "prompt": "Our teacher made us to write a 200-word paragraph about our household duties.\nLỗi sai: ____________ -> Sửa lại: ____________", "ans": "to write -> write", "explain": "Cấu trúc 'make somebody do something' không dùng 'to-infinitive'."}, {"type": "Hoàn thành câu dùng đại từ sở hữu hoặc đại từ phản thân thích hợp (Fill in the blanks)", "prompt": "Nobody helped my sister bake this strawberry cake; she made it all by ______.", "ans": "herself", "explain": "Chủ ngữ là 'she' / 'my sister' -> đại từ phản thân tương ứng là 'herself' (by herself = tự mình làm)."}, {"type": "Sắp xếp từ thành câu hoàn chỉnh (Sentence Building)", "prompt": "the dishes / you / could / after / washing / please / help me / dinner / ?\n-> __________________________________________________", "ans": "Could you please help me wash the dishes after dinner? (hoặc: Could you please help me washing the dishes after dinner?)", "explain": "Cấu trúc yêu cầu lịch sự: 'Could you please + V...?'."}]}, {"id": 4, "title": "TEST 4: HOBBIES & LEISURE (Sở Thích & Thời Gian Rảnh)", "grammar_points": "prefer V-ing to V-ing, be keen on + V-ing/N, Hiện tại hoàn thành với ever/never/already/yet/for/since, So sánh bằng & không bằng (as...as / not as...as), Đồng tình khẳng định (So do I) & Phủ định (Neither do I), Phrasal verb 'take up', be used to + V-ing.", "mcqs": [{"q": "My brother prefers ______ badminton in the school yard to ______ video games at home.", "options": ["A. playing / play", "B. playing / playing", "C. play / play", "D. to play / play"], "ans": "B", "explain": "Cấu trúc so sánh sở thích: 'prefer + V-ing + to + V-ing' -> 'prefer playing... to playing...'."}, {"q": "Hoa is extremely keen ______ collecting vintage stamps from foreign countries.", "options": ["A. in", "B. at", "C. on", "D. with"], "ans": "C", "explain": "Cụm tính từ cố định: 'be keen on + V-ing/Noun' (say mê, rất thích cái gì)."}, {"q": "______ you ever ______ scuba diving in the ocean? – No, I have never tried it.", "options": ["A. Did / go", "B. Have / been", "C. Have / gone", "D. Do / go"], "ans": "C", "explain": "Hỏi về trải nghiệm từ trước đến nay dùng thì Hiện tại hoàn thành với 'ever': 'Have you ever gone / been...'."}, {"q": "Have you finished building your miniature model plane ______? – Yes, I have ______ finished it.", "options": ["A. already / yet", "B. yet / already", "C. ever / never", "D. yet / yet"], "ans": "B", "explain": "Trong câu hỏi thì Hiện tại hoàn thành dùng 'yet' ở cuối; trong câu khẳng định dùng 'already' trước động từ PII."}, {"q": "Mr. Brown has coached our school chess club ______ more than five years.", "options": ["A. since", "B. for", "C. in", "D. during"], "ans": "B", "explain": "Trước khoảng thời gian ('more than five years') trong thì Hiện tại hoàn thành dùng 'for'."}, {"q": "This new animated movie is not ______ exciting ______ the one we watched last weekend.", "options": ["A. as / than", "B. so / as", "C. more / as", "D. as / so"], "ans": "B", "explain": "Cấu trúc so sánh không bằng: 'not as/so + Adj + as'."}, {"q": "I love playing the guitar in my free time. – ______! Music helps me unwind after a long day.", "options": ["A. So do I", "B. Neither do I", "C. So am I", "D. Neither am I"], "ans": "A", "explain": "Đồng tình với một câu khẳng định dùng động từ thường ('love') -> dùng 'So do I'."}, {"q": "My father doesn't like noisy sports events. – ______. I prefer quiet places like libraries.", "options": ["A. So do I", "B. Neither do I", "C. Either do I", "D. So am I"], "ans": "B", "explain": "Đồng tình với một câu phủ định ('doesn't like') -> dùng 'Neither do I' (hoặc 'I don't either')."}, {"q": "During the summer vacation, Susan decided to ______ pottery as a creative new pastime.", "options": ["A. take up", "B. take off", "C. take after", "D. take over"], "ans": "A", "explain": "Cụm động từ 'take up + hobby' có nghĩa là bắt đầu tham gia một sở thích, môn thể thao mới."}, {"q": "Although it was difficult at first, David is now used to ______ up early to go jogging every morning.", "options": ["A. wake", "B. waking", "C. woke", "D. woken"], "ans": "B", "explain": "Cấu trúc 'be used to + V-ing' diễn tả việc đã quen với cái gì/hành động gì ở hiện tại."}], "essays": [{"type": "Viết lại câu sao cho nghĩa không đổi (Sentence Transformation)", "prompt": "I like reading scientific magazines more than playing computer games.\n-> I prefer __________________________________________________.", "ans": "I prefer reading scientific magazines to playing computer games.", "explain": "Chuyển từ 'like doing sth more than doing sth' sang cấu trúc 'prefer V-ing to V-ing'."}, {"type": "Viết lại câu sao cho nghĩa không đổi (Sentence Transformation)", "prompt": "Nam started learning to play the piano three years ago.\n-> Nam has __________________________________________________.", "ans": "Nam has learned (hoặc has been learning) to play the piano for three years.", "explain": "Chuyển từ Quá khứ đơn mốc thời gian ('started ... three years ago') sang Hiện tại hoàn thành với 'for three years'."}, {"type": "Viết lại câu dùng cấu trúc so sánh bằng (Sentence Transformation)", "prompt": "My drawing is more colorful than your drawing.\n-> Your drawing is not as __________________________________________________.", "ans": "Your drawing is not as colorful as mine (hoặc as my drawing).", "explain": "Chuyển từ so sánh hơn sang so sánh không bằng: 'not as + Adj + as'."}, {"type": "Tìm và sửa một lỗi sai trong câu (Error Identification & Correction)", "prompt": "He has been a member of the photography club since four months.\nLỗi sai: ____________ -> Sửa lại: ____________", "ans": "since -> for", "explain": "'four months' là một khoảng thời gian, phải dùng 'for', không dùng 'since' (since đi với mốc thời gian)."}, {"type": "Chia dạng đúng của từ trong ngoặc (Word Form / Verb Form)", "prompt": "After two months of practice, Lan is now used to (swim) ______ 500 meters every afternoon.", "ans": "swimming", "explain": "Cấu trúc 'be used to + V-ing' (đã quen với việc gì)."}]}, {"id": 5, "title": "TEST 5: FOOD, COOKING & SHOPPING (Ẩm Thực & Mua Sắm)", "grammar_points": "Lượng từ: a few vs a little, How many vs How much, Quyết định tức thời (will), Động từ chỉ giác quan (linking verbs: taste, smell, look + adj), both... and..., Gợi ý & Đề xuất (How about + V-ing, Why don't we + V, Let's + V), It takes sb + time + to V, Câu điều kiện loại 0 (Type 0).", "mcqs": [{"q": "We only need ______ fresh eggs and ______ olive oil to prepare this Italian pasta dish.", "options": ["A. a few / a little", "B. a little / a few", "C. many / much", "D. few / little"], "ans": "A", "explain": "'Eggs' là danh từ đếm được số nhiều đi với 'a few'; 'olive oil' là danh từ không đếm được đi với 'a little'."}, {"q": "______ bottles of mineral water and ______ milk do we need to buy for the picnic?", "options": ["A. How much / how many", "B. How many / how much", "C. How many / how many", "D. How much / how much"], "ans": "B", "explain": "'Bottles of mineral water' là danh từ đếm được số nhiều -> 'How many'. 'Milk' là danh từ không đếm được -> 'How much'."}, {"q": "Waiter: 'Are you ready to order, young man?' – Customer: 'Yes, I ______ a grilled chicken salad, please.'", "options": ["A. will have", "B. have had", "C. am having", "D. had"], "ans": "A", "explain": "Đưa ra quyết định ngay tại thời điểm nói trong nhà hàng/quán ăn dùng thì Tương lai đơn 'I will have / I'll have'."}, {"q": "This mushroom soup smells ______ and tastes even ______ than I expected.", "options": ["A. deliciously / better", "B. delicious / gooder", "C. delicious / better", "D. deliciously / best"], "ans": "C", "explain": "Các linking verbs chỉ giác quan ('smell', 'taste') đi kèm tính từ, không dùng trạng từ. Dạng so sánh hơn của 'good' là 'better'."}, {"q": "This special dessert is ______ delicious ______ nutritious for growing teenagers.", "options": ["A. neither / or", "B. both / and", "C. either / and", "D. not only / and"], "ans": "B", "explain": "Cặp liên từ song hành: 'both ... and ...' (vừa ... vừa ...)."}, {"q": "______ having dinner at the new seafood restaurant by the lake tonight?", "options": ["A. Why don't we", "B. How about", "C. Let's", "D. Shall we"], "ans": "B", "explain": "Sau chỗ trống là danh động từ 'having' -> dùng 'How about + V-ing?' (hoặc 'What about + V-ing?')."}, {"q": "Why don't we ______ a chocolate cake for Mom's birthday tomorrow?", "options": ["A. bake", "B. baking", "C. to bake", "D. baked"], "ans": "A", "explain": "Cấu trúc đề xuất: 'Why don't we + V-inf?' -> chọn 'bake'."}, {"q": "It usually ______ my grandmother nearly two hours ______ traditional pho broth.", "options": ["A. take / to simmer", "B. takes / simmering", "C. takes / to simmer", "D. took / simmer"], "ans": "C", "explain": "Cấu trúc: 'It takes sb + time + to V' -> 'takes my grandmother nearly two hours to simmer'."}, {"q": "If you ______ water to 100 degrees Celsius, it ______ into steam.", "options": ["A. heat / turns", "B. heated / turned", "C. will heat / turns", "D. heat / will turn"], "ans": "A", "explain": "Câu điều kiện loại 0 (Conditional Type 0) diễn tả sự thật khoa học/quy luật tự nhiên: cả 2 mệnh đề đều chia thì Hiện tại đơn ('heat / turns')."}, {"q": "There are only ______ butter and ______ apples left in the fridge, so we cannot make an apple pie.", "options": ["A. a little / a few", "B. little / few", "C. much / many", "D. a few / a little"], "ans": "B", "explain": "Ngữ cảnh tiêu cực 'cannot make an apple pie' (hầu như không còn đủ) -> dùng 'little' (cho danh từ không đếm được butter) và 'few' (cho danh từ số nhiều apples) mang nghĩa hầu như không có."}], "essays": [{"type": "Viết lại câu gợi ý sao cho nghĩa không đổi (Sentence Transformation)", "prompt": "Let's make some fresh lemonade to cool down this afternoon.\n-> Why don't __________________________________________________?", "ans": "Why don't we make some fresh lemonade to cool down this afternoon?", "explain": "Chuyển từ cấu trúc 'Let's + V' sang 'Why don't we + V?'."}, {"type": "Viết lại câu gợi ý với 'How about' (Sentence Transformation)", "prompt": "Shall we go to the farmers' market to buy organic vegetables?\n-> How about __________________________________________________?", "ans": "How about going to the farmers' market to buy organic vegetables?", "explain": "Chuyển từ 'Shall we + V' sang 'How about + V-ing?'."}, {"type": "Viết lại câu hoàn chỉnh dùng câu điều kiện loại 0 (Sentence Transformation)", "prompt": "You leave chocolate in the hot sun. It melts quickly.\n-> If you __________________________________________________.", "ans": "If you leave chocolate in the hot sun, it melts quickly.", "explain": "Câu điều kiện loại 0 diễn tả quy luật tự nhiên: 'If + S + V(hiện tại đơn), S + V(hiện tại đơn)'."}, {"type": "Tìm và sửa một lỗi sai trong câu (Error Identification & Correction)", "prompt": "How much cartons of orange juice did you put into the shopping trolley?\nLỗi sai: ____________ -> Sửa lại: ____________", "ans": "How much -> How many", "explain": "'cartons' là danh từ đếm được số nhiều, phải dùng 'How many', không dùng 'How much'."}, {"type": "Chia dạng đúng của từ trong ngoặc (Word Form / Linking Verb)", "prompt": "The freshly baked garlic bread smells (wonderful) ______ and tastes very crisp.", "ans": "wonderful", "explain": "'smell' là linking verb chỉ giác quan, đi kèm tính từ ('wonderful'), không dùng trạng từ."}]}, {"id": 6, "title": "TEST 6: HOLIDAYS & TRAVEL (Kỳ Nghỉ & Du Lịch)", "grammar_points": "Quá khứ đơn mốc thời gian, Câu điều kiện loại 1 (Type 1), Cấu trúc 'It is the first time + S + have/has + PII', Tính từ đuôi -ed vs -ing, Mệnh đề quan hệ trạng từ nơi chốn 'where', Liên từ nhượng bộ Although/Even though vs In spite of/Despite, ask/tell/allow sb to do sth, look forward to + V-ing, Mệnh đề thời gian tương lai với as soon as.", "mcqs": [{"q": "If the weather ______ sunny and pleasant tomorrow, our family ______ a boat trip to Cham Island.", "options": ["A. is / will take", "B. will be / takes", "C. is / take", "D. was / would take"], "ans": "A", "explain": "Câu điều kiện loại 1 (Conditional Type 1): Mệnh đề If chia Hiện tại đơn ('is'), mệnh đề chính chia Tương lai đơn ('will take')."}, {"q": "This is the first time Nam ______ by airplane to Da Nang City.", "options": ["A. travels", "B. has traveled", "C. traveled", "D. is traveling"], "ans": "B", "explain": "Cấu trúc: 'It is the first/second time + S + have/has + PII' (lần đầu tiên ai làm gì) -> dùng thì Hiện tại hoàn thành."}, {"q": "The three-day trip to Cuc Phuong National Park was really ______, and all the children felt ______.", "options": ["A. excited / exciting", "B. exciting / excited", "C. excited / excited", "D. exciting / exciting"], "ans": "B", "explain": "Tính từ đuôi '-ing' (exciting) miêu tả tính chất của chuyến đi; tính từ đuôi '-ed' (excited) miêu tả cảm xúc của trẻ em."}, {"q": "Hoi An is a charming ancient town ______ visitors can admire lantern-lit streets at night.", "options": ["A. which", "B. where", "C. that", "D. what"], "ans": "B", "explain": "Trạng từ quan hệ 'where' thay thế cho danh từ chỉ nơi chốn ('charming ancient town') và đóng vai trò trạng ngữ trong mệnh đề quan hệ."}, {"q": "______ the torrential rain, the tour guide still led the group up the mountain safely.", "options": ["A. Although", "B. Even though", "C. Despite", "D. Because"], "ans": "C", "explain": "Sau chỗ trống là cụm danh từ ('the torrential rain') -> dùng 'Despite' (hoặc 'In spite of'). 'Although' phải đi với một mệnh đề."}, {"q": "Although the museum ticket was quite expensive, we ______ our visit thoroughly.", "options": ["A. enjoy", "B. enjoyed", "C. have enjoyed", "D. were enjoying"], "ans": "B", "explain": "Mệnh đề nhượng bộ ở quá khứ đơn ('was'), mệnh đề chính diễn tả sự việc đã hoàn thành trong chuyến đi cũng chia quá khứ đơn ('enjoyed')."}, {"q": "The flight attendant politely asked all passengers ______ their seatbelts during turbulence.", "options": ["A. fasten", "B. fastening", "C. to fasten", "D. fastened"], "ans": "C", "explain": "Cấu trúc: 'ask / tell / allow somebody to do something' -> 'asked all passengers to fasten'."}, {"q": "We are really looking forward ______ Ha Long Bay on a luxury cruise ship next month.", "options": ["A. to explore", "B. to exploring", "C. explore", "D. exploring"], "ans": "B", "explain": "Cấu trúc cố định: 'look forward to + V-ing' (mong chờ điều gì) -> 'looking forward to exploring'."}, {"q": "I will send you a picture postcard as soon as I ______ in Paris.", "options": ["A. arrive", "B. will arrive", "C. arrived", "D. am arriving"], "ans": "A", "explain": "Trong mệnh đề chỉ thời gian trong tương lai với 'as soon as', động từ chia ở thì Hiện tại đơn, không dùng 'will'."}, {"q": "Last summer, our class ______ a memorable camping trip in Ba Vi National Park.", "options": ["A. has", "B. has had", "C. had", "D. was having"], "ans": "C", "explain": "Dấu hiệu thời gian xác định trong quá khứ ('Last summer') -> dùng thì Quá khứ đơn: 'had'."}], "essays": [{"type": "Viết lại câu dùng 'Although' (Sentence Transformation)", "prompt": "In spite of the heavy fog, the flight took off on schedule.\n-> Although __________________________________________________.", "ans": "Although the fog was heavy, the flight took off on schedule. (hoặc: Although it was heavily foggy...)", "explain": "Chuyển từ cụm danh từ sau 'In spite of' sang mệnh đề có chủ vị sau 'Although'."}, {"type": "Viết lại câu sao cho nghĩa không đổi (Sentence Transformation)", "prompt": "I have never seen such a breathtaking waterfall before.\n-> This is the first time __________________________________________________.", "ans": "This is the first time I have ever seen such a breathtaking waterfall.", "explain": "Chuyển từ Hiện tại hoàn thành với 'never ... before' sang cấu trúc 'This is the first time + S + have + PII'."}, {"type": "Chia dạng đúng của từ trong ngoặc (Word Form)", "prompt": "The historical documentary about ancient Hue Citadel was so (interest) ______ that all students watched silently.", "ans": "interesting", "explain": "Bổ nghĩa cho danh từ sự vật ('documentary') dùng tính từ đuôi '-ing' (interesting)."}, {"type": "Tìm và sửa một lỗi sai trong câu (Error Identification & Correction)", "prompt": "We will phone you as soon as our train will arrive at the railway station.\nLỗi sai: ____________ -> Sửa lại: ____________", "ans": "will arrive -> arrives", "explain": "Trong mệnh đề thời gian tương lai bắt đầu bằng 'as soon as', động từ chia thì Hiện tại đơn (arrives), không dùng 'will arrive'."}, {"type": "Hoàn thành câu dùng cấu trúc 'look forward to' (Sentence Building)", "prompt": "The children / look forward to / visit / their grandparents / in the countryside / this weekend / .\n-> __________________________________________________", "ans": "The children are looking forward to visiting their grandparents in the countryside this weekend.", "explain": "'look forward to + V-ing' diễn tả sự háo hức mong đợi."}]}, {"id": 7, "title": "TEST 7: HEALTH & SPORTS (Sức Khỏe & Thể Thao)", "grammar_points": "had better ('d better) + V-inf, ought to + V-inf, because of + Noun phrase, keep + V-ing, stop to V vs stop V-ing, remember to V, Bị động Hiện tại đơn (is/are + PII), Bị động Quá khứ đơn (was/were + PII), be able to + V-inf, so that + clause.", "mcqs": [{"q": "You have a severe cough and high fever. You ______ see a doctor immediately.", "options": ["A. had better", "B. had better to", "C. would better", "D. had rather to"], "ans": "A", "explain": "Cấu trúc đưa ra lời khuyên khẩn thiết: 'had better + V-inf' (tốt hơn hết nên làm gì)."}, {"q": "To stay physically fit, teenagers ______ to exercise at least thirty minutes a day.", "options": ["A. should", "B. must", "C. ought", "D. had better"], "ans": "C", "explain": "Sau chỗ trống có 'to exercise', trong các động từ khuyết thiếu chỉ có 'ought to + V-inf' có giới từ 'to'."}, {"q": "The inter-school football championship was postponed ______ the heavy thunderstorm.", "options": ["A. because", "B. because of", "C. although", "D. despite of"], "ans": "B", "explain": "Sau chỗ trống là cụm danh từ 'the heavy thunderstorm' chỉ nguyên nhân -> dùng 'because of'."}, {"q": "If you want to build strong muscles, you should keep ______ swimming every afternoon.", "options": ["A. practice", "B. practicing", "C. to practice", "D. practiced"], "ans": "B", "explain": "Cấu trúc: 'keep + V-ing' (tiếp tục, duy trì làm việc gì liên tục)."}, {"q": "After jogging continuously for five kilometers, the athletes stopped ______ some electrolyte water.", "options": ["A. drinking", "B. to drink", "C. drank", "D. drink"], "ans": "B", "explain": "'stop to V' có nghĩa là tạm dừng việc đang làm để làm việc khác (dừng chạy để uống nước)."}, {"q": "The doctor advised my uncle to stop ______ because it harms his respiratory system severely.", "options": ["A. to smoke", "B. smoking", "C. smoke", "D. smoked"], "ans": "B", "explain": "'stop V-ing' có nghĩa là dừng hẳn, từ bỏ một thói quen (bỏ hút thuốc hoàn toàn)."}, {"q": "Please remember ______ off the gymnasium lights before locking the doors tonight.", "options": ["A. turn", "B. turning", "C. to turn", "D. turned"], "ans": "C", "explain": "'remember to V' có nghĩa là nhớ phải thực hiện một nhiệm vụ trong tương lai."}, {"q": "Thousands of healthy meals ______ for school students every morning by professional chefs.", "options": ["A. prepare", "B. are prepared", "C. were prepared", "D. are preparing"], "ans": "B", "explain": "Câu bị động ở thì Hiện tại đơn: chủ ngữ số nhiều 'meals' -> 'are prepared'."}, {"q": "The modern sports complex in our district ______ two years ago to encourage youth athletics.", "options": ["A. was built", "B. is built", "C. built", "D. has been built"], "ans": "A", "explain": "Câu bị động ở thì Quá khứ đơn ('two years ago') với chủ ngữ số ít 'sports complex' -> 'was built'."}, {"q": "Thanks to intense swimming lessons, Peter is now able ______ across the wide swimming pool.", "options": ["A. swim", "B. swimming", "C. to swim", "D. swam"], "ans": "C", "explain": "Cấu trúc diễn tả khả năng: 'be able to + V-inf' -> 'is able to swim'."}], "essays": [{"type": "Chuyển câu chủ động sang câu bị động (Passive Voice)", "prompt": "Doctors and nurses check the students' health condition twice a year.\n-> The students' health condition __________________________________________________.", "ans": "The students' health condition is checked twice a year by doctors and nurses.", "explain": "Chuyển sang bị động thì Hiện tại đơn: 'S + is/are + PII + (by O)'."}, {"type": "Chuyển câu chủ động sang câu bị động (Passive Voice)", "prompt": "The school coach organized an exciting basketball tournament last week.\n-> An exciting basketball tournament __________________________________________________.", "ans": "An exciting basketball tournament was organized by the school coach last week.", "explain": "Chuyển sang bị động thì Quá khứ đơn: 'S + was/were + PII + (by O)'."}, {"type": "Viết lại câu dùng 'because of' (Sentence Transformation)", "prompt": "He couldn't join the badminton match yesterday because he was injured.\n-> He couldn't join the badminton match yesterday because of __________________________________________________.", "ans": "He couldn't join the badminton match yesterday because of his injury (hoặc because of being injured).", "explain": "Chuyển mệnh đề chỉ nguyên nhân sang cụm danh từ sau 'because of'."}, {"type": "Chia dạng đúng của động từ trong ngoặc (Verb Form)", "prompt": "On the way home from the court, we stopped (buy) ______ two fresh coconut drinks.", "ans": "to buy", "explain": "Dừng hành động đi lại để mua nước uống -> dùng 'stop to V'."}, {"type": "Tìm và sửa một lỗi sai trong câu (Error Identification & Correction)", "prompt": "You had better to put on warm clothes because the wind is freezing outside.\nLỗi sai: ____________ -> Sửa lại: ____________", "ans": "to put -> put", "explain": "Sau cấu trúc 'had better' dùng động từ nguyên thể không có 'to' (bare infinitive)."}]}, {"id": 8, "title": "TEST 8: ANIMALS & NATURE (Thiên Nhiên & Động Vật)", "grammar_points": "Mệnh đề quan hệ xác định (Relative Clauses) với which/who, Câu điều kiện loại 2 (Type 2 - giả định không thật ở hiện tại và lời khuyên If I were you), protect sth from + V-ing/N, one of the + so sánh nhất + danh từ số nhiều, There is / There are, look like + N vs look + Adj, It is + Adj + to V, Bị động với động từ khuyết thiếu (modal + be + PII).", "mcqs": [{"q": "The blue whale, ______ is the largest animal on Earth, feeds mostly on tiny krill.", "options": ["A. who", "B. which", "C. whose", "D. where"], "ans": "B", "explain": "Đại từ quan hệ 'which' thay thế cho danh từ chỉ con vật/loài vật ('The blue whale')."}, {"q": "The dedicated rangers ______ patrol the national park day and night protect rare rhinoceroses from poachers.", "options": ["A. which", "B. who", "C. whom", "D. whose"], "ans": "B", "explain": "Đại từ quan hệ 'who' thay thế cho danh từ chỉ người ('The dedicated rangers') làm chủ ngữ cho mệnh đề quan hệ."}, {"q": "If people ______ so much plastic waste into the ocean, marine animals would live much safer.", "options": ["A. don't dump", "B. didn't dump", "C. won't dump", "D. wouldn't dump"], "ans": "B", "explain": "Câu điều kiện loại 2 (Conditional Type 2): mệnh đề chính có 'would live', nên mệnh đề If chia Quá khứ đơn: 'didn't dump'."}, {"q": "If I ______ you, I ______ join the local wildlife conservation club right away.", "options": ["A. am / will", "B. were / would", "C. was / will", "D. had been / would"], "ans": "B", "explain": "Cấu trúc câu điều kiện loại 2 dùng để đưa ra lời khuyên: 'If I were you, I would + V-inf'."}, {"q": "We must take immediate action to protect endangered tigers ______ being hunted illegally.", "options": ["A. to", "B. with", "C. from", "D. against"], "ans": "C", "explain": "Cấu trúc: 'protect someone/something from + V-ing/Noun' (bảo vệ ai/cái gì khỏi nguy cơ nào)."}, {"q": "The cheetah is widely recognized as one of the ______ land animals in the world.", "options": ["A. fast", "B. faster", "C. fastest", "D. most fastest"], "ans": "C", "explain": "Cấu trúc: 'one of the + so sánh nhất + danh từ số nhiều' -> 'one of the fastest land animals'."}, {"q": "Look at that rare chameleon! Its rough skin looks ______ tree bark.", "options": ["A. like", "B. as", "C. alike", "D. similar"], "ans": "A", "explain": "Cấu trúc so sánh diện mạo: 'look like + Noun' (trông giống như một vật gì đó)."}, {"q": "It is essential ______ clean freshwater sources for both wildlife and humans.", "options": ["A. preserve", "B. to preserve", "C. preserving", "D. preserved"], "ans": "B", "explain": "Cấu trúc giả chủ ngữ: 'It is + Adj + to V' -> 'It is essential to preserve'."}, {"q": "Endangered polar bears ______ from global warming and melting sea ice.", "options": ["A. must protect", "B. must be protected", "C. should protect", "D. must to be protected"], "ans": "B", "explain": "Câu bị động với động từ khuyết thiếu: 'modal verb + be + PII' -> 'must be protected'."}, {"q": "In Son Doong cave, ______ thousands of unique limestone stalactites hanging from the roof.", "options": ["A. there is", "B. there are", "C. it is", "D. they are"], "ans": "B", "explain": "'thousands of unique limestone stalactites' là danh từ số nhiều -> dùng cấu trúc tồn tại 'there are'."}], "essays": [{"type": "Nối hai câu thành một dùng đại từ quan hệ (Relative Clause)", "prompt": "I read an article about the red-crowned crane. It is an endangered bird in Vietnam.\n-> I read an article about the red-crowned crane which __________________________________________________.", "ans": "I read an article about the red-crowned crane which is an endangered bird in Vietnam.", "explain": "Dùng đại từ quan hệ 'which' thay thế cho 'It' / danh từ chỉ loài vật 'the red-crowned crane'."}, {"type": "Viết câu điều kiện loại 2 dựa trên tình huống cho sẵn (Conditional Type 2)", "prompt": "I don't have wings, so I cannot fly around the world like an eagle.\n-> If I had wings, __________________________________________________.", "ans": "If I had wings, I could fly (hoặc would fly) around the world like an eagle.", "explain": "Câu điều kiện loại 2 giả định điều trái với thực tế ở hiện tại: 'If + S + V(quá khứ đơn), S + could/would + V-inf'."}, {"type": "Chuyển câu sang thể bị động với động từ khuyết thiếu (Modal Passive)", "prompt": "Governments must enforce strict laws to ban wild animal trafficking.\n-> Strict laws __________________________________________________.", "ans": "Strict laws must be enforced by governments to ban wild animal trafficking.", "explain": "Cấu trúc bị động với modal verb: 'modal verb + be + PII'."}, {"type": "Viết lại câu khuyên nhủ dùng 'If I were you' (Sentence Transformation)", "prompt": "You should not feed the wild monkeys in the national park.\n-> If I were you, __________________________________________________.", "ans": "If I were you, I would not feed (hoặc wouldn't feed) the wild monkeys in the national park.", "explain": "Dùng cấu trúc câu điều kiện loại 2 để đưa ra lời khuyên: 'If I were you, I would/wouldn't + V'."}, {"type": "Tìm và sửa một lỗi sai trong câu (Error Identification & Correction)", "prompt": "This green snake looks like dangerous, so do not touch it.\nLỗi sai: ____________ -> Sửa lại: ____________", "ans": "looks like -> looks (hoặc bỏ like)", "explain": "Đứng trước tính từ 'dangerous' dùng linking verb 'looks', chỉ dùng 'looks like' khi theo sau là một danh từ/cụm danh từ."}]}, {"id": 9, "title": "TEST 9: FRIENDS & EMOTIONS (Bạn Bè & Cảm Xúc)", "grammar_points": "Phrasal verb: get on well with sb, make someone feel + Adj, feel like + V-ing, apologize to sb for + V-ing/N, Would you mind + V-ing? (trả lời: Not at all), Câu gián tiếp (Reported Speech: lùi thì), Câu hỏi gián tiếp Yes/No (S + asked + if/whether + S + V), Liên từ điều kiện Unless (= If not), Câu ước ở hiện tại (Wish + Past Simple / Could + V), Tính từ cảm xúc thất vọng (disappointed) & Mệnh đề lý do.", "mcqs": [{"q": "Mai and Linh have been classmates for five years and they always get ______ well with each other.", "options": ["A. in", "B. on", "C. over", "D. off"], "ans": "B", "explain": "Cụm động từ 'get on well with somebody' có nghĩa là sống hòa thuận, hợp ý với ai."}, {"q": "A heartfelt compliment from true friends can make anyone ______ much more confident.", "options": ["A. feels", "B. feeling", "C. feel", "D. to feel"], "ans": "C", "explain": "Cấu trúc: 'make someone do something' -> theo sau là động từ nguyên thể không 'to': 'feel'."}, {"q": "After a grueling study session, I really feel like ______ out for some bubble tea.", "options": ["A. go", "B. going", "C. to go", "D. went"], "ans": "B", "explain": "Cấu trúc: 'feel like + V-ing' (cảm thấy thích/muốn làm việc gì ngay bây giờ)."}, {"q": "David genuinely apologized to his best friend ______ breaking the promise.", "options": ["A. about", "B. on", "C. for", "D. with"], "ans": "C", "explain": "Cấu trúc: 'apologize to somebody for + V-ing/Noun' (xin lỗi ai về việc gì)."}, {"q": "Would you mind ______ your voice down a little? The baby is sleeping in the next room.", "options": ["A. keep", "B. keeping", "C. to keep", "D. kept"], "ans": "B", "explain": "Cấu trúc câu yêu cầu lịch sự: 'Would you mind + V-ing?' -> 'keeping'."}, {"q": "'Would you mind if I borrowed your dictionary?' – '______, here you are.'", "options": ["A. Yes, of course", "B. Not at all", "C. You're welcome", "D. Never mind"], "ans": "B", "explain": "Để đồng ý cho phép khi người khác hỏi 'Would you mind...?', dùng câu trả lời mang nghĩa phủ định 'Not at all' (Không hề phiền)."}, {"q": "Linda said that she ______ to the school anniversary celebration the following Saturday.", "options": ["A. will come", "B. would come", "C. comes", "D. came"], "ans": "B", "explain": "Câu gián tiếp (Reported Speech): động từ tường thuật ở quá khứ 'said', lùi thì từ 'will come' thành 'would come'."}, {"q": "The teacher asked the new student ______ he lived near the school.", "options": ["A. that", "B. whether", "C. what", "D. weather"], "ans": "B", "explain": "Câu hỏi gián tiếp dạng Yes/No: 'S + asked + if/whether + S + V'."}, {"q": "______ you listen attentively to the teacher's instructions, you will make many careless mistakes.", "options": ["A. If", "B. Unless", "C. As long as", "D. Because"], "ans": "B", "explain": "'Unless' có nghĩa là 'Nếu không' (= If ... not). Câu mang nghĩa: 'Nếu bạn không lắng nghe chú ý, bạn sẽ mắc nhiều lỗi'."}, {"q": "I have to stay home to prepare for the test tomorrow. I wish I ______ join the camping trip with you.", "options": ["A. can", "B. could", "C. will", "D. am able to"], "ans": "B", "explain": "Câu ước ở hiện tại (Wish for present/future): dùng 'could + V-inf' để diễn tả mong muốn không thể thực hiện."}], "essays": [{"type": "Chuyển câu trực tiếp sang câu gián tiếp (Reported Speech)", "prompt": "'I am feeling very tired after the exam,' Nam said.\n-> Nam said that __________________________________________________.", "ans": "Nam said that he was feeling very tired after the exam.", "explain": "Lùi thì từ Hiện tại tiếp diễn ('am feeling') sang Quá khứ tiếp diễn ('was feeling') và đổi đại từ 'I' thành 'he'."}, {"type": "Chuyển câu hỏi trực tiếp sang câu gián tiếp (Reported Question)", "prompt": "'Do you share your secrets with your best friend?' Mary asked me.\n-> Mary asked me if __________________________________________________.", "ans": "Mary asked me if I shared my secrets with my best friend.", "explain": "Câu hỏi gián tiếp Yes/No: 'asked me if + S + V(lùi thì: shared)'."}, {"type": "Viết lại câu dùng 'Unless' (Sentence Transformation)", "prompt": "If you don't say sorry to your sister, she will remain upset.\n-> Unless you __________________________________________________.", "ans": "Unless you say sorry to your sister, she will remain upset.", "explain": "'Unless' thay thế cho 'If ... not', vế sau giữ nguyên."}, {"type": "Viết câu ước với 'I wish' (Wish Clause)", "prompt": "My best friend lives far away from me, so we cannot meet every day.\n-> I wish my best friend __________________________________________________.", "ans": "I wish my best friend lived closer to me (hoặc didn't live far away / could meet me every day).", "explain": "Câu ước trái với hiện tại: động từ lùi về Quá khứ đơn."}, {"type": "Tìm và sửa một lỗi sai trong câu (Error Identification & Correction)", "prompt": "She apologized for her teacher for arriving ten minutes late.\nLỗi sai: ____________ -> Sửa lại: ____________", "ans": "for her teacher -> to her teacher", "explain": "Cấu trúc chuẩn là 'apologize TO someone for something'."}]}, {"id": 10, "title": "TEST 10: DREAMS & FUTURE PLANS (Ước Mơ & Kế Hoạch Tương Lai)", "grammar_points": "hope to + V-inf, plan to + V-inf / be planning to + V-inf, Mệnh đề thời gian tương lai (When + Present Simple, S + will + V), promise to + V-inf, dream of + V-ing, modal verbs dự đoán (might / will), Câu hỏi & câu trả lời điều kiện loại 2, find it + Adj + to V, By the time + Present Simple, believe that + Conditional Type 1.", "mcqs": [{"q": "Ever since childhood, Mai has always dreamed of ______ an aerospace engineer.", "options": ["A. become", "B. becoming", "C. to become", "D. became"], "ans": "B", "explain": "Cấu trúc: 'dream of / about + V-ing' (mơ ước làm nghề gì/việc gì) -> 'dreamed of becoming'."}, {"q": "My brother hopes ______ a full scholarship to a prestigious university when he finishes high school.", "options": ["A. winning", "B. to win", "C. win", "D. won"], "ans": "B", "explain": "Cấu trúc: 'hope to + V-inf' (hy vọng làm được việc gì) -> 'hopes to win'."}, {"q": "When Minh ______ older, he ______ around the world to write travel books.", "options": ["A. will grow / travels", "B. grows / will travel", "C. grow / travels", "D. is growing / travels"], "ans": "B", "explain": "Trong mệnh đề thời gian tương lai bắt đầu bằng 'When', động từ chia Hiện tại đơn ('grows'), mệnh đề chính chia Tương lai đơn ('will travel')."}, {"q": "Phong promised ______ his parents proud by studying diligently for the CLC entrance exam.", "options": ["A. make", "B. making", "C. to make", "D. made"], "ans": "C", "explain": "Cấu trúc: 'promise to + V-inf' (hứa làm gì) -> 'promised to make'."}, {"q": "Scientists say humans ______ live on Mars in the next century, but it is not completely certain yet.", "options": ["A. must", "B. might", "C. should", "D. have to"], "ans": "B", "explain": "'might' diễn tả khả năng có thể xảy ra trong tương lai nhưng mức độ chắc chắn không cao ('not completely certain yet')."}, {"q": "What ______ you do if you ______ a million dollars in an international competition?", "options": ["A. will / win", "B. would / won", "C. did / would win", "D. would / win"], "ans": "B", "explain": "Câu hỏi ở câu điều kiện loại 2 (giả định không có thật ở hiện tại): 'What would you do if you won...?'."}, {"q": "Many students find it ______ to balance academic study and extracurricular activities.", "options": ["A. difficultly", "B. difficulty", "C. difficult", "D. more difficultly"], "ans": "C", "explain": "Cấu trúc: 'find it + Adj + to V' (thấy việc gì như thế nào) -> cần một tính từ: 'difficult'."}, {"q": "By the time Linh ______ 18 years old, she ______ three foreign languages fluently.", "options": ["A. is / will speak", "B. will be / speaks", "C. was / spoke", "D. is / speaks"], "ans": "A", "explain": "Mệnh đề chỉ mốc thời gian 'By the time + S + V(hiện tại đơn)', mệnh đề chính diễn tả tương lai dùng 'will speak'."}, {"q": "I strongly believe that if we ______ persistently every single day, we ______ our biggest dreams.", "options": ["A. practice / will achieve", "B. practiced / would achieve", "C. will practice / achieve", "D. practice / achieve"], "ans": "A", "explain": "Mệnh đề câu điều kiện loại 1 diễn tả sự việc hoàn toàn có thể xảy ra trong tương lai: 'If + HT đơn, S + will + V'."}, {"q": "Our school team is currently planning ______ an eco-friendly community project this summer.", "options": ["A. launch", "B. to launch", "C. launching", "D. launched"], "ans": "B", "explain": "Cấu trúc: 'plan to + V-inf' (lên kế hoạch thực hiện điều gì) -> 'is planning to launch'."}], "essays": [{"type": "Viết lại câu sao cho nghĩa không đổi (Sentence Transformation)", "prompt": "It is difficult for beginners to code a smart AI robot.\n-> Beginners find it __________________________________________________.", "ans": "Beginners find it difficult to code a smart AI robot.", "explain": "Chuyển từ cấu trúc 'It is + Adj + for sb + to V' sang 'sb + find it + Adj + to V'."}, {"type": "Viết lại câu dùng cấu trúc 'dream of' (Sentence Transformation)", "prompt": "Lan's greatest ambition is to travel into outer space.\n-> Lan dreams __________________________________________________.", "ans": "Lan dreams of traveling into outer space (hoặc dreams of traveling to outer space).", "explain": "Cấu trúc 'dream of + V-ing' diễn tả ước mơ hoài bão."}, {"type": "Hoàn thành câu điều kiện loại 2 (Conditional Type 2)", "prompt": "If I (be) ______ the Minister of Education, I (build) ______ more modern digital libraries for rural children.", "ans": "were / would build", "explain": "Câu điều kiện loại 2: Mệnh đề If dùng 'were' cho mọi ngôi; mệnh đề chính dùng 'would + V-inf'."}, {"type": "Chia dạng đúng của động từ trong ngoặc (Future Time Clause)", "prompt": "When our teacher (arrive) ______ tomorrow morning, we (present) ______ our scientific innovation.", "ans": "arrives / will present", "explain": "Mệnh đề thời gian với 'When' chia thì Hiện tại đơn ('arrives'), mệnh đề chính chia Tương lai đơn ('will present')."}, {"type": "Tìm và sửa một lỗi sai trong câu (Error Identification & Correction)", "prompt": "He promised going with me to the university open day next weekend.\nLỗi sai: ____________ -> Sửa lại: ____________", "ans": "going -> to go", "explain": "Sau động từ 'promise' là động từ nguyên mẫu có 'to' ('promise to do sth'), không dùng V-ing."}]}];
+        let currentTestIdx = 0;
+        let userState = JSON.parse(localStorage.getItem('clc_grammar_state') || '{}');
+
+        function initApp() {
+            renderTopicTabs();
+            loadTest(currentTestIdx);
+            updateOverallProgress();
+        }
+
+        function renderTopicTabs() {
+            const tabsContainer = document.getElementById('topicTabs');
+            tabsContainer.innerHTML = '';
+            TESTS.forEach((t, idx) => {
+                const btn = document.createElement('button');
+                btn.className = `topic-btn ${idx === currentTestIdx ? 'active' : ''} ${userState[t.id]?.isDone ? 'is-completed' : ''}`;
+                btn.innerHTML = `
+                    <span>Đề ${t.id}</span>
+                    <span class="topic-badge-done">✓</span>
+                `;
+                btn.onclick = () => {
+                    currentTestIdx = idx;
+                    renderTopicTabs();
+                    loadTest(currentTestIdx);
+                };
+                tabsContainer.appendChild(btn);
+            });
+        }
+
+        function loadTest(idx) {
+            const t = TESTS[idx];
+            const testKey = `test_${t.id}`;
+            const testData = userState[testKey] || { mcqAnswers: {}, essayAnswers: {}, isDone: false };
+
+            const container = document.getElementById('testBoxContainer');
+
+            let mcqHtml = '';
+            t.mcqs.forEach((mcq, mIdx) => {
+                const qNum = mIdx + 1;
+                const userAns = testData.mcqAnswers[qNum];
+                
+                let optsHtml = '';
+                mcq.options.forEach(opt => {
+                    const optLetter = opt.trim().charAt(0);
+                    let optClass = 'opt-btn';
+                    if (userAns) {
+                        optClass += ' locked';
+                        if (optLetter === mcq.ans) {
+                            optClass += ' correct';
+                        } else if (userAns === optLetter) {
+                            optClass += ' wrong';
+                        }
+                    }
+                    optsHtml += `
+                        <button class="${optClass}" onclick="handleSelectMcq(${t.id}, ${qNum}, '${optLetter}', '${mcq.ans}')">
+                            ${opt}
+                        </button>
+                    `;
+                });
+
+                const isAnswered = !!userAns;
+                mcqHtml += `
+                    <div class="mcq-card" id="mcq_card_${t.id}_${qNum}">
+                        <div class="mcq-question">
+                            <span class="mcq-num">Câu ${qNum}:</span>
+                            <span>${escapeHtml(mcq.q)}</span>
+                        </div>
+                        <div class="mcq-options">
+                            ${optsHtml}
+                        </div>
+                        <div class="explanation-box" id="mcq_exp_${t.id}_${qNum}" style="display: ${isAnswered ? 'block' : 'none'}">
+                            <div class="explanation-title">💡 Giải thích chi tiết:</div>
+                            <div>${escapeHtml(mcq.explain)}</div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            let essayHtml = '';
+            t.essays.forEach((essay, eIdx) => {
+                const qNum = 11 + eIdx;
+                const savedInput = testData.essayAnswers[qNum] || '';
+                const isRevealed = testData.revealedEssays?.[qNum] || false;
+
+                essayHtml += `
+                    <div class="essay-card">
+                        <span class="essay-type-badge">${escapeHtml(essay.type)}</span>
+                        <div class="essay-prompt"><b>Câu ${qNum}:</b> ${escapeHtml(essay.prompt)}</div>
+                        <div class="essay-input-row">
+                            <input type="text" class="essay-input" id="essay_in_${t.id}_${qNum}" 
+                                placeholder="Nhập câu trả lời của con vào đây..." 
+                                value="${escapeHtml(savedInput)}"
+                                onchange="saveEssayInput(${t.id}, ${qNum}, this.value)"
+                            />
+                        </div>
+                        <div class="essay-actions">
+                            <button class="btn-check-essay" onclick="toggleEssayResult(${t.id}, ${qNum})">
+                                🔍 ${isRevealed ? 'Ẩn Đáp Án Chuẩn' : 'Kiểm Tra & Xem Đáp Án Chuẩn'}
+                            </button>
+                        </div>
+                        <div class="essay-result-box" id="essay_res_${t.id}_${qNum}" style="display: ${isRevealed ? 'block' : 'none'}">
+                            <div class="essay-std-ans">✅ Đáp án chuẩn: ${escapeHtml(essay.ans)}</div>
+                            <div style="color: var(--text-sub);"><span style="font-weight:700;">Phân tích ngữ pháp:</span> ${escapeHtml(essay.explain)}</div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            container.innerHTML = `
+                <div class="test-header">
+                    <h2 class="test-title">${t.title}</h2>
+                    <div class="test-grammar-focus">
+                        <span class="grammar-focus-label">📌 Trọng tâm ngữ pháp:</span> ${escapeHtml(t.grammar_points)}
+                    </div>
+                </div>
+
+                <div class="part-header">
+                    <span class="part-title">PHẦN 1: TRẮC NGHIỆM KHÁCH QUAN (10 CÂU)</span>
+                    <span class="part-badge">10 Điểm</span>
+                </div>
+                ${mcqHtml}
+
+                <div class="part-header" style="border-left-color: var(--purple);">
+                    <span class="part-title">PHẦN 2: TỰ LUẬN VIẾT LẠI CÂU & CHIA ĐỘNG TỪ (5 CÂU)</span>
+                    <span class="part-badge" style="background: var(--purple);">5 Câu Tự Luận</span>
+                </div>
+                ${essayHtml}
+
+                <div class="test-footer-actions">
+                    <button class="btn-reset-test" onclick="resetCurrentTest(${t.id})">
+                        🔄 Làm Lại Đề Này
+                    </button>
+                    ${idx < TESTS.length - 1 ? `
+                    <button class="btn-next-test" onclick="goToNextTest()">
+                        Tiếp Tục Sang Đề ${idx + 2} ➔
+                    </button>
+                    ` : `
+                    <button class="btn-next-test" onclick="alert('Chúc mừng con đã hoàn thành toàn bộ 10 Đề Kiểm Tra Ngữ Pháp Lớp 6 CLC!')">
+                        🎉 Chúc Mừng Con Đã Hoàn Thành!
+                    </button>
+                    `}
+                </div>
+            `;
+
+            updateCurrentTestScore(t.id);
+        }
+
+        function handleSelectMcq(testId, qNum, userLetter, correctLetter) {
+            const testKey = `test_${testId}`;
+            userState[testKey] = userState[testKey] || { mcqAnswers: {}, essayAnswers: {} };
+            if (userState[testKey].mcqAnswers[qNum]) return; // already answered
+
+            userState[testKey].mcqAnswers[qNum] = userLetter;
+
+            // Check if all 10 are answered
+            if (Object.keys(userState[testKey].mcqAnswers).length >= 10) {
+                userState[testKey].isDone = true;
+            }
+
+            localStorage.setItem('clc_grammar_state', JSON.stringify(userState));
+            loadTest(currentTestIdx);
+            renderTopicTabs();
+            updateOverallProgress();
+        }
+
+        function saveEssayInput(testId, qNum, val) {
+            const testKey = `test_${testId}`;
+            userState[testKey] = userState[testKey] || { mcqAnswers: {}, essayAnswers: {} };
+            userState[testKey].essayAnswers[qNum] = val;
+            localStorage.setItem('clc_grammar_state', JSON.stringify(userState));
+        }
+
+        function toggleEssayResult(testId, qNum) {
+            const testKey = `test_${testId}`;
+            userState[testKey] = userState[testKey] || { mcqAnswers: {}, essayAnswers: {}, revealedEssays: {} };
+            userState[testKey].revealedEssays = userState[testKey].revealedEssays || {};
+            userState[testKey].revealedEssays[qNum] = !userState[testKey].revealedEssays[qNum];
+            localStorage.setItem('clc_grammar_state', JSON.stringify(userState));
+            
+            const resBox = document.getElementById(`essay_res_${testId}_${qNum}`);
+            if (resBox) {
+                resBox.style.display = userState[testKey].revealedEssays[qNum] ? 'block' : 'none';
+            }
+        }
+
+        function resetCurrentTest(testId) {
+            if (confirm(`Con có chắc muốn làm lại Đề ${testId} từ đầu không?`)) {
+                const testKey = `test_${testId}`;
+                delete userState[testKey];
+                localStorage.setItem('clc_grammar_state', JSON.stringify(userState));
+                loadTest(currentTestIdx);
+                renderTopicTabs();
+                updateOverallProgress();
+            }
+        }
+
+        function goToNextTest() {
+            if (currentTestIdx < TESTS.length - 1) {
+                currentTestIdx++;
+                renderTopicTabs();
+                loadTest(currentTestIdx);
+                window.scrollTo({ top: 180, behavior: 'smooth' });
+            }
+        }
+
+        function updateCurrentTestScore(testId) {
+            const t = TESTS.find(x => x.id === testId);
+            const testKey = `test_${testId}`;
+            const answers = userState[testKey]?.mcqAnswers || {};
+            let score = 0;
+            t.mcqs.forEach((m, idx) => {
+                if (answers[idx + 1] === m.ans) score++;
+            });
+            document.getElementById('currentScoreText').innerText = `${score}/10 Trắc nghiệm`;
+        }
+
+        function updateOverallProgress() {
+            let completedCount = 0;
+            TESTS.forEach(t => {
+                if (userState[`test_${t.id}`]?.isDone) completedCount++;
+            });
+            const pct = Math.round((completedCount / TESTS.length) * 100);
+            document.getElementById('progressPctText').innerText = `${pct}% (${completedCount}/${TESTS.length} Đề)`;
+            document.getElementById('progressFillBar').style.width = `${pct}%`;
+        }
+
+        function escapeHtml(str) {
+            if (!str) return '';
+            return str
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#039;");
+        }
+
+        function toggleTheme() {
+            const current = document.documentElement.getAttribute('data-theme') || 'academic';
+            const next = current === 'dark' ? 'academic' : 'dark';
+            document.documentElement.setAttribute('data-theme', next);
+            localStorage.setItem('clc_theme', next);
+            document.getElementById('themeText').innerText = next === 'dark' ? 'Chế độ Ban Đêm' : 'Giao diện Giấy Ngà';
+            document.getElementById('themeBtn').innerHTML = next === 'dark' ? '🌙 <span>Chế độ Ban Đêm</span>' : '☀️ <span>Giao diện Giấy Ngà</span>';
+        }
+
+        // Initialize Theme from Storage
+        const savedTheme = localStorage.getItem('clc_theme');
+        if (savedTheme) {
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            if (savedTheme === 'dark') {
+                document.getElementById('themeText').innerText = 'Chế độ Ban Đêm';
+                document.getElementById('themeBtn').innerHTML = '🌙 <span>Chế độ Ban Đêm</span>';
+            }
+        }
+
+        // Run
+        initApp();
+    </script>
+</body>
+</html>
